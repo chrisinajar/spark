@@ -1,3 +1,7 @@
+# Spark
+Hello, this is the code created by the Spark team before switching over to work on Chroma. Want to work on Spark? Pull requests are welcome!
+
+
 ![lmbr](http://d2tinsms4add52.cloudfront.net/github/readme_header.jpg)
 
 # Amazon Lumberyard
