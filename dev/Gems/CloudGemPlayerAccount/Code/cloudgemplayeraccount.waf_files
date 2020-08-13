@@ -1,0 +1,37 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudGemPlayerAccount_precompiled.cpp",
+            "Source/CloudGemPlayerAccount_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "AWS/ServiceAPI/CloudGemPlayerAccountClientComponent.h",
+            "Include/CloudGemPlayerAccount/CloudGemPlayerAccountBus.h",
+            "Include/CloudGemPlayerAccount/AccountResultInfo.h",
+            "Include/CloudGemPlayerAccount/BasicResultInfo.h",
+            "Include/CloudGemPlayerAccount/DeliveryDetails.h",
+            "Include/CloudGemPlayerAccount/UserAttributeList.h",
+            "Include/CloudGemPlayerAccount/UserAttributeValues.h",
+            "Include/CloudGemPlayerAccount/PlayerAccount.h"
+        ],
+        "Source": [
+            "Source/CloudGemPlayerAccountModule.cpp",
+            "Source/CloudGemPlayerAccountSystemComponent.cpp",
+            "Source/CloudGemPlayerAccountSystemComponent.h",
+            "Source/AccountResultInfo.cpp",
+            "Source/AuthTokenGroup.cpp",
+            "Source/AuthTokenGroup.h",
+            "Source/BasicResultInfo.cpp",
+            "Source/DeliveryDetails.cpp",
+            "Source/PlayerAccount.cpp",
+            "Source/UserAttributeList.cpp",
+            "Source/UserAttributeValues.cpp",
+            "Source/UserPoolTokenRetrievalStrategy.cpp",
+            "Source/UserPoolTokenRetrievalStrategy.h",
+            "AWS/ServiceAPI/CloudGemPlayerAccountClientComponent.cpp"
+
+        ]
+    }
+}

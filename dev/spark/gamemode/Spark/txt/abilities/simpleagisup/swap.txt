@@ -1,0 +1,16 @@
+{
+	"abilities" : {
+		"simpleagisup/swap" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "30",
+			"is_ultimate" : true,
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "150 300 450 600 750 900" 
+			},
+			"special-values" : {
+				"range" : "700 900 1100 1300 1500 1700"
+			}
+		}
+	}
+}

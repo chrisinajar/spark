@@ -1,0 +1,21 @@
+{
+	"units" : {
+		"rangewillsup" : {
+			"slice" : "hero_test_001",
+			"is-hero": true,
+			"primary_attribute" : "will",
+
+			"attack-type":"ranged",
+			"attack-projectile":"projectile_001",
+
+			"variables":{
+				"movement_speed": 100,
+				"attack_range": 10
+			},
+			"ability0" : "rangewillsup/bouncing_stun",
+			"ability1" : "rangewillsup/aoe_heal",			
+			"ability2" : "rangewillsup/damage_multi_debuff",
+			"ability3" : "rangewillsup/channel_attacks"
+		}
+	}
+}

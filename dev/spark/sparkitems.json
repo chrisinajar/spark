@@ -1,0 +1,221 @@
+{
+  "items": {
+    "item": {
+      	// empty?
+    },
+  	"base_item":  	{
+  		"extends": "item",
+    	"ID":                                                 0,    // unique ID
+    	"item_cost":                                          0,	// if recipe = true, this is the recipe cost, else the item can be bought in the shop at this price
+    	"item_shop_tags":                                     "",
+    	"item_recipe":                                        true,
+    	"max_level":				                          5,
+  		"item_recipe_icon":									  "base_recipe_icon",
+    	"item_icon":                               			  "base_icon",
+    	"item_requirements":
+    	{
+      	"01":                                               ["item_x", "item_y"],
+    	},
+
+   		// General
+    	//-------------------------------------------------------------------------------------------------------------
+    	"ability_behavior":                                   "", // what happens when you push the button: unit_target, ground_target, no_target, toggle, passive 
+    	"ability_unit_target_team":                           "", // team_enemy or team_ally
+    	"ability_unit_target_type":                           [], // hero, creep, boss
+    	"ability_unit_target_flags":                          "", // if listed it can target: status_immune
+
+	    // Stats
+	    //-------------------------------------------------------------------------------------------------------------
+	    "ability_cooldown":                                   0,
+	    "ability_shared_cooldown":                            "base",
+	    "ability_cast_range":                                 0,
+	    "ability_cast_point":                                 0.0,
+
+	    // Item Info
+	    //-------------------------------------------------------------------------------------------------------------
+	    "ability_mana_cost":                                  0,
+	    "item_shop_tags":                                     "base",
+	    "item_aliases":                                       "base",
+
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "special_values":
+	    {
+	      "health_regeneration":		[0, 0, 0, 0, 0],
+	      "mana_regeneration":			[0, 0, 0, 0, 0],
+	      "max_health":					[0, 0, 0, 0, 0],
+	      "max_mana":			  		[0, 0, 0, 0, 0],
+	      "movement_speed":  			[0, 0, 0, 0, 0],
+	      "armor":						[0, 0, 0, 0, 0],
+	      "magic_armor":			  	[0, 0, 0, 0, 0],
+	      "all_stats":					[0, 0, 0, 0, 0],
+	      "strength":					[0, 0, 0, 0, 0],
+	      "agility":					[0, 0, 0, 0, 0],
+	      "intelligence":				[0, 0, 0, 0, 0],
+	      "will":						[0, 0, 0, 0, 0],
+	      "damage":						[0, 0, 0, 0, 0],
+	      "attack_speed":			  	[0, 0, 0, 0, 0],
+	      "ability_power":			  	[0, 0, 0, 0, 0],
+	      "lifesteal":					[0, 0, 0, 0, 0],
+	      "spell_lifesteal":			[0, 0, 0, 0, 0],
+	      "heal_amplification":			[0, 0, 0, 0, 0],
+	      "cooldown_reduction":			[0, 0, 0, 0, 0],
+	    }
+	},
+	"boots":  	{
+		"extends": "base_item",
+    	"ID":                                                 1,    // unique ID
+    	"item_cost":                                          500,	// if recipe = true, this is the recipe cost, else the item can be bought in the shop at this price
+    	"item_shop_tags":                                     "",
+    	"item_recipe":                                        false,
+    	"max_level":				                          1,
+  		"item_recipe_icon":									  "base_recipe_icon",
+    	"item_icon":                               			  "boots_icon",
+
+   		// General
+    	//-------------------------------------------------------------------------------------------------------------
+    	"ability_behavior":                                   "passive",	// what happens when you push the button: unit_target, ground_target, no_target, toggle, passive 
+
+	    // Stats
+	    //-------------------------------------------------------------------------------------------------------------
+	    "ability_cooldown":                                   0,
+	    "ability_shared_cooldown":                            "base",
+	    "ability_cast_range":                                 0,
+	    "ability_cast_point":                                 0.0,
+
+	    // Item Info
+	    //-------------------------------------------------------------------------------------------------------------
+	    "ability_mana_cost":                                  0,
+	    "item_shop_tags":                                     "base",
+	    "item_aliases":                                       "base",
+
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "special_values":
+	    {
+	      "health_regeneration":		[0, 0, 0, 0, 0],
+	      "mana_regeneration":			[0, 0, 0, 0, 0],
+	      "max_health":					[0, 0, 0, 0, 0],
+	      "max_mana":			  		[0, 0, 0, 0, 0],
+	      "movement_speed":  			[40, 0, 0, 0, 0],
+	      "armor":						[0, 0, 0, 0, 0],
+	      "magic_armor":			  	[0, 0, 0, 0, 0],
+	      "all_stats":					[0, 0, 0, 0, 0],
+	      "strength":					[0, 0, 0, 0, 0],
+	      "agility":					[0, 0, 0, 0, 0],
+	      "intelligence":				[0, 0, 0, 0, 0],
+	      "will":						[0, 0, 0, 0, 0],
+	      "damage":						[0, 0, 0, 0, 0],
+	      "attack_speed":			  	[0, 0, 0, 0, 0],
+	      "ability_power":			  	[0, 0, 0, 0, 0],
+	      "lifesteal":					[0, 0, 0, 0, 0],
+	      "spell_lifesteal":			[0, 0, 0, 0, 0],
+	      "heal_amplification":			[0, 0, 0, 0, 0],
+	      "cooldown_reduction":			[0, 0, 0, 0, 0],
+	    }
+	},
+	"small_hp_regen":  	{
+  		"extends": "base_item",
+    	"ID":                                                 2,    // unique ID
+    	"item_cost":                                          200,	// if recipe = true, this is the recipe cost, else the item can be bought in the shop at this price
+    	"item_shop_tags":                                     "",
+    	"item_recipe":                                        false,
+    	"max_level":				                          1,
+  		"item_recipe_icon":									  "base_recipe_icon",
+    	"item_icon":                               			  "small_hp_regen_icon",
+
+   		// General
+    	//-------------------------------------------------------------------------------------------------------------
+    	"ability_behavior":                                   "passive", // what happens when you push the button: unit_target, ground_target, no_target, toggle, passive 
+
+	    // Stats
+	    //-------------------------------------------------------------------------------------------------------------
+	    "ability_cooldown":                                   0,
+	    "ability_shared_cooldown":                            "base",
+	    "ability_cast_range":                                 0,
+	    "ability_cast_point":                                 0.0,
+
+	    // Item Info
+	    //-------------------------------------------------------------------------------------------------------------
+	    "ability_mana_cost":                                  0,
+	    "item_shop_tags":                                     "base",
+	    "item_aliases":                                       "base",
+
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "special_values":
+	    {
+	      "health_regeneration":		[3, 0, 0, 0, 0],
+	      "mana_regeneration":    		[0, 0, 0, 0, 0],
+	      "max_health":					[0, 0, 0, 0, 0],
+	      "max_mana":			  		[0, 0, 0, 0, 0],
+	      "movement_speed":  			[0, 0, 0, 0, 0],
+	      "armor":						[0, 0, 0, 0, 0],
+	      "magic_armor":			  	[0, 0, 0, 0, 0],
+	      "all_stats":					[0, 0, 0, 0, 0],
+	      "strength":					[0, 0, 0, 0, 0],
+	      "agility":					[0, 0, 0, 0, 0],
+	      "intelligence":				[0, 0, 0, 0, 0],
+	      "will":						[0, 0, 0, 0, 0],
+	      "damage":						[0, 0, 0, 0, 0],
+	      "attack_speed":			  	[0, 0, 0, 0, 0],
+	      "ability_power":			  	[0, 0, 0, 0, 0],
+	      "lifesteal":					[0, 0, 0, 0, 0],
+	      "spell_lifesteal":			[0, 0, 0, 0, 0],
+	      "heal_amplification":			[0, 0, 0, 0, 0],
+	      "cooldown_reduction":			[0, 0, 0, 0, 0],
+	    }
+	},
+	"small_mana_regen":  	{
+  		"extends": "base_item",
+    	"ID":                                                 3,    // unique ID
+    	"item_cost":                                          200,	// if recipe = true, this is the recipe cost, else the item can be bought in the shop at this price
+    	"item_shop_tags":                                     "",
+    	"item_recipe":                                        false,
+    	"max_level":				                          1,
+  		"item_recipe_icon":									  "base_recipe_icon",
+    	"item_icon":                               			  "small_mana_regen_icon",
+
+   		// General
+    	//-------------------------------------------------------------------------------------------------------------
+    	"ability_behavior":                                   "passive", // what happens when you push the button: unit_target, ground_target, no_target, toggle, passive 
+
+	    // Stats
+	    //-------------------------------------------------------------------------------------------------------------
+	    "ability_cooldown":                                   0,
+	    "ability_shared_cooldown":                            "base",
+	    "ability_cast_range":                                 0,
+	    "ability_cast_point":                                 0.0,
+
+	    // Item Info
+	    //-------------------------------------------------------------------------------------------------------------
+	    "ability_mana_cost":                                  0,
+	    "item_shop_tags":                                     "base",
+	    "item_aliases":                                       "base",
+
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "special_values":
+	    {
+	      "health_regeneration":		[0, 0, 0, 0, 0],
+	      "mana_regeneration":			[3, 0, 0, 0, 0],
+	      "max_health":					[0, 0, 0, 0, 0],
+	      "max_mana":			  		[0, 0, 0, 0, 0],
+	      "movement_speed":  			[0, 0, 0, 0, 0],
+	      "armor":						[0, 0, 0, 0, 0],
+	      "magic_armor":			  	[0, 0, 0, 0, 0],
+	      "all_stats":					[0, 0, 0, 0, 0],
+	      "strength":					[0, 0, 0, 0, 0],
+	      "agility":					[0, 0, 0, 0, 0],
+	      "intelligence":				[0, 0, 0, 0, 0],
+	      "will":						[0, 0, 0, 0, 0],
+	      "damage":						[0, 0, 0, 0, 0],
+	      "attack_speed":			  	[0, 0, 0, 0, 0],
+	      "ability_power":			  	[0, 0, 0, 0, 0],
+	      "lifesteal":					[0, 0, 0, 0, 0],
+	      "spell_lifesteal":			[0, 0, 0, 0, 0],
+	      "heal_amplification":			[0, 0, 0, 0, 0],
+	      "cooldown_reduction":			[0, 0, 0, 0, 0],
+	    }
+	},
+}

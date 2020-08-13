@@ -1,0 +1,19 @@
+{
+    "auto":
+    {
+        "Root":
+        [
+            "AzGameFrameworkModule.h",
+            "AzGameFrameworkModule.cpp"
+        ],
+        "API":
+        [
+            "API/GameApplicationAPI.h"
+        ],
+        "Application":
+        [
+            "Application/GameApplication.cpp",
+            "Application/GameApplication.h"
+        ]
+    }
+}

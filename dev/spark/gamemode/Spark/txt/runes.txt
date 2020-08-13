@@ -1,0 +1,36 @@
+//comments!
+{
+	"abilities" : {
+		"runes/bounty_rune" : {
+			"special-values" : {
+				"bonus_gold":250
+			}
+		},
+		"runes/haste_rune" : {
+			"special-values" : {
+				"haste_duration":5
+			}
+		},
+		"runes/double_damage_rune" : {
+			"special-values" : {
+				"double_damage_duration":10
+			}
+		},
+		"runes/regen_rune" : {
+			"special-values" : {
+				"regen_duration":20
+			}
+		},
+		"runes/arcane_rune" : {
+			"special-values" : {
+				"arcane_duration":15
+			}
+		},
+		"runes/spell_power_rune" : {
+			"special-values" : {
+				"spell_power_duration":15,
+				"bonus_ability_power" : 10
+			}
+		}
+	}
+}

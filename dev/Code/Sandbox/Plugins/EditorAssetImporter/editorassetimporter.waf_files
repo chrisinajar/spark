@@ -1,0 +1,29 @@
+{
+    "none":
+    {
+        "Code":
+        [
+            "AssetImporterWindow.h",
+            "AssetImporterWindow.cpp",
+            "AssetImporterPlugin.h",
+            "AssetImporterPlugin.cpp",
+            "AssetImporterDocument.h",
+            "AssetImporterDocument.cpp",
+            "ImporterRootDisplay.h",
+            "ImporterRootDisplay.cpp",
+            "AssetBrowserContextProvider.h",
+            "AssetBrowserContextProvider.cpp",
+            "SceneSerializationHandler.h",
+            "SceneSerializationHandler.cpp",
+            "Main.cpp",
+            "StdAfx.cpp",
+            "StdAfx.h"
+        ],
+        "UI":
+        [
+            "AssetImporter.qrc",
+            "AssetImporterWindow.ui",
+            "ImporterRootDisplay.ui"
+        ]
+    }
+}

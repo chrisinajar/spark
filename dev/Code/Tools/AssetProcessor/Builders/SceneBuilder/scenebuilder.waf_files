@@ -1,0 +1,7 @@
+{
+    "auto": {        
+        "SceneBuilder": [
+            "Source/SceneBuilderApplication.cpp"
+        ]
+    }
+}

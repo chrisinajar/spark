@@ -1,0 +1,10 @@
+{
+    "auto":
+    {
+        "Root":
+        [
+            "Main.cpp",
+            "resource.h"
+        ]
+    }
+}

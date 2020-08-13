@@ -1,0 +1,17 @@
+{
+	"abilities" : {
+		"astromage/plasma_flare" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "5",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "5" 
+			},
+			"special-values" : {
+				"range" : 30,
+				"speed" : 20,
+				"damage" : 50
+			}
+		}
+	}
+}

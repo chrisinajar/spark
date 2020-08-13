@@ -1,0 +1,12 @@
+{
+    "auto": {
+        "Include": [
+            "Include/SteamWorks/SteamWorksBus.h"
+        ],
+        "Source": [
+            "Source/SteamWorksModule.cpp",
+            "Source/SteamWorksSystemComponent.cpp",
+            "Source/SteamWorksSystemComponent.h"
+        ]
+    }
+}

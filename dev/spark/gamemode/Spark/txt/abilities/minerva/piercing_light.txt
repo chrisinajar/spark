@@ -1,0 +1,17 @@
+//comments!
+{
+	"abilities" : {
+		"minerva/piercing_light" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			//for now the values below are ignored
+			"special-values" : {
+				"duration" : 4.5,
+				"debuff_duration" : 2.5,
+				"bonus_movement_speed" : 15,
+				"bonus_attack_speed" : "5 10 20 30 40 60 80",
+				"reduce_movement_speed" : "4 8 12 16 20 24 28",
+				"reduce_attack_speed" : "4 12 20 28 36 52 68"
+			}
+		}
+	}
+}

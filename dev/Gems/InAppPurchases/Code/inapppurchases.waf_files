@@ -1,0 +1,21 @@
+{
+    "none": {
+        "Root": [
+            "Source/InAppPurchases_precompiled.cpp",
+            "Source/InAppPurchases_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Interface": [
+            "Include/InAppPurchases/InAppPurchasesBus.h",
+            "Include/InAppPurchases/InAppPurchasesInterface.h",
+            "Include/InAppPurchases/InAppPurchasesResponseBus.h"
+        ],
+        "Implementation": [
+            "Source/InAppPurchasesModule.cpp",
+            "Source/InAppPurchasesSystemComponent.cpp",
+            "Source/InAppPurchasesInterface.cpp",
+            "Source/InAppPurchasesFlowNodes.cpp"
+        ]
+    }
+}

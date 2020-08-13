@@ -1,0 +1,1753 @@
+{
+    "Version" : "1.0.0",
+    "MayaEnvironments" :
+    [
+        {
+            "identifier" : "MAYA_PLUG_IN_PATH",
+            "paths" :["$TOOLSFOLDER$/maya/plugins"]
+        },
+        {
+            "identifier" : "MAYA_SHELF_PATH",
+            "paths" :["$TOOLSFOLDER$/maya/script"]
+        },
+        {
+            "identifier" : "MAYA_SCRIPT_PATH",
+            "paths" :["$TOOLSFOLDER$/maya/script"]
+        },
+        {
+            "identifier" : "XBMLANGPATH",
+            "paths" :["$TOOLSFOLDER$/maya/script/icons"]
+        },
+        {
+            "identifier" : "PYTHONPATH",
+            "paths" :["$TOOLSFOLDER$/maya/script"]
+        }
+    ],
+    "DownloadRules" :
+    [
+        {
+            "identifier" : "vc140",
+            "requiredTags" : ["vc140", "windows"]
+        },
+        {
+            "identifier" : "vc141",
+            "requiredTags" : ["vc141", "windows"]
+        },
+        {
+            "identifier" : "winlinux",
+            "requiredTags" : ["windows", "setuplinux"]
+        }
+    ],
+    "Capabilities" :
+    [
+        {
+            "identifier" : "rungame",
+            "description" : "runGameDescription",
+            "tooltip" : "rungameToolTip",
+            "tags" : ["rungame"],
+            "categories" : ["role"],
+            "hosts" : [ "windows", "macOS" ],
+            "default" : true
+        },
+        {
+            "identifier" : "runeditor",
+            "description" : "runEditorDescription",
+            "tooltip" : "runeditorToolTip",
+            "tags" : ["runeditor"],
+            "categories" : ["role"],
+            "hosts" : [ "windows", "macOS" ],
+            "default" : true
+        },
+        {
+            "identifier" : "compilegame",
+            "description" : "compileGameDescription",
+            "tooltip" : "compilegameToolTip",
+            "tags" : ["compilegame"],
+            "categories" : ["role"],
+            "hosts" : [ "all" ],
+            "default" : false
+        },
+        {
+            "identifier" : "compileengine",
+            "description" : "compileEngineDescription",
+            "tooltip" : "compileengineToolTip",
+            "tags" : ["compileengine"],
+            "categories" : ["role"],
+            "hosts" : [ "all" ],
+            "default" : false
+        },
+        {
+            "identifier" : "compilesandbox",
+            "description" : "compileSandboxDescription",
+            "tooltip" : "compilesandboxToolTip",
+            "tags" : ["compilesandbox"],
+            "categories" : ["role"],
+            "hosts" : [ "windows", "macOS" ],
+            "default" : false
+        },
+        {
+            "identifier" : "compileandroid",
+            "description" : "compileAndroidDescription",
+            "tooltip" : "compileandroidToolTip",
+            "tags" : ["compileandroid"],
+            "categories" : ["role"],
+            "hosts" : [ "all" ],
+            "default" : false
+        },
+        {
+            "identifier" : "compileios",
+            "description" : "compileIosDescription",
+            "tooltip" : "compileiosToolTip",
+            "tags" : ["compileios"],
+            "categories" : ["role"],
+            "hosts" : [ "macOS" ],
+            "default" : false
+        },
+        {
+            "identifier" : "setuplinux",
+            "description" : "setuplinuxDescription",
+            "tooltip" : "setuplinuxToolTip",
+            "tags" : ["setuplinux"],
+            "categories" : ["role"],
+            "hosts" : [ "windows" ],
+            "default" : false
+        },
+        {
+            "identifier" : "vc140",
+            "description" : "vc140Description",
+            "tooltip" : "vc140ToolTip",
+            "tags" : ["vc140"],
+            "categories" : ["compiler"],
+            "hosts" : [ "windows" ],
+            "default" : true
+        },
+        {
+            "identifier" : "vc141",
+            "description" : "vc141Description",
+            "tooltip" : "vc141ToolTip",
+            "tags" : ["vc141"],
+            "categories" : ["compiler"],
+            "hosts" : [ "windows" ],
+            "default" : false
+        },
+        {
+            "identifier" : "windows",
+            "description" : "windowsDescription",
+            "tooltip" : "windowsToolTip",
+            "tags" : ["windows"],
+            "categories" : ["OS"],
+            "hosts" : [ "windows" ],
+            "default" : true
+        },
+        {
+            "identifier" : "macOS",
+            "description" : "macOSDescription",
+            "tooltip" : "macOSToolTip",
+            "tags" : ["macOS"],
+            "categories" : ["OS"],
+            "hosts" : [ "macOS" ],
+            "default" : true
+        },
+        {
+            "identifier" : "linux",
+            "description" : "linuxDescription",
+            "tooltip" : "linuxToolTip",
+            "tags" : ["linux"],
+            "categories" : ["OS"],
+            "hosts" : [ "linux" ],
+            "default" : true
+        }
+    ],
+    "SDKs" :
+    [
+        {
+            "identifier" : "boost",
+            "name" : "boostName",
+            "version" : "v1.61.0 modified",
+            "source": "boost/1.61.0-az.2",
+            "optional" : 0,
+            "description" : "boostDescriptionSummary",
+            "detailedInstructions" : "boostDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "boost/1.61.0-az.2/lib",
+                    "destination" : "$CODEFOLDERNAME$/Sandbox/SDKs/boost/lib",
+                    "exampleFile" : "windows/x64/boost_python-vc140-mt-1_61.lib"
+                },
+                {
+                    "hostOS" : ["macOS"],
+                    "source" : "boost/1.61.0-az.2/lib",
+                    "destination" : "$CODEFOLDERNAME$/Sandbox/SDKs/boost/lib",
+                    "exampleFile" : "macos/libboost_python.a"
+                },
+                {
+                    "source" : "boost/1.61.0-az.2/boost",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/boost/boost",
+                    "exampleFile" : "foreach.hpp"
+                }
+            ]
+        },
+        {
+            "identifier" : "maya2014",
+            "name" : "maya2014Name",
+            "version" : "2014",
+            "source": "Maya/Maya2014",
+            "optional" : 1,
+            "description" : "maya2014DescriptionSummary",
+            "detailedInstructions" : "maya2014DetailedInstructions",
+            "roles" : ["compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Maya/Maya2014",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Maya/Maya2014",
+                    "exampleFile" : "x64/lib/QtCore4.lib"
+                }
+            ]
+        },
+
+        {
+            "identifier" : "maya2015",
+            "name" : "maya2015Name",
+            "version" : "2015",
+            "source": "Maya/Maya2015",
+            "optional" : 1,
+            "description" : "maya2015DescriptionSummary",
+            "detailedInstructions" : "maya2015DetailedInstructions",
+            "roles" : ["compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Maya/Maya2015",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Maya/Maya2015",
+                    "exampleFile" : "lib/QtCore4.lib"
+                }
+            ]
+        },
+
+        {
+            "identifier" : "maya2016",
+            "name" : "maya2016Name",
+            "version" : "2016",
+            "source": "Maya/Maya2016",
+            "optional" : 1,
+            "description" : "maya2016DescriptionSummary",
+            "detailedInstructions" : "maya2016DetailedInstructions",
+            "roles" : ["compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Maya/Maya2016",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Maya/Maya2016",
+                    "exampleFile" : "lib/QtCore4.lib"
+                }
+
+            ]
+        },
+        {
+            "identifier" : "maya2017",
+            "name" : "maya2017Name",
+            "version" : "2017",
+            "source": "Maya/Maya2017",
+            "optional" : 1,
+            "description" : "maya2017DescriptionSummary",
+            "detailedInstructions" : "maya2017DetailedInstructions",
+            "roles" : ["compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Maya/Maya2017",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Maya/Maya2017",
+                    "exampleFile" : "lib/Qt5Core.lib"
+                }
+
+            ]
+        },
+        {
+            "identifier" : "max2016",
+            "name" : "max2016Name",
+            "version" : "2016",
+            "source": "Max/2016",
+            "optional" : 1,
+            "description" : "max2016DescriptionSummary",
+            "detailedInstructions" : "max2016DetailedInstructions",
+            "roles" : ["compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Max/2016",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Max/2016",
+                    "exampleFile" : "include/max.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "max2015",
+            "name" : "max2015Name",
+            "version" : "2015",
+            "source": "Max/2015",
+            "optional" : 1,
+            "description" : "max2015DescriptionSummary",
+            "detailedInstructions" : "max2015DetailedInstructions",
+            "roles" : ["compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Max/2015",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Max/2015",
+                    "exampleFile" : "include/max.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "max2014",
+            "name" : "max2014Name",
+            "version" : "2014",
+            "source": "Max/2014",
+            "optional" : 1,
+            "description" : "max2014DescriptionSummary",
+            "detailedInstructions" : "max2014DetailedInstructions",
+            "roles" : ["compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Max/2014",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Max/2014",
+                    "exampleFile" : "include/max.h"
+                }
+
+            ]
+        },
+        {
+            "identifier" : "photoshop",
+            "name" : "photoshopName",
+            "version" : "cs4",
+            "source": "Photoshop/Adobe Photoshop CS4 SDK",
+            "optional" : 1,
+            "description" : "photoshopDescriptionSummary",
+            "detailedInstructions" : "photoshopDetailedInstructions",
+            "roles" : ["compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Photoshop/Adobe Photoshop CS4 SDK",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Photoshop/adobe_photoshop_cs4_sdk_win",
+                    "exampleFile" : "photoshopapi/c++wrapperclasses/BaseADMEntry.cpp"
+                }
+            ]
+        },
+        {
+            "identifier" : "sqlite",
+            "name" : "sqliteName",
+            "version" : "v3.8.8.2",
+            "source": "SQLite/v3.8.8.2",
+            "optional" : 0,
+            "description" : "sqliteDescriptionSummary",
+            "detailedInstructions" : "sqliteDetailedInstructions",
+            "roles" : ["compilegame", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "SQLite/v3.8.8.2",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/SQLite",
+                    "exampleFile" : "sqlite3.c"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "SQLite/v3.8.8.2",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/SQLite",
+                    "exampleFile" : "build/win_x64/vc140/release/sqlite.lib"
+                }
+            ]
+        },
+        {
+            "identifier" : "jansson",
+            "name" : "janssonName",
+            "version" : "2.1",
+            "source": "jansson/2.1",
+            "optional" : 0,
+            "description" : "janssonDescriptionSummary",
+            "detailedInstructions" : "janssonDetailedInstructions",
+            "roles" : ["compileengine", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "jansson/2.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/jansson-2.1",
+                    "exampleFile" : "src/jansson_config.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "livemocap",
+            "name" : "liveMocapName",
+            "version" : "unknown",
+            "source" : "LiveMocap/unknown",
+            "optional" : 0,
+            "description" : "liveMocapDescriptionSummary",
+            "detailedInstructions" : "liveMocapDetailedInstructions",
+            "roles" : ["compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "LiveMocap/unknown",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LiveMocap",
+                    "exampleFile" : "LiveMocap.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "nvapi",
+            "name" : "nvapiName",
+            "version" : "R361-developer_V2",
+            "source": "nvapi/R361-developer_V2",
+            "optional" : 0,
+            "description" : "nvapiDescriptionSummary",
+            "detailedInstructions" : "nvapiDetailedInstructions",
+            "roles" : ["compileengine", "compilesandbox"],
+            "hostOS" : ["windows"],
+            "symlinks" :
+            [
+                {
+                    "source" : "nvapi/R361-developer_V2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/nvapi",
+                    "exampleFile" : "nvapi.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "p4api",
+            "name" : "p4apiName",
+            "version" : "2015.2",
+            "source": "p4api/2015.2",
+            "optional" : 0,
+            "description" : "p4apiDescriptionSummary",
+            "detailedInstructions" : "p4apiDetailedInstructions",
+            "roles" : ["compileengine", "compilesandbox"],
+            "hostOS" : ["windows", "macOS"],
+            "symlinks" :
+            [
+                {
+                    "source" : "p4api/2015.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/p4api",
+                    "exampleFile" : "include/p4/p4tags.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "p4api/2015.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/p4api",
+                    "exampleFile" : "vs14/debug/libclient.lib"
+                },
+                {
+                    "hostOS" : ["macOS"],
+                    "source" : "p4api/2015.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/p4api",
+                    "exampleFile" : "macos/libclient.a"
+                }
+            ]
+        },
+        {
+            "identifier" : "pdcurses",
+            "name" : "pdcursesName",
+            "version" : "2.8-az.1",
+            "source": "pdcurses/2.8-az.1",
+            "optional" : 0,
+            "description" : "pdcursesDescriptionSummary",
+            "detailedInstructions" : "pdcursesDetailedInstructions",
+            "roles" : ["compileengine", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "pdcurses/2.8-az.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/pdcurses",
+                    "exampleFile" : "panel.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "pdcurses/2.8-az.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/pdcurses",
+                    "exampleFile" : "lib/amd64_vs2015/pdcurses.lib"
+                }
+            ]
+        },
+        {
+            "identifier" : "tiff",
+            "name" : "tiffName",
+            "version" : "3.9.5",
+            "source": "tiff/3.9.5",
+            "optional" : 0,
+            "description" : "tiffDescriptionSummary",
+            "detailedInstructions" : "tiffDetailedInstructions",
+            "roles" : ["compileengine", "compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "tiff/3.9.5",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/tiff",
+                    "exampleFile" : "libtiff/libtiff64rtdlld_vc140.lib"
+                },
+                {
+                    "source" : "tiff/3.9.5",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/tiff",
+                    "exampleFile" : "libtiff/tiff.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "fbxsdk",
+            "name" : "fbxsdkName",
+            "version" : "2016.1.2",
+            "source": "FbxSdk/2016.1.2",
+            "optional" : 0,
+            "description" : "fbxsdkDescriptionSummary",
+            "detailedInstructions" : "fbxsdkDetailedInstructions",
+            "roles" : ["compileengine", "compilesandbox"],
+            "hostOS" : ["windows", "macOS"],
+            "installers" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "$TOOLSFOLDERNAME$/Redistributables/FbxSdk/2016.1.2/fbx20161_2_fbxsdk_vs2015_win.exe",
+                    "params" : "/D=$THIRDPARTYFOLDERPATH$\\FbxSdk\\2016.1.2"
+                },
+                {
+                    "hostOS": ["macOS"],
+                    "source": "./$TOOLSFOLDERNAME$/Python/python.sh",
+                    "params": "$TOOLSFOLDERNAME$/Redistributables/FbxSdk/2016.1.2/fbx_install_mac.py \"$THIRDPARTYFOLDERPATH$/FbxSdk/2016.1.2\""
+                }
+            ],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "FbxSdk/2016.1.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/FbxSdk",
+                    "exampleFile" : "lib/vs2015/x64/release/libfbxsdk.dll"
+                },
+                {
+                    "source" : "FbxSdk/2016.1.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/FbxSdk",
+                    "exampleFile" : "include/fbxsdk.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "squish",
+            "name" : "squishName",
+            "version" : "20150601_lmbr_v2",
+            "source" : "squish-ccr/20150601_lmbr_v2",
+            "optional" : 0,
+            "description" : "squishDescriptionSummary",
+            "detailedInstructions" : "squishDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "squish-ccr/20150601_lmbr_v2",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/squish-ccr",
+                    "exampleFile" : "squish.cpp"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "squish-ccr/20150601_lmbr_v2",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/squish-ccr",
+                    "exampleFile" : "vs12/squishgen/squishgen.vcxproj"
+                },
+                {
+                    "source" : "squish-ccr/20150601_lmbr_v2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/squish-ccr",
+                    "exampleFile" : "squish.cpp"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "squish-ccr/20150601_lmbr_v2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/squish-ccr",
+                    "exampleFile" : "vs12/squishgen/squishgen.vcxproj"
+                }
+            ]
+        },
+        {
+            "identifier" : "libtomcrypt",
+            "name" : "libtomcryptName",
+            "version" : "1.17-az.1",
+            "source" : "LibTomCrypt/1.17-az.1",
+            "optional" : 0,
+            "description" : "libTomCryptDescriptionSummary",
+            "detailedInstructions" : "libTomCryptDetailedInstructions",
+            "roles" : ["compileengine", "compilesandbox", "compileandroid", "compileios", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "LibTomCrypt/1.17-az.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LibTomCrypt",
+                    "exampleFile" : "lib/x64_vc14/libtomcrypt.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "LibTomCrypt/1.17-az.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LibTomCrypt",
+                    "exampleFile" : "lib/linux/libtomcrypt.a"
+                },
+                {
+                    "source" : "LibTomCrypt/1.17-az.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LibTomCrypt",
+                    "exampleFile" : "src/headers/tomcrypt.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "libtommath",
+            "name" : "libtommathName",
+            "version" : "0.42.0-az.1",
+            "source" : "LibTomMath/0.42.0-az.1",
+            "optional" : 0,
+            "description" : "libTomMathDescriptionSummary",
+            "detailedInstructions" : "libTomMathDetailedInstructions",
+            "roles" : ["compileengine", "compilesandbox", "compileandroid", "compileios", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "LibTomMath/0.42.0-az.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LibTomMath",
+                    "exampleFile" : "lib/x64_vc14/libtommath.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "LibTomMath/0.42.0-az.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LibTomMath",
+                    "exampleFile" : "lib/linux/libtommath.a"
+                },
+                {
+                    "source" : "LibTomMath/0.42.0-az.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LibTomMath",
+                    "exampleFile" : "bn_mp_prime_random_ex.c"
+                }
+            ]
+        },
+        {
+            "identifier" : "mikkt",
+            "name" : "mikkelsenName",
+            "version" : "1.0.0-az.1",
+            "source" : "mikkelsen/1.0.0-az.1",
+            "optional" : 0,
+            "description" : "mikkelsenDescriptionSummary",
+            "detailedInstructions" : "mikkelsenDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "compileandroid"],
+            "symlinks" :
+            [
+                {
+                    "source" : "mikkelsen/1.0.0-az.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/TangentBasisComputation",
+                    "exampleFile" : "mikkelsen/mikktspace.cpp"
+                }
+            ]
+        },
+        {
+            "identifier" : "freetype2",
+            "name" : "freetype2Name",
+            "version" : "2.5.0.1-pkg.2",
+            "source" : "FreeType2/2.5.0.1-pkg.2",
+            "optional" : 0,
+            "description" : "freeType2DescriptionSummary",
+            "detailedInstructions" : "freeType2DetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "compileandroid", "compileios", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "FreeType2/2.5.0.1-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/FreeType2",
+                    "exampleFile" : "dist/include/ft2build.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "FreeType2/2.5.0.1-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/FreeType2",
+                    "exampleFile" : "vc140_x64/freetype250.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "FreeType2/2.5.0.1-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/FreeType2",
+                    "exampleFile" : "build/linux/clang-3.4/release/libfreetype2.a"
+                }
+            ]
+        },
+        {
+            "identifier": "hdf5",
+            "name": "hdf5name",
+            "version": "1.8.13",
+            "source": "hdf5/1.8.13",
+            "description": "hdf5DescriptionSummary",
+            "detailedInstructions": "hdf5DetailedInstructions",
+            "symlinks":
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "hdf5/1.8.13",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/hdf5",
+                    "exampleFile": "lib/x64/hdf5-vc140-md-s.lib"
+                },
+                {
+                    "source": "hdf5/1.8.13",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/hdf5",
+                    "exampleFile": "include/hdf5.h"
+                }
+            ]
+        },
+        {
+            "identifier": "ilmbase",
+            "name": "ilmbasename",
+            "version": "2.2.0",
+            "source": "ilmbase/2.2.0",
+            "description": "ilmbaseDescriptionSummary",
+            "detailedInstructions": "ilmbaseDetailedInstructions",
+            "symlinks":
+            [
+                {
+                    "source": "ilmbase/2.2.0",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/ilmbase",
+                    "exampleFile": "include/OpenEXR/IlmBaseConfig.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "ilmbase/2.2.0",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/ilmbase",
+                    "exampleFile": "lib/x64/Imath-vc140-md-s.lib"
+                }
+            ]
+        },
+        {
+            "identifier": "szip",
+            "name": "szipname",
+            "version": "2.1",
+            "source": "szip/2.1",
+            "description": "szipDescriptionSummary",
+            "detailedInstructions": "szipDetailedInstructions",
+            "symlinks":
+            [
+                {
+                    "source": "szip/2.1",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/szip",
+                    "exampleFile": "include/szlib.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "szip/2.1",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/szip",
+                    "exampleFile": "lib/x64/libszip-vc140-mt-s.lib"
+                }
+            ]
+        },
+
+        {
+            "identifier": "alembic",
+            "name": "alembicName",
+            "version": "1.5.5",
+            "source": "alembic/1.5.5",
+            "optional": 0,
+            "description": "alembicDescriptionSummary",
+            "detailedInstructions": "alembicDetailedInstructions",
+            "roles": [ "compileengine", "compilesandbox" ],
+            "dependencies":
+            [
+                "hdf5",
+                "ilmbase",
+                "szip",
+                "zlib"
+            ],
+            "symlinks":
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "alembic/1.5.5",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/alembic",
+                    "exampleFile": "lib/x64/AlembicUtil-vc140-md-s.lib"
+                },
+                {
+                    "source": "alembic/1.5.5",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/alembic",
+                    "exampleFile": "include/Alembic/Util/All.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "wwiseLtx",
+            "name" : "wwiseLtxName",
+            "version" : "LTX 2018.1.2.6762",
+            "source" : "Wwise/LTX_2018.1.2.6762",
+            "optional" : 0,
+            "description" : "wwiseLtxDescriptionSummary",
+            "detailedInstructions" : "wwiseLtxDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "compileandroid", "compileios"],
+            "hostOS" : ["windows", "macOS"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Wwise/LTX_2018.1.2.6762/SDK",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Wwise",
+                    "exampleFile" : "include/AK/AkWwiseSDKVersion.h"
+                },
+                {
+                    "compilers" : ["vc120"],
+                    "source" : "Wwise/LTX_2018.1.2.6762/SDK",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Wwise",
+                    "exampleFile" : "x64_vc120/Release/lib/AkSoundEngine.lib"
+                },
+                {
+                    "compilers" : ["vc140"],
+                    "source" : "Wwise/LTX_2018.1.2.6762/SDK",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Wwise",
+                    "exampleFile" : "x64_vc140/Release/lib/AkSoundEngine.lib"
+                },
+                {
+                    "compilers" : ["vc141"],
+                    "source" : "Wwise/LTX_2018.1.2.6762/SDK",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Wwise",
+                    "exampleFile" : "x64_vc150/Release/lib/AkSoundEngine.lib"
+                }
+            ]
+        },
+        {
+            "identifier" : "wwise",
+            "name" : "wwiseName",
+            "version" : "2018.1.4.6807",
+            "source" : "Wwise/2018.1.4.6807",
+            "optional" : 1,
+            "description" : "wwiseDescriptionSummary",
+            "detailedInstructions" : "wwiseDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "compileandroid", "compileios"],
+            "hostOS" : ["windows", "macOS"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Wwise/2018.1.4.6807/SDK",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Wwise",
+                    "exampleFile" : "include/AK/AkWwiseSDKVersion.h"
+                },
+                {
+                    "compilers" : ["vc120"],
+                    "source" : "Wwise/2018.1.4.6807/SDK",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Wwise",
+                    "exampleFile" : "x64_vc120/Release/lib/AkSoundEngine.lib"
+                },
+                {
+                    "compilers" : ["vc140"],
+                    "source" : "Wwise/2018.1.4.6807/SDK",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Wwise",
+                    "exampleFile" : "x64_vc140/Release/lib/AkSoundEngine.lib"
+                },
+                {
+                    "compilers" : ["vc141"],
+                    "source" : "Wwise/2018.1.4.6807/SDK",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Wwise",
+                    "exampleFile" : "x64_vc150/Release/lib/AkSoundEngine.lib"
+                }
+            ]
+        },
+        {
+            "identifier": "qt",
+            "name": "qtName",
+            "version": "5.6.2.6-az",
+            "source": "Qt/5.6.2.6-az",
+            "optional": 0,
+            "description": "qtDescriptionSummary",
+            "detailedInstructions": "qtDetailedInstructions",
+            "roles": [ "compileengine", "compilesandbox", "setuplinux" ],
+            "hostOS" : ["windows", "macOS", "linux"],
+            "symlinks":
+            [
+                {
+                    "source": "Qt/5.6.2.6-az",
+                    "destination": "$CODEFOLDERNAME$/Sandbox/SDKs/Qt",
+                    "exampleFile": "QT-NOTICE.TXT"
+                },
+                {
+                    "compilers": [ "vc140", "vc141" ],
+                    "source": "Qt/5.6.2.6-az",
+                    "destination": "$CODEFOLDERNAME$/Sandbox/SDKs/Qt",
+                    "exampleFile": "msvc2015_64/bin/moc.exe"
+                },
+                {
+                    "hostOS": [ "macOS" ],
+                    "source": "Qt/5.6.2.6-az",
+                    "destination": "$CODEFOLDERNAME$/Sandbox/SDKs/Qt",
+                    "exampleFile": "clang_64/bin/moc"
+                },
+                {
+                    "hostOS": [ "setuplinux" ],
+                    "source": "Qt/5.6.2.6-az",
+                    "destination": "$CODEFOLDERNAME$/Sandbox/SDKs/Qt",
+                    "exampleFile": "gcc_64/bin/moc"
+                }
+            ]
+        },
+        {
+            "identifier": "powerVRTexTool",
+            "name": "powerVRName",
+            "version": "2016 r1",
+            "source": "PVRTexTool/2016_r1",
+            "optional": 0,
+            "description": "powerVRDescriptionSummary",
+            "detailedInstructions": "powerVRDetailedInstructions",
+            "roles": [ "compileengine", "compilesandbox" ],
+            "hostOS": [ "windows", "macOS" ],
+            "symlinks":
+            [
+                {
+                    "source": "PVRTexTool/2016_r1",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/PowerVRTexTool",
+                    "exampleFile": "Include/PVRTexture.h"
+                },
+                {
+                    "compilers": [ "vc140", "vc141" ],
+                    "source": "PVRTexTool/2016_r1",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/PowerVRTexTool",
+                    "exampleFile": "Windows_x86_64/PVRTexLib.lib"
+                },
+                {
+                    "hostOS": [ "macOS" ],
+                    "source": "PVRTexTool/2016_r1",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/PowerVRTexTool",
+                    "exampleFile": "OSX_x86/libPVRTexLib.dylib"
+                }
+            ]
+        },
+         {
+            "identifier" : "etc2comp",
+            "name" : "etc2compName",
+            "version" : "2017_04_24",
+            "source" : "etc2comp/2017_04_24",
+            "optional" : 0,
+            "description" : "etc2compDescriptionSummary",
+            "detailedInstructions" : "etc2compDetailedInstructions",
+            "roles" : ["compileengine", "compilesandbox"],
+            "hostOS" : ["windows", "macOS"],
+            "symlinks" :
+            [
+                {
+                    "source" : "etc2comp/2017_04_24",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/etc2comp",
+                    "exampleFile" : "EtcLib/Etc/Etc.h"
+                }
+            ]
+        },
+        {
+            "identifier": "AWSNativeSDK",
+            "name": "AWSNativeSDKName",
+            "version": "1.4.34.1",
+            "source": "AWS/AWSNativeSDK/1.4.34.1",
+            "optional": 0,
+            "description": "AWSNativeSDKDescriptionSummary",
+            "detailedInstructions": "AWSNativeSDKDetailedInstructions",
+            "roles": [ "compilegame", "compileengine", "compilesandbox", "compileios", "compileandroid", "setuplinux" ],
+            "symlinks": [
+                {
+                    "source": "AWS/AWSNativeSDK/1.4.34.1",
+                    "destination": "$CODEFOLDERNAME$/Sandbox/SDKs/AWSNativeSDK",
+                    "exampleFile": "include/aws/core/Aws.h"
+                },
+                {
+                    "source": "AWS/AWSNativeSDK/1.4.34.1",
+                    "destination": "$CODEFOLDERNAME$/SDKs/AWSNativeSDK",
+                    "exampleFile": "include/aws/core/Aws.h"
+                },
+                {
+                    "source": "AWS/AWSNativeSDK/1.4.34.1",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/AWSNativeSDK",
+                    "exampleFile": "include/aws/core/Aws.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "AWS/AWSNativeSDK/1.4.34.1",
+                    "destination": "$CODEFOLDERNAME$/Sandbox/SDKs/AWSNativeSDK",
+                    "exampleFile": "bin/windows/intel64/vs2015/Release/aws-cpp-sdk-core.lib"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "AWS/AWSNativeSDK/1.4.34.1",
+                    "destination": "$CODEFOLDERNAME$/SDKs/AWSNativeSDK",
+                    "exampleFile": "bin/windows/intel64/vs2015/Release/aws-cpp-sdk-core.lib"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "AWS/AWSNativeSDK/1.4.34.1",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/AWSNativeSDK",
+                    "exampleFile": "bin/windows/intel64/vs2015/Release/aws-cpp-sdk-core.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source": "AWS/AWSNativeSDK/1.4.34.1",
+                    "destination": "$CODEFOLDERNAME$/Sandbox/SDKs/AWSNativeSDK",
+                    "exampleFile": "lib/linux/intel64/Release/libaws-cpp-sdk-cognito-identity.a"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source": "AWS/AWSNativeSDK/1.4.34.1",
+                    "destination": "$CODEFOLDERNAME$/SDKs/AWSNativeSDK",
+                    "exampleFile": "lib/linux/intel64/Release/libaws-cpp-sdk-cognito-identity.a"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source": "AWS/AWSNativeSDK/1.4.34.1",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/AWSNativeSDK",
+                    "exampleFile": "lib/linux/intel64/Release/libaws-cpp-sdk-cognito-identity.a"
+                }
+            ]
+        },
+        {
+           "identifier" : "GameLiftServerSDK",
+            "name" : "GameLiftServerSDKName",
+            "version": "3.2.1",
+            "source":  "AWS/GameLift/3.2.1",
+            "optional" : 0,
+            "description" : "GameLiftServerSDKDescriptionSummary",
+            "detailedInstructions" : "GameLiftServerSDKDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "AWS/GameLift/3.2.1/",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/GameLiftServerSDK",
+                    "exampleFile" : "bin/windows/intel64/vs2015/Release/aws-cpp-sdk-gamelift-server.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "AWS/GameLift/3.2.1/",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/GameLiftServerSDK",
+                    "exampleFile" : "lib/linux/intel64/clang-3.8.0/Release/libaws-cpp-sdk-gamelift-server.a"
+                },
+                {
+                    "source" : "AWS/GameLift/3.2.1/",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/GameLiftServerSDK",
+                    "exampleFile" : "include/aws/gamelift/server/GameLiftServerAPI.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "zlib",
+            "name" : "zlibName",
+            "version": "various",
+            "source" : "zlib/1.2.8-pkg.2",
+            "optional" : 0,
+            "description" : "zlibDescriptionSummary",
+            "detailedInstructions" : "zlibDetailedInstructions",
+            "roles" : ["compilegame", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "zlib/1.2.8-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/zlib-common",
+                    "exampleFile" : "zlib.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "zlib/1.2.8-pkg.2",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/zlib-common",
+                    "exampleFile": "build/win_x64/vc140/release/zlib.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source": "zlib/1.2.8-pkg.2",
+                    "destination": "$CODEFOLDERNAME$/Tools/SDKs/Alembic/zlib-common",
+                    "exampleFile": "build/linux/clang-3.4/release/libzlib.a"
+                }
+            ]
+        },
+        {
+            "identifier" : "GoogleMock",
+            "name" : "googleMockName",
+            "version" : "az-1.3",
+            "source" : "GoogleMock/gmock-az-1.3",
+            "optional" : 0,
+            "description" : "googleMockDescriptionSummary",
+            "detailedInstructions" : "googleMockDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "GoogleMock/gmock-az-1.3/googlemock/include/gmock",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/GoogleMock/include/gmock",
+                    "exampleFile" : "gmock.h"
+                },
+                {
+                    "source" : "GoogleMock/gmock-az-1.3/googletest/include/gtest",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/GoogleMock/include/gtest",
+                    "exampleFile" : "gtest.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "GoogleMock/gmock-az-1.3/lib",
+                    "destination": "$CODEFOLDERNAME$/SDKs/GoogleMock/lib",
+                    "exampleFile": "x64/vc140-md/LIB/Debug/gmock.lib"
+                },
+                {
+                    "hostOS" : ["macOS"],
+                    "source" : "GoogleMock/gmock-az-1.3/lib",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/GoogleMock/lib",
+                    "exampleFile" : "osx/Debug/libgmock.a"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "GoogleMock/gmock-az-1.3/lib/linux",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/GoogleMock/lib/linux",
+                    "exampleFile" : "debug/libgmock.a"
+                },
+                {
+                    "hostOS" : ["linux"],
+                    "source" : "GoogleMock/gmock-az-1.3/lib/linux",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/GoogleMock/lib/linux",
+                    "exampleFile" : "debug/libgmock.a"
+                }
+            ]
+        },
+        {
+            "identifier" : "lz4",
+            "name" : "lz4Name",
+            "version" : "r128-pkg.2",
+            "source" : "lz4/r128-pkg.2",
+            "optional" : 0,
+            "description" : "lz4DescriptionSummary",
+            "detailedInstructions" : "lz4DetailedInstructions",
+            "roles" : ["compilegame", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "lz4/r128-pkg.2/lib",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/lz4/lib",
+                    "exampleFile" : "lz4.c"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "lz4/r128-pkg.2/build",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/lz4/build",
+                    "exampleFile" : "win_x64/vc140/release/lz4.lib"
+                },
+                {
+                    "hostOS" : ["macOS"],
+                    "source" : "lz4/r128-pkg.2/build",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/lz4/build",
+                    "exampleFile" : "osx/darwin-clang-703.0.31/release/liblz4.a"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "lz4/r128-pkg.2/build",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/lz4/build",
+                    "exampleFile" : "linux/clang-3.4/release/liblz4.a"
+                },
+                {
+                    "hostOS" : ["linux"],
+                    "source" : "lz4/r128-pkg.2/build",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/lz4/build",
+                    "exampleFile" : "linux/clang-3.4/release/liblz4.a"
+                }
+            ]
+        },
+        {
+            "identifier" : "Lua",
+            "name" : "LuaName",
+            "version" : "5.1.1.8-az",
+            "source" : "Lua/5.1.1.8-az",
+            "optional" : 0,
+            "description" : "LuaDescriptionSummary",
+            "detailedInstructions" : "LuaDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Lua/5.1.1.8-az",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Lua",
+                    "exampleFile" : "Lua/lua.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "Lua/5.1.1.8-az",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Lua",
+                    "exampleFile" : "build/win_x64/vc140/release/lua.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "Lua/5.1.1.8-az",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Lua",
+                    "exampleFile" : "build/linux/clang-3.4/release/liblua.a"
+                }
+            ]
+        },
+        {
+            "identifier" : "expat",
+            "name" : "expat-Name",
+            "version" : "2.1.0-pkg.2",
+            "source" : "expat/2.1.0-pkg.2",
+            "optional" : 0,
+            "description" : "expat-DescriptionSummary",
+            "detailedInstructions" : "expat-DetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "expat/2.1.0-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/expat",
+                    "exampleFile" : "lib/expat.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "expat/2.1.0-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/expat",
+                    "exampleFile" : "build/win_x64/vc140/release/expat.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "expat/2.1.0-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/expat",
+                    "exampleFile" : "build/linux/clang-3.4/release/libexpat.a"
+                }
+            ]
+        },
+        {
+            "identifier" : "md5",
+            "name" : "md5-Name",
+            "version" : "2.0-pkg.2",
+            "source" : "md5/2.0-pkg.2",
+            "optional" : 0,
+            "description" : "md5-DescriptionSummary",
+            "detailedInstructions" : "md5-DetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "md5/2.0-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/md5",
+                    "exampleFile" : "md5.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "md5/2.0-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/md5",
+                    "exampleFile" : "build/win_x64/vc140/release/md5.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "md5/2.0-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/md5",
+                    "exampleFile" : "build/linux/clang-3.4/release/libmd5.a"
+                }
+            ]
+        },
+        {
+            "identifier" : "LZSS",
+            "name" : "LzssName",
+            "version" : "unknown",
+            "source" : "LZSS/unknown-pkg.2",
+            "optional" : 0,
+            "description" : "LzssDescriptionSummary",
+            "detailedInstructions" : "LzssDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "LZSS/unknown-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LZSS",
+                    "exampleFile" : "LZSS.H"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "LZSS/unknown-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LZSS",
+                    "exampleFile" : "build/win_x64/vc140/release/lzss.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "LZSS/unknown-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/LZSS",
+                    "exampleFile" : "build/linux/clang-3.4/release/liblzss.a"
+                }
+            ]
+        },
+        {
+            "identifier" : "Lzma",
+            "name" : "LzmaName",
+            "version" : "unknown",
+            "source" : "Lzma/unknown-pkg.2",
+            "optional" : 0,
+            "description" : "LzmaDescriptionSummary",
+            "detailedInstructions" : "LzmaDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "Lzma/unknown-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Lzma",
+                    "exampleFile" : "Lzma86.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "Lzma/unknown-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Lzma",
+                    "exampleFile" : "build/win_x64/vc140/release/lzma.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "Lzma/unknown-pkg.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/Lzma",
+                    "exampleFile" : "build/linux/clang-3.4/release/liblzma.a"
+                }
+            ]
+        },
+        {
+            "identifier" : "AMD_AGS",
+            "name" : "AmdAgsName",
+            "version" : "2.2",
+            "source" : "AMD/AGS Lib/2.2",
+            "optional" : 0,
+            "description" : "AmdAgsDescriptionSummary",
+            "detailedInstructions" : "AmdAgsDetailedInstructions",
+            "roles" : ["compileengine", "compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "AMD/AGS Lib/2.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/AMD/AGS Lib",
+                    "exampleFile" : "inc/amd_ags.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "AMD/AGS Lib/2.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/AMD/AGS Lib",
+                    "exampleFile" : "lib/x64/static/amd_ags64.lib"
+                }
+            ]
+        },
+        {
+            "identifier" : "OSVRSDK",
+            "name" : "OSVRSDKName",
+            "version" : "0.6.1363",
+            "source" : "OSVR/0.6.1363",
+            "optional" : 0,
+            "description" : "OSVRSDKDescriptionSummary",
+            "detailedInstructions" : "OSVRSDKDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "OSVR/0.6.1363",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/OSVR",
+                    "exampleFile" : "include/osvr/ClientKit/ClientKit.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "OSVR/0.6.1363",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/OSVR",
+                    "exampleFile" : "lib/osvrCommon.lib"
+                }
+            ]
+        },
+        {
+            "identifier" : "PHYSXSDK",
+            "name" : "PHYSXSDKName",
+            "version" : "3.4.23173160",
+            "source" : "PhysX/3.4.23173160",
+            "optional" : 1,
+            "description" : "PHYSXSDKDescriptionSummary",
+            "detailedInstructions" : "PHYSXSDKDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox"],
+            "symlinks" :
+            [
+                {
+                    "source" : "PhysX/3.4.23173160/PhysX_3.4",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/PhysX/PXSrc",
+                    "exampleFile" : "Include/PxActor.h"
+                },
+                {
+                    "source" : "PhysX/3.4.23173160/PxShared",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/PhysX/PxShared",
+                    "exampleFile" : "include/foundation/Px.h"
+                }
+            ]
+        },
+        {
+            "identifier": "Dyad",
+            "name": "dyadName",
+            "version": "0.2.0-17-amazon",
+            "source": "dyad/0.2.0-17-amazon",
+            "optional": 0,
+            "description": "dyadDescriptionSummary",
+            "detailedInstructions": "dyadInstructions",
+            "roles": [ "compilegame", "compileengine", "compilesandbox", "setuplinux" ],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source": "dyad/0.2.0-17-amazon",
+                    "destination": "$CODEFOLDERNAME$/SDKs/dyad",
+                    "exampleFile": "lib/x64_v140_Release/libdyad.lib"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source": "dyad/0.2.0-17-amazon",
+                    "destination": "$CODEFOLDERNAME$/SDKs/dyad",
+                    "exampleFile": "lib/linux_release/libdyad.a"
+                },
+                {
+                    "source": "dyad/0.2.0-17-amazon",
+                    "destination": "$CODEFOLDERNAME$/SDKs/dyad",
+                    "exampleFile": "src/dyad.c"
+                }
+            ]
+        },
+        {
+            "identifier" : "Clang",
+            "name" : "Clang",
+            "version" : "6.0.1",
+            "source" : "Clang/6.0.1",
+            "optional" : 1,
+            "description" : "ClangDescriptionSummary",
+            "detailedInstructions" : "ClangDetailedInstructions",
+            "roles" : [ "compilegame", "compileengine", "compilesandbox", "setuplinux" ],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "Clang/6.0.1",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Clang",
+                    "exampleFile" : "vs2015/release/lib/clangTooling.lib"
+                },
+                {
+                    "hostOS" : ["linux"],
+                    "source" : "Clang/3.7",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Clang",
+                    "exampleFile" : "linux_x64/release/lib/libclang.so"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "Clang/6.0.1",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Clang",
+                    "exampleFile" : "linux_x64/release/lib/libclang.so"
+                },
+                {
+                    "hostOS" : ["macOS"],
+                    "source" : "Clang/6.0.1",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/Clang",
+                    "exampleFile" : "xcode/release/lib/libclang.dylib"
+                }
+            ]
+        },
+        {
+            "identifier" : "rapidjson",
+            "name" : "rapidjson",
+            "version" : "1.0.2.1",
+            "source" : "rapidjson/rapidjson-1.0.2.1",
+            "optional" : 0,
+            "description" : "rapidjsonDescriptionSummary",
+            "detailedInstructions" : "rapidjsonDetailedInstructions",
+            "roles" : [ "compilegame", "compileengine", "compilesandbox", "setuplinux" ],
+            "symlinks" :
+            [
+                {
+                    "source" : "rapidjson/rapidjson-1.0.2.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/rapidjson",
+                    "exampleFile" : "include/rapidjson/rapidjson.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "rapidxml",
+            "name" : "rapidxml",
+            "version" : "1.13-modified.1",
+            "source" : "rapidxml/1.13-modified.1",
+            "optional" : 0,
+            "description" : "rapidxmlDescriptionSummary",
+            "detailedInstructions" : "rapidxmlDetailedInstructions",
+            "roles" : [ "compilegame", "compileengine", "compilesandbox", "setuplinux" ],
+            "symlinks" :
+            [
+                {
+                    "source" : "rapidxml/1.13-modified.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/rapidxml",
+                    "exampleFile" : "include/rapidxml/rapidxml.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "jinja2",
+            "name" : "jinja2",
+            "version" : "2.8",
+            "source" : "jinja2/2.8_py2.7",
+            "optional" : 0,
+            "description" : "jinja2DescriptionSummary",
+            "detailedInstructions" : "jinja2DetailedInstructions",
+            "roles" : [ "compilegame", "compileengine", "compilesandbox", "compileandroid" ],
+            "symlinks" :
+            [
+                {
+                    "source" : "jinja2/2.8_py2.7",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/jinja2",
+                    "exampleFile" : "x64/jinja2/__init__.py"
+                }
+            ]
+        },
+        {
+            "identifier" : "markupsafe",
+            "name" : "markupsafe",
+            "version" : "0.23",
+            "source" : "markupsafe/0.23_py2.7",
+            "optional" : 0,
+            "description" : "markupsafeDescriptionSummary",
+            "detailedInstructions" : "markupsafeDetailedInstructions",
+            "roles" : [ "compilegame", "compileengine", "compilesandbox", "compileandroid", "setuplinux" ],
+            "symlinks" :
+            [
+                {
+                    "source" : "markupsafe/0.23_py2.7",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/markupsafe",
+                    "exampleFile" : "x64/markupsafe/__init__.py"
+                }
+            ]
+        },
+        {
+            "identifier" : "jsmn",
+            "name" : "jsmnName",
+            "version" : "78b1dca",
+            "source" : "jsmn/78b1dca",
+            "optional" : 0,
+            "description" : "jsmnDescriptionSummary",
+            "detailedInstructions" : "jsmnDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "jsmn/78b1dca",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/jsmn",
+                    "exampleFile" : "jsmn.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "OpenSSL",
+            "name" : "OpenSSLname",
+            "version" : "1.0.2k-noasm.2",
+            "source" : "OpenSSL/1.0.2k-noasm.2",
+            "description" : "OpenSSLdescription",
+            "detailedInstructions" : "OpenSSLdetailedInstructions",
+            "roles" : ["compilegame","compileengine", "compileandroid","compilesandbox", "setuplinux"],
+            "symlinks" :
+            [
+                {
+                    "source" : "OpenSSL/1.0.2k-noasm.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/OpenSSL",
+                    "exampleFile" : "include/openssl/ssl.h"
+                },
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "OpenSSL/1.0.2k-noasm.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/OpenSSL",
+                    "exampleFile" : "lib/vc140_x64_release/libeay32.lib"
+                },
+                {
+                    "hostOS" : ["macOS"],
+                    "source" : "OpenSSL/1.0.2k-noasm.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/OpenSSL",
+                    "exampleFile" : "lib/darwin-x86_64-release/libssl.a"
+                },
+                {
+                    "roles" : ["setuplinux"],
+                    "source" : "OpenSSL/1.0.2k-noasm.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/OpenSSL",
+                    "exampleFile" : "lib/linux-x86_64-clang-release/libssl.a"
+                }
+            ]
+        },
+        {
+            "identifier": "civetweb",
+            "name": "CivetWeb",
+            "version": "2016.09.22",
+            "source" : "civetweb/civetweb-20160922-az.1",
+            "optional": 0,
+            "description": "civetwebDescriptionSummary",
+            "detailedInstructions": "civetwebInstructions",
+            "roles": [ "compilegame", "compileengine", "compilesandbox" ],
+            "symlinks" :
+            [
+                {
+                    "source": "civetweb/civetweb-20160922-az.1",
+                    "destination": "$CODEFOLDERNAME$/SDKs/civetweb",
+                    "exampleFile": "include/civetweb.h"
+                }
+            ]
+        },
+        {
+            "identifier": "fuelsdk",
+            "name": "fuelSKDName",
+            "version": "r46",
+            "source" : "Twitch/FUEL/r46",
+            "optional": 1,
+            "description": "fuelSDKDescription",
+            "detailedInstructions": "fuelSDKInstructions",
+            "roles": [ "compilegame", "compileengine", "compilesandbox" ],
+            "symlinks" :
+            [
+                {
+                    "source": "Twitch/FUEL/r46",
+                    "destination": "$CODEFOLDERNAME$/SDKs/Twitch/FUEL",
+                    "exampleFile": "include/fuel_impl/IapClient.h"
+                }
+            ]
+        },
+        {
+            "identifier": "ASN1",
+            "name": "ASN1",
+            "version": "0.9.27",
+            "source" : "asn1/0.9.27",
+            "optional": 0,
+            "description": "Abstract Syntax Notation 1",
+            "detailedInstructions": "This is used to decode data encoded using ASN1(like receipts on iOS).",
+            "roles": [ "compileios" ],
+            "symlinks" :
+            [
+                {
+                    "source": "asn1/0.9.27",
+                    "destination": "$CODEFOLDERNAME$/SDKs/ASN1",
+                    "exampleFile": "Source/Payload.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "FFmpeg",
+            "name" : "FFmpegSDKName",
+            "version" : "3.2",
+            "source" : "FFmpeg/3.2",
+            "optional" : 1,
+            "description" : "FFmpegSDKDescriptionSummary",
+            "detailedInstructions" : "FFmpegSDKDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox"],
+            "hostOS" : ["windows"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "FFmpeg/3.2",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/FFmpeg",
+                    "exampleFile" : "include/libavcodec/avcodec.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "LibAV",
+            "name" : "LibAVSDKName",
+            "version" : "11.7",
+            "source" : "libav/11.7/usr",
+            "optional" : 1,
+            "description" : "LibAVSDKDescriptionSummary",
+            "detailedInstructions" : "LibAVSDKDetailedInstructions",
+            "roles" : ["compilegame", "compileengine", "compilesandbox"],
+            "hostOS" : ["windows"],
+            "symlinks" :
+            [
+                {
+                    "compilers" : ["vc140", "vc141"],
+                    "source" : "libav/11.7/usr",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/libav",
+                    "exampleFile" : "include/libavcodec/avcodec.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "benchmark",
+            "name" : "benchmarkName",
+            "version" : "1.4.1",
+            "source" : "benchmark/1.4.1",
+            "optional" : 1,
+            "description" : "benchmarkDetailedSummary",
+            "detailedInstructions" : "benchmarkDetailedInstructions",
+            "roles" : [ "compileengine" ],
+            "hostOS" : [ "windows" ],
+            "symlinks" :
+            [
+                {
+                    "source" : "benchmark/1.4.1",
+                    "destination" : "$CODEFOLDERNAME$/SDKs/benchmark",
+                    "exampleFile" : "include/benchmark/benchmark.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "unwind",
+            "name" : "unwindName",
+            "version" : "1.2.1",
+            "source" : "unwind/1.2.1",
+            "description" : "unwindDescriptionSummary",
+            "detailedInstructions" : "unwindDetailedInstructions",
+            "roles" : [ "setuplinux" ],
+            "hostOS" : [ "windows" ],
+            "symlinks" :
+            [
+                {
+                    "source": "unwind/1.2.1",
+                    "destination": "$CODEFOLDERNAME$/SDKs/unwind",
+                    "exampleFile": "include/libunwind.h"
+                }
+            ]
+        },
+        {
+            "identifier" : "unwind_build",
+            "name" : "unwindName",
+            "version" : "1.2.1",
+            "source" : "unwind/1.2.1",
+            "description" : "unwindDescriptionSummary",
+            "detailedInstructions" : "unwindDetailedInstructions",
+            "roles" : [ "compilegame", "compileengine" ],
+            "hostOS" : [ "linux" ],
+            "symlinks" :
+            [
+                {
+                    "source": "unwind/1.2.1",
+                    "destination": "$CODEFOLDERNAME$/SDKs/unwind",
+                    "exampleFile": "include/libunwind.h"
+                }
+            ]
+        },
+        {
+           "identifier" : "DirectXShaderCompiler",
+           "name" : "DirectXShaderCompilerName",
+           "version" : "1.0.1-az.1",
+           "source" : "DirectXShaderCompiler/1.0.1-az.1",
+           "optional" : 0,
+           "description" : "DirectXShaderCompilerDescriptionSummary",
+           "detailedInstructions" : "DirectXShaderCompilerDetailedInstructions",
+           "roles": [ "compilegame", "compileengine", "compilesandbox" ],
+           "hostOS": [ "windows", "macOS" ],
+           "symlinks" :
+           [
+                {
+                    "hostOS" : ["windows"],
+                    "source" : "DirectXShaderCompiler/1.0.1-az.1",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/DirectXShaderCompiler",
+                    "exampleFile" : "bin/win_x64/release/dxcGL.exe"
+                },
+                {
+                    "hostOS" : ["windows"],
+                    "source" : "DirectXShaderCompiler/1.0.1-az.1",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/DirectXShaderCompiler",
+                    "exampleFile" : "bin/win_x64/release/dxcMetal.exe"
+                },
+                {
+                    "hostOS" : ["macOS"],
+                    "source" : "DirectXShaderCompiler/1.0.1-az.1",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/DirectXShaderCompiler",
+                    "exampleFile" : "bin/darwin_x64/release/dxcGL"
+                },
+                {
+                    "hostOS" : ["macOS"],
+                    "source" : "DirectXShaderCompiler/1.0.1-az.1",
+                    "destination" : "$CODEFOLDERNAME$/Tools/SDKs/DirectXShaderCompiler",
+                    "exampleFile" : "bin/darwin_x64/release/dxcMetal"
+                }
+           ]
+        }
+    ]
+}

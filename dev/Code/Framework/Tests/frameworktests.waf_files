@@ -1,0 +1,34 @@
+{
+    "none": {
+        "Root": [
+            "../AzCore/Tests/Main.cpp"
+        ],
+        "Framework" : [
+            "BehaviorEntityTests.cpp",
+            "CommandLineTests.cpp",
+            "BinToTextEncode.cpp",
+            "ComponentAddRemove.cpp",
+            "EntityContext.cpp",
+            "EntityTestbed.h",
+            "FileFunc.cpp",
+            "FileIO.cpp",
+            "FrameworkApplicationFixture.h",
+            "GenAppDescriptors.cpp",
+            "GenericComponentWrapperTest.cpp",
+            "InstanceDataHierarchy.cpp",
+            "NetBinding.cpp",
+            "NetworkContext.cpp",
+            "Slices.cpp",
+            "Script.cpp",
+            "StringFunc.cpp",
+            "AssetCatalog.cpp",
+            "AssetProcessorConnection.cpp",
+            "NetBindingSystemImplTest.cpp",
+            "NetBindingMocks.h",
+            "TransformComponent.cpp",
+            "GridMocks.h",
+            "InterestManagerComponentTests.cpp",
+            "SQLiteConnectionTests.cpp"
+        ]
+    }
+}

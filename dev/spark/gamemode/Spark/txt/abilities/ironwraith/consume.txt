@@ -1,0 +1,19 @@
+{
+	"abilities" : {
+		"ironwraith/consume": {
+			"icon-file": "Textures/Icons/Abilities/16",
+			"cooldown" : "30",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "150 300 450 600 750 900" 
+			},
+			"special-values" : {
+				"duration": "3",
+				"damage": "60 120 180 240 300 360",
+				"bonus_damage_strength_multiplier": "0.6 1.2 1.8 2.4 3 3.6",
+				"movement_speed_reduction_percentage": 50,
+				"range": 16
+			}
+		}
+	}
+}

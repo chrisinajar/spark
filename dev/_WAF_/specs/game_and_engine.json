@@ -1,0 +1,34 @@
+{
+    "description"           : "Configuration to build the Engine and Game Projects",
+    "visual_studio_name"    : "Game and Engine",
+    "modules" : [
+        "CryCommon",
+        "Cry3DEngine",
+        "CryFont",
+        "CryNetwork",
+        "CryPhysics",
+        "CrySoundSystem",
+        "CryAudioCommon",
+        "CrySystem",
+        "CryAction",
+        "CryAction_AutoFlowNode",
+        "GemRegistry",
+        "GridMate",
+        "CryAudioImplNoSound",
+        "CryAudioImplWwise",
+        "LyIdentity_shared",
+        "LyIdentity_static",
+        "CryRenderGL",
+        "CryRenderD3D11",
+        "CryRenderD3D12",
+        "CryRenderMetal",
+        "CryRenderNULL"
+    ],
+
+    "appletv_modules" :
+    [
+        "CryAudioImplWwise",
+        "CryRenderMetal"
+    ]
+}
+

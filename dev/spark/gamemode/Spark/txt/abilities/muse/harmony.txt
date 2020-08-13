@@ -1,0 +1,17 @@
+{
+	"abilities" : {
+		"muse/harmony" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "20",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "80 80 100 120 140 220 300" 
+			},
+			"special-values" : {
+				"range" : 70,
+				"heal_amount" : "25 50 100 150 200 400 600",
+				"cooldown_reduction" : 2
+			}
+		}
+	}
+}

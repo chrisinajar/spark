@@ -1,0 +1,8 @@
+{
+    "none": {
+        "Source": [
+            "StaticLibrary/CloudGemFramework_precompiled.cpp",
+            "StaticLibrary/CloudGemFramework_precompiled.h"
+        ]
+    }
+}

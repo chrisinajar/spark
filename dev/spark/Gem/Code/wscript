@@ -1,0 +1,46 @@
+
+
+def build(bld):
+    bld.DefineGem(
+        # General
+        includes                = [ '.',
+                                    './3rdParty',
+                                    bld.Path('Code/CryEngine/CryCommon'),
+                                    bld.Path('Code/CryEngine/CryAction')],
+        use                     = ['AzGameFramework'],
+        uselib                  = ['STEAMWORKS'],
+
+        # Platform Specific
+
+        # ==============================
+        # iOS
+        # 'ios_output_file_name' must match both
+        # 'executable_name' in 'project.json' and
+        # 'Executable file' in '../Resources/IOSLauncher/Info.plist'
+        # ==============================
+        ios_output_file_name    = 'sparkLauncher',
+        ios_file_list           = ['spark_ios.waf_files'],
+
+        # ==============================
+        # AppleTV
+        # 'appletv_output_file_name' must match both
+        # 'executable_name' in 'project.json' and
+        # 'Executable file' in '../Resources/AppleTVLauncher/Info.plist'
+        # ==============================
+        appletv_output_file_name = 'sparkLauncher',
+        appletv_file_list       = ['spark_appletv.waf_files'],
+
+        darwin_file_list        = ['spark_mac.waf_files'],
+
+       
+       
+
+        # Testing
+        test_all_file_list      = ['spark_tests.waf_files'],
+
+        # Add additional custom build options here
+        win_debug_dedicated_uselib = ['AWS_GAMELIFT_SERVER_SHARED'],
+        win_profile_dedicated_uselib = ['AWS_GAMELIFT_SERVER_SHARED'],
+        win_performance_dedicated_uselib = ['AWS_GAMELIFT_SERVER_STATIC'],
+        win_release_dedicated_uselib = ['AWS_GAMELIFT_SERVER_STATIC']
+    )

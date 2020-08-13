@@ -1,0 +1,9 @@
+{
+    "description": "Configuration for spark",
+    "visual_studio_name": "spark",
+    "comment" : "",
+    "game_projects" : "spark",
+
+    "modules" : [
+    ]
+}

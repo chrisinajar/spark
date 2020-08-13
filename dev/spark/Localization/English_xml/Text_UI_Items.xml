@@ -1,0 +1,1429 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>matthew williams</Author>
+  <LastAuthor>matthew williams</LastAuthor>
+  <Created>2019-07-16T14:37:03Z</Created>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12750</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Courier New" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Courier New" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Courier New" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+   <NumberFormat ss:Format="&quot;$&quot;#,##0.00"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial"/>
+   <NumberFormat ss:Format="&quot;$&quot;#,##0.00"/>
+  </Style>
+  <Style ss:ID="s85">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s86">
+   <Font ss:FontName="Arial" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s88">
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s89">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s90">
+   <Font ss:FontName="Arial" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="235" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultColumnWidth="75.75"
+   ss:DefaultRowHeight="15.75">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="216"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="262.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="254.25" ss:Span="3"/>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ORIGINAL TEXT</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">TRANSLATED TEXT</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CONTEXT</Data></Cell>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s68"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51">
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">This contains original text meant for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">This contains text for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s68"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s76"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ITEMS</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s81"><Data ss:Type="String">ui_ability_type_passive</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Passive</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Passive</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_type_immediate</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Immediate</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Immediate</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_type_unit_target</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Unit Target</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Unit Target</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_type_point_target</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Point Target</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Point Target</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_type_direction_target</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Direction Target</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Direction Target</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_type_vector_target</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Vector Target</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Vector Target</Data></Cell>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_pierces_spell_immunity</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Spell Immunity</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Spell Immunity</Data></Cell>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_dispellable</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Dispellable</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Dispellable</Data></Cell>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_damage_type_physical</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Physical</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Physical</Data></Cell>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_damage_type_magical</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Magical</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Magical</Data></Cell>
+    <Cell ss:StyleID="s84"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_damage_type_pure</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Pure</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Pure</Data></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_affects_friendly</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Friendly</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Friendly</Data></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s85"><Data ss:Type="String">ui_ability_affects_enemy</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Enemy</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Enemy</Data></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s85"><Data ss:Type="String">ui_ability_affects_both</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Both</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Both</Data></Cell>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_yes</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_ability_no</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s80"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">BOOTS</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_item_boots</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Boots</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Boots</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s80"><Data ss:Type="String">ui_item_boots_bonus_movement_speed</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Bonus Movement Speed</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Bonus Movement Speed</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s85"><Data ss:Type="String">ui_item_boots_description</Data></Cell>
+    <Cell><Data ss:Type="String">The basic boots are a pair of aged, brown boots laced to the lower shin. Basic boots upgrade into War Cleats (Cleave), Magician’s Slippers (Spell), Vampiric Treads (Single Target), Lucky Shoes (Be Around Dying Creeps), Annihilator Greaves (Instant Creep Kill), Banker’s Boots (Bounty Rune), and Bandit Boots (Punch Heroes).</Data></Cell>
+    <Cell><Data ss:Type="String">The basic boots are a pair of aged, brown boots laced to the lower shin. Basic boots upgrade into War Cleats (Cleave), Magician’s Slippers (Spell), Vampiric Treads (Single Target), Lucky Shoes (Be Around Dying Creeps), Annihilator Greaves (Instant Creep Kill), Banker’s Boots (Bounty Rune), and Bandit Boots (Punch Heroes).</Data></Cell>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:StyleID="s82"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s82"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_red_pearl</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Red Pearl</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Red Pearl</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_red_pearl_regen_amount</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">HP Regen</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">HP Regen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_red_pearl_description</Data></Cell>
+    <Cell><Data ss:Type="String">The red pearl is a polished…red pearl.</Data></Cell>
+    <Cell><Data ss:Type="String">The red pearl is a polished…red pearl.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_signet</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Signet</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Signet</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_signet_regen_amount</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_signet_description</Data></Cell>
+    <Cell><Data ss:Type="String">The mana signet is a small, blue-ish metal token with a runic seal pressed into it.</Data></Cell>
+    <Cell><Data ss:Type="String">The mana signet is a small, blue-ish metal token with a runic seal pressed into it.</Data></Cell>
+   </Row>
+   <Row ss:Index="39" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_bottle_of_quicksilver</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bottle Of QuickSilver</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bottle Of QuickSilver</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_bottle_of_quicksilver_bonus_movement_speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus Move Speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus Move Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_bottle_of_quicksilver_description</Data></Cell>
+    <Cell ss:HRef="http://terranostra-feinkost.de/WebRoot/Store7/Shops/4714947b-42fc-48f5-b7cc-65016e4ec6aa/5451/F5A7/9240/8EC4/97CF/0A48/3524/0B7D/711-2017-Iphoefer-Kalb-Silvaner-trocken-Erste-Lage.jpg"><Data
+      ss:Type="String">The vial of quicksilver is a corked, colourless bocksbeutel containing silver-coloured liquid.</Data></Cell>
+    <Cell ss:HRef="http://terranostra-feinkost.de/WebRoot/Store7/Shops/4714947b-42fc-48f5-b7cc-65016e4ec6aa/5451/F5A7/9240/8EC4/97CF/0A48/3524/0B7D/711-2017-Iphoefer-Kalb-Silvaner-trocken-Erste-Lage.jpg"><Data
+      ss:Type="String">The vial of quicksilver is a corked, colourless bocksbeutel containing silver-coloured liquid.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_armored_belt</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armored Belt</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armored Belt</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_armored_belt_bonus_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus Armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_armored_belt_description</Data></Cell>
+    <Cell><Data ss:Type="String">The armoured belt is a piece of armour for the abdomen and upper legs made from wood, leather, and plant fibre binding.</Data></Cell>
+    <Cell><Data ss:Type="String">The armoured belt is a piece of armour for the abdomen and upper legs made from wood, leather, and plant fibre binding.</Data></Cell>
+   </Row>
+   <Row ss:Index="47" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_idol</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Idol</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Idol</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_idol_bonus_all_stat</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_idol_description</Data></Cell>
+    <Cell><Data ss:Type="String">The idol is a small ivory statue of Jaekka at the peak of a stone, wrapping her tail around its base.</Data></Cell>
+    <Cell><Data ss:Type="String">The idol is a small ivory statue of Jaekka at the peak of a stone, wrapping her tail around its base.</Data></Cell>
+   </Row>
+   <Row ss:Index="51" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_medallion_of_strength</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Medallion Of Strength</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Medallion Of Strength</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_medallion_of_strength_bonus_strength</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Strength</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Strength</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_medallion_of_strength_description</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">The medallion of strength is a war medal hung by a bright red ribbon.</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">The medallion of strength is a war medal hung by a bright red ribbon.</Data></Cell>
+   </Row>
+   <Row ss:Index="55" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_claws_of_agility</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Claws Of Agility</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Claws Of Agility</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_claws_of_agility_bonus_agility</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Agility</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Agility</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_claws_of_agility_description</Data></Cell>
+    <Cell><Data ss:Type="String">The claws of agility are represented by a green, leather glove with curved spikes embedded into the palm.</Data></Cell>
+    <Cell><Data ss:Type="String">The claws of agility are represented by a green, leather glove with curved spikes embedded into the palm.</Data></Cell>
+   </Row>
+   <Row ss:Index="59" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_wand_of_intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Wand Of Intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Wand Of Intelligence</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_wand_of_intelligence_bonus_intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Intelligence</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_wand_of_intelligence_description</Data></Cell>
+    <Cell><Data ss:Type="String">The wand of intelligence is a smooth wooden baton with a bulbous, glowing, blue gem at its head.</Data></Cell>
+    <Cell><Data ss:Type="String">The wand of intelligence is a smooth wooden baton with a bulbous, glowing, blue gem at its head.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_orb_of_will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Orb Of Will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Orb Of Will</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_orb_of_will_bonus_will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_orb_of_will_description</Data></Cell>
+    <Cell><Data ss:Type="String">The orb of will is a translucent, faintly purple sphere resembling a crystal ball on a stand, resembling a crystal ball.</Data></Cell>
+    <Cell><Data ss:Type="String">The orb of will is a translucent, faintly purple sphere resembling a crystal ball on a stand, resembling a crystal ball.</Data></Cell>
+   </Row>
+   <Row ss:Index="67" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_gladius</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Gladius</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Gladius</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_gladius_bonus_damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_gladius_description</Data></Cell>
+    <Cell ss:HRef="https://1.bp.blogspot.com/-71ZoljKHuVU/V1qY8PojgtI/AAAAAAAADo0/YZJ5Is5gXroBbj_ql7gSBh-kKKy-ayG8gCLcB/s1600/Gladius.jpg"><Data
+      ss:Type="String">The gladius is an unremarkable gladius hispaniensis with a leather grip.</Data></Cell>
+    <Cell ss:HRef="https://1.bp.blogspot.com/-71ZoljKHuVU/V1qY8PojgtI/AAAAAAAADo0/YZJ5Is5gXroBbj_ql7gSBh-kKKy-ayG8gCLcB/s1600/Gladius.jpg"><Data
+      ss:Type="String">The gladius is an unremarkable gladius hispaniensis with a leather grip.</Data></Cell>
+   </Row>
+   <Row ss:Index="71" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mote_of_hunger</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mote Of Hunger</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mote Of Hunger</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mote_of_hunger_bonus_life_steal</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Life Steal</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Life Steal</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mote_of_hunger_description</Data></Cell>
+    <Cell><Data ss:Type="String">The mote of hunger is a bright red, ember-like stone.</Data></Cell>
+    <Cell><Data ss:Type="String">The mote of hunger is a bright red, ember-like stone.</Data></Cell>
+   </Row>
+   <Row ss:Index="75" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_resilient_bauble</Data></Cell>
+    <Cell><Data ss:Type="String">Resilient Bauble</Data></Cell>
+    <Cell><Data ss:Type="String">Resilient Bauble</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_resilient_bauble_bonus_status_resistance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Status Resistance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Status Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_resilient_bauble_description</Data></Cell>
+    <Cell><Data ss:Type="String">The resilient bauble is an amorphous multicoloured iridescent stone.</Data></Cell>
+    <Cell><Data ss:Type="String">The resilient bauble is an amorphous multicoloured iridescent stone.</Data></Cell>
+   </Row>
+   <Row ss:Index="79" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_ruby_floret</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Ruby Floret</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Ruby Floret</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_ruby_floret_bonus_health</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus HP</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus HP</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_ruby_floret_description</Data></Cell>
+    <Cell ss:HRef="http://www.suppreviewers.com/wp-content/uploads/2018/01/Centaury4AW86.jpg"><Data
+      ss:Type="String">The Ruby Floret is a red, crystalline flower blossom, resembling the branching centaury in structure.</Data></Cell>
+    <Cell ss:HRef="http://www.suppreviewers.com/wp-content/uploads/2018/01/Centaury4AW86.jpg"><Data
+      ss:Type="String">The Ruby Floret is a red, crystalline flower blossom, resembling the branching centaury in structure.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_guardian_pendant</Data></Cell>
+    <Cell><Data ss:Type="String">Guardian Pendant</Data></Cell>
+    <Cell><Data ss:Type="String">Guardian Pendant</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_guardian_pendant_bonus_magic_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_guardian_pendant_description</Data></Cell>
+    <Cell><Data ss:Type="String">The guardian pendant is an ancient necklace with a crude, rusted depiction of a dragon’s head as its main feature.</Data></Cell>
+    <Cell><Data ss:Type="String">The guardian pendant is an ancient necklace with a crude, rusted depiction of a dragon’s head as its main feature.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_bloom_quartz</Data></Cell>
+    <Cell><Data ss:Type="String">Bloom Quartz</Data></Cell>
+    <Cell><Data ss:Type="String">Bloom Quartz</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_bloom_quartz_bonus_health</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus HP</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus HP</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_bloom_quartz_description</Data></Cell>
+    <Cell><Data ss:Type="String">The bloom quartz is a pink, quartz-like crystal growth with a bright white glow at its base, gradually decreasing in intensity as it moves upwards.</Data></Cell>
+    <Cell><Data ss:Type="String">The bloom quartz is a pink, quartz-like crystal growth with a bright white glow at its base, gradually decreasing in intensity as it moves upwards.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_magic_ring</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic Ring</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic Ring</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_magic_ring_bonus_ability_power</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Ability Power</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Ability Power</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_magic_ring_description</Data></Cell>
+    <Cell><Data ss:Type="String">The magic ring is a fairly plain, silver band encrusted in small, blue topaz crystals.</Data></Cell>
+    <Cell><Data ss:Type="String">The magic ring is a fairly plain, silver band encrusted in small, blue topaz crystals.</Data></Cell>
+   </Row>
+   <Row ss:Index="95" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_zweihander</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Zweihander</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Zweihander</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_zweihander_bonus_damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_zweihander_description</Data></Cell>
+    <Cell><Data ss:Type="String">The zweihander is a plain, but well crafted steel two-handed sword.</Data></Cell>
+    <Cell><Data ss:Type="String">The zweihander is a plain, but well crafted steel two-handed sword.</Data></Cell>
+   </Row>
+   <Row ss:Index="99" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_fire_flax</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Fire Flax</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Fire Flax</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_fire_flax_bonus_heal_amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_fire_flax_description</Data></Cell>
+    <Cell><Data ss:Type="String">Fire flax is a small bushel of red flax flowers, emanating vaporous yellow magic from the stems and leaves.</Data></Cell>
+    <Cell><Data ss:Type="String">Fire flax is a small bushel of red flax flowers, emanating vaporous yellow magic from the stems and leaves.</Data></Cell>
+   </Row>
+   <Row ss:Index="103" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_swifthook</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Swift Hook</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Swift Hook</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_swifthook_bonus_attack_speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Attack Speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Attack Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_swifthook_description</Data></Cell>
+    <Cell><Data ss:Type="String">The swifthook is an inward-curved, karambit-like dagger.</Data></Cell>
+    <Cell><Data ss:Type="String">The swifthook is an inward-curved, karambit-like dagger.</Data></Cell>
+   </Row>
+   <Row ss:Index="107" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_armored_vest</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armored Vest</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armored Vest</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_armored_vest_bonus_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus Armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_armored_vest_description</Data></Cell>
+    <Cell><Data ss:Type="String">The armored vest is a brigandine with metal plates covering the abdomen and pectorals.</Data></Cell>
+    <Cell><Data ss:Type="String">The armored vest is a brigandine with metal plates covering the abdomen and pectorals.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_health_potion</Data></Cell>
+    <Cell><Data ss:Type="String">Flask of Renewal</Data></Cell>
+    <Cell><Data ss:Type="String">Flask of Renewal</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_health_potion_regen_percentage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Regen Percentage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Regen Percentage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_health_potion_hp_max_percentage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Max HP Percentage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Max HP Percentage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_health_potion_duration</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Duration</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_health_potion_description</Data></Cell>
+    <Cell><Data ss:Type="String">The flask of renewal is a test-tube shaped vial with a light brown cork. Inside of the vial is a bright yellow fluid with a rust-coloured haze in the empty space between the fluid and the cork.</Data></Cell>
+    <Cell><Data ss:Type="String">The flask of renewal is a test-tube shaped vial with a light brown cork. Inside of the vial is a bright yellow fluid with a rust-coloured haze in the empty space between the fluid and the cork.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_potion</Data></Cell>
+    <Cell><Data ss:Type="String">Mage Bloom</Data></Cell>
+    <Cell><Data ss:Type="String">Mage Bloom</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_potion_regen_percentage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Regen Percentage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Regen Percentage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_potion_mana_max_percentage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Max Mana Percentage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Max Mana Percentage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_potion_duration</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Duration</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_potion_description</Data></Cell>
+    <Cell><Data ss:Type="String">Magebloom is a light blue flower with a bright green stem. Glowing, pollen-like motes emanate from the centre of the blossom.</Data></Cell>
+    <Cell><Data ss:Type="String">Magebloom is a light blue flower with a bright green stem. Glowing, pollen-like motes emanate from the centre of the blossom.</Data></Cell>
+   </Row>
+   <Row ss:Index="123" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_grand_hammer</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Grand Hammer</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Grand Hammer</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_grand_hammer_bonus_damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_grand_hammer_description</Data></Cell>
+    <Cell><Data ss:Type="String">The grand hammer is a fairly unornamented war hammer. It upgrades into Lucky Mace (Crit), Steelsplitter (Desolator), Maul’s Maul (Active AOE Hit), and Nemesis Mace (Active Ground and Slow).</Data></Cell>
+    <Cell><Data ss:Type="String">The grand hammer is a fairly unornamented war hammer. It upgrades into Lucky Mace (Crit), Steelsplitter (Desolator), Maul’s Maul (Active AOE Hit), and Nemesis Mace (Active Ground and Slow).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_windspear</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Windspear</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Windspear</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_windspear_bonus_damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_windspear_bonus_movement_speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Movement Speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Movement Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_windspear_description</Data></Cell>
+    <Cell><Data ss:Type="String">The windspear is simple, albeit elegant blue-white shortspear. It upgrades into Ullr’s Javelin (Mixed), Blighted Halberd (MS Steal), and Splinterlance (Poke).</Data></Cell>
+    <Cell><Data ss:Type="String">The windspear is simple, albeit elegant blue-white shortspear. It upgrades into Ullr’s Javelin (Mixed), Blighted Halberd (MS Steal), and Splinterlance (Poke).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_spirit_prism</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Spirit Prism</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Spirit Prism</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_spirit_prism_bonus_heal_amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_spirit_prism_bonus_will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_spirit_prism_bonus_magic_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_spirit_prism_description</Data></Cell>
+    <Cell><Data ss:Type="String">The spirit prism is an iridescent triangular prism refracting an incoming beam of light into a spectrum. As the item is upgraded, the prism’s output transitions from resembling an orderly spectrum of light to a chaotic explosion of colours with distinct, ribbon-like textures. The item upgrades into Ghost Lens (Farsight), Mana Converter (Mana Into Health) and Witch Clock (CDR)</Data></Cell>
+    <Cell><Data ss:Type="String">The spirit prism is an iridescent triangular prism refracting an incoming beam of light into a spectrum. As the item is upgraded, the prism’s output transitions from resembling an orderly spectrum of light to a chaotic explosion of colours with distinct, ribbon-like textures. The item upgrades into Ghost Lens (Farsight), Mana Converter (Mana Into Health) and Witch Clock (CDR)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_witch_clock</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Witch Clock</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Witch Clock</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_witch_clock_bonus_cooldown_reduction</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Cooldown Reduction</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Cooldown Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_witch_clock_bonus_will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_witch_clock_bonus_magic_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic Armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_witch_clock_description</Data></Cell>
+    <Cell><Data ss:Type="String">The witch clock is a silver pocket watch on a chain. As the item is upgraded, the clock face becomes irregularly organised, with additional hours and additional hands appearing, adding colour and abnormality to the item.</Data></Cell>
+    <Cell><Data ss:Type="String">The witch clock is a silver pocket watch on a chain. As the item is upgraded, the clock face becomes irregularly organised, with additional hours and additional hands appearing, adding colour and abnormality to the item.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sacred_codex</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Sacred Codex</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Sacred Codex</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sacred_codex_bonus_heal_amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sacred_codex_bonus_all_stat</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sacred_codex_regen_amount</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sacred_codex_bonus_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus Armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sacred_codex_bonus_cooldown_reduction</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Cooldown Reduction</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Cooldown Reduction</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sacred_codex_description</Data></Cell>
+    <Cell><Data ss:Type="String">The sacred codex is a white book with Jaekka’s sigil on its front cover. As the item is upgraded, its cover and binding become more ornate, and it gradually opens to reveal a multicoloured torrent of magic bursting from its pages</Data></Cell>
+    <Cell><Data ss:Type="String">The sacred codex is a white book with Jaekka’s sigil on its front cover. As the item is upgraded, its cover and binding become more ornate, and it gradually opens to reveal a multicoloured torrent of magic bursting from its pages</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sigil_of_protection</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Sigil Of Protection</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Sigil Of Protection</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sigil_of_protection_bonus_status_resistance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Status Resistance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Status Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sigil_of_protection_bonus_all_stat</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_sigil_of_protection_description</Data></Cell>
+    <Cell><Data ss:Type="String">The sigil of protection is an octagonal seal with an ornate depiction of Jaekka and the four worshipped dragons etched into it. It is made of an iridescent, jade-like stone. It upgrades into Staff of Deliverance (Ally Purge), Scepter of Unyielding (Boost Status Resistance), and Blessed Raiment (Combo Breaker).</Data></Cell>
+    <Cell><Data ss:Type="String">The sigil of protection is an octagonal seal with an ornate depiction of Jaekka and the four worshipped dragons etched into it. It is made of an iridescent, jade-like stone. It upgrades into Staff of Deliverance (Ally Purge), Scepter of Unyielding (Boost Status Resistance), and Blessed Raiment (Combo Breaker).</Data></Cell>
+   </Row>
+   <Row ss:Index="157" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_scholars_orb</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Scholars Orb</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Scholars Orb</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_scholars_orb_bonus_ability_power</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Ability Power</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Ability Power</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_scholars_orb_bonus_intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Intelligence</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_scholars_orb_regen_amount</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_scholars_orb_description</Data></Cell>
+    <Cell><Data ss:Type="String">The scholar’s orb is a light blue, opalescent crystal ball. As the item is upgraded, it gains a metal setting and the orb itself becomes more visibly charged. It upgrades into Staff of Binding (Atos-ish), Tempest Satchel (Push Stick), and Ebony Candle (Silence).</Data></Cell>
+    <Cell><Data ss:Type="String">The scholar’s orb is a light blue, opalescent crystal ball. As the item is upgraded, it gains a metal setting and the orb itself becomes more visibly charged. It upgrades into Staff of Binding (Atos-ish), Tempest Satchel (Push Stick), and Ebony Candle (Silence).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_saviors_mask</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Saviors Mark</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Saviors Mark</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_saviors_mask_bonus_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_saviors_mask_bonus_all_stat</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_saviors_mask_regen_amount</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_saviors_mask_bonus_heal_amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_saviors_mask_description</Data></Cell>
+    <Cell><Data ss:Type="String">The savior's mark is a lightly worn piece of red cloth with two vertically stacked white sigils on it. As the item is upgraded, the cloth becomes longer and more sigils are added, eventually gaining a second, rose-coloured cloth tied at one end with its own sigils. The savior's mark upgrades into Physic Crest (Urn) and Soul Prism (Amp+CDR).</Data></Cell>
+    <Cell><Data ss:Type="String">The savior's mark is a lightly worn piece of red cloth with two vertically stacked white sigils on it. As the item is upgraded, the cloth becomes longer and more sigils are added, eventually gaining a second, rose-coloured cloth tied at one end with its own sigils. The savior's mark upgrades into Physic Crest (Urn) and Soul Prism (Amp+CDR).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_crystal_heart</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Crystal Heart</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Crystal Heart</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_crystal_heart_bonus_health</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus HP</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus HP</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_crystal_heart_bonus_strength</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Strength</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Strength</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_crystal_heart_regen_amount</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">HP Regen</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">HP Regen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_crystal_heart_description</Data></Cell>
+    <Cell><Data ss:Type="String">The crystal heart is a rough red crystal in an approximately elliptical shape, bulging out further to the viewer’s left than to the right. As it is upgraded, the crystal becomes more refined: remaining rough, but coming to resemble an anatomical depiction of a heart, and gaining a white-pink glow in its centre. The crystal heart upgrades into Sanguine Talisman (Out of Combat Regen) and Crimson Eye (Regen Boost).</Data></Cell>
+    <Cell><Data ss:Type="String">The crystal heart is a rough red crystal in an approximately elliptical shape, bulging out further to the viewer’s left than to the right. As it is upgraded, the crystal becomes more refined: remaining rough, but coming to resemble an anatomical depiction of a heart, and gaining a white-pink glow in its centre. The crystal heart upgrades into Sanguine Talisman (Out of Combat Regen) and Crimson Eye (Regen Boost).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_dragon_pendant</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Dragon Pendant</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Dragon Pendant</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_dragon_pendant_bonus_magic_armor</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Magic Armor</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Magic Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_dragon_pendant_bonus_strength</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Strength</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Strength</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_dragon_pendant_bonus_will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_dragon_pendant_regen_amount</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">HP Regen</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">HP Regen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_dragon_pendant_description</Data></Cell>
+    <Cell><Data ss:Type="String">The Dragon Pendant is a silver dragon’s head amulet strung on a plain brown cord. As it is upgraded, purple flames begin to grow from its eyes and open mouth. Dragon Pendant upgrades into the Keeper’s Hood (BKB-ish) and Devotion (Spell Block Alternative).</Data></Cell>
+    <Cell><Data ss:Type="String">The Dragon Pendant is a silver dragon’s head amulet strung on a plain brown cord. As it is upgraded, purple flames begin to grow from its eyes and open mouth. Dragon Pendant upgrades into the Keeper’s Hood (BKB-ish) and Devotion (Spell Block Alternative).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_duelling_foil</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Duelling Foil</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Duelling Foil</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_duelling_foil_bonus_agility</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Agility</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Agility</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_duelling_foil_bonus_damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_duelling_foil_bonus_movement_speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Movement Speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Movement Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_duelling_foil_description</Data></Cell>
+    <Cell><Data ss:Type="String">The duelling foil is a swept hilt steel rapier with a cord wrapped grip. As it is upgraded, the guard becomes fuller and more ornate. The duelling foil upgrades into Spectral Stiletto (Illusions), Incarnadine (Moving Lifesteal), and Magerazor (Mana Burn).</Data></Cell>
+    <Cell><Data ss:Type="String">The duelling foil is a swept hilt steel rapier with a cord wrapped grip. As it is upgraded, the guard becomes fuller and more ornate. The duelling foil upgrades into Spectral Stiletto (Illusions), Incarnadine (Moving Lifesteal), and Magerazor (Mana Burn).</Data></Cell>
+   </Row>
+   <Row ss:Index="189" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hallowed_bridandine</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Hallowed Bridandine</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Hallowed Bridandine</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hallowed_bridandine_bonus_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hallowed_bridandine_bonus_will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hallowed_bridandine_bonus_intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Intelligence</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hallowed_bridandine_description</Data></Cell>
+    <Cell><Data ss:Type="String">The brigandine is an indigo canvas vest and skirt covered in bronze studs. The sigil of the God Beast’s Congregation appears as a faint motif on the torso. It upgrades into Sacred Cuirass (AS Slow + CDR), Feathermail (Lucience), and Frigid Crown (AS Slow + Active Slowing AOE Blast).</Data></Cell>
+    <Cell><Data ss:Type="String">The brigandine is an indigo canvas vest and skirt covered in bronze studs. The sigil of the God Beast’s Congregation appears as a faint motif on the torso. It upgrades into Sacred Cuirass (AS Slow + CDR), Feathermail (Lucience), and Frigid Crown (AS Slow + Active Slowing AOE Blast).</Data></Cell>
+   </Row>
+   <Row ss:Index="195" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_oathplate</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Oathplate</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Oathplate</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_oathplate_bonus_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_oathplate_bonus_all_stat</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_oathplate_description</Data></Cell>
+    <Cell><Data ss:Type="String">Oathplate is a short-sleeved plate chestpiece with a faded coat of arms at its centre. The various seams and accents of the armour appear in the colours of all of the attributes. As the oathplate is upgraded, it gains padding, pauldrons, and the coat of arms is restored. It upgrades into Blighted Cuirass (Damage Aura), Aegis of the Hound (Boost Aura), and Wicked Mail (Damage Return).</Data></Cell>
+    <Cell><Data ss:Type="String">Oathplate is a short-sleeved plate chestpiece with a faded coat of arms at its centre. The various seams and accents of the armour appear in the colours of all of the attributes. As the oathplate is upgraded, it gains padding, pauldrons, and the coat of arms is restored. It upgrades into Blighted Cuirass (Damage Aura), Aegis of the Hound (Boost Aura), and Wicked Mail (Damage Return).</Data></Cell>
+   </Row>
+   <Row ss:Index="200" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hjalldrengs_grasp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Hjalldrengs Grasp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Hjalldrengs Grasp</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hjalldrengs_grasp_bonus_aura_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Aura Armor Lost</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Aura Armor Lost</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hjalldrengs_grasp_bonus_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hjalldrengs_grasp_bonus_attack_speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Attack Speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Attack Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_hjalldrengs_grasp_description</Data></Cell>
+    <Cell><Data ss:Type="String">Hjalldreng’s Grasp is a rugged iron gauntlet with talon-like fingers. As the item is upgraded the metal is restored, and decorative horns emerge from the plates.</Data></Cell>
+    <Cell><Data ss:Type="String">Hjalldreng’s Grasp is a rugged iron gauntlet with talon-like fingers. As the item is upgraded the metal is restored, and decorative horns emerge from the plates.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_parasite_dynamo</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Parasite Dynamo</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Parasite Dynamo</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_parasite_dynamo_bonus_life_steal</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Life Steal</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Life Steal</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_parasite_dynamo_bonus_agility</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Agility</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Agility</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_parasite_dynamo_bonus_will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_parasite_dynamo_description</Data></Cell>
+    <Cell><Data ss:Type="String">The parasite dynamo is an inscrutable, arcane trinket with engine-like traits and an eerie red glow within its mechanisms. It upgrades into Dread Masque (Lifesteal) and Energy Siphon (Spell Lifesteal).</Data></Cell>
+    <Cell><Data ss:Type="String">The parasite dynamo is an inscrutable, arcane trinket with engine-like traits and an eerie red glow within its mechanisms. It upgrades into Dread Masque (Lifesteal) and Energy Siphon (Spell Lifesteal).</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:Index="2" ss:StyleID="s90"/>
+    <Cell ss:StyleID="s90"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_push_stick</Data></Cell>
+    <Cell><Data ss:Type="String">Tempest Satchel</Data></Cell>
+    <Cell><Data ss:Type="String">Tempest Satchel</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_push_stick_push_distance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Push Distance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Push Distance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_push_stick_regen_amount</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Regen</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_push_stick_bonus_intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Intelligence</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Intelligence</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_push_stick_bonus_spell_life_steal</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Spell Life Steal</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Spell Life Steal</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_push_stick_description</Data></Cell>
+    <Cell><Data ss:Type="String">The tempest satchel is fine hide sack, tied at one end, and covered with abstract blue and gold spiral designs. As the item is upgraded, the spiral designs grow in size and number, and billowing winds begin to emerge from the sack’s opening.</Data></Cell>
+    <Cell><Data ss:Type="String">The tempest satchel is fine hide sack, tied at one end, and covered with abstract blue and gold spiral designs. As the item is upgraded, the spiral designs grow in size and number, and billowing winds begin to emerge from the sack’s opening.</Data></Cell>
+   </Row>
+   <Row ss:Index="219" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_quick_silver_band</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Quick Silver Band</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Quick Silver Band</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_quick_silver_band_bonus_ability_power</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Ability Power</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Ability Power</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_quick_silver_band_bonus_health</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus HP</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Bonus HP</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_quick_silver_band_bonus_movement_speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Movement Speed</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Movement Speed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_quick_silver_band_description</Data></Cell>
+    <Cell><Data ss:Type="String">The Sorcerer’s Band is a two-finger silver ring. The main feature of the ring is nordic artwork etched into the flat face of the ring, which becomes increasingly ornate as the item is upgraded. Quicksilver Band upgrades into Phase Ring (Stasis) and Byrri’s Diadem (Magic Armour Pierce).</Data></Cell>
+    <Cell><Data ss:Type="String">The Sorcerer’s Band is a two-finger silver ring. The main feature of the ring is nordic artwork etched into the flat face of the ring, which becomes increasingly ornate as the item is upgraded. Quicksilver Band upgrades into Phase Ring (Stasis) and Byrri’s Diadem (Magic Armour Pierce).</Data></Cell>
+   </Row>
+   <Row ss:Index="225" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_staff_of_deliverance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Staff Of Deliverance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Staff Of Deliverance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_staff_of_deliverance_bonus_status_resistance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Status Resistance</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Status Resistance</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_staff_of_deliverance_bonus_all_stat</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">All Stat Bonus</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_staff_of_deliverance_description</Data></Cell>
+    <Cell><Data ss:Type="String">The staff of deliverance has an alabaster shaft and a large, unfilled metal circle at its head. As it is upgraded, the staff’s body becomes more refined and ergonomic and a star-like light source begins to grow from the centre of the staff’s head.</Data></Cell>
+    <Cell><Data ss:Type="String">The staff of deliverance has an alabaster shaft and a large, unfilled metal circle at its head. As it is upgraded, the staff’s body becomes more refined and ergonomic and a star-like light source begins to grow from the centre of the staff’s head.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s88"/>
+    <Cell ss:StyleID="s88"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_converter</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Converter</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Converter</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_converter_bonus_magic_armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic Armor</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Magic Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_converter_bonus_will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Will</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_converter_bonus_heal_amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Heal Amp</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_converter_mana_to_health_percentage</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana To Health</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana To Health</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ui_item_mana_converter_description</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Converter Description</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Mana Converter Description</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <NoSummaryRowsBelowDetail/>
+   <NoSummaryColumnsRightDetail/>
+   <Selected/>
+   <TopRowVisible>102</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>116</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+     <RangeSelection>R117C2:R117C3</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

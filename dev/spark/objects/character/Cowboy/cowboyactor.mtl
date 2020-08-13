@@ -1,0 +1,85 @@
+<Material MtlFlags="557312" DccMaterialHash="0" vertModifType="0">
+ <SubMaterials>
+  <Material Name="pants_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/cowboy/textures/cowboy_pants_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/cowboy/textures/cowboy_pants_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/cowboy/textures/cowboy_pants_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/cowboy/textures/cowboy_pants_diff.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hat_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.063010022,0.063010022,0.063010022,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/cowboy/textures/cowboy_hat_ddna.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/cowboy/textures/cowboy_hat_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/cowboy/textures/cowboy_hat_diff.tif"/>
+    <Texture Map="Specular" File="objects/character/cowboy/textures/cowboy_hat_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyeOcclusion_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Illum" GenMask="400000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0,0,0,0.98000002" Specular="0,0,0,0.0078740334" Opacity="0.98000002" Shininess="2.0078785" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/cowboy/textures/cowboy_eyeocclusion_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyeTear_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="1002001000000" StringGenMask="%EYE_SPECULAR_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/cowboy/textures/cowboy_eyewater_spec.tif"/>
+   </Textures>
+   <PublicParams DepthBiasScale="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hand_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="2101000000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.04518621,0.04518621,0.04518621,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Specular" File="objects/character/cowboy/textures/cowboy_hand_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/cowboy/textures/cowboy_hand_ddna.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/cowboy/textures/cowboy_hand_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/cowboy/textures/cowboy_hand_diff.tif"/>
+   </Textures>
+   <PublicParams Melanin="0.156" SSSIndex="1.2" TranslucencyMultiplier="0.377" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="head_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="2101000000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,0.43188238" Opacity="1" Shininess="110.13" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/cowboy/textures/cowboy_head_ddna.dds"/>
+    <Texture Map="Opacity" File="objects/character/cowboy/textures/cowboy_head_sss_amended.tif"/>
+    <Texture Map="Specular" File="objects/character/cowboy/textures/cowboy_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/cowboy/textures/cowboy_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/cowboy/textures/cowboy_head_diff.tif"/>
+   </Textures>
+   <PublicParams Melanin="0.1" SSSIndex="1.29" TranslucencyMultiplier="1.33" IndirectColor="0.24620135,0.20155628,0.19120172"/>
+  </Material>
+  <Material Name="jacket_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/cowboy/textures/cowboy_jacket_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/cowboy/textures/cowboy_jacket_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/cowboy/textures/cowboy_jacket_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/cowboy/textures/cowboy_jacket_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="arms_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/cowboy/textures/cowboy_jacket_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/cowboy/textures/cowboy_jacket_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/cowboy/textures/cowboy_jacket_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/cowboy/textures/cowboy_jacket_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyes_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="1003000000000" StringGenMask="%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="0.6795426,0.68668544,0.65140575,1" Specular="0.13286835,0.13286835,0.13286835,0.50498098" Opacity="1" Shininess="128.77016" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Heightmap" File="objects/character/cowboy/textures/cowboy_eyes_displ.tif"/>
+    <Texture Map="Smoothness" File="objects/character/cowboy/textures/cowboy_eyes_ddna.dds"/>
+    <Texture Map="Custom" File="objects/character/cowboy/textures/cowboy_eyecornea_ddna.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/cowboy/textures/cowboy_eyes_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/cowboy/textures/cowboy_eye_diff.tif"/>
+   </Textures>
+   <PublicParams CorneaRefraction="0" IrisDepth="0.02" IrisColor="0.5,0.5,0.5" IrisShadowing="5.8000002" CorneaSmoothness="0.70999998" ScleraSSS="0.14" IrisSSS="0.94999999" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyeWetness_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="1002001000000" StringGenMask="%EYE_SPECULAR_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.53947961,0.53947961,0.53947961,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures />
+   <PublicParams DepthBiasScale="1" IndirectColor="0.24620135,0.24620135,0.24620135"/>
+  </Material>
+ </SubMaterials>
+</Material>

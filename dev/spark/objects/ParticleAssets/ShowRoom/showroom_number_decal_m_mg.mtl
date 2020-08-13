@@ -1,0 +1,12 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="showroom_number_decal_mat" MtlFlags="524448" Shader="Illum" GenMask="800010000800" StringGenMask="%DECAL%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="0.03954624,0.03954624,0.03954624" Opacity="0.99000001" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_concrete_numbers_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_concrete_numbers_001_m_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

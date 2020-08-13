@@ -1,0 +1,138 @@
+﻿<p>Define your custom defect report field</p>
+<button class="btn l-primary add-button" (click)="onAddNewFieldModal(customFields)">
+    Add New Field
+</button>
+<button class="btn btn-outline-primary add-button" (click)="updateClientConfiguration()">
+    Save Configuration
+</button>
+<div [ngSwitch]="isLoadingClientConfiguration">
+    <div *ngSwitchCase="true">
+        <loading-spinner></loading-spinner>
+    </div>
+    <div class="content-container" *ngSwitchCase="false">
+        <div *ngFor="let field of customFields; let fieldIndex = index">
+            <client-configuration-field 
+                [field]="field"
+                [fieldIdPrefix]="''"
+                [isObjectProperty]="false"
+                (addNewProperty)="onAddNewFieldModal(field['properties'])"
+                (showModifyField)="onModifyFieldModal(customFields, field, fieldIndex)"
+                (showDeleteField)="onDeleteFieldModal(customFields, field, fieldIndex)">
+                <div class="fields" *ngIf="field.type === 'object'">
+                    <div *ngFor="let property of field.properties; let propertyIndex = index">
+                        <client-configuration-field 
+                                [field]="property"
+                                [fieldIdPrefix]="field['title']"
+                                [isObjectProperty]="true"
+                                (showModifyField)="onModifyFieldModal(field.properties, property, propertyIndex)"
+                                (showDeleteField)="onDeleteFieldModal(field.properties, property, propertyIndex)">
+                        </client-configuration-field>
+                    </div>
+                </div>
+            </client-configuration-field>
+        </div>
+    </div>
+</div>
+
+<modal *ngIf="editMode === EditMode.EditField || editMode === EditMode.CreateField"
+        [title]="getModalName()"
+        [autoOpen]="true"
+        [hasSubmit]="true"
+        [submitButtonText]="getSubmitButtonText()"
+        [onDismiss]="onDismissModal"
+        [onClose]="onDismissModal"
+        (modalSubmitted)="onModalSubmit()">
+    <div class="modal-body">
+        <div class="form-group row">
+            <label class="col-form-label col-3">
+                Field Type
+            </label>
+            <div class="d-inline-block dropdown-outer col-8 field-type-dropdown" ngbDropdown>
+                <button type="button" class="btn l-dropdown col-12" id="path-dropdown" ngbDropdownToggle>
+                    <span class="dropdown-inner"> {{getFieldTypeDisplayText()}} </span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-center" aria-labelledby="path-dropdown">
+                    <div *ngFor="let fieldType of fieldTypes">
+                        <button *ngIf="curFields === customFields || fieldType.displayText !== 'Object' " type="button" class="dropdown-item" (click)="onChangeFieldType(fieldType)"> {{fieldType.displayText}} </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form [formGroup]="fieldTitleForm">
+            <div class="form-group row" [ngClass]="{'has-danger': isFormFieldNotValid(fieldTitleForm, 'title')}">
+                <label class="col-form-label col-3" for="title">
+                    Title
+                </label>
+                <input class="form-control col-8" id="title" type="text" [formControl]="fieldTitleForm.controls['title']"
+                        [ngClass]="{'form-control-danger': isFormFieldNotValid(fieldTitleForm, 'title')}" />
+
+                <span class="col-3"></span>
+                <div *ngIf="isFormFieldRequiredEmpty(fieldTitleForm, 'title')" class="form-control-feedback col-8">Title cannot be empty</div>
+                <div *ngIf="isFormFieldTitleDuplicate(fieldTitleForm, 'title')" class="form-control-feedback col-8">Title already exists</div>
+            </div>
+        </form>
+
+        <ng-container *ngIf="curEditingField.type === 'text'">
+            <form [formGroup]="textFieldForm">
+                <div class="form-group row" [ngClass]="{'has-danger': isFormFieldNotValid(textFieldForm, 'maxChars')}">
+                    <label class="col-form-label col-3" for="maxChars">
+                        Character Limit
+                    </label>
+                    <input class="form-control col-8" id="maxChars" [formControl]="textFieldForm.controls['maxChars']"
+                            [ngClass]="{'form-control-danger': isFormFieldNotValid(textFieldForm, 'maxChars')}" />
+
+                    <span class="col-3"></span>
+                    <div *ngIf="isFormFieldRequiredEmpty(textFieldForm, 'maxChars')" class="form-control-feedback col-8">Character Limit cannot be emtpy</div>
+                    <div *ngIf="!isFormFieldRequiredEmpty(textFieldForm, 'maxChars') &&
+                         isFormFieldNotPositiveNum(textFieldForm, 'maxChars')" class="form-control-feedback col-8">
+                        Invalid number
+                    </div>
+                </div>
+            </form>
+        </ng-container>
+
+        <ng-container *ngIf="curEditingField.type === 'predefined'">
+            <div *ngFor="let optionForm of predefinedFieldForm.controls['options'].controls; let i = index; trackBy:trackByFn">
+                <div class="form-group row" [ngClass]="{'has-danger': isFormFieldNotValid(optionForm, 'value')}">
+                    <label class="col-form-label col-3" *ngIf="i===0">
+                        Multiple Choice Options
+                    </label>
+                    <span class="col-3" *ngIf="i>0"></span>
+
+                    <input class="form-control col-8" type="text" [formControl]="optionForm.controls['value']"
+                            [ngClass]="{'form-control-danger': isFormFieldNotValid(optionForm, 'value')}" />
+                    <i *ngIf="i > 0" class="fa fa-close col-form-label col-1 delete-option-icon" (click)="onDeleteOption(i)"></i>
+
+                    <span class="col-3"></span>
+                    <div *ngIf="isFormFieldRequiredEmpty(optionForm, 'value')" class="form-control-feedback col-8">Option cannot be emtpy</div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <span class="col-3"></span>
+                <div class="col-8 add-option-button">
+                    <button class="btn btn-outline-primary" (click)="onAddOption()">
+                        + Add Option
+                    </button>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</modal>
+
+<modal *ngIf="editMode === EditMode.DeleteField"
+        [title]="getModalName()"
+        [autoOpen]="true"
+        [hasSubmit]="true"
+        [onDismiss]="onDismissModal"
+        [onClose]="onDismissModal"
+        [submitButtonText]="getSubmitButtonText()"
+        (modalSubmitted)="onModalSubmit()"
+        [metricIdentifier]="context.identifier">
+    <div class="modal-body">
+        <p>
+            Are you sure you want to delete {{curEditingField.title}}?
+        </p>
+    </div>
+</modal>

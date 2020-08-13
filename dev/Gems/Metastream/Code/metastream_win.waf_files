@@ -1,0 +1,18 @@
+{
+    "NoUberFile": {
+        "CivetWeb": [
+            "@3P:civetweb@/include/CivetServer.h",
+            "@3P:civetweb@/src/CivetServer.cpp",
+            "@3P:civetweb@/include/civetweb.h",
+            "@3P:civetweb@/src/civetweb.c"
+        ]
+    },
+    "auto": {
+        "Source/HTTPServer": [
+            "Source/BaseHttpServer.h",
+            "Source/BaseHttpServer.cpp",
+            "Source/CivetHttpServer.h",
+            "Source/CivetHttpServer.cpp"
+        ]
+    }
+}

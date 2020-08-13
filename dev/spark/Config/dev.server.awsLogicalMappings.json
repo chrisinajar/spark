@@ -1,0 +1,38 @@
+{
+    "LogicalMappings": {
+        "CloudGemPlayerAccount.PlayerUserPool": {
+            "PhysicalResourceId": "us-west-2_WM01fkmHO", 
+            "ResourceType": "Custom::CognitoUserPool", 
+            "UserPoolClients": {
+                "DefaultClientApp": {
+                    "ClientId": "3iap703anfdu54lg3mjal8h02b"
+                }
+            }
+        }, 
+        "CloudGemPlayerAccount.ServiceApi": {
+            "PhysicalResourceId": "https://k536j5zt1b.execute-api.us-west-2.amazonaws.com/api", 
+            "ResourceType": "Custom::ServiceApi"
+        }, 
+        "PlayerAccessIdentityPool": {
+            "PhysicalResourceId": "us-west-2:7c205183-8c85-4391-b847-b628e38dc21b", 
+            "ResourceType": "Custom::CognitoIdentityPool"
+        }, 
+        "PlayerAccessTokenExchange": {
+            "PhysicalResourceId": "spark-PlayerAccessTokenExchange-LHLOSEENI9Q5", 
+            "ResourceType": "AWS::Lambda::Function"
+        }, 
+        "PlayerLoginIdentityPool": {
+            "PhysicalResourceId": "us-west-2:c3ea5442-e878-4dfa-9244-2bc27065c527", 
+            "ResourceType": "Custom::CognitoIdentityPool"
+        }, 
+        "account_id": {
+            "PhysicalResourceId": "588472492807", 
+            "ResourceType": "Configuration"
+        }, 
+        "region": {
+            "PhysicalResourceId": "us-west-2", 
+            "ResourceType": "Configuration"
+        }
+    }, 
+    "Protected": false
+}

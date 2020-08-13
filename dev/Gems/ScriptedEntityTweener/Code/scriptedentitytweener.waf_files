@@ -1,0 +1,24 @@
+{
+    "none": {
+        "Source": [
+            "Source/ScriptedEntityTweener_precompiled.cpp",
+            "Source/ScriptedEntityTweener_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/ScriptedEntityTweener/ScriptedEntityTweenerBus.h",
+            "Include/ScriptedEntityTweener/ScriptedEntityTweenerEnums.h"
+        ],
+        "Source": [
+            "Source/ScriptedEntityTweenerSystemComponent.cpp",
+            "Source/ScriptedEntityTweenerSystemComponent.h",
+            "Source/ScriptedEntityTweenerModule.cpp",
+            "Source/ScriptedEntityTweenerMath.h",
+            "Source/ScriptedEntityTweenerTask.cpp",
+            "Source/ScriptedEntityTweenerTask.h",
+            "Source/ScriptedEntityTweenerSubtask.cpp",
+            "Source/ScriptedEntityTweenerSubtask.h"
+        ]
+    }
+}

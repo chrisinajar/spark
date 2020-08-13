@@ -1,0 +1,12 @@
+<Material MtlFlags="524288" DccMaterialHash="0" Shader="Terrain.Layer" GenMask="200200208000000" StringGenMask="%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%SPECULAR_MAP%TEMP_TERRAIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.045000002,0.045000002,0.045000002,1" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Heightmap" File="textures/wasteland/wasteland_sand/wasteland_sand_height.dds"/>
+  <Texture Map="Detail" File="textures/wasteland/wasteland_sand/wasteland_sand_roughness.dds"/>
+  <Texture Map="Specular" File="textures/wasteland/wasteland_sand/wasteland_sand_ambientocclusion.dds"/>
+  <Texture Map="Bumpmap" File="textures/wasteland/wasteland_sand/wasteland_sand_normal.dds"/>
+  <Texture Map="Diffuse" File="textures/wasteland/wasteland_sand/wasteland_sand_basecolor.dds">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.1" TileV="0.1"/>
+  </Texture>
+ </Textures>
+ <PublicParams BlendFalloff="1" DetailTextureStrength="1" PomDisplacement="0.025" SelfShadowStrength="3" HeightBias="1" BlendFactor="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

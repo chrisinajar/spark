@@ -1,0 +1,11 @@
+{
+    "none": {
+        "Root": [
+            "Source/AWS_precompiled.cpp",
+            "Source/AWS_precompiled.h"
+        ],
+        "Source": [
+            "Source/AWSModule.cpp"
+        ]
+    }
+}

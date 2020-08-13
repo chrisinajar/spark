@@ -1,0 +1,13 @@
+{
+    "auto":
+    {
+        "Tests":
+        [
+            "Tests/SceneProcessingConfigTest.cpp"
+        ],
+        "Tests/SceneBuilder":
+        [
+            "Tests/SceneBuilder/SceneBuilderTests.cpp"
+        ]
+    }
+}

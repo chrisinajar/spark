@@ -1,0 +1,90 @@
+{
+    "name": "alembic",
+    "source": "@3P:alembic@",
+    "description": "Alembic Library",
+    "aliases": {
+        "alembic_libs" : [
+                "AlembicAbc",
+                "AlembicAbcCollection",
+                "AlembicAbcCoreAbstract",
+                "AlembicAbcCoreFactory",
+                "AlembicAbcCoreHDF5",
+                "AlembicAbcCoreOgawa",
+                "AlembicAbcGeom",
+                "AlembicAbcMaterial",
+                "AlembicOgawa",
+                "AlembicUtil"
+        ],
+        "ilmbase_libs" : [
+                "Half",
+                "IexMath",
+                "Iex",
+                "IlmThread",
+                "Imath"
+        ],
+        "hdf5_libs" : [
+            "hdf5_hl",
+            "hdf5"
+        ],
+        "lib_names" : [
+            "${alembic_libs}",
+            "${ilmbase_libs}",
+            "${hdf5_libs}"
+        ]
+    },
+    "includes": [
+        "include",
+        "@3P:ilmbase@/include/OpenEXR"
+    ],
+    "defines": [],
+    "lib_required": "True",
+    "platform": {
+        "win_x64_vs2013": {
+            "libpath": [
+                "lib/x64",
+                "@3P:hdf5@/lib/x64",
+                "@3P:ilmbase@/lib/x64"
+            ],
+            "lib_debug": [
+                "${lib_names}-vc120-mt-sd.lib"
+            ],
+            "lib_release": [
+                "${lib_names}-vc120-mt-s.lib"
+            ],
+            "linkflags" : [
+                "/ignore:4099"
+            ]
+        },
+        "win_x64_vs2015": {
+            "libpath": [
+                "lib/x64",
+                "@3P:hdf5@/lib/x64",
+                "@3P:ilmbase@/lib/x64"
+            ],
+            "lib_debug": [
+                "${lib_names}-vc140-md-sd.lib"
+            ],
+            "lib_release": [
+                "${lib_names}-vc140-md-s.lib"
+            ],
+            "linkflags" : [
+                "/ignore:4099"
+            ]
+        },
+        "win_x64_vs2017": "@win_x64_vs2015",
+        "darwin_x64": {
+            "libpath": [
+                "lib/macos",
+                "@3P:hdf5@/lib/macos",
+                "@3P:ilmbase@/lib/macos"
+            ],
+            "lib_debug": [
+                "lib${lib_names}.a"
+            ],
+            "lib_release": [
+                "lib${lib_names}.a"
+            ]
+        }
+    }
+}
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\</ProjectRoot>
+		<SourceFilesRoot>F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="266088136" Language="SFX">
+			<ShortName>sfx_ambience_spark_alphamap.wav</ShortName>
+			<Path>SFX\sfx_ambience_spark_alphamap_8956FC97.wem</Path>
+		</File>
+	</StreamedFiles>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2643612632" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\content</ObjectPath>
+			<ShortName>content</ShortName>
+			<Path>content.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2122963377" Name="Play_sfx_ambience_spark_alphamap" ObjectPath="\Events\Default Work Unit\Play_sfx_ambience_spark_alphamap"/>
+				<Event Id="4175570933" Name="Play_sfx_attack_r_1" ObjectPath="\Events\Default Work Unit\Play_sfx_attack_r_1"/>
+				<Event Id="2762721572" Name="Play_sfx_blink_appear" ObjectPath="\Events\Default Work Unit\Play_sfx_blink_appear"/>
+				<Event Id="2231392266" Name="Play_sfx_blink_appear_01" ObjectPath="\Events\Default Work Unit\Play_sfx_blink_appear_01"/>
+				<Event Id="393235542" Name="Play_sfx_blink_vanish" ObjectPath="\Events\Default Work Unit\Play_sfx_blink_vanish"/>
+				<Event Id="681320211" Name="Play_sfx_buyitem" ObjectPath="\Events\Default Work Unit\Play_sfx_buyitem"/>
+				<Event Id="1541992402" Name="Play_sfx_capturepoint" ObjectPath="\Events\Default Work Unit\Play_sfx_capturepoint"/>
+				<Event Id="431846268" Name="Play_sfx_duel" ObjectPath="\Events\Default Work Unit\Play_sfx_duel"/>
+				<Event Id="3852581064" Name="Play_sfx_entershop" ObjectPath="\Events\Default Work Unit\Play_sfx_entershop"/>
+				<Event Id="3908763747" Name="Play_sfx_fire_loop" ObjectPath="\Events\Default Work Unit\Play_sfx_fire_loop"/>
+				<Event Id="2693333341" Name="Play_sfx_hero_astromagus_skill_q" ObjectPath="\Events\Default Work Unit\Play_sfx_hero_astromagus_skill_q"/>
+				<Event Id="2693333342" Name="Play_sfx_hero_astromagus_skill_r" ObjectPath="\Events\Default Work Unit\Play_sfx_hero_astromagus_skill_r"/>
+				<Event Id="2693333339" Name="Play_sfx_hero_astromagus_skill_w" ObjectPath="\Events\Default Work Unit\Play_sfx_hero_astromagus_skill_w"/>
+				<Event Id="2234392231" Name="Play_sfx_levelup_1" ObjectPath="\Events\Default Work Unit\Play_sfx_levelup_1"/>
+				<Event Id="2944748108" Name="Play_sfx_point" ObjectPath="\Events\Default Work Unit\Play_sfx_point"/>
+				<Event Id="2833543870" Name="Play_sfx_respawn" ObjectPath="\Events\Default Work Unit\Play_sfx_respawn"/>
+				<Event Id="1117141914" Name="Play_sfx_UI_back" ObjectPath="\Events\Default Work Unit\Play_sfx_UI_back"/>
+				<Event Id="2925662583" Name="Play_sfx_UI_button" ObjectPath="\Events\Default Work Unit\Play_sfx_UI_button"/>
+				<Event Id="3170220158" Name="Play_sfx_ui_lockin_hero" ObjectPath="\Events\Default Work Unit\Play_sfx_ui_lockin_hero"/>
+				<Event Id="3201342862" Name="Play_sfx_ui_timer_countdown" ObjectPath="\Events\Default Work Unit\Play_sfx_ui_timer_countdown"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="266088136"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="93383826" Language="SFX">
+					<ShortName>sfx_point.wav</ShortName>
+					<Path>SFX\sfx_point_56D34C19.wem</Path>
+				</File>
+				<File Id="96482954" Language="SFX">
+					<ShortName>sfx_UI_back.wav</ShortName>
+					<Path>SFX\sfx_UI_back_56D34C19.wem</Path>
+				</File>
+				<File Id="140086355" Language="SFX">
+					<ShortName>sfx_ui_timer_countdown_2.wav</ShortName>
+					<Path>SFX\sfx_ui_timer_countdown_2_56D34C19.wem</Path>
+				</File>
+				<File Id="185789000" Language="SFX">
+					<ShortName>sfx_capturepoint.wav</ShortName>
+					<Path>SFX\sfx_capturepoint_56D34C19.wem</Path>
+				</File>
+				<File Id="195914978" Language="SFX">
+					<ShortName>sfx_buyitem.wav</ShortName>
+					<Path>SFX\sfx_buyitem_56D34C19.wem</Path>
+				</File>
+				<File Id="232225433" Language="SFX">
+					<ShortName>sfx_levelup_1.wav</ShortName>
+					<Path>SFX\sfx_levelup_1_56D34C19.wem</Path>
+				</File>
+				<File Id="336698749" Language="SFX">
+					<ShortName>sfx_hero_astromagus_skill_w.wav</ShortName>
+					<Path>SFX\sfx_hero_astromagus_skill_w_56D34C19.wem</Path>
+				</File>
+				<File Id="351618176" Language="SFX">
+					<ShortName>sfx_ui_lockin_hero.wav</ShortName>
+					<Path>SFX\sfx_ui_lockin_hero_56D34C19.wem</Path>
+				</File>
+				<File Id="409444624" Language="SFX">
+					<ShortName>sfx_hero_astromagus_skill_r.wav</ShortName>
+					<Path>SFX\sfx_hero_astromagus_skill_r_56D34C19.wem</Path>
+				</File>
+				<File Id="423571487" Language="SFX">
+					<ShortName>sfx_entershop.wav</ShortName>
+					<Path>SFX\sfx_entershop_56D34C19.wem</Path>
+				</File>
+				<File Id="449547935" Language="SFX">
+					<ShortName>sfx_ui_timer_countdown_1.wav</ShortName>
+					<Path>SFX\sfx_ui_timer_countdown_1_56D34C19.wem</Path>
+				</File>
+				<File Id="488226643" Language="SFX">
+					<ShortName>sfx_attack_r_arrow_1.wav</ShortName>
+					<Path>SFX\sfx_attack_r_arrow_1_56D34C19.wem</Path>
+				</File>
+				<File Id="508470882" Language="SFX">
+					<ShortName>sfx_respawn.wav</ShortName>
+					<Path>SFX\sfx_respawn_56D34C19.wem</Path>
+				</File>
+				<File Id="522099703" Language="SFX">
+					<ShortName>sfx_blink_vanish.wav</ShortName>
+					<Path>SFX\sfx_blink_vanish_56D34C19.wem</Path>
+				</File>
+				<File Id="536042359" Language="SFX">
+					<ShortName>sfx_duel.wav</ShortName>
+					<Path>SFX\sfx_duel_56D34C19.wem</Path>
+				</File>
+				<File Id="621194481" Language="SFX">
+					<ShortName>sfx_UI_button.wav</ShortName>
+					<Path>SFX\sfx_UI_button_56D34C19.wem</Path>
+				</File>
+				<File Id="767737219" Language="SFX">
+					<ShortName>sfx_fire_loop.wav</ShortName>
+					<Path>SFX\sfx_fire_loop_56D34C19.wem</Path>
+				</File>
+				<File Id="938719284" Language="SFX">
+					<ShortName>sfx_attack_r_woosh_basic_2.wav</ShortName>
+					<Path>SFX\sfx_attack_r_woosh_basic_2_56D34C19.wem</Path>
+				</File>
+				<File Id="998526210" Language="SFX">
+					<ShortName>sfx_blink_appear.wav</ShortName>
+					<Path>SFX\sfx_blink_appear_56D34C19.wem</Path>
+				</File>
+				<File Id="1013913954" Language="SFX">
+					<ShortName>sfx_hero_astromagus_skill_q.wav</ShortName>
+					<Path>SFX\sfx_hero_astromagus_skill_q_56D34C19.wem</Path>
+				</File>
+				<File Id="1056440603" Language="SFX">
+					<ShortName>sfx_attack_r_throw_1.wav</ShortName>
+					<Path>SFX\sfx_attack_r_throw_1_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

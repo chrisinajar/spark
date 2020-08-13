@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Source": [
+            "Source/HttpRequestor_precompiled.cpp",
+            "Source/HttpRequestor_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Implementation": [
+            "Source/ComponentStub.cpp"
+        ]
+    }
+}

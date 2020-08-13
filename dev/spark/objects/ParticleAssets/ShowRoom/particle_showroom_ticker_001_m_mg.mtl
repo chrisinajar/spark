@@ -1,0 +1,28 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="technical_particle_showroom_ticker_bg_001_mat" MtlFlags="524416" Shader="Illum" GenMask="800000000000" StringGenMask="%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="0,0,0" Specular="0,0,0" Opacity="1" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_ticker_bg_001_m_diff.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="technical_particle_showroom_ticker_mg_001_mat" MtlFlags="524448" Shader="Illum" GenMask="800000020800" StringGenMask="%DECAL%EMITTANCE_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="1,1,1" Emittance="1,0.6795426,0.1559265,200" Opacity="0.99000001" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_ticker_mg_001_m_diff.dds">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TexMod_UOscillatorType="2" TexMod_UOscillatorRate="0.2" TexMod_UOscillatorAmplitude="0.5"/>
+    </Texture>
+    <Texture Map="Emittance" File="objects/particleassets/showroom/showroom_ticker_mg_001_m_diff.dds">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TexMod_UOscillatorType="2" TexMod_UOscillatorRate="0.2" TexMod_UOscillatorAmplitude="0.5"/>
+    </Texture>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="3.76" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="technical_particle_showroom_ticker_fg_001_mat" MtlFlags="524448" Shader="Illum" GenMask="800000000000" StringGenMask="%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="0,0,0" Opacity="0.99000001" AlphaTest="0.25" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_ticker_fg_001_m_diff.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,8 @@
+<ParticleLibrary Name="particles_gravity" SandboxVersion="1.15.0.0" ParticleVersion="33">
+ <Particles Name="gravity_001">
+  <Params Count="1500,Random=0.199" EmitterSizeDiameter="5" LocalSpawnPosRandomOffset="x=0.22,y=0.22" LocalOffsetRoundness="1" LocalStretch="0.05" Continuous="true" EmitterLifeTime="1" ParticleLifeTime="2,Random=0.25" OffsetRoundness="1" Curvature="0" BlendType="Additive" Texture="textures/vfx/glow/glow_b_002.dds" SoftParticle="true" Alpha="ParticleAge=(t=0.157,v=1;t=1,flags=4)" Color="(y=0.43306628,z=0.0409152),ParticleAge=(v=(x=1,y=0.855,z=0.482);t=0.204,v=(x=0.957,y=0.443,z=0.125);t=0.286,v=(x=0.61,y=0.184);t=1,v=(x=0.36))" EmissiveLighting="20" SizeX="0.05,Random=0.384,ParticleAge=(v=1;t=0.133,v=1;t=0.875,v=1;t=1,v=0.16,flags=4)" SizeY="0.05,Random=0.384,ParticleAge=(v=1;t=0.133,v=1;t=0.875,v=1;t=1,v=0.16,flags=4)" SizeZ="0.05,Random=0.384,ParticleAge=(v=1;t=0.133,v=1;t=0.875,v=1;t=1,v=0.16,flags=4)" Stretch="0.05" GravityScale="-0.75,ParticleAge=(;t=0.15,v=0.7)" TargetAttraction="ExtendSpeed=true"/>
+ </Particles>
+ <Particles Name="gravity_002">
+  <Params Count="10" MaintainDensity="1" EmitterSizeDiameter="5" BeamAge="1" Continuous="true" PulsePeriod="1" ParticleLifeTime="1" Curvature="0" BlendType="Additive" Texture="textures/vfx/glow/glow_b_002.dds" SoftParticle="true" Alpha="2,ParticleAge=(;t=0.514,v=1;t=1)" Color="(y=0.47066373,z=0.1412633)" EmissiveLighting="1" SizeX="0.65,Random=0.231" SizeY="0.65,Random=0.231" SizeZ="0.65,Random=0.231" SortQuality="2"/>
+ </Particles>
+</ParticleLibrary>

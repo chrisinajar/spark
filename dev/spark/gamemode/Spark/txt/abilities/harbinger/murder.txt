@@ -1,0 +1,15 @@
+//comments!
+{
+	"abilities" : {
+		"harbinger/murder" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "35 30 25 20 15 10",
+			//for now the values below are ignored
+			"special-values" : {
+				"crit_percentage" : "175 250 325 400 475 550",
+				"movement_speed_reduction_percentage" : 80,
+				"slow_duration" : "1.75 2.5 3.25 4 4.75 5.5"
+			}
+		}
+	}
+}

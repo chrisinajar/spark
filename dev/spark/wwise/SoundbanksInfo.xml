@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\</ProjectRoot>
+		<SourceFilesRoot>F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\amazon\Lumberyard\1.18.0.0\dev\spark\wwise\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>T:\Amazon\Lumberyard\1.17.0.0\dev\spark\Sounds\wwise\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2643612632" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Content</ObjectPath>
+			<ShortName>Content</ShortName>
+			<Path>Content.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2762721572" Name="Play_sfx_blink_appear" ObjectPath="\Events\Default Work Unit\Play_sfx_blink_appear"/>
+				<Event Id="393235542" Name="Play_sfx_blink_vanish" ObjectPath="\Events\Default Work Unit\Play_sfx_blink_vanish"/>
+				<Event Id="681320211" Name="Play_sfx_buyitem" ObjectPath="\Events\Default Work Unit\Play_sfx_buyitem"/>
+				<Event Id="3852581064" Name="Play_sfx_entershop" ObjectPath="\Events\Default Work Unit\Play_sfx_entershop"/>
+				<Event Id="4271743005" Name="Play_sfx_hook_hit" ObjectPath="\Events\Default Work Unit\Play_sfx_hook_hit"/>
+				<Event Id="1118335346" Name="Play_sfx_hook_throw" ObjectPath="\Events\Default Work Unit\Play_sfx_hook_throw"/>
+				<Event Id="1643478367" Name="Play_sfx_levelup" ObjectPath="\Events\Default Work Unit\Play_sfx_levelup"/>
+				<Event Id="2944748108" Name="Play_sfx_point" ObjectPath="\Events\Default Work Unit\Play_sfx_point"/>
+				<Event Id="1044233350" Name="Play_sfx_push_1" ObjectPath="\Events\Default Work Unit\Play_sfx_push_1"/>
+				<Event Id="1044233349" Name="Play_sfx_push_2" ObjectPath="\Events\Default Work Unit\Play_sfx_push_2"/>
+				<Event Id="2833543870" Name="Play_sfx_respawn" ObjectPath="\Events\Default Work Unit\Play_sfx_respawn"/>
+				<Event Id="413403710" Name="Play_sfx_stun" ObjectPath="\Events\Default Work Unit\Play_sfx_stun"/>
+				<Event Id="1117141914" Name="Play_sfx_UI_back" ObjectPath="\Events\Default Work Unit\Play_sfx_UI_back"/>
+				<Event Id="2925662583" Name="Play_sfx_UI_button" ObjectPath="\Events\Default Work Unit\Play_sfx_UI_button"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="127198834" Language="SFX">
+					<ShortName>sfx_point.wav</ShortName>
+					<Path>SFX\sfx_point_F26CE7B0.wem</Path>
+				</File>
+				<File Id="223773374" Language="SFX">
+					<ShortName>sfx_levelup.wav</ShortName>
+					<Path>SFX\sfx_levelup_F26CE7B0.wem</Path>
+				</File>
+				<File Id="445117983" Language="SFX">
+					<ShortName>sfx_UI_button.wav</ShortName>
+					<Path>SFX\sfx_UI_button_F26CE7B0.wem</Path>
+				</File>
+				<File Id="524940964" Language="SFX">
+					<ShortName>sfx_buyitem.wav</ShortName>
+					<Path>SFX\sfx_buyitem_F26CE7B0.wem</Path>
+				</File>
+				<File Id="554778609" Language="SFX">
+					<ShortName>sfx_blink_appear.wav</ShortName>
+					<Path>SFX\sfx_blink_appear_F26CE7B0.wem</Path>
+				</File>
+				<File Id="636623362" Language="SFX">
+					<ShortName>sfx_stun.wav</ShortName>
+					<Path>SFX\sfx_stun_F26CE7B0.wem</Path>
+				</File>
+				<File Id="789936205" Language="SFX">
+					<ShortName>sfx_hook_hit.wav</ShortName>
+					<Path>SFX\sfx_hook_hit_F26CE7B0.wem</Path>
+				</File>
+				<File Id="809604761" Language="SFX">
+					<ShortName>sfx_push_2.wav</ShortName>
+					<Path>SFX\sfx_push_2_F26CE7B0.wem</Path>
+				</File>
+				<File Id="882586394" Language="SFX">
+					<ShortName>sfx_UI_back.wav</ShortName>
+					<Path>SFX\sfx_UI_back_F26CE7B0.wem</Path>
+				</File>
+				<File Id="906577854" Language="SFX">
+					<ShortName>sfx_entershop.wav</ShortName>
+					<Path>SFX\sfx_entershop_F26CE7B0.wem</Path>
+				</File>
+				<File Id="953508537" Language="SFX">
+					<ShortName>sfx_push_1.wav</ShortName>
+					<Path>SFX\sfx_push_1_F26CE7B0.wem</Path>
+				</File>
+				<File Id="958458640" Language="SFX">
+					<ShortName>sfx_hook_throw.wav</ShortName>
+					<Path>SFX\sfx_hook_throw_F26CE7B0.wem</Path>
+				</File>
+				<File Id="960922056" Language="SFX">
+					<ShortName>sfx_respawn.wav</ShortName>
+					<Path>SFX\sfx_respawn_F26CE7B0.wem</Path>
+				</File>
+				<File Id="981369163" Language="SFX">
+					<ShortName>sfx_blink_vanish.wav</ShortName>
+					<Path>SFX\sfx_blink_vanish_F26CE7B0.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

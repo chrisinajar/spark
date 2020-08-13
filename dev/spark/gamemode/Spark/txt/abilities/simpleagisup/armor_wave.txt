@@ -1,0 +1,21 @@
+//comments!
+{
+	"abilities" : {
+		"simpleagisup/armor_wave" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "10",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "40 40 60 80 100 200 300" 
+			},
+			"special-values" : {
+				"speed" : 20,
+				"damage" : "20 60 80 100 120 240 360",
+				"reduce_armor" : "5 15 20 25 30 55 80",
+				"duration" : 8,
+				"visibility_duration" : 3,
+				"range" : 140
+			}
+		}
+	}	
+}

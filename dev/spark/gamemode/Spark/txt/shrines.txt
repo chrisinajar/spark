@@ -1,0 +1,13 @@
+//comments!
+{
+	"abilities" : {
+		"shrines/shrine" : {
+			"icon-file": "Textures/Icons/Abilities/15",
+			"cooldown" : "300",
+			"name" : "Shrine Test Name",
+			"special-values" : {
+				"duration":5
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+<facet-generator 
+    [context]="context" 
+    [tabs]="['Report Detail', 'Raw Data']" 
+    [disableInheritedFacets]="true"
+    [metricIdentifier]="context.identifier"
+    (tabClicked)="tabIndex=$event"></facet-generator>
+
+<!-- Overview Tab -->
+<div *ngIf="tabIndex === 0">
+    <defect-detail-overview-tab
+        [defect]="defect"
+        [isJiraIntegrationEnabled]="isJiraIntegrationEnabled"
+        [isLoading]="isLoadingDefectDetails"
+        [configurationMappings]="configurationMappings"
+        [toDefectListPageCallback]="toDefectListPageCallback"
+        [defectReporterApiHandler]="_apiHandler"
+        [context]="context"
+        (updateJiraMappings)="updateJiraMappings.emit()">
+    </defect-detail-overview-tab>
+</div>
+
+<!-- Raw Data Tab -->
+<div *ngIf="tabIndex === 1">
+    <raw-data-tab [defect]="defect" [isLoading]="isLoadingDefectDetails" [rawDataKeys]="rawDataKeys"></raw-data-tab>
+</div>

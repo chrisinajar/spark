@@ -1,0 +1,15 @@
+{
+    "GemFormatVersion": 4,
+    "Uuid": "797d43d3996744cab164bc494d757a92",
+    "Name": "RVO2",
+    "DisplayName": "RVO2",
+    "Version": "0.1.0",
+    "Summary": "Pathfinding with Optimal Reciprocal Avoidance.",
+    "Tags": ["Untagged"],
+    "IconPath": "preview.png",
+    "Modules": [
+        {
+            "Type": "GameModule"
+        }
+    ]
+}

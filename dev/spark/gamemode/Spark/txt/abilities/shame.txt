@@ -1,0 +1,58 @@
+// shamefile, don't add to it, don't do it!
+{
+	"abilities" : {
+		"hook" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "5",
+			"MaxLevel" : 1,
+
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "5" 
+			},
+			"special-values" : {
+				"damage" : 100,
+				"range" : 30,
+				"speed" : 20
+			}
+		},
+		"hook_damage": {
+			"icon-file": "Textures/Icons/Abilities/16",
+
+			"special-values" : {
+				"bonus_damage": "50 100 150 200"
+			}
+		},
+		"hook_range": {
+			"icon-file": "Textures/Icons/Abilities/4",
+			"special-values" : {
+				"bonus_range": "10 20 30 40"
+			}
+		},
+		"hook_speed": {
+			"icon-file": "Textures/Icons/Abilities/36",
+			"special-values" : {
+				"bonus_speed": "10 20 40 70"
+			}
+		},
+
+		"building_behavior": {
+			"icon-file" : "Textures/Icons/Abilities/building",
+			"level" : 1,
+			"max_level" : 1
+		},
+		
+		"ward_behavior": {
+			"icon-file" : "Textures/Icons/Abilities/building",
+			"level" : 1,
+			"max_level" : 1
+		},
+		
+		"ult_ward_behaviour": {
+			"icon-file" : "Textures/Icons/Abilities/building",
+			"level" : 1,
+			"max_level" : 1
+		}
+	}
+	
+}

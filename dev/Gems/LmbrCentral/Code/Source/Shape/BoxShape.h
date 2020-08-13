@@ -1,0 +1,94 @@
+/*
+* All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+* its licensors.
+*
+* For complete copyright and license terms please see the LICENSE at the root of this
+* distribution (the "License"). All use of this software is governed by the License,
+* or, if provided, by the license below or the license accompanying this file. Do not
+* remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+*
+*/
+
+#pragma once
+
+#include <AzCore/Component/TransformBus.h>
+#include <AzCore/Math/Aabb.h>
+#include <AzCore/Math/Obb.h>
+#include <LmbrCentral/Shape/ShapeComponentBus.h>
+#include <LmbrCentral/Shape/BoxShapeComponentBus.h>
+
+namespace AzFramework
+{
+    class EntityDebugDisplayRequests;
+}
+
+namespace LmbrCentral
+{
+    struct ShapeDrawParams;
+
+    class BoxShape
+        : public ShapeComponentRequestsBus::Handler
+        , public BoxShapeComponentRequestsBus::Handler
+        , public AZ::TransformNotificationBus::Handler
+    {
+    public:
+        AZ_CLASS_ALLOCATOR(BoxShape, AZ::SystemAllocator, 0)
+        AZ_RTTI(BoxShape, "{36D1BA94-13CF-433F-B1FE-28BEBBFE20AA}")
+
+        static void Reflect(AZ::ReflectContext* context);
+
+        void Activate(AZ::EntityId entityId);
+        void Deactivate();
+        void InvalidateCache(InvalidateShapeCacheReason reason);
+
+        // ShapeComponentRequestsBus::Handler
+        AZ::Crc32 GetShapeType() override { return AZ_CRC("Box", 0x08a9483a); }
+        AZ::Aabb GetEncompassingAabb() override;
+        bool IsPointInside(const AZ::Vector3& point) override;
+        float DistanceSquaredFromPoint(const AZ::Vector3& point) override;
+        AZ::Vector3 GenerateRandomPointInside(AZ::RandomDistributionType randomDistribution) override;
+        bool IntersectRay(const AZ::Vector3& src, const AZ::Vector3& dir, AZ::VectorFloat& distance) override;
+
+        // BoxShapeComponentRequestBus::Handler
+        BoxShapeConfig GetBoxConfiguration() override { return m_boxShapeConfig; }
+        AZ::Vector3 GetBoxDimensions() override { return m_boxShapeConfig.m_dimensions; }
+        void SetBoxDimensions(const AZ::Vector3& dimensions) override;
+
+        // AZ::TransformNotificationBus::Handler
+        void OnTransformChanged(const AZ::Transform& local, const AZ::Transform& world) override;
+
+        const BoxShapeConfig& GetBoxConfiguration() const { return m_boxShapeConfig; }
+        void SetBoxConfiguration(const BoxShapeConfig& boxShapeConfig) { m_boxShapeConfig = boxShapeConfig; }
+        const AZ::Transform& GetCurrentTransform() const { return m_currentTransform; }
+
+    private:
+        /**
+         * Runtime data - cache potentially expensive operations.
+         */
+        class BoxIntersectionDataCache
+            : public IntersectionTestDataCache<BoxShapeConfig>
+        {
+            void UpdateIntersectionParamsImpl(
+                const AZ::Transform& currentTransform, const BoxShapeConfig& configuration) override;
+
+            friend BoxShape;
+
+            AZ::Aabb m_aabb; ///< Aabb representing this Box.
+            AZ::Obb m_obb; ///< Obb representing this Box.
+            AZ::Vector3 m_currentPosition; ///< Position of the Box.
+            AZ::Vector3 m_dimensions; ///< Dimensions of Box (including entity scale).
+            bool m_axisAligned = true; ///< Indicates whether the box is axis or object aligned.
+        };
+
+        BoxShapeConfig m_boxShapeConfig; ///< Underlying box configuration.
+        BoxIntersectionDataCache m_intersectionDataCache; ///< Caches transient intersection data.
+        AZ::Transform m_currentTransform; ///< Caches the current transform for the entity on which this component lives.
+        AZ::EntityId m_entityId; ///< Id of the entity the box shape is attached to.
+    };
+
+    void DrawBoxShape(
+        const ShapeDrawParams& shapeDrawParams, const BoxShapeConfig& boxShapeConfig,
+        AzFramework::EntityDebugDisplayRequests& displayContext);
+
+} // namespace LmbrCentral

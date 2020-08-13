@@ -1,0 +1,70 @@
+{
+	"units": {
+		"test_boss": {
+			"extends": "base_boss",
+
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"slice":                                "boss_test_001",        //model
+			"sound_set":                            "name",
+
+			// Abilities
+			//-------------------------------------------------------------------------------------------------------------
+			"ability_0":                            "",                     // Ability 1.
+			"ability_1":                            "",                     // Ability 2.
+			"ability_2":                            "",                     // Ability 3.
+			"ability_3":                            "",                     // Ability 4.
+			"ability_4":                            "",                     // Extra abilities.
+			"ability_5":                            "",                     
+			"ability_6":                            "",                     
+			"ability_7":                            "",                     
+			"ability_8":                            "",
+
+			// Collision
+			//-------------------------------------------------------------------------------------------------------------
+			"collision_radius":                     70,
+
+			// Movement
+			//-------------------------------------------------------------------------------------------------------------
+			"movement_type":                        "boss",  //or "Boss"
+			"movement_speed":                       420,
+			"movement_turn_rate":                   0.8,
+
+			// Attributes
+			//-------------------------------------------------------------------------------------------------------------
+			"health":                          		[2500,7500,15000,22500,33750],
+			"health_regen":                    		[3.5,5,50,75,100],
+			"mana":                            		[0,0,0,0,0],
+			"mana_regen":                      		[0,0,0,0,0],
+
+			"damage":                          		[1050,2500,4700,6000,8000],
+			"attack_time":                     		[1,1,0.833,0.7,0.6],
+
+			"physical_armor":                  		[75,75,75,75,75],
+			"magic_armor":                     		[-150,-150,-150,-150,-150],
+
+			"status_resistance":               		[0,0,0,0,0],
+			"ability_power":                   		[0,0,0,0,0],
+			"heal_amp":                        		[0,0,0,0,0],
+			"cooldown_reduction":              		[0,0,0,0,0],
+
+			"experience_bounty":                    [1000,2000,3000,4000,5000],
+
+			// Attack Properties
+			//-------------------------------------------------------------------------------------------------------------
+			"attack_type":                          "melee",   // ranged/melee/disabled
+			"attack_damage_type":                   "physical", // physical/magical
+			"attack_animation_point":               0.6,
+			"attack_backswing":                     0.1,
+			"attack_range":                         [150,150,150,150,150],
+
+			"projectile_model":                     "particles/base_attacks/test_boss.vpcf",
+			"projectile_speed":                     [600,600,600,600,600],
+
+			// Vision
+			//-------------------------------------------------------------------------------------------------------------
+			"vision_daytime_radius":                [1400,1400,1400,1400,1400],
+			"vision_nighttime_radius":              [1400,1400,1400,1400,1400]
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudGemMessageOfTheDay_precompiled.cpp",
+            "Source/CloudGemMessageOfTheDay_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/CloudGemMessageOfTheDay/CloudGemMessageOfTheDayBus.h",
+            "AWS/ServiceAPI/CloudGemMessageOfTheDayClientComponent.h"
+        ],
+        "Source": [
+            "Source/CloudGemMessageOfTheDayModule.cpp",
+            "Source/CloudGemMessageOfTheDaySystemComponent.cpp",
+            "Source/CloudGemMessageOfTheDaySystemComponent.h",
+            "AWS/ServiceAPI/CloudGemMessageOfTheDayClientComponent.cpp"
+        ]
+    }
+}

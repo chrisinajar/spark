@@ -1,0 +1,11 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="particle_showroom_watervolume_001_mat" MtlFlags="526464" Shader="Watervolume" GenMask="80000009" StringGenMask="" SurfaceType="mat_water" Diffuse="0.19806935,0.19806935,0.19806935" Specular="0.21223079,0.21223079,0.21223079" Opacity="1" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Environment" File="textures/cubemaps/particles_sample/showroom_env_probe_001_cm.dds"/>
+   </Textures>
+   <PublicParams NormalsScale="0.236" SoftIntersectionFactor="10" Tilling="0.20999999" DetailNormalsScale="0.079000004" EnvCubeReflMul="16" VertexWaveScale="0" DetailTilling="0.69999999" EnvCubeScale="200" RealtimeReflMul="16" RainTilling="1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,24 @@
+{
+	"Dependencies": [
+		{
+            "Uuid": "ff06785f7145416b9d46fde39098cb0c",
+            "VersionConstraints": [
+                "~>0.1"
+            ],
+            "_comment": "LmbrCentral"
+        }
+    ],
+    "GemFormatVersion": 4,
+    "Uuid": "0e4cab78ff7a4b58bb8557eb0bc23fe5",
+    "Name": "PhysicsWrapper",
+    "DisplayName": "PhysicsWrapper",
+    "Version": "0.1.0",
+    "Summary": "EBus for raycasting",
+    "Tags": ["Untagged"],
+    "IconPath": "preview.png",
+    "Modules": [
+        {
+            "Type": "GameModule"
+        }
+    ]
+}

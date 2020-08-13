@@ -1,0 +1,27 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="particle_geo_emitter_001_mat" MtlFlags="524416" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_aluminum_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_aluminum_001_m_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/showroom/showroom_aluminum_001_m_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="particle_geo_emitter_light_001_mat" MtlFlags="524448" Shader="Illum" GenMask="800000020000" StringGenMask="%EMITTANCE_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="1,1,1" Emittance="0.36130682,0.62396049,0.97344542,200" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_skylight_001_m_diff.dds"/>
+    <Texture Map="Emittance" File="objects/particleassets/showroom/showroom_skylight_001_m_diff.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="particle_geo_emitter_orange_001_mat" MtlFlags="524416" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_steel_orange_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_steel_orange_001_m_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/showroom/showroom_steel_orange_001_m_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+</Material>

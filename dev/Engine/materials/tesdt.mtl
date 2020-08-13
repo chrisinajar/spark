@@ -1,0 +1,10 @@
+<Material MtlFlags="524288" DccMaterialHash="0" Shader="Terrain.Layer" GenMask="200200200000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_TERRAIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.045000002,0.045000002,0.045000002,1" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Bumpmap" File="textures/clay soil/t_slo_clay_soil_basecolor.dds"/>
+  <Texture Map="Specular" File="textures/clay soil/t_slo_clay_soil_metallic.dds"/>
+  <Texture Map="Detail" File="textures/clay soil/t_slo_clay_soil_roughness.dds"/>
+  <Texture Map="Heightmap" File="textures/clay soil/t_slo_clay_soil_height.dds"/>
+  <Texture Map="Diffuse" File="textures/clay soil/t_slo_clay_soil_ambientocclusion.dds"/>
+ </Textures>
+ <PublicParams BlendFalloff="1" DetailTextureStrength="1" BlendFactor="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,51 @@
+//comments!
+{
+	"include" : [
+		"astromage/plasma_flare",
+		"astromage/quasar",
+		"astromage/solar_maximum",
+		"astromage/antimatter_lance",
+
+		"harbinger/carrion_dart",
+		"harbinger/flicker_strike",
+		"harbinger/the_flock",
+		"harbinger/murder",
+
+		"ironwraith/phantom_grip",
+		"ironwraith/ravenous_spirit",
+		"ironwraith/dread_light",
+		"ironwraith/consume",
+
+		"minerva/consecrate",
+		"minerva/holy_javlin",
+		"minerva/piercing_light",
+		"minerva/empyrean",
+
+		"muse/forest_friend",
+		"muse/harmony",
+		"muse/dischord",
+		"muse/shadow_serenade",
+		
+		"simpleagisup/stun_bolt",
+		"simpleagisup/armor_wave",
+		"simpleagisup/aura_damage",
+		"simpleagisup/swap",
+		
+		"rangewillsup/bouncing_stun",
+		"rangewillsup/aoe_heal",
+		"rangewillsup/damage_multi_debuff",
+		"rangewillsup/channel_attacks",
+		
+		"quill/runic_burst",
+		"quill/ink_pit",
+		"quill/thrill_seeker",
+		"quill/legendarium",
+
+		"walkingfountain/line_stun",
+		"walkingfountain/delayed_heal_and_nuke",
+		"walkingfountain/mana_leak",
+		"walkingfountain/global_teleport",
+		
+		"shame"
+	]
+}

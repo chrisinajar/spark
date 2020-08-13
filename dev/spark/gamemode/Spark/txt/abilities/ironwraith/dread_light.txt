@@ -1,0 +1,13 @@
+//comments!
+{
+	"abilities" : {
+		"ironwraith/dread_light": {
+			"icon-file": "Textures/Icons/Abilities/36",
+			"special-values" : {
+				"damage" : "15 30 60 90 120 270 420",
+				"range" : 25,
+				"movement_speed_reduction" : "4 8 16 24 32 40 48"
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudGemDynamicContent_precompiled.cpp",
+            "Source/CloudGemDynamicContent_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Implementation": [
+            "Source/ComponentStub.cpp"
+        ]
+    }
+}

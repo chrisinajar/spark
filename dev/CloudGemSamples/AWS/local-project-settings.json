@@ -1,0 +1,14 @@
+{
+    "default": {
+        "DisabledResourceGroups": [
+            "CloudGemLeaderboard", 
+            "CloudGemMessageOfTheDay", 
+            "CloudGemPlayerAccount", 
+            "CloudGemInGameSurvey", 
+            "CloudGemDynamicContent",
+            "CloudGemAWSScriptBehaviors"
+        ],
+        "Set": "default",
+        "FrameworkVersion": "1.1.3"
+    }
+}

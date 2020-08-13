@@ -1,0 +1,499 @@
+/*
+* All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+* its licensors.
+*
+* For complete copyright and license terms please see the LICENSE at the root of this
+* distribution (the "License"). All use of this software is governed by the License,
+* or, if provided, by the license below or the license accompanying this file. Do not
+* remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+*
+*/
+// Original file Copyright Crytek GMBH or its affiliates, used under license.
+
+#if !%TEMP_VEGETATION
+    #define INST_STREAM_CUSTOM                                  \
+        #if %_RT_INSTANCING_ATTR                                \
+            #if %_RT_FOG                                        \
+                float4 InstAvgFogVolumeContrib   : TEXCOORDN;   \
+            #endif                                              \
+        #endif
+#endif
+
+///////////////// Vertex/texture modifiers //////////////////
+
+#include "ModificatorVT.cfi"
+#include "ModificatorTC.cfi"
+
+///////////////// General vertex output //////////////////
+
+struct v2f_sh
+{
+	#if %_DS || %_PS || !ENABLE_TESSELLATION || %_RT_NO_TESSELLATION
+		float4 HPosition  : POSITION;
+	#endif
+
+	#if ENABLE_TESSELLATION && !%_RT_NO_TESSELLATION
+		float4 vView     : TEXCOORDN;	// For shadow gen this is world position
+		half4 vNormal    : TEXCOORDN;
+	#endif
+
+	#if (ENABLE_TESSELLATION && !%_RT_NO_TESSELLATION) || %_RT_ALPHATEST || %_RT_ALPHABLEND || %_RT_SAMPLE4 || %_RT_DISSOLVE
+		float2 baseTC : TEXCOORDN;
+	#endif	
+
+	#if !%_RT_HW_PCF_COMPARE || %_RT_CUBEMAP0
+		float Depth  : TEXCOORDN;
+	#endif
+
+	#if (!ENABLE_TESSELLATION || %_RT_NO_TESSELLATION) && %_RT_SAMPLE4
+		half3 Normal  : TEXCOORDN;
+		float2 Depth2  : TEXCOORDN;
+	#endif
+};
+
+struct vert2FragGeneral
+{  
+#if %_DS || %_PS || !ENABLE_TESSELLATION || %_RT_NO_TESSELLATION
+  OUT_HPOS_IN_WPOS
+#endif  
+  float4 baseTC : TEXCOORDN;
+#if %BLENDLAYER
+  // Un-modulated texture coordinates used by blend map and modulated blend layer texture coordinates used by 2nd diffuse, 2nd height, etc.  
+  float4 blendMapTCblendLayerTC : TEXCOORDN;
+#endif
+#if %EMITTANCE_MAP
+  float4 emittanceTCemissiveIntensityTC : TEXCOORDN;
+#endif
+#if %DETAIL_MAPPING
+  float4 detailTC : TEXCOORDN;
+#endif
+
+#if %_RT_FOG || %ANISO_SPECULAR || %TEMP_EYES || %OFFSET_BUMP_MAPPING || %PARALLAX_OCCLUSION_MAPPING || %SILHOUETTE_PARALLAX_OCCLUSION_MAPPING
+  float4 vTangent  : TEXCOORDN;
+  float4 vBinormal : TEXCOORDN;
+#endif
+
+  float4 vView     : TEXCOORDN;       
+  
+  float4 screenProj : TEXCOORDN;   //z used for instanced alpha test value  
+
+#if %_RT_DECAL_TEXGEN_2D 
+  float3 DistAtten : TEXCOORDN;
+#endif  
+
+#if %_RT_FOG && !%_RT_DECAL_TEXGEN_2D
+  float4 AvgFogVolumeContrib : TEXCOORDN;
+#endif
+
+#if %_RT_FOG || %_RT_DECAL_TEXGEN_2D || %DECAL
+  float4 Ambient   : TEXCOORDN;
+#endif
+
+#if ENABLE_TESSELLATION && !%_RT_NO_TESSELLATION
+  half4 vNormal    : TEXCOORDN;
+#endif
+
+#if %VERTCOLORS || %BLENDLAYER
+  half4 Color      : COLOR0;
+#endif
+};
+
+#if %SILHOUETTE_PARALLAX_OCCLUSION_MAPPING
+struct vert2GeomGeneral
+{
+	vert2FragGeneral IN;
+
+	float3 viewExtr : TEXCOORDN;
+	float4 hPosExtr : TEXCOORDN;
+};
+
+struct geom2FragGeneral
+{
+	vert2FragGeneral IN;
+};
+#endif
+
+struct vert2fragZ
+{
+#if %_DS || %_PS || !ENABLE_TESSELLATION || %_RT_NO_TESSELLATION
+	OUT_HPOS_IN_WPOS
+#endif
+
+//spark stuff
+  float3 WorldPos : TEXCOORDN; 
+//  bool  is_world_pos_defined : TEXCOORDN; 
+//
+
+
+	float4 baseTC    : TEXCOORDN;   // modulated texture coordinates
+#if %BLENDLAYER
+	// Un-modulated texture coordinates used by blend map and modulated blend layer texture coordinates used by 2nd diffuse, 2nd height, etc.
+    // Translates into two float2 - blendMapTC and blendLayerTC on the pixel input side
+    float4 blendMapTCblendLayerTC   : TEXCOORDN;
+#endif
+#if %DETAIL_MAPPING
+    float4 detailTC : TEXCOORDN;
+#endif
+
+#if (!%GRASS && !%TEMP_TERRAIN) || %_RT_ALPHABLEND 
+	// Every mesh outputs tangent space. Grass and base terrain are particular cases, they just output normal
+	half4 vTangent   : TEXCOORDN;
+	half4 vBinormal  : TEXCOORDN;
+#endif
+	half4 vNormalWS   : TEXCOORDN;
+
+
+#if %VERTCOLORS || %BLENDLAYER || %FUR_VERT_COLORS
+    // In case of %FUR_VERT_COLORS this interpolant is used for [xyz - hair comb, w - hair length / blend amount]
+    half4 Color      : COLOR0;
+#endif
+
+#if %TEMP_TERRAIN || (%TEMP_VEGETATION && %_RT_BLEND_WITH_TERRAIN_COLOR)
+	float4 terrainParams0    : TEXCOORDN;
+#endif
+
+#if %SILHOUETTE_PARALLAX_OCCLUSION_MAPPING || %PARALLAX_OCCLUSION_MAPPING || %OFFSET_BUMP_MAPPING || %_RT_ALPHABLEND || %TEMP_EYES || %LEAVES || %GRASS
+    ##if AZ_RESTRICTED_PLATFORM
+        ##include_restricted(vertexLib_cfi, AZ_RESTRICTED_PLATFORM)
+    ##endif
+    ##if AZ_RESTRICTED_SECTION_IMPLEMENTED
+        ##undef AZ_RESTRICTED_SECTION_IMPLEMENTED
+    ##else
+		half3 viewTS   : TEXCOORDN;
+    ##endif
+#endif
+
+	// deferred shading tdb: double check tessellation paths if all correct
+#if ENABLE_TESSELLATION && !%_RT_NO_TESSELLATION
+	float4 vView     : TEXCOORDN;
+	float4 vNormal     : TEXCOORDN;
+#endif
+
+#if %_RT_MOTION_BLUR && !%_RT_ALPHABLEND
+	float3 HPosCurr : TEXCOORDN;
+	float3 HPosPrev : TEXCOORDN;
+#endif
+
+#if !%TEMP_TERRAIN && !%SILHOUETTE_PARALLAX_OCCLUSION_MAPPING
+	FRONT_FACE_PS
+#endif
+};
+
+#if %SILHOUETTE_PARALLAX_OCCLUSION_MAPPING
+struct vert2geomZ
+{
+	vert2fragZ IN;
+
+	float3 viewExtr     : TEXCOORDN;
+	float4 hPosExtr     : TEXCOORDN;
+
+	float3 wsDirPos     : TEXCOORDN;
+	float3 wsDirPosExtr : TEXCOORDN;
+};
+
+struct geom2fragZ
+{
+	vert2fragZ IN;
+
+	float3 wsTriPos[3]    : TEXCOORDN;
+	float3 wsTriDispl[3]  : TEXCOORDN;
+	float4 wsClipPlane[5] : TEXCOORDN;
+	float3 wsViewDir      : TEXCOORDN;
+
+	float3 texGenU        : TEXCOORDN;
+	float3 texGenV        : TEXCOORDN;
+};
+#endif
+
+#if GMEM
+float4 GmemStencilValue : PB_GmemStencilValue;
+#endif
+
+///////////////// Shared vertex shader computations //////////////////
+
+#if %SILHOUETTE_PARALLAX_OCCLUSION_MAPPING
+void vs_shared_output( in app2vertGeneral IN, inout vert2FragGeneral OUT, inout vert2GeomGeneral OUT_ext, inout streamPos vertPassPos, bool bUseBump)
+#else
+void vs_shared_output( in app2vertGeneral IN, inout vert2FragGeneral OUT, inout streamPos vertPassPos, bool bUseBump)
+#endif
+{
+    // Common data
+    streamPos_FromGeneral(IN, vertPassPos);
+#if %SILHOUETTE_PARALLAX_OCCLUSION_MAPPING
+	const float3 SilPomDispl = SilPomDisplacement * TangNormal(IN.vertCommon.Tangent, IN.vertCommon.Binormal);
+	vertPassPos.Position.xyz += SilPomDispl * -HeightBias;
+#endif
+
+  float4 vPosDecal = vertPassPos.Position;
+  
+  float4 HPosition = Pos_VS_General(PerView_ViewProjZeroMatr, vertPassPos);
+  float3 vNorm = vertPassPos.ObjToTangentSpace[2];
+
+  float4 baseTC = vertPassPos.baseTC;
+
+
+#if %_RT_DECAL_TEXGEN_2D 
+	_TCModifyDecal( vertPassPos, baseTC, OUT.DistAtten );
+#endif
+
+    // Apply texture modifiers
+#if %BLENDLAYER
+    // The blend map uses unmodified texture coordinates from either uv set 1 or uv set 2
+    #if %BLENDLAYER_UV_SET_2
+        float4 blendMapTC = vertPassPos.baseTC2;
+    #else
+        float4 blendMapTC = baseTC;
+    #endif
+    OUT.blendMapTCblendLayerTC.xy = blendMapTC.xy;
+
+    // The 2nd diffuse map, 2nd height map, etc. use a modified texture coordinate
+    float4 modifiedBlendLayerTC = _ModifyBlendLayerUV(blendMapTC, vertPassPos.Position );
+    OUT.blendMapTCblendLayerTC.zw = modifiedBlendLayerTC.xy;
+#endif
+#if %EMITTANCE_MAP
+    // Both the emissive map and the emissive intensity map (from the decal overlay texture) use the same uv set
+    #if %EMITTANCE_MAP_UV_SET_2
+        float4 emittanceTC = vertPassPos.baseTC2;
+    #else
+        float4 emittanceTC = baseTC;
+    #endif
+
+    // The emissive map and emissive intensity map each have their own independent modifier
+    float4 modifiedEmittanceTC = _ModifyEmittanceUV(emittanceTC, vertPassPos.Position);
+    OUT.emittanceTCemissiveIntensityTC.xy = modifiedEmittanceTC.xy;
+
+    modifiedEmittanceTC = _ModifyEmissiveMultiplierUV(emittanceTC, vertPassPos.Position);
+    OUT.emittanceTCemissiveIntensityTC.zw = modifiedEmittanceTC.xy;
+#endif
+#if %DETAIL_MAPPING
+    #if %DETAIL_MAPPING_UV_SET_2
+        OUT.detailTC = _ModifyDetailUV(vertPassPos.baseTC2, vertPassPos.Position);
+    #else
+        OUT.detailTC = _ModifyDetailUV(baseTC, vertPassPos.Position);
+    #endif
+#endif
+    _ModifyUV_1(baseTC, OUT.baseTC, vertPassPos.Position );
+
+#if %_RT_FOG || %_RT_DECAL_TEXGEN_2D || %DECAL
+
+	// Output ambient color - for alpha blending, recursive rendering passes, decals also require ambient.w (opacity parameter)
+    OUT.Ambient = GetInstance_AmbientOpacity(vertPassPos);
+#endif
+
+    // Preparing the inverse non-uniform matrix for correct vector transform
+    float3x3    instInvScaleMat = InverseScaleMatrixFast((const float3x3)vertPassPos.InstMatrix);
+
+#if %_RT_FOG || %ANISO_SPECULAR || %TEMP_EYES || %OFFSET_BUMP_MAPPING || %PARALLAX_OCCLUSION_MAPPING || %SILHOUETTE_PARALLAX_OCCLUSION_MAPPING
+    // Output tangents only for cases that require it - alpha blending, recursive passes and anisotropic specular
+    
+    // Tangent gets same scale as object, Normal gets inverse scale, Binormal reconstructed from the two
+    float3 worldTangent  = normalize( mul((float3x3)vertPassPos.InstMatrix, vertPassPos.ObjToTangentSpace[0]) );
+    float3 worldNormal   = normalize( mul(instInvScaleMat,                  vertPassPos.ObjToTangentSpace[2]) );
+    float3 worldBinormal = normalize(cross(worldNormal, worldTangent) * sign(vertPassPos.Tangent.w));
+
+    OUT.vTangent = float4(worldTangent, vertPassPos.Tangent.w); 
+    OUT.vBinormal.xyz = worldBinormal;
+#endif
+
+    OUT.vView.xyz = vertPassPos.WorldPos.xyz - PerView_WorldViewPos.xyz;
+
+#if !ENABLE_TESSELLATION || %_RT_NO_TESSELLATION
+  OUT.HPosition = HPosition;
+#else
+  OUT.vNormal.xyz = normalize(mul(instInvScaleMat, vertPassPos.Normal.xyz));
+#endif
+
+  // Output the screen-space texture coordinates - for shadows and general projections
+  OUT.screenProj = HPosToScreenTC(HPosition);
+
+  // Output fog into view-vector W component (to save interpolator)
+#if %_RT_FOG && !%_RT_DECAL_TEXGEN_2D
+  OUT.vView.w = GetVolumetricFogDensity(OUT.vView.xyz + PerView_WorldViewPos.xyz);
+
+ #if %_RT_INSTANCING_ATTR
+   #fetchinst (OUT.AvgFogVolumeContrib = IN.InstAvgFogVolumeContrib, vertPassPos.nInstance);  
+ #else
+   OUT.AvgFogVolumeContrib = float4(0.0, 0.0, 0.0, 1.0);//AvgFogVolumeContrib;
+ #endif
+
+ #if !%_RT_ALPHABLEND
+    // additive blending case
+    OUT.AvgFogVolumeContrib.w *= OUT.vView.w;
+    OUT.AvgFogVolumeContrib.xyz = 0.0;
+ #endif
+#else
+  OUT.vView.w = vertPassPos.Position.w;    
+#endif
+
+#if %VERTCOLORS || %BLENDLAYER
+  OUT.Color = vertPassPos.Color;
+#endif
+
+#if %SILHOUETTE_PARALLAX_OCCLUSION_MAPPING
+{
+    streamPos vertPassPosTmp = vertPassPos;
+    vertPassPosTmp.Position.xyz += SilPomDispl;
+
+    const float3 vPosExtr = mul(vertPassPosTmp.InstMatrix, vertPassPosTmp.Position).xyz;
+
+    OUT_ext.viewExtr = vPosExtr;
+    OUT_ext.hPosExtr = Pos_VS_General(PerView_ViewProjZeroMatr, vertPassPosTmp);
+}
+#endif
+}
+
+#if %SILHOUETTE_PARALLAX_OCCLUSION_MAPPING
+void EmitVertexG(in vert2GeomGeneral v, in bool top, inout TriangleStream<geom2FragGeneral> OutStream)
+{
+  geom2FragGeneral Out;
+  Out.IN = v.IN;
+
+  if (top)
+  {
+    Out.IN.HPosition = v.hPosExtr;
+    Out.IN.screenProj = HPosToScreenTC(v.hPosExtr);
+    Out.IN.vView.xyz = v.viewExtr;
+  }
+
+  OutStream.Append(Out);
+}
+
+void EmitPrismG(in vert2GeomGeneral v0, in vert2GeomGeneral v1, in vert2GeomGeneral v2, inout TriangleStream<geom2FragGeneral> OutStream)
+{
+	EmitVertexG(v0, true, OutStream);
+	EmitVertexG(v1, true, OutStream);
+	EmitVertexG(v2, true, OutStream);
+
+	EmitVertexG(v2, false, OutStream);
+	EmitVertexG(v0,  true, OutStream);
+	EmitVertexG(v0, false, OutStream);
+	EmitVertexG(v1,  true, OutStream);
+	EmitVertexG(v1, false, OutStream);
+	EmitVertexG(v2, false, OutStream);
+
+
+	OutStream.RestartStrip();
+}
+
+struct SilhouetteInfo
+{
+	float3 wsTriPos[3];
+	float3 wsTriDispl[3];
+	float4 wsClipPlane[5];
+
+	float3 texGenU;
+	float3 texGenV;
+};
+
+float4 SetupPlane(in float3 p0, in float3 p1, in float3 p2)
+{
+	float3 d0 = p1 - p0;
+	float3 d1 = p2 - p0;
+
+	float3 n = cross(d0, d1);
+	return float4(n, dot(n, p0));
+}
+
+float4 SetupEdgePlane(in vert2geomZ v0, in vert2geomZ v1)
+{
+	float4 p = SetupPlane(v0.wsDirPosExtr, v1.wsDirPos, v1.wsDirPosExtr);
+	if (dot(p.xyz, v0.wsDirPos) > p.w)
+		p = SetupPlane(v0.wsDirPosExtr, v0.wsDirPos, v1.wsDirPosExtr);
+	return p;
+}
+
+SilhouetteInfo SetupSilhouetteInfo(in vert2geomZ v0, in vert2geomZ v1, in vert2geomZ v2)
+{
+	SilhouetteInfo res = (SilhouetteInfo) 0;
+
+	res.wsTriPos[0] = v0.wsDirPos;
+	res.wsTriPos[1] = v1.wsDirPos;
+	res.wsTriPos[2] = v2.wsDirPos;
+
+	res.wsTriDispl[0] = v0.wsDirPosExtr - v0.wsDirPos;
+	res.wsTriDispl[1] = v1.wsDirPosExtr - v1.wsDirPos;
+	res.wsTriDispl[2] = v2.wsDirPosExtr - v2.wsDirPos;
+
+	res.wsClipPlane[0] = SetupPlane(v0.wsDirPosExtr, v1.wsDirPosExtr, v2.wsDirPosExtr); // top
+	res.wsClipPlane[1] = SetupPlane(v0.wsDirPos, v2.wsDirPos, v1.wsDirPos); // bottom
+	res.wsClipPlane[2] = SetupEdgePlane(v0, v1); // edge 0-1
+	res.wsClipPlane[3] = SetupEdgePlane(v1, v2); // edge 1-2
+	res.wsClipPlane[4] = SetupEdgePlane(v2, v0); // edge 2-0
+
+	res.texGenU = float3(v0.IN.baseTC.x, v1.IN.baseTC.x, v2.IN.baseTC.x);
+	res.texGenV = float3(v0.IN.baseTC.y, v1.IN.baseTC.y, v2.IN.baseTC.y);
+
+	return res;
+}
+
+void EmitVertexZ(in vert2geomZ v, in bool top, in SilhouetteInfo info, inout TriangleStream<geom2fragZ> OutStream)
+{
+    geom2fragZ Out = (geom2fragZ) 0;
+
+    Out.IN = v.IN;
+
+    if (top)
+    {
+        Out.IN.HPosition = v.hPosExtr;
+        Out.IN.viewTS = v.viewExtr;
+    }
+
+    for (int i=0; i<3; i++)
+    {
+        Out.wsTriPos[i] = info.wsTriPos[i];
+        Out.wsTriDispl[i] = info.wsTriDispl[i];
+    }
+
+    for (int i=0; i<5; i++)
+    {
+        Out.wsClipPlane[i] = info.wsClipPlane[i];
+    }
+
+    Out.wsViewDir = (top==true) ? v.wsDirPosExtr : v.wsDirPos;
+
+    Out.texGenU = info.texGenU;
+    Out.texGenV = info.texGenV;
+
+    OutStream.Append(Out);
+}
+
+void EmitPrismZ(in vert2geomZ v0, in vert2geomZ v1, in vert2geomZ v2, inout TriangleStream<geom2fragZ> OutStream)
+{
+	SilhouetteInfo info = SetupSilhouetteInfo(v0, v1, v2);
+
+	EmitVertexZ(v0, true, info, OutStream);
+	EmitVertexZ(v1, true, info, OutStream);
+	EmitVertexZ(v2, true, info, OutStream);
+
+	EmitVertexZ(v2, false, info, OutStream);
+	EmitVertexZ(v0,  true, info, OutStream);
+	EmitVertexZ(v0, false, info, OutStream);
+	EmitVertexZ(v1,  true, info, OutStream);
+	EmitVertexZ(v1, false, info, OutStream);
+	EmitVertexZ(v2, false, info, OutStream);
+	OutStream.RestartStrip();
+}
+#endif
+
+//==============================================================================
+// From SpeedTree: regarding the 0.5 and 0.8 values.
+//
+// We're currently rendering a hardcoded 8 views around the tree, which would be every 45 degrees. 0.8 is ~37 degrees, 
+// so it's an adequate buffer to ensure the next pops in before the previous pops out. If you get that tolerance too close,
+// the tree might flicker or even disappear sometimes.
+//
+// 0.5 is a bigger tolerance for when the horizontal (top down) billboard changes, since that is more noticeable. 
+//------------------------------------------------------------------------------
+void SpeedTreeRemoveBillboardFace(float3 vNormal, bool bHorizontalBillboard, inout float4 vPosition)
+{
+	half3 vView = PerView_ViewBasisZ.xyz;
+	vView.z *= vView.z;
+	vView = normalize(vView);
+	half fViewAmount = dot(vView, vNormal);
+	if (fViewAmount < (bHorizontalBillboard ? 0.5 : 0.8))		
+	{	
+		vPosition = float4(0,0,0,0);
+	}
+}
+//=======================================================================

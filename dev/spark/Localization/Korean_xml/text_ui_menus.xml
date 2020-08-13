@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10965</WindowHeight>
+  <WindowWidth>21975</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <TabRatio>274</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=Sheet1!R1C3:R2C4"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="50" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62">
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="13.5"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="271.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="343.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="329.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="160.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51" ss:StyleID="s65">
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">TRANSLATED TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell><Data ss:Type="String">CONTEXT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:StyleID="s65">
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">This contains original text meant for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">This contains text for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s72">
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s75"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s76">
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Language Selection</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_SelectLanguage</Data></Cell>
+    <Cell><Data ss:Type="String">select language</Data></Cell>
+    <Cell><Data ss:Type="String">언어 선택</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_English</Data></Cell>
+    <Cell><Data ss:Type="String">English</Data></Cell>
+    <Cell><Data ss:Type="String">English</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_German</Data></Cell>
+    <Cell><Data ss:Type="String">German</Data></Cell>
+    <Cell><Data ss:Type="String">Deutsch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Japanese</Data></Cell>
+    <Cell><Data ss:Type="String">Japanese</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">日本</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Korean</Data></Cell>
+    <Cell><Data ss:Type="String">Korean</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">한국어</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ChineseSC</Data></Cell>
+    <Cell><Data ss:Type="String">Chinese (Simplified)</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">中国</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ChineseTC</Data></Cell>
+    <Cell><Data ss:Type="String">Chinese (Traditional)</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">中國</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Russian</Data></Cell>
+    <Cell><Data ss:Type="String">Russian</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Русский</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Portuguese</Data></Cell>
+    <Cell><Data ss:Type="String">Portuguese</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">português</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Spanish</Data></Cell>
+    <Cell><Data ss:Type="String">Spanish</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Español</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s76">
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">MainMenu</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_SelectLevel</Data></Cell>
+    <Cell><Data ss:Type="String">select level</Data></Cell>
+    <Cell><Data ss:Type="String">레벨선택</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_GoSettings</Data></Cell>
+    <Cell><Data ss:Type="String">settings</Data></Cell>
+    <Cell><Data ss:Type="String">옵션</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ResumeGame</Data></Cell>
+    <Cell><Data ss:Type="String">resume</Data></Cell>
+    <Cell><Data ss:Type="String">계속하기</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ExitGame</Data></Cell>
+    <Cell><Data ss:Type="String">exit</Data></Cell>
+    <Cell><Data ss:Type="String">끝내기</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_MainMenuTitle</Data></Cell>
+    <Cell><Data ss:Type="String">main menu</Data></Cell>
+    <Cell><Data ss:Type="String">메인메뉴</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Graphic</Data></Cell>
+    <Cell><Data ss:Type="String">graphic</Data></Cell>
+    <Cell><Data ss:Type="String">그래픽</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Fullscreen</Data></Cell>
+    <Cell><Data ss:Type="String">fullscreen</Data></Cell>
+    <Cell><Data ss:Type="String">전체화면</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Resolution</Data></Cell>
+    <Cell><Data ss:Type="String">resolution</Data></Cell>
+    <Cell><Data ss:Type="String">해상도</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Hdr</Data></Cell>
+    <Cell><Data ss:Type="String">hdr</Data></Cell>
+    <Cell><Data ss:Type="String">HDR</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Sound</Data></Cell>
+    <Cell><Data ss:Type="String">sounds</Data></Cell>
+    <Cell><Data ss:Type="String">소리</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Music</Data></Cell>
+    <Cell><Data ss:Type="String">music volume</Data></Cell>
+    <Cell><Data ss:Type="String">배경볼륨</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Sfx</Data></Cell>
+    <Cell><Data ss:Type="String">sfx volume</Data></Cell>
+    <Cell><Data ss:Type="String">이펙트볼륨</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_SaveConfig</Data></Cell>
+    <Cell><Data ss:Type="String">apply</Data></Cell>
+    <Cell><Data ss:Type="String">적용</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_CancelConfig</Data></Cell>
+    <Cell><Data ss:Type="String">cancel</Data></Cell>
+    <Cell><Data ss:Type="String">취소</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_LevelPage</Data></Cell>
+    <Cell><Data ss:Type="String">Lumberyard</Data></Cell>
+    <Cell><Data ss:Type="String">Lumberyard</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_SelLanguage</Data></Cell>
+    <Cell><Data ss:Type="String">language</Data></Cell>
+    <Cell><Data ss:Type="String">언어</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Hello</Data></Cell>
+    <Cell><Data ss:Type="String">Hello</Data></Cell>
+    <Cell><Data ss:Type="String">안녕하세요</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s76">
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">IngameMenu</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Resume</Data></Cell>
+    <Cell><Data ss:Type="String">Resume</Data></Cell>
+    <Cell><Data ss:Type="String">계속하기</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Restart</Data></Cell>
+    <Cell><Data ss:Type="String">Restart</Data></Cell>
+    <Cell><Data ss:Type="String">다시시작</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_QuickLoadGame</Data></Cell>
+    <Cell><Data ss:Type="String">Load</Data></Cell>
+    <Cell><Data ss:Type="String">로드</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_QuickSaveGame</Data></Cell>
+    <Cell><Data ss:Type="String">Save</Data></Cell>
+    <Cell><Data ss:Type="String">세이브</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_GoMainmenu</Data></Cell>
+    <Cell><Data ss:Type="String">Mainmenu</Data></Cell>
+    <Cell><Data ss:Type="String">메인메뉴</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Exit</Data></Cell>
+    <Cell><Data ss:Type="String">Exit</Data></Cell>
+    <Cell><Data ss:Type="String">끝내기</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s76">
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">LoadingScreen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Loading</Data></Cell>
+    <Cell><Data ss:Type="String">loading</Data></Cell>
+    <Cell><Data ss:Type="String">로딩</Data></Cell>
+   </Row>
+   <Row ss:Index="46" ss:StyleID="s76">
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">HUD</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Health</Data></Cell>
+    <Cell><Data ss:Type="String">Health</Data></Cell>
+    <Cell><Data ss:Type="String">체력</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_DeadMsg</Data></Cell>
+    <Cell><Data ss:Type="String">You are dead!</Data></Cell>
+    <Cell><Data ss:Type="String">플레이어가 죽었습니다.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_PressRessurect</Data></Cell>
+    <Cell><Data ss:Type="String">Press &quot;fire&quot; to revive player</Data></Cell>
+    <Cell><Data ss:Type="String">다시 시작하려면 &quot;Fire&quot;를 누르세요</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Objectives</Data></Cell>
+    <Cell><Data ss:Type="String">Objectives</Data></Cell>
+    <Cell><Data ss:Type="String">미션</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.51181102362204722"
+     x:Data="&amp;LTime restriction sample script"/>
+    <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P"/>
+    <PageMargins x:Bottom="0.98425196850393704" x:Left="0" x:Right="0"
+     x:Top="0.98425196850393704"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>70</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>31</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

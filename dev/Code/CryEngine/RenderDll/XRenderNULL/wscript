@@ -1,0 +1,72 @@
+########################################################################################
+# All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+# its licensors.
+#
+# For complete copyright and license terms please see the LICENSE at the root of this
+# distribution (the "License"). All use of this software is governed by the License,
+# or, if provided, by the license below or the license accompanying this file. Do not
+# remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+#
+# Original file Copyright Crytek GMBH or its affiliates, used under license.
+#
+########################################################################################
+
+def build(bld):
+
+    supported_plats = ['win', 'linux']
+
+    platform = bld.env['PLATFORM']
+    if platform == 'project_generator':
+      supported_plats.extend(['darwin', 'android'])
+
+    if not bld.is_monolithic_build():
+      if 'darwin' in platform:
+        supported_plats.append('darwin')
+
+      if 'android' in platform: 
+        supported_plats.append('android')
+
+    bld.CryEngineModule(
+        # Settings
+        target              = 'CryRenderNULL',
+        vs_filter           = 'CryEngine',
+        copyright_org       = 'Amazon-CryTek',
+        file_list           = 'core_null_renderer.waf_files',
+        platforms           = supported_plats,
+        configurations      = ['debug', 'debug_test',
+                               'profile', 'profile_test',
+                               'dedicated_all',
+                               'debug_test_dedicated', 'profile_test_dedicated'],
+
+        pch                 = '../StdAfx.cpp',
+        includes            = ['..',
+                               bld.ThirdPartyPath('squish'),
+                               bld.Path('Code/CryEngine/RenderDll/XRenderD3D9')],
+        defines             = ['NULL_RENDERER', '_RENDERER', 'USE_CRY_NEW_AND_DELETE' ],
+        use                 = ['AzFramework'],
+        uselib              = ['LZMA',
+                               'LZSS'],
+        additional_settings = bld.Settings( files = '../Common/lzss.cpp', disable_pch = True ),
+
+        # Compiler Specific
+        msvc_cxxflags       = ['/Zm200'],
+
+        # Platform Specific
+        win_lib          = [ 'opengl32', 'glu32', 'Shell32', 'Gdi32', 'Ole32' ],
+        win_libpath      = [ bld.Path('Code/CryEngine/RenderDll/XRenderD3D9') ],
+
+        win_x64_clang_cxxflags = [
+                                '-Wno-microsoft-unqualified-friend',
+                                '-Wno-deprecated-declarations',
+                                '-Wno-sometimes-uninitialized',
+                                '-Wno-shift-negative-value',
+                                '-Wno-null-dereference',
+                                '-Wno-array-bounds',
+                                '-Wno-return-type' ],
+
+        # Testing
+        test_all_file_list = ['core_null_renderer_test.waf_files'],
+    )
+

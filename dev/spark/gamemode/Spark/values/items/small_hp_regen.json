@@ -1,0 +1,25 @@
+{
+	"items": {
+		"small_hp_regen":  	{
+			"extends": "base_item",
+			"ID":                               4,    // unique ID
+			"item_cost":                        200,	// if recipe = true, this is the recipe cost, else the item can be bought in the shop at this price
+			"item_shop_tags":                   "",
+			"item_recipe":                      false,
+			"max_level":				        1,
+			"item_recipe_icon":					"base_recipe_icon",
+			"item_icon":                        "small_hp_regen_icon",
+
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"ability_behavior":                 "passive", // what happens when you push the button: unit_target, ground_target, no_target, toggle, passive 
+
+			// Special
+			//-------------------------------------------------------------------------------------------------------------
+			"special_values":
+			{
+				"health_regeneration":			3,
+			}
+		}
+	}
+}

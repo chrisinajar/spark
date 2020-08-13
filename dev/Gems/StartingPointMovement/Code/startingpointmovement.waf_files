@@ -1,0 +1,17 @@
+{
+    "auto": {
+        "Source": [
+            "Source/StartingPointMovementGem.cpp"
+        ],
+        "Include": [
+            "Include/StartingPointMovement/StartingPointMovementConstants.h",
+            "Include/StartingPointMovement/StartingPointMovementUtilities.h"
+        ]
+    },
+    "none": {
+        "Source": [
+            "Source/StartingPointMovement_precompiled.cpp",
+            "Source/StartingPointMovement_precompiled.h"
+        ]
+    }
+}

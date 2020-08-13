@@ -1,0 +1,5 @@
+<ParticleLibrary Name="New_Library" SandboxVersion="1.15.0.0" ParticleVersion="33">
+ <Particles Name="emitter">
+  <Params Count="5" EmitterSizeDiameter="5" Continuous="true" ParticleLifeTime="2" Curvature="0" Texture="editor/plugins/particleeditorplugin/defaults/defaultparticle.dds" Speed="5" CameraNonFacingFade="FadeCurve=(;t=1,v=1)"/>
+ </Particles>
+</ParticleLibrary>

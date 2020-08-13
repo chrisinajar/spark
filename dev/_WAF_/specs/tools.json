@@ -1,0 +1,42 @@
+{
+    "description"           : "Configuration to build non-essential tools",
+    "visual_studio_name"    : "Lumberyard Tools",
+    "comment"               : "This is meant to only compile tools on Windows and Mac.",
+    "disable_game_projects" : true,
+    "platforms" : ["win","darwin"],
+    "configurations" : ["debug", "debug_test", "profile", "profile_test"],
+
+    "modules" :
+    [
+        "AzQtComponents",
+        "AzTestRunner",
+        "CrashHandler",
+        "ToolsCrashHandler",
+        "ToolsCrashUploader",
+        "SetupAssistant",
+        "SetupAssistantBatch",
+        "GemRegistry",
+        "Lyzard",
+        "lmbr",
+        "LyzardSDK",
+        "LyzardEngines",
+        "LyzardGems",
+        "LyzardProjects",
+        "LyzardTemplates",
+        "LyzardApplicationDescriptors",
+        "LyzardCapabilities",
+        "LyzardThirdPartySDKs",
+        "LyzardPackages",
+        "LyzardSetup",
+        "ProjectConfigurator",
+        "LyIdentity_shared",
+        "LyIdentity_static",
+        "LyMetricsShared_shared",
+        "LyMetricsShared_static",
+        "LyMetricsProducer_shared",
+        "LyMetricsProducer_static",
+        "LyMetricsProducer_python",
+        "LyMetricsConsumer",
+        "LyInstallerMetrics"
+    ]
+}

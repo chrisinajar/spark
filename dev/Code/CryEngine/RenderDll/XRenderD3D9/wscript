@@ -1,0 +1,188 @@
+#######################################################################################
+# All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+# its licensors.
+#
+# For complete copyright and license terms please see the LICENSE at the root of this
+# distribution (the "License"). All use of this software is governed by the License,
+# or, if provided, by the license below or the license accompanying this file. Do not
+# remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+#
+# Original file Copyright Crytek GMBH or its affiliates, used under license.
+#
+########################################################################################
+
+from waflib import Logs
+import os
+from runpy import run_path
+
+SUBFOLDERS = [
+    'DXGL',
+    'DXMETAL',
+]
+
+def build(bld):
+
+    clang_cxxflags = [
+        '-Wno-microsoft-unqualified-friend',
+        '-Wno-deprecated-declarations',
+        '-Wno-sometimes-uninitialized',
+        '-Wno-shift-negative-value',
+        '-Wno-null-dereference',
+        '-Wno-array-bounds',
+        '-Wno-return-type',
+    ]
+
+    restricted_scripts = {}
+    for p0, p1, p2, p3 in bld.env['RESTRICTED_PLATFORMS']:
+        platform_wscript = os.path.join(bld.path.abspath(), p0, 'wscript_{0}'.format(p1))
+        if os.path.exists(platform_wscript):
+            restricted_scripts[p3] = run_path(platform_wscript)
+
+    configurations_dx11 = ['debug', 'debug_test', 'profile', 'profile_test']
+    configurations_dx12 = ['debug', 'debug_test', 'profile', 'profile_test']
+    monolithic_configs = ['performance', 'release']
+    extended = False
+    if bld.env['PLATFORM'] == 'project_generator':
+        configurations_dx11.extend(monolithic_configs)
+        configurations_dx12.extend(monolithic_configs)
+        extended = True
+    elif 'win' in bld.variant and bld.options.win_build_renderer == 'DX12':
+        extended = True
+        if not getattr(bld, 'has_dx12', None) or not bld.has_dx12():
+            Logs.warn('win_build_renderer == DX12 but machine cant compile for DX12, reverting to DX11')
+            configurations_dx11.extend(monolithic_configs)
+        else:
+            configurations_dx12.extend(monolithic_configs)
+    else:
+        for p in restricted_scripts:
+            if 'restricted_dx12_configuration' in restricted_scripts[p]:
+                if restricted_scripts[p]['restricted_dx12_configuration'](bld, configurations_dx12):
+                    extended = True
+    if not extended:
+        configurations_dx11.extend(monolithic_configs)
+
+    kw = dict(
+        #==============================
+        # Common Settings
+        #==============================
+        target              = 'CryRenderD3D11',
+        vs_filter           = 'CryEngine',
+        copyright_org       = 'Amazon-CryTek',
+        file_list           = [ 'core_renderer.waf_files',
+                                'd3d11.waf_files'],
+        platforms           = ['win'],
+        configurations      = configurations_dx11,
+        pch                 = '../StdAfx.cpp',
+        use                 = ['AzFramework'],
+        uselib              = ['LZMA',
+                               'LZSS',
+                               'LZ4',
+                               'AMD_SHARED',
+                               'NVAPI'],
+        includes            = ['..',
+                               bld.Path('Code/CryEngine/RenderDll/Common')],
+        defines             = ['DIRECT3D10',
+                               'XRENDERD3D10_EXPORTS',
+                               'DO_RENDERSTATS',
+                               '_RENDERER',
+                               'EXCLUDE_CINEMIZER_SDK',
+                               'USE_CRY_NEW_AND_DELETE'],
+
+
+        # Compiler Specific
+        win_x64_clang_cxxflags = clang_cxxflags,
+        # Platform Specific
+        win_file_list               = 'mesh_baker.waf_files',
+        win_includes                = ['.',
+                                       bld.Path('Code/CryEngine/CryCommon'),
+                                       bld.ThirdPartyPath('squish')],
+        win_lib                     = ['winmm',
+                                       'version',
+                                       'd3d11',
+                                       'd3dcompiler',
+                                       'dxguid',
+                                       'Ole32',
+                                       'Gdi32',
+                                       'ws2_32',
+                                       'Shell32' ],
+        win_defines                 = ['DO_RENDERLOG' ],
+        win_test_all_file_list      = ['d3d11_test.waf_files'],
+    )
+    for p in restricted_scripts:
+        if 'update_d3d11_restricted_parameters' in restricted_scripts[p]:
+            restricted_scripts[p]['update_d3d11_restricted_parameters'](bld, kw)
+    bld.CryEngineModule(**kw)
+    
+    #==============================
+    # Build CryRenderD3D12
+    #==============================
+    kw = dict(
+        #==============================
+        # Common Settings
+        #==============================
+        target              = 'CryRenderD3D12',
+        vs_filter           = 'CryEngine',
+        file_list           = ['core_renderer.waf_files',
+                               'd3d12.waf_files'],
+        platforms           = ['win_x64_vs2017',
+                               'win_x64_vs2015',
+	                          ],
+        configurations      = configurations_dx12,
+        pch                 = '../StdAfx.cpp',
+        build_in_dedicated  = False, # do not build this module if making dedicated server.
+        use                 = ['AzFramework'],
+        uselib              = ['LZMA',
+                               'LZSS',
+                               'LZ4',
+                               'AMD_SHARED',
+                               'BOOST',
+                               'NVAPI'],
+        dx12_only           = True,
+        includes            = ['..',
+                               bld.Path('Code/CryEngine/RenderDll/Common')],
+        defines             = [ 'DIRECT3D10',
+                                'CRY_USE_DX12',
+                                'XRENDERD3D10_EXPORTS',
+                                'DO_RENDERSTATS',
+                                '_RENDERER',
+                                'EXCLUDE_CINEMIZER_SDK'],
+
+        # Compiler Specific
+        win_x64_clang_cxxflags = clang_cxxflags,
+
+        #==============================
+        # Windows
+        #==============================
+        win_file_list       = ['mesh_baker.waf_files', 
+                               'dx12_renderer.waf_files'],
+        win_includes        = [ '.',
+                                bld.Path('Code/CryEngine/CryCommon'),
+                                bld.ThirdPartyPath('squish'),
+                                bld.Path('Code/CryEngine/RenderDll/XRenderD3D9/DX12/Includes')],
+        win_lib             = [ 'winmm',
+                                'version',
+                                'd3dcompiler',
+                                'dxguid',
+                                'Ole32',
+                                'Gdi32',
+                                'ws2_32',
+                                'Shell32', 
+                                'd3d12',
+                                'dxgi'],
+
+        win_defines = [ 'DO_RENDERLOG' ],
+
+        #==============================
+        # Testing
+        #==============================
+        win_x64_test_all_file_list = ['d3d12_test.waf_files'],
+    )
+    for p in restricted_scripts:
+        if 'update_d3d12_restricted_parameters' in restricted_scripts[p]:
+            restricted_scripts[p]['update_d3d12_restricted_parameters'](bld, kw)
+    bld.CryEngineModule(**kw)
+
+    # Recursive into all sub projects
+    bld.recurse(dirs=SUBFOLDERS, mandatory=False)

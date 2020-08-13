@@ -1,0 +1,2045 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>matthew williams</Author>
+  <LastAuthor>matthew williams</LastAuthor>
+  <Created>2019-04-30T16:03:09Z</Created>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12750</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s15">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s16">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s18">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s24">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s25">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s27">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s29">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s30">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s32">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s34">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="211" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s15" ss:DefaultColumnWidth="75.75"
+   ss:DefaultRowHeight="15.75">
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="216"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="262.5"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="254.25"/>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s16"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ORIGINAL TEXT</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">TRANSLATED TEXT</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">CONTEXT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51">
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">This contains original text meant for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">This contains text for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s23"/>
+    <Cell ss:StyleID="s23"/>
+    <Cell ss:StyleID="s24"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Settings</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_settings_hotkeys</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">HOTKEYS</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">HOTKEYS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_settings_interface</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">INTERFACE</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">INTERFACE</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_settings_game</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">GAME</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">GAME</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_settings_video</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">VIDEO</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">VIDEO</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_settings_audio</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">AUDIO</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">AUDIO</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_settings_default</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">DEFAULTS</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">DEFAULTS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Language Selection</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_SelectLanguage</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Select Language…</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Select Language…</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_English</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">English</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">English</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_German</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">German</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Deutsch</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_Japanese</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Japanese</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">日本</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_Korean</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Korean</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">한국어</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ChineseSC</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Chinese (Simplified)</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">中国</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ChineseTC</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Chinese (Traditional)</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">中國</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_Russian</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Russian</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Русский</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_Portuguese</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Portuguese</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">português</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_Spanish</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Spanish</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Español</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s25"><Data ss:Type="String">HotKeys Menu</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_hotkeys_reset_hotkeys</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">RESET HOTKEYS...</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">RESET HOTKEYS...</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_hotkeys_advanced_hotkeys</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ADVANCED HOTKEYS</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ADVANCED HOTKEYS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_spectator</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">SPECTATOR</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">SPECTATOR</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_back_to_basic</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">BACK TO BASIC HOTKEYS</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">BACK TO BASIC HOTKEYS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_abilities</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">ABILITIES</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">ABILITIES</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_items</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">ITEMS</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">ITEMS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_chat</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">CHAT</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">CHAT</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_unit_actions</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">UNIT ACTIONS</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">UNIT ACTIONS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_shop_actions</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">SHOP ACTIONS</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">SHOP ACTIONS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_interface</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">INTERFACE</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">INTERFACE</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_control_groups</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">CONTROL GROUPS</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">CONTROL GROUPS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_camera_actions</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">CAMERA ACTIONS</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">CAMERA ACTIONS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_hotkeys_options</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">HOTKEY OPTIONS</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">HOTKEY OPTIONS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_select_hero</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Select Hero</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Select Hero</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_select_all_controlled_units</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Select All Controlled Units</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Select All Controlled Units</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_attack_move</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Attack Move</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Attack Move</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_hold_position</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Hold Position</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Hold Position</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_select_courier</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Select Courier</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Select Courier</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_deliver_items</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Deliver Items</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Deliver Items</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_purchase_quickbuy</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Purchase Quick Buy</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Purchase Quick Buy</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_chat_to_team</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Chat To Team</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Chat To Team</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_chat_to_everyone</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Chat To Everyone</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Chat To Everyone</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_chat_to_everyone</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Voice Chat (PARTY)</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Voice Chat (PARTY)</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_voice_chat_team</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Voice Chat (TEAM)</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Voice Chat (TEAM)</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_camera_grip</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Grip</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Grip</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_scoreboard</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Scoreboard</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Scoreboard</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_pause</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Pause</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Pause</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_learn_abilitiy</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Learn Ability</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Learn Ability</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_upgrade_talents</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Upgrade Talents</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Upgrade Talents</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_move</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Move</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Move</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_direction_move</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Directional Move</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Directional Move</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_patrol</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Patrol</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Patrol</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_cancel_current_action</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Cancel Current Action</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Cancel Current Action</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_select_all_other_units</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Select All Other Units</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Select All Other Units</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_taunt</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Taunt</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Taunt</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_toggle_auto_attack</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Toggle Auto Attack</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Toggle Auto Attack</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_courier_special</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Activate Courier Special</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Activate Courier Special</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_purchase_sticky</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Purchase Sticky</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Purchase Sticky</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_take_stash_items</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Take Stash Items</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Take Stash Items</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_open_shop</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Open Shop</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Open Shop</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_camera_up</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Up</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Up</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_camera_down</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Down</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Down</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_camera_left</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Left</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Left</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_camera_right</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Right</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Right</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_camera_zoom_in</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Zoom In</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Zoom In</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_camera_zoom_out</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Zoom Out</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Zoom Out</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_control_group_next</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Next Unit</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Next Unit</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_control_group_previous</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Previous Unit</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Previous Unit</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_control_group_1</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 1</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 1</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_control_group_2</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 2</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 2</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_control_group_3</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 3</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 3</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_control_group_4</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 4</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 4</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_control_group_5</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 5</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 5</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_control_group_6</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 6</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Group 6</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_double_tap_to_cast_on_self</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Double Tap Ability To Self Cast</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Double Tap Ability To Self Cast</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_allow_windows_command_keys_to_be_bound</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Allow Windows / Command Key To Be Bound</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Allow Windows / Command Key To Be Bound</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_smart_double_tap</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Smart Double Tap</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Smart Double Tap</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_shop_always_uses_hotkeys</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Shop Always Uses Hotkeys</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Shop Always Uses Hotkeys</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_hotkeys_left_click_activates_camera_grip</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Left Click Activates Camera Grip</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Left Click Activates Camera Grip</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Options Menu</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_options_advanced_options</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">TO ADVANCED OPTIONS</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">TO ADVANCED OPTIONS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_options_reset</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">RESET</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">RESET</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_options_map</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Map</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Map</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_options_minimap_on_right</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Mini Map On Right </Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Mini Map On Right </Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_options_game</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">GAME</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">GAME</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_options_camera</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CAMERA</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CAMERA</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_options_chat</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CHAT</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">CHAT</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_options_interface</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">INTERFACE</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">INTERFACE</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_social</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">SOCIAL</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">SOCIAL</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_network</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">NETWORK</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">NETWORK</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_miscellaneous</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">MISCELLANEOUS</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">MISCELLANEOUS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_auto_attack</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Auto Attack</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Auto Attack</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_never</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Never</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Never</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_standard</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Standard</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Standard</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_always</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Always</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Always</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_auto_select_summoned_units</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Auto Select Summond Units</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Auto Select Summond Units</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_unified_orders_with_ctrl</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Unified Orders With CTRL</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Unified Orders With CTRL</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_teleport_requires_hold</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Teleport Requires Hold</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Teleport Requires Hold</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_channeled_abilities_require_hold</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Channeled Abilities Require Hold</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Channeled Abilities Require Hold</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_right_click_force_attack</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Right Click Force Attack</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Right Click Force Attack</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_quick_attack</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Quick Attack</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Quick Attack</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_quick_move</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Quick move</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Quick move</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_camera_speed</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Speed</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Camera Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_hold_select_hero_to_follow</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Hold Select Hero To Follow</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Hold Select Hero To Follow</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_disable_camera_zoom</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Disable Camera Zoom</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Disable Camera Zoom</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_center_camera_on_hero_respawn</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Center Camera On Hero Respawn</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Center Camera On Hero Respawn</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_edge_pan</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Edge Pan</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Edge Pan</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_mini_map_hero_size</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Mini Map Hero Size</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Mini Map Hero Size</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_hud_size</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">HUD Scale</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">HUD Scale</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_use_alt_to_show_hero_icons</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Use ALT To Show Hero Icons</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Use ALT To Show Hero Icons</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_invert_alt_toggle</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Invert ALT Toggle</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Invert ALT Toggle</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_use_simple_colors_in_minimap</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Use Simple Colors In Minimap</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Use Simple Colors In Minimap</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_display_steam_messages_as_wispers</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Display Steam Messages As Wispers</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Display Steam Messages As Wispers</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_mute_all_incoming_chat</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Mute All Incoming Chat</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Mute All Incoming Chat</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_mute_chat_from_enemies</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Mute All Chat From Enemies</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Mute All Chat From Enemies</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_display_names_over_healthbar</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Display Names Over Healthbars</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Display Names Over Healthbars</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_hero_names</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hero Names</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hero Names</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_player_names</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Player Names</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Player Names</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_nothing</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Nothing</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Nothing</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_disable_status_text</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Disable Status Text</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Disable Status Text</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_hide_damage_numbers</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hide Damage Numbers</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hide Damage Numbers</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_colorblind_mode</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Color Blind Mode</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Color Blind Mode</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_automatically_choose_cursor_size</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Automatically Choose Cursor Size</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Automatically Choose Cursor Size</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_cursor_size</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Cursor Size</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Cursor Size</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_show_help_tips</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Show Help Tips</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Show Help Tips</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_differentiate_ally_healthbars</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Differentiate Ally Healthbars</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Differentiate Ally Healthbars</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_hide_enemy_mana</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hide Enemy Mana Bars</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hide Enemy Mana Bars</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_summoned_unit_auto_attack</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Summond Units Auto Attack</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Summond Units Auto Attack</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_same_as_hero</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Same As Hero</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Same As Hero</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_disable_autoattack_when_stop_is_held</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Disable Auto Attack When Stop Is Held</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Disable Auto Attack When Stop Is Held</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_toggle_autoattack_automatically</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Toggle Auto Attack Automatically</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Toggle Auto Attack Automatically</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_use_broadcaster_stats</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Use Broadcaster Stats</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Use Broadcaster Stats</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_bring_game_to_front_when_match_found</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bring Spark To Front When Match Found</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bring Spark To Front When Match Found</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_bring_game_to_front_for_pick_and_start</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bring Spark To Front For Pick Phase And Game Start</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bring Spark To Front For Pick Phase And Game Start</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_bring_game_to_front_when_unpaused</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bring Spark To Front When Unpaused</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bring Spark To Front When Unpaused</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_enable_console</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Enable Console</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Enable Console</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_enable_screen_shake</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Enable Screen Shake</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Enable Screen Shake</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_expose_public_match_data</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Expose Public Match Data</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Expose Public Match Data</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_block_party_invites_from_non_friends</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Block Party Invites From Non Friends</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Block Party Invites From Non Friends</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_hide_party_status_when_not_in_an_open_party</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hide Party Status When Not In An Open Lobby</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hide Party Status When Not In An Open Lobby</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_do_not_auto_accept_invites_when_in_open_party</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Do No Auto Accept Invites When In Open Lobby</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Do No Auto Accept Invites When In Open Lobby</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_trade_invites_from</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Trade Invites From</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Trade Invites From</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_friends_only</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Friends Only</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Friends Only</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_anyone</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Anyone</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Anyone</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_network_quality</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Network Quality</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Network Quality</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_low_end_network</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Low End Network</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Low End Network</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_options_high_end_network</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">High End Network</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">High End Network</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s34"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Video Menu</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="String">ui_video_resolution</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">RESOLUTION</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">RESOLUTION</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_rendering</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">RENDERING</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">RENDERING</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_options</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">OPTIONS</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">OPTIONS</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_apply</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">APPLY</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">APPLY</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_aspect_ratio</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Aspect Ratio</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Aspect Ratio</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_size</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Size</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Size</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_display_mode</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Display Mode</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Display Mode</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_apply</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">APPLY</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">APPLY</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_use_basic_settings</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Use Basic Settings</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Use Basic Settings</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_fastest</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Fastest</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Fastest</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_best_looking</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Best Looking</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Best Looking</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_use_advanced_settings</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Use Advanced Settings</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Use Advanced Settings</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_animate_portrait</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Animate Portrait</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Animate Portrait</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_anti_aliasing</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Anti-Aliasing</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Anti-Aliasing</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_additive_light_pass</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Additive Light Pass</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Additive Light Pass</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_specular</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Specular</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Specular</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_world_lighting</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">World Lighting</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">World Lighting</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_specular_and_light_blooms</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Specular and Light Blooms</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Specular and Light Blooms</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_ambient_occlusion</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Ambient Occlusion</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Ambient Occlusion</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_normal_maps</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Normal Maps</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Normal Maps</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_atmospheric_fog</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Atmospheric Fog</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Atmospheric Fog</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_tree_wind</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Tree Wind</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Tree Wind</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_grass</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Grass</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Grass</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_texture_quality</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Texture Quality</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Texture Quality</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_effect_quality</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Effect Quality</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Effect Quality</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_shadow_quality</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Shadow Quality</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Shadow Quality</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_low</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Low</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Low</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_medium</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Med</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Med</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_high</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">High</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">High</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_ultra</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Ultra</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Ultra</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_game_screen_render_quality</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Game Screen Render Quality</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Game Screen Render Quality</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_video_max_frames_per_second</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Maximum Framer Per Second Allowed</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">Maximum Framer Per Second Allowed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s28"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s25"><Data ss:Type="String">Audio Menu</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_volume</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">VOLUME</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">VOLUME</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_audio</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">AUDIO</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">AUDIO</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_voice</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">VOICE</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">VOICE</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_master_volume</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Master Volume</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Master Volume</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_game_sounds</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Game Sounds</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Game Sounds</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_music</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Music</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Music</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_volume_voice</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Voice</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Voice</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_unit_speech</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Unit Speech</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Unit Speech</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_open_mic_threshold</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Open Mic Threshold</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Open Mic Threshold</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_voice_chat_party</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Voice Chat (PARTY)</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Voice Chat (PARTY)</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_voice_chat_team</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Voice Chat (TEAM)</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Voice Chat (TEAM)</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_push_to_talk</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Push To Talk</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Push To Talk</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_open_mic</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Open Mic</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Open Mic</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_play_sounds_in_desktop</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Play Sound In Desktop</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Play Sound In Desktop</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_chat_message_sound</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Chat Message Sound</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Chat Message Sound</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_sound_device</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Sound Device</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Sound Device</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_speaker_configuration</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Speaker Configuration</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Speaker Configuration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_unit_speech_off</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Off</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Off</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_unit_speech_events</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Events</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Events</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_audio_unit_speech_all</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">All</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">All</Data></Cell>
+   </Row>
+   <Row ss:Index="210" ss:Height="12.75">
+    <Cell ss:StyleID="s25"><Data ss:Type="String">About</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ui_about</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ABOUT</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">ABOUT</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <NoSummaryRowsBelowDetail/>
+   <NoSummaryColumnsRightDetail/>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

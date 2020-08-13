@@ -1,0 +1,154 @@
+{
+    "GemListFormatVersion": 2,
+    "Gems": [
+        {
+            "Path": "Gems/EMotionFX",
+            "Uuid": "044a63ea67d04479aa5daf62ded9d9ca",
+            "Version": "0.1.0",
+            "_comment": "EMotionFX"
+        },
+        {
+            "Path": "Gems/AWS",
+            "Uuid": "0945e21b7ae848ac80b4ec1f34c459cc",
+            "Version": "0.1.0",
+            "_comment": "AWS"
+        },
+        {
+            "Path": "Gems/PhysicsWrapper",
+            "Uuid": "0e4cab78ff7a4b58bb8557eb0bc23fe5",
+            "Version": "0.1.0",
+            "_comment": "PhysicsWrapper"
+        },
+        {
+            "Path": "Gems/LyShine",
+            "Uuid": "0fefab3f13364722b2eab3b96ce2bf20",
+            "Version": "0.1.0",
+            "_comment": "LyShine"
+        },
+        {
+            "Path": "Gems/CloudCanvasCommon",
+            "Uuid": "102e23cf4c4c4b748585edbce2bbdc65",
+            "Version": "0.1.0",
+            "_comment": "CloudCanvasCommon"
+        },
+        {
+            "Path": "Gems/LegacyGameInterface",
+            "Uuid": "3108b261962e44b6a0c1c036c693bca2",
+            "Version": "1.0.0",
+            "_comment": "LegacyGameInterface"
+        },
+        {
+            "Path": "Gems/CryLegacy",
+            "Uuid": "352fef7706634c92814c587e84d7165a",
+            "Version": "0.1.0",
+            "_comment": "CryLegacy"
+        },
+        {
+            "Path": "Gems/Maestro",
+            "Uuid": "3b9a978ed6f742a1acb99f74379a342c",
+            "Version": "0.1.0",
+            "_comment": "Maestro"
+        },
+        {
+            "Path": "spark/Gem",
+            "Uuid": "46b9d586131f46f7b8d0286211becf81",
+            "Version": "0.1.0"
+        },
+        {
+            "Path": "Gems/TextureAtlas",
+            "Uuid": "5a149b6b3c964064bd4970f0e92f72e2",
+            "Version": "0.1.0",
+            "_comment": "TextureAtlas"
+        },
+        {
+            "Path": "Gems/CertificateManager",
+            "Uuid": "659cffff33b14a10835bafc6ea623f98",
+            "Version": "0.0.1",
+            "_comment": "CertificateManager"
+        },
+        {
+            "Path": "Gems/UiBasics",
+            "Uuid": "6bb61c9e547043f0afc5019d6d460b78",
+            "Version": "0.1.0",
+            "_comment": "UiBasics"
+        },
+        {
+            "Path": "Gems/CloudGemFramework/v1",
+            "Uuid": "6fc787a982184217a5a553ca24676cfa",
+            "Version": "1.1.3",
+            "_comment": "CloudGemFramework"
+        },
+        {
+            "Path": "Gems/GameLift",
+            "Uuid": "76de765796504906b73be7365a9bff06",
+            "Version": "2.0.0",
+            "_comment": "GameLift"
+        },
+        {
+            "Path": "Gems/MouseCursorPosition",
+            "Uuid": "7c18089fe13b4ef9aa7c36beacaecc87",
+            "Version": "0.1.0",
+            "_comment": "MouseCursorPosition"
+        },
+        {
+            "Path": "Gems/SceneProcessing",
+            "Uuid": "7c2578f634df4345aca98d671e39b8ab",
+            "Version": "0.1.0",
+            "_comment": "SceneProcessing"
+        },
+        {
+            "Path": "Gems/ScriptCanvas",
+            "Uuid": "869a0d0ec11a45c299917d45c81555e6",
+            "Version": "0.1.0",
+            "_comment": "ScriptCanvasGem"
+        },
+        {
+            "Path": "Gems/GraphCanvas",
+            "Uuid": "875b6fcbdeea44deaae7984ad9bb6cdc",
+            "Version": "0.1.0",
+            "_comment": "GraphCanvas"
+        },
+        {
+            "Path": "Gems/SteamWorks",
+            "Uuid": "d2793a8baa464ba1af9094bed6b761c0",
+            "Version": "0.1.0",
+            "_comment": "SteamWorks"
+        },
+        {
+            "Path": "Gems/Multiplayer",
+            "Uuid": "d3ed407a19bb4c0d92b7c4872313d600",
+            "Version": "1.0.0",
+            "_comment": "Multiplayer"
+        },
+        {
+            "Path": "Gems/ImageProcessing",
+            "Uuid": "eeffbd9211cf4ce0b5cc73696b427cbe",
+            "Version": "0.1.0",
+            "_comment": "ImageProcessing"
+        },
+        {
+            "Path": "Gems/CryEntityRemoval",
+            "Uuid": "f3ae24a1635e4f849535f37ef9f4b4da",
+            "Version": "0.1.0",
+            "_comment": "CryEntityRemoval"
+        },
+        {
+            "Path": "Gems/Camera",
+            "Uuid": "f910686b6725452fbfc4671f95f733c6",
+            "Version": "0.1.0",
+            "_comment": "Camera"
+        },
+        {
+            "Path": "Gems/CloudGemPlayerAccount",
+            "Uuid": "fd4ea4ff80a64bb9a90e55b46e9539ef",
+            "Version": "0.1.0",
+            "_comment": "CloudGemPlayerAccount"
+        },
+        {
+            "Path": "Gems/LmbrCentral",
+            "Uuid": "ff06785f7145416b9d46fde39098cb0c",
+            "Version": "0.1.0",
+            "_comment": "LmbrCentral"
+        }
+    ]
+}

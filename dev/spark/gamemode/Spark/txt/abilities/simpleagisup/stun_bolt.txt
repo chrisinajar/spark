@@ -1,0 +1,18 @@
+{
+	"abilities" : {
+		"simpleagisup/stun_bolt" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "9",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "110 110 130 150 170 370 570" 
+			},
+			"special-values" : {
+				"range" : 50,
+				"speed" : 40,
+				"stun_duration" : "0.5 1.25 1.5 1.75 2 2.25 2.5",
+				"damage" : "50 100 175 250 325 625 925"  
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+<Material MtlFlags="526336" Shader="Particles" GenMask="404" StringGenMask="" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/defaults/white.dds" IsTileU="0" IsTileV="0"/>
+  <Texture Map="Bumpmap" File="objects/particleassets/ripple_001_ddna.dds" IsTileU="0" IsTileV="0"/>
+ </Textures>
+ <PublicParams GlobalIlluminationAmount="30" RefrBumpScale="0.37"/>
+</Material>

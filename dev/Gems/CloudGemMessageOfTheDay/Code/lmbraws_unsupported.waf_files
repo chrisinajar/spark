@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudGemMessageOfTheDay_precompiled.cpp",
+            "Source/CloudGemMessageOfTheDay_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Implementation": [
+            "Source/ComponentStub.cpp"
+        ]
+    }
+}

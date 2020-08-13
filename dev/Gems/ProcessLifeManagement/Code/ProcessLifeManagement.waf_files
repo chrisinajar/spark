@@ -1,0 +1,14 @@
+{
+    "none": {
+        "Source": [
+            "Source/ProcessLifeManagement_precompiled.cpp",
+            "Source/ProcessLifeManagement_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Source": [
+            "Source/ProcessLifeManagementGem.h",
+            "Source/ProcessLifeManagementGem.cpp"
+        ]
+    }
+}

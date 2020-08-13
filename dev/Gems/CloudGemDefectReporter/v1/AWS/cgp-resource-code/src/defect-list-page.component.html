@@ -1,0 +1,57 @@
+<facet-generator #facetgenerator
+    [context]="context" 
+    [tabs]="isJiraIntegrationEnabled ? ['Overview', 'Dashboard', 'Bookmarks', 'Recent Searches', 'Data Mappings', 'Client Configuration', 'Jira Integration'] : ['Overview', 'Dashboard', 'Bookmarks', 'Recent Searches', 'Data Mappings', 'Client Configuration']" 
+    [metricIdentifier]="context.identifier"    
+    (tabClicked)="getSubNavItem($event)"></facet-generator>
+
+<!-- Overview Facet -->
+<div [ngClass]="{'hide-element': (tabIndex !== 0)}">
+        <defect-list-overview-tab #defectListOverviewTab
+            [isJiraIntegrationEnabled]="isJiraIntegrationEnabled"
+            [metricApiHandler]="getMetricApiHandler()"
+            [defectReporterApiHandler]="getDefectReporterApiHandler()"
+            [toDefectDetailsPageCallback]="toDefectDetailsPageCallback"
+            (updateJiraMappings)="updateJiraMappings()"
+            [partialInputQuery]="partialInputQuery">
+        </defect-list-overview-tab>
+</div>
+
+<!-- Dashboard Facet -->
+<div *ngIf="tabIndex === 1">
+    <dashboard-tab [metricApiHandler]="getMetricApiHandler()"></dashboard-tab>
+</div>
+
+<!-- Bookmarks Facet -->
+<div *ngIf="tabIndex === 2">
+    <!-- Ngx Datatable -->
+    <defect-datatable #bookmarktable
+        [aws]="aws"
+        [metricApiHandler]="getMetricApiHandler()"
+        [defectReporterApiHandler]="getDefectReporterApiHandler()"
+        [partialQuery]="''"
+        [tableName]="'bookmark'"
+        [limit]="'ALL'"
+        [toDefectDetailsPageCallback]="toDefectDetailsPageCallback"
+        [bookmark]="true">
+    </defect-datatable>  
+</div>
+
+<!-- Recent Searches Facet -->
+<div *ngIf="tabIndex === 3">
+    <recent-searches-tab [defectReporterApiHandler]="getDefectReporterApiHandler()" (runRecentSearch)="runRecentSearch($event)"></recent-searches-tab>
+</div>
+
+<!-- Report Configure Facet -->
+<div *ngIf="tabIndex === 4">
+    <report-configuration [(mappings)]="configurationMappings"></report-configuration>
+</div>
+
+<!-- Client Configure Facet -->
+<div *ngIf="tabIndex === 5">
+    <client-configuration [context]="context"></client-configuration>
+</div>
+
+<!-- Jira Integration Facet -->
+<div *ngIf="tabIndex === 6">
+    <jira-integration [context]="context" [isLoadingReportFields]="defectListOverviewTab.datatable.loading" [reportFields]="defectListOverviewTab.datatable.reportFields"></jira-integration>
+</div>

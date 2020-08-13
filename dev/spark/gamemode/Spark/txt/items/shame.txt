@@ -1,0 +1,656 @@
+//comments!
+{
+	"items" : {
+		"Boots" : {
+			"price":{
+				"gold" : 500
+			},
+			"special-values" : {
+				"bonus_movement_speed": "40"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/basic_boots"			
+		},
+		"mote_of_hunger" : {
+			"price":{
+				"gold" : 500
+			},
+			"special-values" : {
+				"bonus_life_steal": "20"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/mote_of_hunger"			
+		},
+		"feather_mail" : {
+			"cooldown":"10",
+			"costs":{
+				"mana" : "50"
+			},
+			"price":{
+				"gold" : 100
+			},
+			"special-values" : {
+				"range" : "200",
+				"bonus_armor" : "50",
+				"bonus_strength" : "50",
+				"aura_heal_amount": "25",
+				"bonus_aura_movement_speed" : "25"
+			},
+			"name":"Feather Mail",
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/18"			
+		},
+		"flutter_crown" : {
+			"cooldown":"10",
+			"price":{
+				"gold" : 900
+			},			
+			"costs":{
+				"mana" : "5"
+			},
+			"special-values" : {
+				"range": "20",
+				"bonus_attack_speed": "50",
+				"duration": "5"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/19"			
+		},
+		"witch_clock" : {
+			"price":{
+				"gold" : 8000
+			},
+			"special-values" : {
+				"bonus_will": "44",
+				"bonus_magic_armor": "80",
+				"bonus_cooldown_reduction": "35"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/6"			
+		},
+		"mana_potion" : {
+			"cooldown":"45",
+			"price":{
+				"gold" : 50
+			},
+			"special-values" : {
+				"regen_percentage": "25",
+				"mana_max_percentage": "1",
+				"duration": "16"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/mage_bloom"			
+		},
+		"health_potion" : {
+			"cooldown":"30",
+			"price":{
+				"gold" : 100
+			},
+			"special-values" : {
+				"regen_percentage": "50",
+				"hp_max_percentage": "2",
+				"duration": "8"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/health_potion"			
+		},
+		"tempest_satchel" : {
+			"cooldown":"10",
+			"price":{
+				"gold" : 3500
+			},			
+			"costs":{
+				"mana" : "35"
+			},
+			"special-values" : {
+				"push_distance": "20",
+				"regen_amount": "12.5",
+				"bonus_intelligence": "36",
+				"bonus_spell_life_steal": "20"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/32"			
+		},
+		"oathplate" : {
+			"price":{
+				"gold" : 2400
+			},
+			"special-values" : {
+				"bonus_armor": "75",
+				"bonus_all_stat" : "10"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/7"			
+		},
+		"hjalldrengs_grasp" : {
+			"price":{
+				"gold" : 1500
+			},
+			"special-values" : {
+				"bonus_armor": "60",
+				"bonus_aura_armor" : "-15",
+				"bonus_attack_speed" : "75"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/23"			
+		},
+		"orb_of_will" : {
+			"price":{
+				"gold" : 600
+			},
+			"special-values" : {
+				"bonus_will": "8"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/orb_of_will"			
+		},
+		"red_pearl" : {
+			"price":{
+				"gold" : 200
+			},
+			"special-values" : {
+				"regen_amount": "3"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/red_pearl"			
+		},
+		"resilient_bauble" : {
+			"price":{
+				"gold" : 500
+			},
+			"special-values" : {
+				"bonus_status_resistance": "8"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/resilient_bauble"			
+		},
+		"ruby_floret" : {
+			"price":{
+				"gold" : 500
+			},
+			"special-values" : {
+				"bonus_health": "500"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/ruby_floret"			
+		},
+		"swifthook" : {
+			"price":{
+				"gold" : 900
+			},
+			"special-values" : {
+				"bonus_attack_speed": "30"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/swifthook"			
+		},
+		"wand_of_intelligence" : {
+			"price":{
+				"gold" : 600
+			},
+			"special-values" : {
+				"bonus_intelligence": "8"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/wand_of_inteligence"			
+		},
+		"zweihander" : {
+			"price":{
+				"gold" : 1400
+			},
+			"special-values" : {
+				"bonus_damage": "30"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/zweihander"			
+		},
+		"armored_belt" : {
+			"price":{
+				"gold" : 400
+			},
+			"special-values" : {
+				"bonus_armor": "30"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/armoured_belt"			
+		},
+		"armored_vest" : {
+			"price":{
+				"gold" : 1200
+			},
+			"special-values" : {
+				"bonus_armor": "45"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/armored_vest"			
+		},
+		"bloom_quartz" : {
+			"price":{
+				"gold" : 1200
+			},
+			"special-values" : {
+				"bonus_health": "1000"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/bloom_quartz"			
+		},
+		"bottle_of_quicksilver" : {
+			"price":{
+				"gold" : 300
+			},
+			"special-values" : {
+				"bonus_movement_speed": "20"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/bottle_of_quicksilver"
+		},
+		"claws_of_agility" : {
+			"price":{
+				"gold" : 600
+			},
+			"special-values" : {
+				"bonus_agility": "8"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/agility_claws"			
+		},
+		"fire_flax" : {
+			"price":{
+				"gold" : 1000
+			},
+			"special-values" : {
+				"bonus_heal_amp": "10"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/fire_flax"			
+		},
+		"gladius" : {
+			"price":{
+				"gold" : 400
+			},
+			"special-values" : {
+				"bonus_damage": "16"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/gladius"			
+		},
+		"guardian_pendant" : {
+			"price":{
+				"gold" : 600
+			},
+			"special-values" : {
+				"bonus_magic_armor": "30"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/guardian_pendant"			
+		},
+		"idol" : {
+			"price":{
+				"gold" : 500
+			},
+			"special-values" : {
+				"bonus_all_stat": "5"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/idol"			
+		},
+		"magic_ring" : {
+			"price":{
+				"gold" : 1100
+			},
+			"special-values" : {
+				"bonus_ability_power": "10"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/magic_ring"			
+		},
+		"mana_signet" : {
+			"price":{
+				"gold" : 200
+			},
+			"special-values" : {
+				"regen_amount": "3"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/mana_signet"			
+		},
+		"medallion_of_strength" : {
+			"price":{
+				"gold" : 600
+			},
+			"special-values" : {
+				"bonus_strength": "8"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/medallion_of_strength"			
+		},
+		"arctic_talon" : {
+			"price":{
+				"gold" : 300
+			},
+			"special-values" : {
+				"bonus_attack_speed": "50",
+				"reduce_attack_speed" : "50",
+				"bonus_health" : "500", 
+				"bonus_mana" : "500",
+				"bonus_movement_speed" : "-50"
+			},
+			"name":"Arctic Talon",
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/medallion_of_strength"			
+		},
+		"blighted_cuirass" : {
+			"price":{
+				"gold" : 300
+			},
+			"special-values" : {
+				"bonus_armor": "50",
+				"bonus_strength" : "50",
+				"bonus_will" : "50",
+				"bonus_damage" : "50",
+				"aura_movement_speed_reduction" : "25",
+				"aura_damage" : "50"
+			},
+			"name":"Blighted Cuirass",
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/27"			
+		},
+		"aegis_of_the_hound" : {
+			"cooldown":"10",
+			"costs":{
+				"mana" : "50"
+			},			
+			"price":{
+				"gold" : 300
+			},
+			"special-values" : {
+				"bonus_armor": "50",
+				"bonus_all_stat" : "50",
+				"bonus_attack_speed" : "50",
+				"bonus_movement_speed" : "50",
+				"duration" : "5"
+			},
+			"name":"Aegis Of The Hound",
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/27"			
+		},
+		"wicked_mail" : {
+			"cooldown":"10",
+			"costs":{
+				"mana" : "50"
+			},			
+			"price":{
+				"gold" : 300
+			},
+			"special-values" : {
+				"bonus_armor": "50",
+				"bonus_strength" : "50",
+				"bonus_agility" : "50",
+				"duration" : "5"
+			},
+			"name":"Wicked Mail",
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/27"			
+		},
+		"sigil_of_protection" : {
+		
+			"price":{
+				"gold" : 1800
+			},
+			"special-values" : {
+				"bonus_status_resistance": "14",
+				"bonus_all_stat" : "16"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/39"			
+		},
+		"dragon_pendant" : {
+		
+			"price":{
+				"gold" : 2000
+			},
+			"special-values" : {
+				"bonus_magic_armor": "45",
+				"bonus_strength" : "8",
+				"bonus_will": "8",
+				"regen_amount": "5"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/8"			
+		},
+		"bloomhawk_charm" : {
+		
+			"price":{
+				"gold" : 300
+			},
+			"special-values" : {
+				"bonus_health": "50",
+				"bonus_attack_speed" : "50",
+				"bonus_movement_speed": "-50",
+				"duration": "50"
+			},
+			"name":"Bloomhawk Charm",
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/27"			
+		},
+		"crystal_heart" : {
+		
+			"price":{
+				"gold" : 2000
+			},
+			"special-values" : {
+				"bonus_health": "1500",
+				"regen_amount" : "10",
+				"bonus_strength": "12"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/1"			
+		},
+		"hallowed_bridandine" : {
+		
+			"price":{
+				"gold" : 2400
+			},
+			"special-values" : {
+				"bonus_armor": "75",
+				"bonus_intelligence" : "12",
+				"bonus_will": "12"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/30"			
+		},
+		"sacred_codex" : {
+
+			"price":{
+				"gold" : 350
+			},
+			"special-values" : {
+				"bonus_all_stat": "20",
+				"bonus_armor": "45",
+				"bonus_mana_regen": "10",
+				"bonus_heal_amp": "30",
+				"bonus_cooldown_reduction": "20"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/34"			
+		},
+		"spirit_prism" : {
+		
+			"price":{
+				"gold" : 2300
+			},
+			"special-values" : {
+				"bonus_magic_armor": "30",
+				"bonus_heal_amp" : "10",
+				"bonus_will": "20"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/44"			
+		},
+		"mysterious_dagger" : {
+		
+			"price":{
+				"gold" : 300
+			},
+			"special-values" : {
+				"bonus_attack_speed": "50",
+				"bonus_damage" : "50"
+			},
+			"name":"Mysterious Dagger",
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/27"			
+		},
+		"parasite_dynamo" : {
+		
+			"price":{
+				"gold" : 2200
+			},
+			"special-values" : {
+				"bonus_life_steal": "20",
+				"bonus_agility" : "12",
+				"bonus_will" : "12"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/35"			
+		},
+		"saviors_mark" : {
+		
+			"price":{
+				"gold" : 2100
+			},
+			"special-values" : {
+				"bonus_armor": "45",
+				"bonus_all_stat" : "6",
+				"regen_amount" : "5",
+				"bonus_heal_amp" : "15"				
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/41"			
+		},
+		"scholars_orb" : {
+		
+			"price":{
+				"gold" : 2100
+			},
+			"special-values" : {
+				"bonus_ability_power": "12",
+				"bonus_intelligence" : "20",
+				"regen_amount" : "5"			
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/9"			
+		},
+		"windspear" : {
+		
+			"price":{
+				"gold" : 2200
+			},
+			"special-values" : {
+				"bonus_damage": "50",
+				"bonus_movement_speed" : "20"			
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/20"			
+		},
+		"grand_hammer" : {
+		
+			"price":{
+				"gold" : 2000
+			},
+			"special-values" : {
+				"bonus_damage": "60"			
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/37"			
+		},
+		"duelling_foil" : {
+		
+			"price":{
+				"gold" : 2100
+			},
+			"special-values" : {
+				"bonus_damage": "24",
+				"bonus_agility": "20",
+				"bonus_movement_speed": "25"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/10"			
+		},
+		"quick_silver_band" : {
+		
+			"price":{
+				"gold" : 1900
+			},
+			"special-values" : {
+				"bonus_ability_power": "15",
+				"bonus_health": "750",
+				"bonus_movement_speed": "30"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/27"			
+		},
+		"core_1" : {
+		
+			"price":{
+				"gold" : 300
+			},
+			"name":"Core 1",
+			"icon-file" : "Textures/Icons/Items/27"			
+		},
+		"staff_of_deliverance" : {
+		
+			"price":{
+				"gold" : 1500
+			},
+			"special-values" : {
+				"bonus_status_resistance": "16",
+				"bonus_all_stat": "20"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/dispel_stick"			
+		},
+		"mana_converter" : {
+		
+			"price":{
+				"gold" : 3500
+			},
+			"special-values" : {
+				"bonus_magic_armor": "45",
+				"bonus_will": "36",
+				"bonus_heal_amp": "25",
+				"mana_to_health_percentage" : "25"
+			},
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/53"			
+		},
+		"observer_ward" : {
+			"price":{
+				"gold" : 75
+			},
+			"name":"Observer Ward",
+			"shoptab":"Base",
+			"icon-file" : "Textures/Icons/Items/wardenwood_branch"	
+		}
+	},
+
+	"units" : {
+		"monkey_ward" : {
+			"slice" : "monkey_ward",
+			"lua-file" : "",
+			"is-hero": false,
+			"variables":{
+				"vision_range": 30
+			},
+			"ability0" : "ward_behavior"
+		},
+		"ult_ward" : {
+			"slice" : "monkey_ward",
+			"lua-file" : "",
+			"is-hero": false,
+			"variables":{
+				"vision_range": 30
+			},
+			"ability0" : "ult_ward_behaviour"
+		}
+	}	
+}

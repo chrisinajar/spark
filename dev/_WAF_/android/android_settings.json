@@ -1,0 +1,14 @@
+{
+    "DEV_KEYSTORE_ALIAS" : "development_keystore",
+    "DEV_KEYSTORE" : "_WAF_/android/dev.keystore",
+
+    "DISTRO_KEYSTORE_ALIAS" : "distribution_keystore",
+    "DISTRO_KEYSTORE" : "_WAF_/android/distro.keystore",
+
+    "BUILD_TOOLS_VER" : "latest",
+
+    "SDK_VERSION" : "android-26",
+    "NDK_PLATFORM" : "android-21",
+
+    "BUILD_ENVIRONMENT" : "Development"
+}

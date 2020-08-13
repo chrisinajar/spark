@@ -1,0 +1,18 @@
+//comments!
+{
+	"abilities" : {
+		"astromage/quasar" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "9",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "25" 
+			},
+			"special-values" : {
+				"range" : 30,
+				"damage" : 25,
+				"stun_duration" : 25
+			}
+		}
+	}
+}

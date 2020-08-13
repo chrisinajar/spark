@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudGemPlayerAccount_precompiled.cpp",
+            "Source/CloudGemPlayerAccount_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Implementation": [
+            "Source/ComponentStub.cpp"
+        ]
+    }
+}

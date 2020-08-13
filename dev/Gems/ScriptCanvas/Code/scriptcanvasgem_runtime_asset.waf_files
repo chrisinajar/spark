@@ -1,0 +1,10 @@
+{
+    "auto": {
+        "Asset/Runtime": [
+            "Asset/RuntimeAssetRegistry.h",
+            "Asset/RuntimeAssetRegistry.cpp",
+            "Asset/RuntimeAssetSystemComponent.cpp",
+            "Asset/RuntimeAssetSystemComponent.h"
+        ]
+    }
+}

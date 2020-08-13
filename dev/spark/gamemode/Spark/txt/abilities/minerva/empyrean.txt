@@ -1,0 +1,16 @@
+//comments!
+{
+	"abilities" : {
+		"minerva/empyrean" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "50",
+			"is_ultimate" : true,
+			//for now the values below are ignored
+			"special-values" : {
+				"damage_to_health_percentage" : "50 70 90 110 130 150",
+				"min_health_trigger_percentage" : 20,
+				"duration" : "4 4.5 5 5.5 6 6.5"
+			}
+		}
+	}
+}

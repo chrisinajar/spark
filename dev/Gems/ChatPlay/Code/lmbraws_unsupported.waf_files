@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Source": [
+            "Source/ChatPlay_precompiled.cpp",
+            "Source/ChatPlay_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Implementation": [
+            "Source/ComponentStub.cpp"
+        ]
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "units": {
+        "muse": {
+            "extends": "base_hero",
+            // General
+            //-------------------------------------------------------------------------------------------------------------
+            "slice":								"hero_test_001",		//model
+            "sound_set":							"muse",
+            "level":								1,
+            "player_controlled": 					true,
+            "has_inventory":						true,
+
+            // Abilities
+            //-------------------------------------------------------------------------------------------------------------
+            "ability_0":                            "muse/harmony",                         // Ability 1.
+            "ability_1":							"muse/forest_friend",							// Ability 1.
+            "ability_2":							"muse/dischord",							// Ability 2.
+            "ability_3":							"muse/shadow_serenade",							// Ability 3.
+            "ability_4":							"",							// Ability 4.
+            "ability_5":							"",							// Extra abilities.
+            "ability_6":							"",							
+            "ability_7":							"",							
+            "ability_8":							"",							
+            "ability_9":							"",
+              
+            // Talents
+            //-------------------------------------------------------------------------------------------------------------
+            "talent_1":								"",
+            "talent_2":								"",
+            "talent_3":								"",
+            "talent_4":								"",
+            "talent_5":								"",
+            "talent_6":								"",
+            "talent_7":								"",
+            "talent_8":								"",
+            "talent_9":								"",
+            "talent_10":							"",
+
+            // Attributes
+            //-------------------------------------------------------------------------------------------------------------
+            "attribute_primary":					"WILL",
+            "attribute_starting_strength":			18,
+            "attribute_starting_agility":			24,
+            "attribute_starting_intelligence":		12,
+            "attribute_starting_will":				26,
+
+            "attribute_strength_gain":				1.6,
+            "attribute_agility_gain":				2.5,
+            "attribute_intelligence_gain":			1.4,
+            "attribute_will_gain":					4.5,
+
+            // Base
+            //-------------------------------------------------------------------------------------------------------------
+            "base_health":							200,
+            "base_health_regen": 					3,
+            "base_mana":							100,
+            "base_mana_regen":						2,
+
+            "base_damage": 							31,
+            "base_attack_time": 					1.7,
+            "base_attack_speed": 					100,
+
+            "base_physical_armor":					15,
+            "base_magic_armor":						25,
+
+            // Attack Properties
+            //-------------------------------------------------------------------------------------------------------------
+            "attack_type":							"ranged", 	// ranged/melee/disabled
+            "attack_damage_type":					"physical", // physical/magical
+            "attack_animation_point":				0.7,
+            "attack_backswing":						0.1,
+            "attack_range":							600,
+              
+            "projectile_model":						"projectile_001",
+            "projectile_speed":						1200,
+
+            // Vision
+            //-------------------------------------------------------------------------------------------------------------
+            "vision_daytime_radius":				1800,
+            "vision_nighttime_radius":				1200
+        }
+    }
+}

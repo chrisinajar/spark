@@ -1,0 +1,16 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="marble_glass_001_mat" MtlFlags="524416" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="79" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/marble_001_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/marble_001_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/marble_001_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_nodraw" Diffuse="1,1,1" Specular="0,0,0" Opacity="1" Shininess="10" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

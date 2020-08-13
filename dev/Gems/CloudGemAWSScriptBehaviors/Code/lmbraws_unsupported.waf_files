@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudGemAWSScriptBehaviors_precompiled.cpp",
+            "Source/CloudGemAWSScriptBehaviors_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Implementation": [
+            "Source/ComponentStub.cpp"
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+<ParticleLibrary Name="particles_geo_emitter_m" SandboxVersion="1.15.0.0" ParticleVersion="33">
+ <Particles Name="geo_emitter_001">
+  <Params Count="100" MaintainDensity="100" EmitterSizeDiameter="5" LocalSpawnPosRandomOffset="x=0.1,y=0.1" LocalOffsetRoundness="0.999" LocalSpawnIncrement="0.999" BeamAge="4" Continuous="true" ParticleLifeTime="4" OffsetRoundness="0.999" SpawnIncrement="0.999" FocusAngle="180" FocusAzimuth="180" EmitOffsetDir="true" EmitAngle="180" Facing="Free" Curvature="0" BlendType="Opaque" Material="objects/particleassets/marble_001_m_mg" Geometry="objects/particleassets/marble_001.cgf" Alpha="1.01" DiffuseLighting="0" ReceiveShadows="true" CastShadows="true" GlobalIllumination="true" SizeX="0.75" SizeY="0.75" SizeZ="0.75" Speed="-0.5" GravityScale="Random=0.132" RotationRateX="360,Random=0.83" PhysicsType="SimpleCollision" CollideStaticObjects="true" CollideDynamicObjects="true" CollisionFraction="0.996" FinalCollision="Bounce" Elasticity="0.5" DynamicFriction="10" Density="1"/>
+ </Particles>
+</ParticleLibrary>

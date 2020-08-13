@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudCanvasCommon_precompiled.cpp",
+            "Source/CloudCanvasCommon_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Implementation": [
+            "Source/ComponentStub.cpp"
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudGemSpeechRecognition_precompiled.cpp",
+            "Source/CloudGemSpeechRecognition_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/CloudGemSpeechRecognition/CloudGemSpeechRecognitionBus.h"
+        ],
+        "Source": [
+            "Source/CloudGemSpeechRecognitionModule.cpp",
+            "Source/CloudGemSpeechRecognitionSystemComponent.cpp",
+            "Source/CloudGemSpeechRecognitionSystemComponent.h",
+            "Source/VoiceRecorderSystemComponent.cpp",
+            "Source/VoiceRecorderSystemComponent.h"
+        ],
+        "API" : [
+            "AWS/ServiceApi/CloudGemSpeechRecognitionClientComponent.h",
+            "AWS/ServiceApi/CloudGemSpeechRecognitionClientComponent.cpp"
+        ]
+    }
+}

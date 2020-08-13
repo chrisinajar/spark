@@ -1,0 +1,37 @@
+{
+    "description"           : "Configuration to build LmbrSetup tools",
+    "visual_studio_name"    : "Lumberyard Setup Tools",
+    "disable_game_projects" : true,
+    "platforms" : ["win","darwin","linux"],
+    "configurations" : ["debug","profile","debug_test", "profile_test"],
+
+    "modules" :
+    [
+        "AzQtComponents",
+        "SetupAssistant",
+        "SetupAssistantBatch",
+        "GemRegistry",
+        "Lyzard",
+        "lmbr",
+        "LyzardSDK",
+        "LyzardEngines",
+        "LyzardGems",
+        "LyzardProjects",
+        "LyzardTemplates",
+        "LyzardApplicationDescriptors",
+        "LyzardCapabilities",
+        "LyzardThirdPartySDKs",
+        "LyzardPackages",
+        "LyzardSetup",
+        "ProjectConfigurator",
+        "LyIdentity_shared",
+        "LyIdentity_static",
+        "LyMetricsShared_shared",
+        "LyMetricsShared_static",
+        "LyMetricsProducer_shared",
+        "LyMetricsProducer_static",
+        "LyMetricsProducer_python",
+        "LyMetricsConsumer",
+        "LyInstallerMetrics"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "none":
+    {
+        "Source":
+        [
+            "Source/Rain_precompiled.cpp",
+            "Source/Rain_precompiled.h"
+        ]
+    },
+    "auto":
+    {
+        "Include":
+        [
+            "Include/RainComponentBus.h"
+        ],
+        "Source":
+        [
+            "Source/RainGem.h",
+            "Source/RainGem.cpp",
+            "Source/Rain.h",
+            "Source/Rain.cpp",
+            "Source/RainComponent.h",
+            "Source/RainComponent.cpp"
+        ]
+    }
+}

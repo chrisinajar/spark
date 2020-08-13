@@ -1,0 +1,24 @@
+{
+	"abilities" : {
+		"quill/legendarium" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : 90,
+			"is_ultimate" : true,
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "200 400 600 800 1000 1200" 
+			},
+			"special-values" : {
+				"damage" : "100 200 300 400 500 600",
+				"duration" : 10,
+				"range" : 30,
+				"reduce_attack_speed" : "60 120 180 240 300 360",
+				"movement_speed_reduction_percentage" : 30,
+				"aoe" : 75,
+				"explosions_per_second" : 10,
+				"explosions_damage_aoe" : 30,
+				"debuff_linger" : 2
+			}
+		}
+	}
+}

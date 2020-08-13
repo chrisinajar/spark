@@ -1,0 +1,49 @@
+########################################################################################
+# All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+# its licensors.
+#
+# For complete copyright and license terms please see the LICENSE at the root of this
+# distribution (the "License"). All use of this software is governed by the License,
+# or, if provided, by the license below or the license accompanying this file. Do not
+# remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+########################################################################################
+
+def build(bld):
+
+    kw = dict(
+        # Add custom build options here
+        use         = ['GridMate'],
+        uselib      = ['OPENSSL'],
+        includes    = [bld.Path('Code/CryEngine/CryAction'),
+                       bld.Path('Code/CryEngine/CryNetwork')],
+        file_list   = [
+                        'Multiplayer.waf_files',
+                      ],
+
+        # Platform Specific
+        win_use     = ['AWS_CPP_SDK_GAMELIFT',
+                       'AWS_CPP_SDK_CORE'],
+        win_debug_dedicated_uselib = ['AWS_GAMELIFT_SERVER_SHARED'],
+        win_profile_dedicated_uselib = ['AWS_GAMELIFT_SERVER_SHARED'],
+        win_performance_dedicated_uselib = ['AWS_GAMELIFT_SERVER_STATIC'],
+        win_release_dedicated_uselib = ['AWS_GAMELIFT_SERVER_STATIC'],
+        win_lib          = ['gdi32', 'Winhttp', 'Ws2_32', 'mswsock'],
+        win_defines      = ['NET_SUPPORT_SECURE_SOCKET_DRIVER=1'],
+
+        linux_defines    = ['NET_SUPPORT_SECURE_SOCKET_DRIVER=1'],
+        linux_debug_dedicated_uselib = ['AWS_GAMELIFT_SERVER_STATIC'],
+        linux_profile_dedicated_uselib = ['AWS_GAMELIFT_SERVER_STATIC'],
+        linux_performance_dedicated_uselib = ['AWS_GAMELIFT_SERVER_STATIC'],
+        linux_release_dedicated_uselib = ['AWS_GAMELIFT_SERVER_STATIC'],
+
+        restricted_script = 'update_restricted_parameters',
+    )
+    for p0, p1, p2, p3 in bld.env['RESTRICTED_PLATFORMS']:
+        kw['file_list'] += [
+            'Source/{0}/Multiplayer_tools_{1}.waf_files'.format(p0, p1),
+            'Source/BehaviorContext/{0}/BehaviorContext_tools_{1}.waf_files'.format(p0, p1)
+        ]
+        kw['{}_file_list'.format(p3)] = ['Source/{0}/Multiplayer_{1}.waf_files'.format(p0, p1)]
+    bld.DefineGem(**kw)

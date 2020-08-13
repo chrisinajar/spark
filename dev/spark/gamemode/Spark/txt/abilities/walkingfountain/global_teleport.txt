@@ -1,0 +1,18 @@
+{
+	"abilities" : {
+		"walkingfountain/global_teleport" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "140 120 100 80 60 40",
+			"is_ultimate" : true,
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "150 300 450 600 750 900" 
+			},
+			"special-values" : {
+				"aoe" : 25,
+				"channel_time" : "5 4.5 4 3.5 3 2.5",
+				"allies_transported" : "1 2 2 3 3 4"
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"include": [
+		"heroes/base_hero",
+		"heroes/astromage",
+		"heroes/harbinger",
+		"heroes/minerva",
+		"heroes/muse",
+		"heroes/old_man",
+		"heroes/quill",
+		"heroes/simpleagisup",
+		"heroes/walkingfountain"
+	]
+}

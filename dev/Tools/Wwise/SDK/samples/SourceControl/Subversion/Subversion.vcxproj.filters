@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res">
+      <UniqueIdentifier>{70B95FC8-AE7B-6C43-9967-2E68D3A67E5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring">
+      <UniqueIdentifier>{97A90946-DBE3-F546-B602-A987DABE75DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source">
+      <UniqueIdentifier>{E71C4B05-6DDE-BA49-812E-DA8BB4793109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty">
+      <UniqueIdentifier>{A92EBA9E-0EDE-FE47-A403-418BF68FB27A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty\Subversion">
+      <UniqueIdentifier>{BB51C607-3925-FF42-89C4-46EA9764B7EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty\Subversion\X64">
+      <UniqueIdentifier>{23A2EBA4-AD4F-2343-94BF-C08EDB4031EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty\Subversion\X64\debug">
+      <UniqueIdentifier>{0C3EE424-3836-B440-9088-70D30F1D73B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty\Subversion\X64\debug\bin">
+      <UniqueIdentifier>{4D30D65A-6AEA-6D4B-A77F-DF2E709D3441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty\Subversion\X64\release">
+      <UniqueIdentifier>{58F8F6F2-7DB0-714E-98F3-03072A58D97E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty\Subversion\X64\release\bin">
+      <UniqueIdentifier>{24FD1783-02E0-0F4D-8244-1D3E684155B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{EF30B1FA-3720-504C-B650-24FEA0820F40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Subversion.rc2">
+      <Filter>res</Filter>
+    </None>
+    <None Include="Subversion.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgCommitMessage.h" />
+    <ClInclude Include="DlgConfiguration.h" />
+    <ClInclude Include="DlgLockMessage.h" />
+    <ClInclude Include="DlgOnCreateModify.h" />
+    <ClInclude Include="DlgRename.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Subversion.h" />
+    <ClInclude Include="SubversionPool.h" />
+    <ClInclude Include="SubversionSourceControl.h" />
+    <ClInclude Include="..\Common\OperationResults.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SourceControlHelpers.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgCommitMessage.cpp" />
+    <ClCompile Include="DlgConfiguration.cpp" />
+    <ClCompile Include="DlgLockMessage.cpp" />
+    <ClCompile Include="DlgOnCreateModify.cpp" />
+    <ClCompile Include="DlgRename.cpp" />
+    <ClCompile Include="DllInterface.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Subversion.cpp" />
+    <ClCompile Include="SubversionPool.cpp" />
+    <ClCompile Include="SubversionSourceControl.cpp" />
+    <ClCompile Include="..\Common\OperationResults.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SourceControlHelpers.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Subversion.rc" />
+  </ItemGroup>
+</Project>

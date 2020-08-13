@@ -1,0 +1,19 @@
+{
+	"abilities" : {
+		"walkingfountain/line_stun" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "13",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "120 120 135 150 165 365 565" 
+			},
+			"special-values" : {
+				"range" : 35,
+				"projectile_width": 10,
+				"speed" : 25,
+				"stun_duration" : "0.2 0.6 0.8 1 1.2 1.4 1.6",
+				"damage" : "20 80 130 180 230 430 630"  
+			}
+		}
+	}
+}

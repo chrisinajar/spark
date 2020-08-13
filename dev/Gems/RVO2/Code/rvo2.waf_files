@@ -1,0 +1,12 @@
+{
+    "auto": {
+        "Include": [
+            "Include/RVO2/RVO2Bus.h"
+        ],
+        "Source": [
+            "Source/RVO2Module.cpp",
+            "Source/RVO2SystemComponent.cpp",
+            "Source/RVO2SystemComponent.h"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "auto": {
+        "Builder": [
+            "Builder/ScriptCanvasBuilderComponent.cpp",
+            "Builder/ScriptCanvasBuilderComponent.h",
+            "Builder/ScriptCanvasBuilderWorker.cpp",
+            "Builder/ScriptCanvasBuilderWorker.h"
+        ]
+    }
+}

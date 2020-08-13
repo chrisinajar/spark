@@ -1,0 +1,11 @@
+{
+    "GemFormatVersion": 3,
+    "Uuid": "7c18089fe13b4ef9aa7c36beacaecc87",
+    "Name": "MouseCursorPosition",
+    "DisplayName": "MouseCursorPosition",
+    "Version": "0.1.0",
+    "LinkType": "Dynamic",
+    "Summary": "Exposes getting the mouse cursor position via EBus.",
+    "Tags": ["Untagged"],
+    "IconPath": "preview.png"
+}

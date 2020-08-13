@@ -1,0 +1,12 @@
+{
+	"abilities" : {
+		"simpleagisup/aura_damage" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			//for now the values below are ignored
+			"special-values" : {
+				"aoe" : 90,
+				"bonus_aura_damage" : "6 12 18 24 30 36 42"
+			}
+		}
+	}
+}

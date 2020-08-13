@@ -1,0 +1,138 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="rin_m_eyeballs" MtlFlags="524416" Shader="Eye" GenMask="22020010000" StringGenMask="%ENVIRONMENT_MAP%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="" Diffuse="1,1,1,1" Specular="0.038204376,0.038204376,0.038204376,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Custom" File="Objects/Character/Rin/Textures/face/rin_cornea_ddn.tif"/>
+    <Texture Map="Heightmap" File="Objects/Character/Rin/Textures/face/rin_eyeball_disp.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/face/rin_eyeball_ddn.tif"/>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/face/rin_eyeball_diff.tif"/>
+   </Textures>
+   <PublicParams CorneaRefraction="0.0060000001" IrisDepth="0" IrisColor="0.49693301,0.49693301,0.49693301" IrisShadowing="2.266" CorneaSmoothness="1" ScleraSSS="0.2" IrisSSS="0.40000001" IndirectColor="0,0,0"/>
+  </Material>
+  <Material Name="rin_m_haircap" MtlFlags="524416" Shader="Hair" GenMask="120004008" StringGenMask="%ANISO_SPECULAR%DIRECTION_MAP%HAIR_PASS%NORMAL_MAP" SurfaceType="" Diffuse="0.77582234,0.79129809,0.83077002,1" Specular="0.28744087,0.28744087,0.28744087,1" Opacity="0.99000001" Shininess="255" AlphaTest="0.89999998" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/hair/rin_haircap_diffuse.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/hair/rin_haircap_ddn.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Rin/Textures/hair/rin_haircap_spec.tif"/>
+    <Texture Map="Detail" File="Objects/Character/Rin/Textures/hair/rin_haircap_direction.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="-0.029999999" SoftIntersection="0" ShiftVariation="0.26699999" DiffuseWrap="0.361" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.926" AlphaBlendMultiplier="1.179" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_cloth" MtlFlags="524416" Shader="Illum" GenMask="12002020000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/body/rin_cloth_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/body/rin_cloth_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Rin/Textures/body/rin_cloth_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_leather" MtlFlags="524416" Shader="Illum" GenMask="12002020000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" AlphaTest="0.23999999" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/body/rin_straps_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/body/rin_straps_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Rin/Textures/body/rin_straps_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_armor" MtlFlags="524416" Shader="Illum" GenMask="12002020000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/body/rin_armor_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/body/rin_armor_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Rin/Textures/body/rin_armor_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_hands" MtlFlags="524416" Shader="Humanskin" GenMask="2040020000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN" SurfaceType="" Diffuse="1,1,1,1" Specular="0.27889431,0.27889431,0.27889431,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/body/rin_hands_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/body/rin_hands_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Rin/Textures/body/rin_hands_spec.tif"/>
+   </Textures>
+   <PublicParams Melanin="0" SSSIndex="1.2" TranslucencyMultiplier="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_props" MtlFlags="524416" Shader="Illum" GenMask="12000020000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="0.49693301,0.49693301,0.49693301,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/weapon/rin_weapons_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/weapon/rin_weapons_ddn.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Rin/Textures/weapon/rin_weapons_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_mouth" MtlFlags="524416" Shader="Hair" GenMask="120000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%NORMAL_MAP" SurfaceType="" Diffuse="1,1,1,1" Specular="0.20507877,0.20507877,0.20507877,1" Opacity="1" Shininess="207" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/face/rin_mouth_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/face/rin_mouth_ddn.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Rin/Textures/face/rin_mouth_spec.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.1" SoftIntersection="0" ShiftVariation="0" DiffuseWrap="0.5" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.5" AlphaBlendMultiplier="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_face" MtlFlags="524416" Shader="Humanskin" GenMask="2050020000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING_MASK%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.19806935,0.19806935,0.19806935,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/face/rin_face_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/face/rin_face_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Rin/Textures/face/rin_face_spec.tif"/>
+    <Texture Map="Opacity" File="Objects/Character/Rin/Textures/face/rin_face_sss.tif"/>
+   </Textures>
+   <PublicParams Melanin="0" SSSIndex="1.2" TranslucencyMultiplier="0.824" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_hairplanes" MtlFlags="524416" Shader="Hair" GenMask="200120004008" StringGenMask="%ANISO_SPECULAR%DIRECTION_MAP%HAIR_PASS%NORMAL_MAP%THIN_HAIR" SurfaceType="" Diffuse="0.61720669,0.61720669,0.61720669,1" Specular="1,1,1,1" Opacity="0.99000001" Shininess="255" AlphaTest="0.0099999998" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/hair/rin_haircards_diffuse.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/hair/rin_haircards_ddn.tif"/>
+    <Texture Map="Detail" File="Objects/Character/Rin/Textures/hair/rin_haircards_direction.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.25799999" SoftIntersection="0.421" ShiftVariation="0.87" DiffuseWrap="0.396" SecondaryHighlightColor="1,1,1" SecondaryHighlightWidth="2.2320001" ThinHairThreshold="0.211" AlphaBlendMultiplier="2.2" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_eyebrow" MtlFlags="524416" Shader="Hair" GenMask="200100000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%THIN_HAIR" SurfaceType="mat_flesh" Diffuse="0,0,0,1" Specular="1,1,1,1" Opacity="0.99000001" Shininess="255" AlphaTest="0.14" vertModifType="0" LayerAct="0">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/face/rin_brows_diff.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="-0.146" SoftIntersection="0.5" ShiftVariation="0" DiffuseWrap="0.15000001" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.819" ThinHairThreshold="0.60000002" AlphaBlendMultiplier="1.5" IndirectColor="0.26225069,0.26225069,0.26225069"/>
+  </Material>
+  <Material Name="rin_m_lashes" MtlFlags="524416" Shader="Hair" GenMask="200100000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%THIN_HAIR" SurfaceType="mat_flesh" Diffuse="0.45641103,0.45641103,0.45641103,1" Specular="0.43415368,0.43415368,0.43415368,1" Opacity="0.99000001" Shininess="255" AlphaTest="0.38" vertModifType="0" LayerAct="0">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/face/rin_brows_diff.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0" SoftIntersection="0.51099998" ShiftVariation="0.039000001" DiffuseWrap="0.37799999" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.763" ThinHairThreshold="0.74400002" AlphaBlendMultiplier="3.0799999" IndirectColor="0.26225069,0.26225069,0.26225069"/>
+  </Material>
+  <Material Name="rin_m_eyecover" MtlFlags="524416" Shader="Eye" GenMask="22000400000" StringGenMask="%EYE_AO_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_flesh" Diffuse="0,0,0,1" Specular="0,0,0,1" Opacity="1" Shininess="52" vertModifType="0" LayerAct="0">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/face/rin_eyecover_diff.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Rin/Textures/face/rin_eyecover_spec.tif"/>
+   </Textures>
+   <PublicParams DiffOccStrength="1" SpecOccStrength="0.2" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_fuzz" MtlFlags="524416" Shader="Hair" GenMask="200100000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%THIN_HAIR" SurfaceType="mat_flesh" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="0.99000001" Shininess="255" AlphaTest="0.14" vertModifType="0" LayerAct="0">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/face/rin_brows_diff.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="-0.146" SoftIntersection="0.69999999" ShiftVariation="0" DiffuseWrap="0.133" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.819" ThinHairThreshold="0.60000002" AlphaBlendMultiplier="1.5" IndirectColor="0.26225069,0.26225069,0.26225069"/>
+  </Material>
+  <Material Name="rin_m_haircards" MtlFlags="524416" Shader="Hair" GenMask="200120004008" StringGenMask="%ANISO_SPECULAR%DIRECTION_MAP%HAIR_PASS%NORMAL_MAP%THIN_HAIR" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/hair/rin_haircards_diffuse.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Rin/Textures/hair/rin_haircards_ddn.tif"/>
+    <Texture Map="Detail" File="Objects/Character/Rin/Textures/hair/rin_haircards_direction.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.093000002" SoftIntersection="0.21600001" ShiftVariation="1.432" DiffuseWrap="1" SecondaryHighlightColor="1,1,1" SecondaryHighlightWidth="2.2320001" ThinHairThreshold="0.833" AlphaBlendMultiplier="1.868" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_eyewetness" MtlFlags="524416" Shader="Eye" GenMask="22010010000" StringGenMask="%ENVIRONMENT_MAP%EYE_SPECULAR_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_flesh" Diffuse="1,1,1,1" Specular="0.020288564,0.048171829,0.048171829,1" Opacity="1" Shininess="224" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/other/rin_grey.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams DepthBiasScale="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rin_m_tearduct" MtlFlags="524416" Shader="Humanskin" GenMask="40000000000" StringGenMask="%TEMP_SKIN" SurfaceType="" Diffuse="0.57112497,0.57112497,0.57112497,1" Specular="0.0097212186,0.0097212186,0.0097212186,1" Opacity="1" Shininess="98" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Rin/Textures/face/rin_tearduct_diff.tif"/>
+   </Textures>
+   <PublicParams Melanin="0" SSSIndex="1.2" TranslucencyMultiplier="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

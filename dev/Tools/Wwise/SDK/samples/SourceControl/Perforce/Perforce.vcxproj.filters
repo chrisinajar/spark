@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res">
+      <UniqueIdentifier>{CEF3FFFE-5C39-3240-BEA9-289384B6623D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring">
+      <UniqueIdentifier>{389E813C-F866-1D4D-AED2-629A16687E5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source">
+      <UniqueIdentifier>{87DF7836-0D2E-5E44-904E-A44A361A333A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty">
+      <UniqueIdentifier>{09318C46-9A18-A940-AA82-1C0968DAB127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty\OpenSSL">
+      <UniqueIdentifier>{6AAC290B-D97A-1343-A9FC-43429C361E94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Authoring\source\3rdParty\OpenSSL\bin">
+      <UniqueIdentifier>{FB2E5C1F-C7D7-3344-A04A-384BF947BC36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{B0587750-A6F1-9240-8AD7-F183413EBCC1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Perforce.rc2">
+      <Filter>res</Filter>
+    </None>
+    <None Include="Perforce.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgPerforceConfig.h" />
+    <ClInclude Include="DlgPerforceDescription.h" />
+    <ClInclude Include="DlgPerforceOnNewFiles.h" />
+    <ClInclude Include="DlgRename.h" />
+    <ClInclude Include="Perforce.h" />
+    <ClInclude Include="PerforcePlugin.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\Common\OperationResults.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SourceControlHelpers.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgPerforceConfig.cpp" />
+    <ClCompile Include="DlgPerforceDescription.cpp" />
+    <ClCompile Include="DlgPerforceOnNewFiles.cpp" />
+    <ClCompile Include="DlgRename.cpp" />
+    <ClCompile Include="DllInterface.cpp" />
+    <ClCompile Include="PerforceClientUser.cpp" />
+    <ClCompile Include="PerforcePlugin.cpp" />
+    <ClCompile Include="PerforceSourceControl.cpp" />
+    <ClCompile Include="PerforceUtility.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\Common\OperationResults.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SourceControlHelpers.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Perforce.rc" />
+  </ItemGroup>
+</Project>

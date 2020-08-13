@@ -1,0 +1,20 @@
+//comments!
+{
+	"abilities" : {
+		"walkingfountain/delayed_heal_and_nuke" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "10",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "100 100 120 140 160 510 860" 
+			},
+			"special-values" : {
+				"range" : 75,
+				"damage" : "25 75 150 225 300 600 900",
+				"heal" : "25 75 150 225 300 600 900",
+				"aoe" : 30,
+				"delay" : 1.5
+			}
+		}
+	}	
+}

@@ -1,0 +1,12 @@
+{
+    "none": {
+        "Tests": [
+            "tests/main.cpp",
+            "tests/VersionTest.cpp",
+            "tests/DependencyTest.cpp",
+            "tests/DescriptionTest.cpp",
+            "tests/ProjectSettingsTest.cpp",
+            "tests/RegistryTest.cpp"
+        ]
+    }
+}

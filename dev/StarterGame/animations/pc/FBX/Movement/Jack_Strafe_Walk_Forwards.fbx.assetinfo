@@ -1,0 +1,47 @@
+<ObjectStream version="3">
+	<Class name="SceneManifest" version="1" type="{9274AD17-3212-4651-9F3B-7DCCB080E467}">
+		<Class name="AZStd::vector" field="values" type="{5D6A7C67-11CA-59A4-829B-0B20B781B292}">
+			<Class name="AZStd::shared_ptr" field="element" type="{EB7522F9-0E87-55A9-A191-E924DC5AE867}">
+				<Class name="MotionGroup" field="element" version="3" type="{1B0ABB1E-F6DF-4534-9A35-2DD8244BF58C}">
+					<Class name="IMotionGroup" field="BaseClass1" version="1" type="{1CA400A8-2C3E-423D-B8A3-C457EF88E533}">
+						<Class name="IGroup" field="BaseClass1" version="1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
+							<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+						</Class>
+					</Class>
+					<Class name="AZStd::string" field="name" value="jack_strafe_walk_forwards" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="selectedRootBone" value="RootNode.Jack:jack_root" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZ::Uuid" field="id" value="{F32349AE-B72A-5CA3-82FA-94A9644F824C}" type="{E152C105-A133-4D03-BBF8-3D4B2FBA3E2A}"/>
+					<Class name="RuleContainer" field="rules" version="1" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
+						<Class name="AZStd::vector" field="rules" type="{B5BDB053-178F-5D55-8663-70897A71B7C9}">
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="CoordinateSystemRule" field="element" version="1" type="{603207E2-4F55-4C33-9AAB-98CA75C1E351}">
+									<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+										<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+									</Class>
+									<Class name="int" field="targetCoordinateSystem" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+								</Class>
+							</Class>
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="MetaDataRule" field="element" version="1" type="{8D759063-7D2E-4543-8EB3-AB510A5886CF}">
+									<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+									<Class name="AZStd::string" field="metaData" value='AdjustMotion -motionID $(MOTIONID) -motionExtractionFlags 0
+ClearMotionEvents -motionID $(MOTIONID)
+CreateMotionEventTrack -motionID $(MOTIONID) -eventTrackName "Sync"
+AdjustMotionEventTrack -motionID $(MOTIONID) -eventTrackName "Sync" -enabled true
+CreateMotionEvent -motionID $(MOTIONID) -eventTrackName "Sync" -startTime 0.021721 -endTime 0.021721 -eventType "RightFoot" -parameters "" -mirrorType "LeftFoot"
+CreateMotionEvent -motionID $(MOTIONID) -eventTrackName "Sync" -startTime 0.550000 -endTime 0.550000 -eventType "LeftFoot" -parameters "" -mirrorType "RightFoot"
+CreateMotionEventTrack -motionID $(MOTIONID) -eventTrackName "Event Track 2"
+AdjustMotionEventTrack -motionID $(MOTIONID) -eventTrackName "Event Track 2" -enabled true
+CreateMotionEvent -motionID $(MOTIONID) -eventTrackName "Event Track 2" -startTime 0.020000 -endTime 0.020000 -eventType "RightFootstep" -parameters "" -mirrorType ""
+CreateMotionEvent -motionID $(MOTIONID) -eventTrackName "Event Track 2" -startTime 0.550000 -endTime 0.550000 -eventType "LeftFootstep" -parameters "" -mirrorType ""
+' type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+								</Class>
+							</Class>
+						</Class>
+					</Class>
+				</Class>
+			</Class>
+		</Class>
+	</Class>
+</ObjectStream>
+

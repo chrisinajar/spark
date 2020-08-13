@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Root": [
+            "Main.cpp"
+        ],
+        "AzToolsFramework": [
+          "UndoStack.cpp"
+        ],
+        "ToolsComponents": [
+            "ToolsComponents/EditorLayerComponentTests.cpp"
+        ]
+    }
+}

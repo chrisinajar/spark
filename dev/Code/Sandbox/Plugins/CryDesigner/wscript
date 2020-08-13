@@ -1,0 +1,56 @@
+########################################################################################
+# All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+# its licensors.
+#
+# For complete copyright and license terms please see the LICENSE at the root of this
+# distribution (the "License"). All use of this software is governed by the License,
+# or, if provided, by the license below or the license accompanying this file. Do not
+# remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+#
+# Original file Copyright Crytek GMBH or its affiliates, used under license.
+#
+########################################################################################
+
+def build(bld):
+
+    bld.CryPlugin(
+        # Settings
+        target          = 'CryDesigner',
+        vs_filter	    = 'Sandbox/Plugins',
+        copyright_org   = 'Amazon-CryTek',
+        file_list       = 'crydesigner.waf_files',
+        platforms       = ['win', 'darwin'],
+        configurations  = ['debug', 'debug_test', 'profile', 'profile_test'],
+        use             = ['AzToolsFramework',
+                           'EditorLib',
+                           'EditorCommon'],
+        uselib          = ['QT5CORE',
+                           'QT5GUI',
+                           'QT5WIDGETS',
+                           'QT5NETWORK',
+                           'BOOSTPYTHON',
+                           'AWS_CPP_SDK_CORE',
+                           'AWS_CPP_SDK_COGNITO_IDENTITY',
+                           'AWS_CPP_SDK_IDENTITY_MANAGEMENT',
+                           'AWS_CPP_SDK_MOBILEANALYTICS'],
+         pch            = 'StdAfx.cpp',
+        features        = ['qt5', 'EmbeddedPython'],
+        defines         = ['USE_PYTHON_SCRIPTING',
+                           'SANDBOX_IMPORTS',
+                           'DISABLE_UVMAPPING_WINDOW'],
+        includes        = [ '.',
+                            '..'],
+
+        clang_enable_rtti 	= True,
+
+        darwin_x64_lib  	= ['python2.7'],
+        win_x64_clang_cxxflags 	= ['-fexceptions', #BOOSTPYTHON
+                                  '-Wno-inconsistent-dllimport', #BOOSTPYTHON
+                                  '-Wno-deprecated-register'], #BOOSTPYTHON
+	darwin_cxxflags 	= ['-Wno-deprecated-register'],
+
+        # Testing
+        test_all_file_list = ['crydesigner_test.waf_files'],
+    )

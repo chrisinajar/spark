@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{B7B29299-49FB-AC47-8513-6158BB1C5815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK">
+      <UniqueIdentifier>{4A419533-00FE-874F-91F2-CD11D32EE1ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\Plugin">
+      <UniqueIdentifier>{D428F892-1EBC-FA4D-A877-7BC7107D4F50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\Plugin\PluginServices">
+      <UniqueIdentifier>{F0EC9D6C-B3BF-274E-BBB7-857A864B1ADA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AkLpFilter.h" />
+    <ClInclude Include="..\AkToneGen.h" />
+    <ClInclude Include="..\AkToneGenParams.h" />
+    <ClInclude Include="..\AkWaveTables.h" />
+    <ClInclude Include="..\..\..\..\..\..\include\AK\Plugin\AkToneSourceFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\include\AK\Plugin\PluginServices\AkValueRamp.h">
+      <Filter>include\AK\Plugin\PluginServices</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AkLpFilter.cpp" />
+    <ClCompile Include="..\AkToneGen.cpp" />
+    <ClCompile Include="..\AkToneGenDSP.cpp" />
+    <ClCompile Include="..\AkToneGenParams.cpp" />
+  </ItemGroup>
+</Project>

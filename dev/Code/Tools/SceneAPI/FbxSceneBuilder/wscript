@@ -1,0 +1,45 @@
+########################################################################################
+#
+# All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates, or
+# a third party where indicated.
+#
+# For complete copyright and license terms please see the LICENSE at the root of this
+# distribution (the "License"). All use of this software is governed by the License,
+# or, if provided, by the license below or the license accompanying this file. Do not
+# remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+########################################################################################
+
+def build(bld):
+    bld.CryEngineModule(
+        # Settings
+        target                  = 'FbxSceneBuilder',
+        vs_filter               = 'Tools/SceneAPI',
+        file_list               = 'fbxscenebuilder.waf_files',
+
+        platforms               = ['win', 'darwin'],
+        configurations          = ['debug', 'debug_test', 'profile', 'profile_test'],
+        disable_pch             = True,
+        includes                = [bld.Path('Code/Tools')],
+        export_includes         = [bld.Path('Code/Tools')],
+        use                     = ['AzCore',
+                                   'AzFramework',
+                                   'SceneCore',
+                                   'SceneData',
+                                   'AzToolsFramework',
+                                   'GFxFramework',
+                                   'FbxSDKWrapper'],
+        defines                 = ['FBX_SCENE_BUILDER_EXPORTS',
+                                   '_HAS_EXCEPTIONS=0'],
+        output_sub_folder_copy  = ['rc'],
+		features				= ['link_running_program'],
+
+        win_x64_clang_cxxflags          = ['-Wno-null-dereference'],
+
+        #platform specific
+        darwin_file_list        = 'fbxscenebuilder_darwin.waf_files',
+
+        # Testing
+        test_all_file_list = 'fbxscenebuilder_testing.waf_files',
+    )

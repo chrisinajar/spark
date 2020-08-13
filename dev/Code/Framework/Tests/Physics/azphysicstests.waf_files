@@ -1,0 +1,10 @@
+{
+    "none": {
+        "Physics" : [
+            "PhysicsTests.h",
+            "PhysicsTests.inl",
+            "PhysicsGenericInterfaceTests.inl",
+            "PhysicsComponentBusTests.inl"
+        ]
+    }
+}

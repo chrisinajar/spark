@@ -1,0 +1,5 @@
+<ParticleLibrary Name="particles_target_attraction_m" SandboxVersion="1.15.0.0" ParticleVersion="33">
+ <Particles Name="target_attraction_emitter_001">
+  <Params Count="500" EmitterSizeDiameter="5" LocalSpawnPosRandomOffset="x=1.5,y=1.5,z=1.5" LocalOffsetRoundness="0.999" LocalStretch="0.025,ParticleAge=(;t=1,v=1)" Continuous="true" EmitterLifeTime="5" ParticleLifeTime="2" OffsetRoundness="0.999" Curvature="0" BlendType="Additive" Texture="textures/vfx/fire/ember_001.dds" SoftParticle="true" Alpha="ParticleAge=(;t=0.78,v=0.12;t=1,v=1,flags=4)" Color="(x=0.86807144,y=0.66538733)" DiffuseBacklighting="0.999" EmissiveLighting="10" SizeX="0.1,Random=0.154,ParticleAge=(v=1;t=1,flags=4)" SizeY="0.1,Random=0.154,ParticleAge=(v=1;t=1,flags=4)" SizeZ="0.1,Random=0.154,ParticleAge=(v=1;t=1,flags=4)" Stretch="0.025,ParticleAge=(;t=1,v=1)" Speed="2,Random=0.787" Turbulence3DSpeed="1,ParticleAge=(;t=1,v=1)" CollisionFraction="0" Density="1"/>
+ </Particles>
+</ParticleLibrary>

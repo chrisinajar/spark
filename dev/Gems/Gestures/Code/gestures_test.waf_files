@@ -1,0 +1,16 @@
+{
+    "none":
+    {
+        "Tests":
+        [
+            "Tests/BaseGestureTest.h",
+            "Tests/GestureRecognizerClickOrTapTests.cpp",
+            "Tests/GestureRecognizerPinchTests.cpp",
+            "Tests/GesturesTest.cpp"
+        ],
+        "Mocks":
+        [
+            "Mocks/IRecognizerMock.h"
+        ]
+    }
+}

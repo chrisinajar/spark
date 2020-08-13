@@ -1,0 +1,20 @@
+{
+    "auto": {
+        "Root": [
+        ],
+        
+        "SliceBuilder": [
+            "Source/SliceBuilderApplication.cpp",
+            "Source/SliceBuilderComponent.cpp",
+            "Source/SliceBuilderComponent.h",
+            "Source/SliceBuilderWorker.cpp",
+            "Source/SliceBuilderWorker.h",
+            "Source/TraceDrillerHook.cpp",
+            "Source/TraceDrillerHook.h",
+            "Source/TypeFingerprinter.h",
+            "Source/TypeFingerprinter.cpp",
+            "Source/UiSliceBuilderWorker.cpp",
+            "Source/UiSliceBuilderWorker.h"
+        ]
+    }
+}

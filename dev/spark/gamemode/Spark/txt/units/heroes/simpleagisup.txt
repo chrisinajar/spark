@@ -1,0 +1,21 @@
+{
+	"units" : {
+		"simpleagisup" : {
+			"slice" : "hero_test_001",
+			"is-hero": true,
+			"primary_attribute" : "agility",
+
+			"attack-type":"ranged",
+			"attack-projectile":"projectile_001",
+
+			"variables":{
+				"movement_speed": 100,
+				"attack_range": 10
+			},
+			"ability0" : "simpleagisup/stun_bolt",
+			"ability1" : "simpleagisup/armor_wave",			
+			"ability2" : "simpleagisup/aura_damage",
+			"ability3" : "simpleagisup/swap"
+		}
+	}
+}

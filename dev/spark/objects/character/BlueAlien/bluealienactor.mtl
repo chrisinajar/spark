@@ -1,0 +1,96 @@
+<Material MtlFlags="557312" DccMaterialHash="1141929891" vertModifType="0">
+ <SubMaterials>
+  <Material Name="armor_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="1001400000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.1441285,0.1441285,0.1441285,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/bluealien/textures/bluealien_lightsarmor_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/bluealien/textures/bluealien_lightsarmor_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/bluealien/textures/bluealien_lightsarmor_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/bluealien/textures/bluealien_lightsarmor_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="body_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="1008480000080000" StringGenMask="%DISPLACEMENT_MAPPING%NORMAL_MAP%PN_TESSELLATION%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,0.46937293" Opacity="1" Shininess="119.69009" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/bluealien/textures/bluealien_geckobody_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/bluealien/textures/bluealien_geckobody_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/bluealien/textures/bluealien_geckobody_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/bluealien/textures/bluealien_geckobody_ddna.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" TessellationFactor="1.7" TessellationDispBias="0.89999998" Melanin="0" TessellationHeightScale="0.0099999998" SSSIndex="0" TessellationFactorMax="9.1800003" TranslucencyMultiplier="0" TessellationFactorMin="2.8299999" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyeWetness_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="4012000000000" StringGenMask="%EYE_SPECULAR_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.090841718,0.090841718,0.090841718,0.83137327" Opacity="1" Shininess="212.00018" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_eyewater_spec.tif"/>
+   </Textures>
+   <PublicParams DepthBiasScale="0.73000002" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyesAO_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Illum" GenMask="1080000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%PN_TESSELLATION%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0,0,0,0.68000001" Specular="0.045000002,0.045000002,0.045000002,0.0078740288" Opacity="0.68000001" Shininess="2.0078773" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/bluealien/textures/bluealien_eyesao_diff.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" EmittanceMapGamma="1" TessellationFactor="1" SSSIndex="0" TessellationFactorMax="32" TessellationFactorMin="13.49" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyesInner_MAT" MtlFlags="2621568" DccMaterialHash="0" Shader="Eye" GenMask="1004002000000000" StringGenMask="%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="0.70837593,0.70837593,0.70837593,1" Specular="0.021219011,0.021219011,0.021219011,0.0078740278" Opacity="1" Shininess="2.0078771" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Heightmap" File="objects/character/bluealien/textures/bluealien_eyes_displ.tif"/>
+    <Texture Map="Smoothness" File="objects/character/bluealien/textures/bluealien_eyes_ddna.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+    <Texture Map="Custom" File="objects/character/bluealien/textures/bluealien_eyesouter_ddna.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/bluealien/textures/bluealien_eyes_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/bluealien/textures/bluealien_eyes_diff.tif"/>
+   </Textures>
+   <PublicParams CorneaRefraction="0" IrisDepth="0.0099999998" IrisColor="0.67244327,0.67244327,0.67244327" IrisShadowing="15" CorneaSmoothness="0.87" ScleraSSS="0.029999999" IrisSSS="1.17" IndirectColor="0.57112497,0.57112497,0.57112497"/>
+  </Material>
+  <Material Name="eyesOuter_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="4012000000000" StringGenMask="%EYE_SPECULAR_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.021219011,0.021219011,0.021219011,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures />
+   <PublicParams DepthBiasScale="1" IndirectColor="0.57112497,0.57112497,0.57112497"/>
+  </Material>
+  <Material Name="lights_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="1001400000100003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%EMITTANCE_MAP%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0.57112497,0.57112497,0.57112497,1" Specular="0,0,0,1" Emittance="0.50888133,1,0.3712377,15" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Emittance" File="objects/character/bluealien/textures/bluealien_lightsarmor_emm.tif"/>
+    <Texture Map="Smoothness" File="objects/character/bluealien/textures/bluealien_lightsarmor_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/bluealien/textures/bluealien_lightsarmor_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/bluealien/textures/bluealien_lightsarmor_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/bluealien/textures/bluealien_lightsarmor_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hair_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="1008480000000000" StringGenMask="%NORMAL_MAP%PN_TESSELLATION%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.043735035,0.043735035,0.043735035,0.35294119" Opacity="1" Shininess="90" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/bluealien/textures/bluealien_mouthnails_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/bluealien/textures/bluealien_mouthnails_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/bluealien/textures/bluealien_mouthnails_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/bluealien/textures/bluealien_mouthnails_ddna.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" TessellationFactor="1" Melanin="0.23" SSSIndex="1.2" TessellationFactorMax="32" TranslucencyMultiplier="0.38999999" TessellationFactorMin="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="nails_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="1008480000000000" StringGenMask="%NORMAL_MAP%PN_TESSELLATION%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.043735035,0.043735035,0.043735035,0.35294119" Opacity="1" Shininess="90" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/bluealien/textures/bluealien_mouthnails_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/bluealien/textures/bluealien_mouthnails_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/bluealien/textures/bluealien_mouthnails_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/bluealien/textures/bluealien_mouthnails_ddna.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" TessellationFactor="1" Melanin="0.23" SSSIndex="1.2" TessellationFactorMax="32" TranslucencyMultiplier="0.38999999" TessellationFactorMin="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="shirt_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="1001400000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.30498734,0.30498734,0.30498734,0.41176501" Opacity="1" Shininess="105.00008" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/blueAlien/textures/blueAlien_shirt_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/blueAlien/textures/blueAlien_shirt_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/blueAlien/textures/blueAlien_shirt_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/blueAlien/textures/blueAlien_shirt_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="tongue_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="1008400000000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.015996294,0.015996294,0.015996294,0.0078740222" Opacity="1" Shininess="2.0078757" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/bluealien/textures/bluealien_mouthnails_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/bluealien/textures/bluealien_mouthnails_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/bluealien/textures/bluealien_mouthnails_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/bluealien/textures/bluealien_mouthnails_ddna.tif"/>
+   </Textures>
+   <PublicParams Melanin="0" SSSIndex="1.2" TranslucencyMultiplier="0.27900001" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams />
+</Material>

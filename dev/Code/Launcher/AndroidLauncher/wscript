@@ -1,0 +1,79 @@
+########################################################################################
+# All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+# its licensors.
+#
+# For complete copyright and license terms please see the LICENSE at the root of this
+# distribution (the "License"). All use of this software is governed by the License,
+# or, if provided, by the license below or the license accompanying this file. Do not
+# remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+########################################################################################
+
+import os, shutil
+
+from waflib.Build import BuildContext
+
+def build(bld):
+
+    # we have to skip both of these module definitions if android isn't support, otherwise this will cause unnecessary failures
+    if any(platform for platform in bld.get_supported_platforms() if 'android' in platform):
+
+        # the default file permissions after copies are made.  511 => 'chmod 777 <file>'
+        FILE_PERMISSIONS = 511
+
+        # copy over the native activity glue files
+        dest_directory = bld.path.make_node('NativeActivityGlue')
+        dest_directory.mkdir()
+
+        ndk_root = bld.get_env_file_var('LY_ANDROID_NDK')
+        native_activity_glue = os.path.join(ndk_root, 'sources', 'android', 'native_app_glue')
+
+        for src in ('android_native_app_glue.c', 'android_native_app_glue.h'):
+            source_file = os.path.join(native_activity_glue, src)
+            dest_file = dest_directory.make_node(src)
+
+            if os.path.exists(dest_file.abspath()):
+                dest_file.chmod(FILE_PERMISSIONS) 
+
+            shutil.copy2(source_file, dest_file.abspath())
+            dest_file.chmod(FILE_PERMISSIONS) 
+
+        bld.CryEngineStaticLibrary(
+            target              = 'NativeActivityGlue',
+            vs_filter           = 'Android',
+            platforms           = [ 'android' ],
+            configurations      = [ 'debug', 'profile', 'performance', 'release' ],
+            file_list           = [ 'native_activity_glue.waf_files' ],
+            export_includes     = [ 'NativeActivityGlue' ],
+            android_cflags      = [ '-fvisibility=default' ],
+        )
+
+    if isinstance(bld, BuildContext):
+        bld.read_aar(
+            name = 'support-compat',
+            group = 'com.android.support'
+        )
+
+    bld.CryLauncher(
+        # Settings
+        target              = 'AndroidLauncher',
+        platforms           = ['android' ],
+        configurations      = ['debug', 'profile', 'performance', 'release'],
+        file_list           = 'android_launcher.waf_files',
+
+        # Platform Specific
+        android_use             = ['AzGameFramework', 'NativeActivityGlue'],
+        android_includes        = [bld.Path('Code/CryEngine/CryAction'),
+                                   bld.Path('Code/CryEngine/CrySystem'),
+                                   bld.Path('Code/Launcher')],
+
+        # Force the native app glue entry point to be defined.  This is an alternative method to 
+        # calling app_dummy in android_main that works with newer NDKs which have deprecated 
+        # app_dummy (but still seem to strip this function)
+        android_linkflags       = [ '-u', 'ANativeActivity_onCreate' ],
+
+        android_java_src_path   = [bld.Path('Code/Launcher/AndroidLauncher/java') ],
+        android_java_libs       = bld.Path('Code/Launcher/AndroidLauncher/ProjectBuilder/android_libraries.json'),
+    )
+

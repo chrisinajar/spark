@@ -1,0 +1,1 @@
+require('gamemode/spark/modules/gold/gold')

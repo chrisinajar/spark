@@ -1,0 +1,17 @@
+{
+    "none": {
+        "Source": [
+            "Source/AudioAnimationEvents_precompiled.cpp",
+            "Source/AudioAnimationEvents_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+        ],
+        "Source": [
+            "Source/AudioAnimationEventsModule.cpp",
+            "Source/AudioAnimationEventsProxyComponent.cpp",
+            "Source/AudioAnimationEventsProxyComponent.h"
+        ]
+    }
+}

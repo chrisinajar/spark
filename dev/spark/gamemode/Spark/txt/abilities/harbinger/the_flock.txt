@@ -1,0 +1,18 @@
+//comments!
+{
+	"abilities" : {
+		"harbinger/the_flock" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "60 55 50 45 40 35 30",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "100" 
+			},
+			"special-values" : {
+				"duration" : 3,
+				"hide_radius" : "500 180 150 120 90 60 30",
+				"evasion" : 100
+			}
+		}
+	}
+}

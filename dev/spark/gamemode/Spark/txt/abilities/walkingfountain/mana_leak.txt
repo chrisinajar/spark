@@ -1,0 +1,21 @@
+{
+	"abilities" : {
+		"walkingfountain/mana_leak" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "10",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "100 100 120 140 160 510 860" 
+			},
+			"special-values" : {
+				"range" : 80,
+				"ally_percentage_max_mana_gained_per_second" : "1 2.5 3.25 4 4.75 5.5 6.25",
+				"ally_base_mana_gain_per_second" : "10 20 40 60 80 160 240",
+				"max_mana_lost_percentage" : "0.5 2.5 3.25 4 4.75 5.5 6.25",
+				"buff_duration" : 5,
+				"debuff_duration" : 5,
+				"stun_duration" : 3
+			}
+		}
+	}
+}

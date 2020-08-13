@@ -1,0 +1,10 @@
+<ParticleLibrary Name="Chicken" SandboxVersion="0.0.0.0" ParticleVersion="28">
+ <Particles Name="poof_feather">
+  <Params Count="10" ParticleLifeTime="2" EmitAngle="180,Random=1" Curvature="0" Texture="editor/plugins/particleeditorplugin/defaults/feather01.tif" Alpha="ParticleAge=(v=1;t=1)" SizeX="0.2,Random=0.3,ParticleAge=(;t=0.192,v=1;t=0.66,v=1;t=1,v=0.114)" SizeY="0.2,Random=0.3,ParticleAge=(;t=0.192,v=1;t=0.66,v=1;t=1,v=0.114)" Speed="3,Random=0.3" AirResistance="1" GravityScale="0.1" RandomAngles="y=180" RotationRateY="90"/>
+  <Childs>
+   <Particles Name="smoke">
+    <Params Count="3" ParticleLifeTime="1" Curvature="0" Texture="editor/plugins/particleeditorplugin/defaults/puffup01.tif" Alpha="ParticleAge=(v=1;t=1)" SizeX="ParticleAge=(v=0.376;t=1,v=1)" SizeY="ParticleAge=(v=0.376;t=1,v=1)" Speed="0.1,Random=0.3" RandomAngles="y=360" RotationRateY="25,Random=2"/>
+   </Particles>
+  </Childs>
+ </Particles>
+</ParticleLibrary>

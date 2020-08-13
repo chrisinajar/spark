@@ -1,0 +1,17 @@
+//comments!
+{
+	"abilities" : {	
+		"astromage/solar_maximum" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "5",
+			"special-values" : {
+				"max_stack_amount": 3,
+				"bonus_attack_speed" : 10,
+				"bonus_movement_speed" : 10,
+				"bonus_ability_power" : 10,
+				"duration" : 10,
+				"percentage_increase" : 5
+			}
+		}
+	}
+}

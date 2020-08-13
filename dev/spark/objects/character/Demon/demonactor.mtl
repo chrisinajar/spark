@@ -1,0 +1,146 @@
+<Material MtlFlags="557312" DccMaterialHash="0" vertModifType="0">
+ <SubMaterials>
+  <Material Name="armShells_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000002003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DETAIL_MAPPING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,0.69462872" Opacity="1" Shininess="177.13033" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_head_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/demon/textures/demon_head_detail.tif"/>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_head_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0.22" SSSIndex="0" DetailBumpScale="0.99000001" DetailGlossScale="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="backShells_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000002003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DETAIL_MAPPING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,0.76290196" Opacity="1" Shininess="194.53999" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_backshell_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/demon/textures/demon_body_detail.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="5" TileV="5"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_backshell_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_backshell_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_backshell_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0.50999999" SSSIndex="0" DetailBumpScale="0.2" DetailGlossScale="0.82999998" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="bodyShellparts_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000082003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DETAIL_MAPPING%EMITTANCE_MAP%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,0.79043138" Opacity="1" Shininess="201.56" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Heightmap" File="objects/character/demon/textures/demon_body_displ.tif"/>
+    <Texture Map="Emittance" File="objects/character/demon/textures/demon_body_emm.tif"/>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_body_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/demon/textures/demon_body_detail.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="5" TileV="5"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_body_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_body_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_body_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0.1" SSSIndex="0" DetailBumpScale="0" DetailGlossScale="0.2" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="body_MAT" MtlFlags="540800" DccMaterialHash="0" Shader="Humanskin" GenMask="2121000042000" StringGenMask="%DETAIL_MAPPING%DISPLACEMENT_MAPPING%NORMAL_MAP%PN_TESSELLATION%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_flesh" Diffuse="1,1,1,1" Specular="1,1,1,0.50756979" Opacity="1" Shininess="129.4303" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Heightmap" File="objects/character/demon/textures/demon_body_displ.tif"/>
+    <Texture Map="Emittance" File="objects/character/demon/textures/demon_body_emm.tif"/>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_body_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/demon/textures/demon_body_detail.tif"/>
+    <Texture Map="Opacity" File="objects/character/demon/textures/demon_body_sss.tif"/>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_body_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_body_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_body_diff.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.68000001" TessellationFactor="5" TessellationDispBias="0" Melanin="0.25" TessellationHeightScale="0" SSSIndex="1.3099999" DetailBumpScale="0.63" TessellationFactorMax="32" TranslucencyMultiplier="0.72000003" TessellationFactorMin="10" IndirectColor="0.014443845,0.024157634,0.078187428"/>
+  </Material>
+  <Material Name="chestPlates_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000002003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DETAIL_MAPPING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,0.83047163" Opacity="1" Shininess="211.77026" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_backshell_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/demon/textures/demon_backshell_detail.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="3" TileV="3"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_backshell_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_backshell_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_backshell_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0.1" SSSIndex="0" DetailBumpScale="0" DetailGlossScale="0.2" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="claws_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000002003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DETAIL_MAPPING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_head_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/demon/textures/demon_head_detail.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="3" TileV="3"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_head_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0.52999997" SSSIndex="0" DetailBumpScale="0" DetailGlossScale="0.80000001" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyes_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000082003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DETAIL_MAPPING%EMITTANCE_MAP%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.11953845,0.04518621,0.04518621,1" Emittance="1,1,1,25" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Emittance" File="objects/character/demon/textures/demon_head_emm.tif"/>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_head_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/demon/textures/demon_eyes_detail.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="5" TileV="5"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_head_diff.tif"/>
+    <Texture Map="Decal" File="objects/character/demon/textures/demon_head_emm.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="1.2" SSSIndex="3.99" DetailBumpScale="0" DetailGlossScale="0.57999998" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hands_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000002003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DETAIL_MAPPING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_head_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/demon/textures/demon_head_detail.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="3" TileV="3"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_head_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0.69999999" SSSIndex="0" DetailBumpScale="0" DetailGlossScale="0.80000001" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="head_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000082003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DETAIL_MAPPING%EMITTANCE_MAP%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,0.5614118" Emittance="1,0.00091058103,0.00091058103,0" Opacity="1" Shininess="143.16" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Emittance" File="objects/character/demon/textures/demon_head_emm.tif"/>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_head_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/demon/textures/demon_body_detail.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="5" TileV="5"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_head_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0" SSSIndex="0" DetailBumpScale="0" DetailGlossScale="0.050000001" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="legLights_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000080003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%EMITTANCE_MAP%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0.33716366,0,0,1" Specular="0.11193243,0.10461649,0.26225069,0.95435339" Emittance="0.59720188,0,0,0" Opacity="1" Shininess="243.36011" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Emittance" File="objects/character/demon/textures/demon_head_emm.tif"/>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_head_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_head_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="teeth_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000080003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%EMITTANCE_MAP%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.063010022,0.063010022,0.063010022,0.55262804" Emittance="1,1,1,1" Opacity="1" Shininess="140.92015" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Emittance" File="objects/character/demon/textures/demon_head_emm.tif"/>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_head_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_head_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="tongue_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000080003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%EMITTANCE_MAP%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0,0,0,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Emittance" File="objects/character/demon/textures/demon_head_emm.tif"/>
+    <Texture Map="Smoothness" File="objects/character/demon/textures/demon_head_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/demon/textures/demon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/demon/textures/demon_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/demon/textures/demon_head_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+</Material>

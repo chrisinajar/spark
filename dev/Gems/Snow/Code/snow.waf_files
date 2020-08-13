@@ -1,0 +1,26 @@
+{
+    "none":
+    {
+        "Source":
+        [
+            "Source/Snow_precompiled.cpp",
+            "Source/Snow_precompiled.h"
+        ]
+    },
+    "auto":
+    {
+        "Include":
+        [
+            "Include/SnowComponentBus.h"
+        ],
+        "Source":
+        [
+            "Source/Snow.h",
+            "Source/Snow.cpp",
+            "Source/SnowComponent.cpp",
+            "Source/SnowComponent.h",
+            "Source/SnowGem.h",
+            "Source/SnowGem.cpp"
+        ]
+    }
+}

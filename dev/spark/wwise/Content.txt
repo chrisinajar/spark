@@ -1,0 +1,32 @@
+Event	ID	Name			Wwise Object Path	Notes
+	393235542	Play_sfx_blink_vanish			\Default Work Unit\Play_sfx_blink_vanish	
+	413403710	Play_sfx_stun			\Default Work Unit\Play_sfx_stun	
+	681320211	Play_sfx_buyitem			\Default Work Unit\Play_sfx_buyitem	
+	1044233349	Play_sfx_push_2			\Default Work Unit\Play_sfx_push_2	
+	1044233350	Play_sfx_push_1			\Default Work Unit\Play_sfx_push_1	
+	1117141914	Play_sfx_UI_back			\Default Work Unit\Play_sfx_UI_back	
+	1118335346	Play_sfx_hook_throw			\Default Work Unit\Play_sfx_hook_throw	
+	1643478367	Play_sfx_levelup			\Default Work Unit\Play_sfx_levelup	
+	2762721572	Play_sfx_blink_appear			\Default Work Unit\Play_sfx_blink_appear	
+	2833543870	Play_sfx_respawn			\Default Work Unit\Play_sfx_respawn	
+	2925662583	Play_sfx_UI_button			\Default Work Unit\Play_sfx_UI_button	
+	2944748108	Play_sfx_point			\Default Work Unit\Play_sfx_point	
+	3852581064	Play_sfx_entershop			\Default Work Unit\Play_sfx_entershop	
+	4271743005	Play_sfx_hook_hit			\Default Work Unit\Play_sfx_hook_hit	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	127198834	sfx_point	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_point_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_point\sfx_point		390840
+	223773374	sfx_levelup	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_levelup_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_levelup\sfx_levelup		236144
+	445117983	sfx_UI_button	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_UI_button_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_UI_button\sfx_UI_button		440628
+	524940964	sfx_buyitem	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_buyitem_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_buyitem\sfx_buyitem		133944
+	554778609	sfx_blink_appear	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_blink_appear_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_blink_appear\sfx_blink_appear		134944
+	636623362	sfx_stun	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_stun_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_stun\sfx_stun		166144
+	789936205	sfx_hook_hit	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_hook_hit_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_hook_hit\sfx_hook_hit		323216
+	809604761	sfx_push_2	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_push_2_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_push_2\sfx_push_2		134756
+	882586394	sfx_UI_back	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_UI_back_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_UI_back\sfx_UI_back		152944
+	906577854	sfx_entershop	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_entershop_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_entershop\sfx_entershop		583144
+	953508537	sfx_push_1	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_push_1_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_push_1\sfx_push_1		113444
+	958458640	sfx_hook_throw	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_hook_throw_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_hook_throw\sfx_hook_throw		237744
+	960922056	sfx_respawn	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_respawn_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_respawn\sfx_respawn		679064
+	981369163	sfx_blink_vanish	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_blink_vanish_F26CE7B0.wem		\Interactive Music Hierarchy\Default Work Unit\sfx_blink_vanish\sfx_blink_vanish		112584
+

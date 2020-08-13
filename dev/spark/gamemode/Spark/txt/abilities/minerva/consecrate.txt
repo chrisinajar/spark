@@ -1,0 +1,21 @@
+//comments!
+{
+	"abilities" : {
+		"minerva/consecrate" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "6",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "100 140 180 220 260 560 860" 
+			},
+			"special-values" : {
+				"damage_block" : "55 110 140 170 200 400 600",
+				"explode_damage" : 150,
+				"explode_aoe" : 67.5 ,
+				"shield_health_percentage" : 20,
+				"range" : 65,
+				"duration" : 15
+			}
+		}
+	}
+}

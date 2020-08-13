@@ -1,0 +1,79 @@
+<Material MtlFlags="557312" DccMaterialHash="0" vertModifType="0">
+ <SubMaterials>
+  <Material Name="accessories_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.70110202,0.70110202,0.70110202,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/horse/textures/horse_accessories_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/horse/textures/horse_accessories_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/horse/textures/horse_accessories_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/horse/textures/horse_accessories_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="body_MAT" MtlFlags="2621568" DccMaterialHash="0" Shader="Illum" GenMask="501000082003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DETAIL_MAPPING%EMITTANCE_MAP%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.090841718,0.090841718,0.090841718,1" Opacity="1" Shininess="180" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/horse/textures/horse_body_ddna.dds"/>
+    <Texture Map="Detail" File="objects/character/horse/textures/horse_bodyflow_ddn.dds"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+    <Texture Map="Specular" File="objects/character/horse/textures/horse_body_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/horse/textures/horse_body_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/horse/textures/horse_body_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0.25" SSSIndex="0" DetailBumpScale="0" DetailGlossScale="0.5" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyeOcclusion_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Illum" GenMask="402000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_default" Diffuse="0,0,0,0.99000001" Specular="0,0,0,0.0078740399" Opacity="0.99000001" Shininess="2.0078802" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/horse/textures/horse_eyeocclusion_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyeTear_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Glass" GenMask="20000" StringGenMask="%DIRT_MAP" SurfaceType="mat_default" Diffuse="1,1,1,0.16" Specular="0.10946172,0.10946172,0.10946172,0.83776617" Opacity="0.16" Shininess="213.63037" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_eyewater_spec.tif"/>
+   </Textures>
+   <PublicParams BumpMapTile="1" TintColor="1,1,1" TintCloudiness="0" BackLightScale="0.5" BumpScale="0.1" IndirectColor="0.24620135,0.24620135,0.24620135"/>
+  </Material>
+  <Material Name="eyes_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="1003000000000" StringGenMask="%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="0.99110222,1,0.94730669,1" Specular="0.13286835,0.13286835,0.13286835,0.47003943" Opacity="1" Shininess="119.86005" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Custom" File="objects/character/horse/textures/horse_eyecornea_ddna.dds"/>
+    <Texture Map="Heightmap" File="objects/character/horse/textures/horse_eye_dipl.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/horse/textures/horse_eye_ddn.dds"/>
+    <Texture Map="Diffuse" File="objects/character/horse/textures/horse_eyes_diff.tif"/>
+   </Textures>
+   <PublicParams CorneaRefraction="0" IrisDepth="0.0099999998" IrisColor="0.5,0.5,0.5" IrisShadowing="4.4499998" CorneaSmoothness="0.64999998" ScleraSSS="0.059999999" IrisSSS="1.3099999" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyewetness_MAT" MtlFlags="524448" DccMaterialHash="0" Shader="Eye" GenMask="1002001000000" StringGenMask="%EYE_SPECULAR_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,0.98225069,0.77582234,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures />
+   <PublicParams DepthBiasScale="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hairCards_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Hair" GenMask="4001000000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%NORMAL_MAP" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.074213572,0.099898733,0.015208516,0.59137386" Opacity="1" Shininess="150.80034" AlphaTest="0.25" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/horse/textures/horse_haircards_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/horse/textures/horse_haircards_ddna.tif"/>
+    <Texture Map="Smoothness" File="objects/character/horse/textures/horse_haircards_ddna.dds"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0" SoftIntersection="1.25" ShiftVariation="0.63999999" DiffuseWrap="0.31" SecondaryHighlightColor="0.63075727,0.69387192,0.46207702" SecondaryHighlightWidth="1.47" AlphaBlendMultiplier="1.58" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hairGeo_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Illum" GenMask="400000000403" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%DEPTH_FIXUP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0.090841718,0.090841718,0.090841718,0.44" Specular="0.30498734,0.30498734,0.30498734,1" Opacity="0.44" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/horse/textures/horse_hairgeo_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DepthFixupThreshold="0.050000001" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="teeth_MAT" MtlFlags="540800" DccMaterialHash="0" Shader="Illum" GenMask="401000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0.28744087,0.28744087,0.28744087,1" Specular="0.063010022,0.063010022,0.063010022,0.70345163" Opacity="1" Shininess="179.38017" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Bumpmap" File="engineassets/textures/white_ddn.tif"/>
+    <Texture Map="Diffuse" File="engineassets/textures/white.tif"/>
+    <Texture Map="Smoothness" File="objects/character/horse/textures/horse_body_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="tongue_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="401000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0.20507877,0.038204376,0.023153368,1" Specular="0.063010022,0.063010022,0.063010022,0.70345169" Opacity="1" Shininess="179.38019" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Bumpmap" File="engineassets/textures/white_ddn.tif"/>
+    <Texture Map="Diffuse" File="engineassets/textures/white.tif"/>
+    <Texture Map="Smoothness" File="objects/character/horse/textures/horse_body_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+</Material>

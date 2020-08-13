@@ -1,0 +1,44 @@
+<Material MtlFlags="524544" DccMaterialHash="348950710">
+ <SubMaterials>
+  <Material Name="lambert2" MtlFlags="524416" Shader="Illum" GenMask="80000001" Diffuse="0.000000,0.246153,0.400000" Specular="0.000000,0.000000,0.000000" Emittance="0.000000,0.000000,0.000000" Opacity="1.000000" Shininess="10.000000" DccMaterialHash="3728127958">
+   <Textures>
+    <Texture Map="Diffuse" File="EngineAssets/Textures/white.dds"/>
+   </Textures>
+  </Material>
+  <Material Name="lambert1" MtlFlags="524416" Shader="Illum" GenMask="80000001" Diffuse="0.061600,0.217783,0.400000" Specular="0.000000,0.000000,0.000000" Emittance="0.000000,0.000000,0.000000" Opacity="1.000000" Shininess="10.000000" DccMaterialHash="3316085644">
+   <Textures>
+    <Texture Map="Diffuse" File="EngineAssets/Textures/white.dds"/>
+   </Textures>
+  </Material>
+  <Material Name="lambert3" MtlFlags="524416" Shader="Illum" GenMask="80000001" Diffuse="0.033200,0.117845,0.400000" Specular="0.000000,0.000000,0.000000" Emittance="0.000000,0.000000,0.000000" Opacity="1.000000" Shininess="10.000000" DccMaterialHash="3839440165">
+   <Textures>
+    <Texture Map="Diffuse" File="EngineAssets/Textures/white.dds"/>
+   </Textures>
+  </Material>
+  <Material Name="lambert9" MtlFlags="524416" Shader="Illum" GenMask="80000001" Diffuse="0.000000,0.107693,0.400000" Specular="0.000000,0.000000,0.000000" Emittance="0.000000,0.000000,0.000000" Opacity="1.000000" Shininess="10.000000" DccMaterialHash="2934067933">
+   <Textures>
+    <Texture Map="Diffuse" File="EngineAssets/Textures/white.dds"/>
+   </Textures>
+  </Material>
+  <Material Name="lambert6" MtlFlags="524416" Shader="Illum" GenMask="80000001" Diffuse="0.000000,0.307693,0.400000" Specular="0.000000,0.000000,0.000000" Emittance="0.000000,0.000000,0.000000" Opacity="1.000000" Shininess="10.000000" DccMaterialHash="707987224">
+   <Textures>
+    <Texture Map="Diffuse" File="EngineAssets/Textures/white.dds"/>
+   </Textures>
+  </Material>
+  <Material Name="lambert8" MtlFlags="524416" Shader="Illum" GenMask="80000001" Diffuse="0.000000,0.153847,0.400000" Specular="0.000000,0.000000,0.000000" Emittance="0.000000,0.000000,0.000000" Opacity="1.000000" Shininess="10.000000" DccMaterialHash="2626364539">
+   <Textures>
+    <Texture Map="Diffuse" File="EngineAssets/Textures/white.dds"/>
+   </Textures>
+  </Material>
+  <Material Name="lambert4" MtlFlags="524416" Shader="Illum" GenMask="80000001" Diffuse="0.000000,0.046153,0.400000" Specular="0.000000,0.000000,0.000000" Emittance="0.000000,0.000000,0.000000" Opacity="1.000000" Shininess="10.000000" DccMaterialHash="2338288845">
+   <Textures>
+    <Texture Map="Diffuse" File="EngineAssets/Textures/white.dds"/>
+   </Textures>
+  </Material>
+  <Material Name="lambert5" MtlFlags="524416" Shader="Illum" GenMask="80000001" Diffuse="0.000000,0.169233,0.400000" Specular="0.000000,0.000000,0.000000" Emittance="0.000000,0.000000,0.000000" Opacity="1.000000" Shininess="10.000000" DccMaterialHash="459051511">
+   <Textures>
+    <Texture Map="Diffuse" File="EngineAssets/Textures/white.dds"/>
+   </Textures>
+  </Material>
+ </SubMaterials>
+</Material>

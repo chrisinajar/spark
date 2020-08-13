@@ -1,0 +1,37 @@
+<ObjectStream version="3">
+	<Class name="MotionSet" version="1" type="{FE63321D-3593-4214-AFA4-F620CDC17B9B}">
+		<Class name="AZStd::string" field="name" value="MotionSet0" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+		<Class name="AZStd::unordered_map" field="motionEntries" type="{B61DECD5-C93D-539F-98A2-2E0DCB111C9C}">
+			<Class name="AZStd::pair" field="element" type="{76EF6A60-F507-5BC6-AE64-4FC79C502A6C}">
+				<Class name="AZStd::string" field="value1" value="bard_run_anim" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="bard_run_anim" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="animation/bard/bard_run_anim.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair" field="element" type="{76EF6A60-F507-5BC6-AE64-4FC79C502A6C}">
+				<Class name="AZStd::string" field="value1" value="bard_idle_anim" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="bard_idle_anim" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="animation/bard/bard_idle_anim.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair" field="element" type="{76EF6A60-F507-5BC6-AE64-4FC79C502A6C}">
+				<Class name="AZStd::string" field="value1" value="bard_attack_anim" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="bard_attack_anim" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="animation/bard/bard_attack_anim.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+			<Class name="AZStd::pair" field="element" type="{76EF6A60-F507-5BC6-AE64-4FC79C502A6C}">
+				<Class name="AZStd::string" field="value1" value="bard_death_anim" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				<Class name="MotionSet::MotionEntry" field="value2" version="1" type="{A1859687-2DE7-4B29-8A39-07836FDF5956}">
+					<Class name="AZStd::string" field="id" value="bard_death_anim" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="assetId" value="animation/bard/bard_death_anim.motion" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+				</Class>
+			</Class>
+		</Class>
+		<Class name="AZStd::vector" field="childSets" type="{21DD0794-B5E0-5D1F-8C19-4E5DD2CD79AD}"/>
+	</Class>
+</ObjectStream>
+

@@ -1,0 +1,18 @@
+{
+    "none": {
+        "Source": [
+            "Source/CryLegacyAnimation_precompiled.cpp",
+            "Source/CryLegacyAnimation_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/CryLegacyAnimation/CryLegacyAnimationBus.h"
+        ],
+        "Source": [
+            "Source/CryLegacyAnimationModule.cpp",
+            "Source/CryLegacyAnimationSystemComponent.cpp",
+            "Source/CryLegacyAnimationSystemComponent.h"
+        ]
+    }
+}

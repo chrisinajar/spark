@@ -1,0 +1,52 @@
+<ParticleLibrary Name="Pickups" SandboxVersion="1.18.0.0" ParticleVersion="33">
+ <Folder Name="Projector">
+  <Params Count="5" EmitterSizeDiameter="5" Continuous="true" ParticleLifeTime="2" Curvature="0" Texture="editor/plugins/particleeditorplugin/defaults/defaultparticle.dds" Speed="5"/>
+ </Folder>
+ <Particles Name="Projector.PickupHealthGlow">
+  <Params Count="12" EmitterSizeDiameter="5" LocalRandomAngles="y=35" BeamAge="1.8" Continuous="true" ParticleLifeTime="1.8,Random=0.088" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsprojectorbeam_01.dds" SoftParticle="true" Alpha="ParticleAge=(;t=0.404,v=0.592;t=0.557,v=0.6;t=1)" Color="(x=0,y=0.7230552)" DiffuseLighting="0" EmissiveLighting="1" MaintainAspectRatio="false" SizeX="0.8,Random=0.1" SizeY="1.8,Random=0.1,ParticleAge=(v=0.298,d=0.7019608,flags=32;t=1,v=1,s=0.7019608,flags=4)" SizeZ="1.8,Random=0.1,ParticleAge=(v=0.298,d=0.7019608,flags=32;t=1,v=1,s=0.7019608,flags=4)" PivotY="1" MoveRelEmitter="Yes" RandomAngles="y=35" CameraMaxDistance="50"/>
+  <Childs>
+   <Particles Name="Light">
+    <Params Count="2" EmitterSizeDiameter="5" LocalSpawnPosOffset="z=0.5" BeamAge="3" Continuous="true" ParticleLifeTime="3" SpawnPosOffset="z=0.5" Curvature="0" BlendType="Additive" Texture="editor/plugins/particleeditorplugin/defaults/defaultparticle.dds" Color="(x=0,y=0.7230552)" CastShadows="true" LightSource="Radius=1.5,Intensity=(0.5,ParticleAge=(;t=0.467,v=1;t=0.52,v=1;t=1))" SizeX="0.01" SizeY="0.01" SizeZ="0.01" MoveRelEmitter="Yes" ViewDistanceAdjust="3"/>
+   </Particles>
+   <Particles Name="Sparks">
+    <Params Count="10" EmitterSizeDiameter="5" LocalSpawnPosOffset="y=0.7,z=0.6" LocalSpawnPosRandomOffset="z=0.4" BeamAge="5" Continuous="true" ParticleLifeTime="5" SpawnPosOffset="y=0.7,z=0.6" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsprojectorglow_01.dds" Alpha="ParticleAge=(;t=0.294,v=1;t=0.706,v=1;t=1)" Color="(x=0,y=0.7230552)" DiffuseLighting="0" EmissiveLighting="15" SizeX="0.07,Random=0.6" SizeY="0.07,Random=0.6" SizeZ="0.07,Random=0.6" Speed="0.3,Random=0.2" TurbulenceSize="0.7" TurbulenceSpeed="145" MoveRelEmitter="Yes" CameraMaxDistance="35"/>
+   </Particles>
+   <Particles Name="GlowProjectorHaloBottom">
+    <Params Enabled="false" Count="2" EmitterSizeDiameter="5" LocalSpawnPosOffset="z=0.25" BeamAge="3" Continuous="true" ParticleLifeTime="3" SpawnPosOffset="z=0.25" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsprojectorglow_01.dds" SoftParticle="true" Alpha="ParticleAge=(;t=0.3,v=1;t=0.686,v=1;t=1)" Color="(x=0,y=0.7230552)" DiffuseLighting="0" EmissiveLighting="2" SizeX="0.6" SizeY="0.6" SizeZ="0.6" MoveRelEmitter="Yes" CameraMaxDistance="20"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="Projector.PickupObjectiveGlow">
+  <Params Count="12" EmitterSizeDiameter="5" LocalRandomAngles="y=35" BeamAge="1.8" Continuous="true" ParticleLifeTime="1.8,Random=0.088" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsprojectorbeam_01.dds" Alpha="ParticleAge=(;t=0.404,v=0.592;t=0.557,v=0.6;t=1)" Color="(y=0.5759689,z=0)" DiffuseLighting="0" EmissiveLighting="1" MaintainAspectRatio="false" SizeX="0.8,Random=0.1" SizeY="1.8,Random=0.1,ParticleAge=(v=0.298,d=0.7019608,flags=32;t=1,v=1,s=0.7019608,flags=4)" SizeZ="1.8,Random=0.1,ParticleAge=(v=0.298,d=0.7019608,flags=32;t=1,v=1,s=0.7019608,flags=4)" PivotY="1" MoveRelEmitter="Yes" RandomAngles="y=35" CameraMaxDistance="50"/>
+  <Childs>
+   <Particles Name="GlowProjectorHaloBottom">
+    <Params Enabled="false" Count="2" EmitterSizeDiameter="5" LocalSpawnPosOffset="z=0.25" BeamAge="3" Continuous="true" ParticleLifeTime="3" SpawnPosOffset="z=0.25" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsprojectorglow_01.dds" SoftParticle="true,Softness=0.4" Alpha="ParticleAge=(;t=0.275,v=1;t=0.698,v=1;t=1)" Color="(y=0.5759689,z=0)" DiffuseLighting="0" EmissiveLighting="2" SizeX="0.6" SizeY="0.6" SizeZ="0.6" MoveRelEmitter="Yes" CameraMaxDistance="20"/>
+   </Particles>
+   <Particles Name="Light">
+    <Params Count="2" EmitterSizeDiameter="5" LocalSpawnPosOffset="z=0.5" BeamAge="3" Continuous="true" ParticleLifeTime="3" SpawnPosOffset="z=0.5" Curvature="0" BlendType="Additive" Texture="editor/plugins/particleeditorplugin/defaults/defaultparticle.dds" Color="(y=0.5759689,z=0)" CastShadows="true" LightSource="Radius=1.5,Intensity=(0.5,ParticleAge=(;t=0.463,v=1;t=0.518,v=1;t=1))" SizeX="0.01" SizeY="0.01" SizeZ="0.01" MoveRelEmitter="Yes" ViewDistanceAdjust="3"/>
+   </Particles>
+   <Particles Name="Sparks">
+    <Params Count="10" EmitterSizeDiameter="5" LocalSpawnPosOffset="y=0.7,z=0.6" LocalSpawnPosRandomOffset="z=0.4" BeamAge="5" Continuous="true" ParticleLifeTime="5" SpawnPosOffset="y=0.7,z=0.6" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsprojectorglow_01.dds" Alpha="ParticleAge=(;t=0.294,v=1;t=0.706,v=1;t=1)" Color="(y=0.5759689,z=0)" DiffuseLighting="0" EmissiveLighting="15" SizeX="0.07,Random=0.6" SizeY="0.07,Random=0.6" SizeZ="0.07,Random=0.6" Speed="0.3,Random=0.2" TurbulenceSize="0.7" TurbulenceSpeed="145" MoveRelEmitter="Yes" CameraMaxDistance="35"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Folder Name="Interaction">
+  <Params Count="5" EmitterSizeDiameter="5" Continuous="true" ParticleLifeTime="2" Curvature="0" Texture="editor/plugins/particleeditorplugin/defaults/defaultparticle.dds" Speed="5"/>
+ </Folder>
+ <Particles Name="Interaction.PickupHealthCollected">
+  <Params Count="1" EmitterSizeDiameter="5" LocalRandomAngles="y=360" BeamAge="0.7" ParticleLifeTime="0.7" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsstarring_01.dds" SoftParticle="true,Softness=0.5" Alpha="ParticleAge=(t=0.17,v=1;t=0.57,v=0.06,s=-1.882353,flags=4;t=1)" Color="ParticleAge=(t=0.153,v=(x=1,y=1,z=1);t=0.718,v=(y=0.9,z=0.918))" DiffuseLighting="0" EmissiveLighting="4" SizeX="ParticleAge=(v=0.24,d=0.37647063,flags=32;t=0.114,v=0.427;t=0.294,v=0.62,d=0.38039213,flags=32;t=1,v=1,s=0.38039213,flags=4)" SizeY="ParticleAge=(v=0.24,d=0.37647063,flags=32;t=0.114,v=0.427;t=0.294,v=0.62,d=0.38039213,flags=32;t=1,v=1,s=0.38039213,flags=4)" SizeZ="ParticleAge=(v=0.24,d=0.37647063,flags=32;t=0.114,v=0.427;t=0.294,v=0.62,d=0.38039213,flags=32;t=1,v=1,s=0.38039213,flags=4)" RandomAngles="y=360"/>
+  <Childs>
+   <Particles Name="Sparks">
+    <Params Count="25" EmitterSizeDiameter="5" LocalSpawnPosRandomOffset="x=0.1,y=0.1,z=0.1" LocalOffsetRoundness="0.999" LocalSpawnIncrement="0.999" BeamAge="1" ParticleLifeTime="1,Random=0.4" OffsetRoundness="0.999" SpawnIncrement="0.999" FocusAngle="180,Random=0.999" FocusAzimuth="180,Random=1.999" EmitAngle="180,Random=0.999" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsprojectorglow_01.dds" Alpha="ParticleAge=(t=0.39,v=1;t=1)" Color="ParticleAge=(v=(x=1,y=1,z=1);t=1,v=(y=0.843,z=0.9))" DiffuseLighting="0" EmissiveLighting="7" SizeX="0.1,Random=0.386,ParticleAge=(t=0.49,v=1;t=1,v=0.498)" SizeY="0.1,Random=0.386,ParticleAge=(t=0.49,v=1;t=1,v=0.498)" SizeZ="0.1,Random=0.386,ParticleAge=(t=0.49,v=1;t=1,v=0.498)" Speed="5" AirResistance="4,Random=0.262,WindScale=0"/>
+   </Particles>
+  </Childs>
+ </Particles>
+ <Particles Name="Interaction.PickupObjectiveCollected">
+  <Params Count="1" EmitterSizeDiameter="5" LocalRandomAngles="y=360" BeamAge="0.7" ParticleLifeTime="0.7" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsstarring_01.dds" SoftParticle="true,Softness=200" Alpha="ParticleAge=(t=0.17,v=1;t=0.57,v=0.06,s=-1.882353,flags=4;t=1)" Color="ParticleAge=(t=0.153,v=(x=1,y=1,z=1);t=0.718,v=(x=1,y=0.757,z=0.09))" DiffuseLighting="0" EmissiveLighting="4" SizeX="1.1,ParticleAge=(v=0.24,d=0.37647063,flags=32;t=0.114,v=0.427;t=0.294,v=0.62,d=0.38039213,flags=32;t=1,v=1,s=0.38039213,flags=4)" SizeY="1.1,ParticleAge=(v=0.24,d=0.37647063,flags=32;t=0.114,v=0.427;t=0.294,v=0.62,d=0.38039213,flags=32;t=1,v=1,s=0.38039213,flags=4)" SizeZ="1.1,ParticleAge=(v=0.24,d=0.37647063,flags=32;t=0.114,v=0.427;t=0.294,v=0.62,d=0.38039213,flags=32;t=1,v=1,s=0.38039213,flags=4)" RandomAngles="y=360"/>
+  <Childs>
+   <Particles Name="Sparks">
+    <Params Count="25" EmitterSizeDiameter="5" LocalSpawnPosRandomOffset="x=0.1,y=0.1,z=0.1" LocalOffsetRoundness="0.999" LocalSpawnIncrement="0.999" BeamAge="1" ParticleLifeTime="1,Random=0.4" OffsetRoundness="0.999" SpawnIncrement="0.999" FocusAngle="180,Random=0.999" FocusAzimuth="180,Random=1.999" EmitAngle="180,Random=0.999" Curvature="0" BlendType="Additive" Texture="objects/effects/particleassets/fx_pickupsprojectorglow_01.dds" Alpha="ParticleAge=(t=0.39,v=1;t=1)" Color="ParticleAge=(v=(x=1,y=1,z=1);t=1,v=(x=1,y=0.733,z=0.004))" DiffuseLighting="0" EmissiveLighting="7" SizeX="0.1,Random=0.386,ParticleAge=(t=0.49,v=1;t=1,v=0.498)" SizeY="0.1,Random=0.386,ParticleAge=(t=0.49,v=1;t=1,v=0.498)" SizeZ="0.1,Random=0.386,ParticleAge=(t=0.49,v=1;t=1,v=0.498)" Speed="5" AirResistance="4,Random=0.262,WindScale=0"/>
+   </Particles>
+  </Childs>
+ </Particles>
+</ParticleLibrary>

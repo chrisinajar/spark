@@ -1,0 +1,81 @@
+{
+    "Dependencies": [
+        {
+            "Uuid": "0e4cab78ff7a4b58bb8557eb0bc23fe5",
+            "VersionConstraints": [
+                "~>0.1"
+            ],
+            "_comment": "PhysicsWrapper"
+        },
+        {
+            "Uuid": "7c18089fe13b4ef9aa7c36beacaecc87",
+            "VersionConstraints": [
+                "~>0.1"
+            ],
+            "_comment": "MouseCursorPosition"
+        },
+		{
+            "Uuid": "044a63ea67d04479aa5daf62ded9d9ca",
+            "VersionConstraints": [
+                "~>0.1"
+            ],
+            "_comment": "EMotionFX"
+        },
+        {
+            "Uuid": "fd4ea4ff80a64bb9a90e55b46e9539ef",
+            "VersionConstraints": [
+                "~>0.1"
+            ],
+            "_comment": "CloudGemPlayerAccount"
+        },
+        {
+            "Uuid": "d2793a8baa464ba1af9094bed6b761c0",
+            "VersionConstraints": [
+                "~>0.1"
+            ],
+            "_comment": "SteamWorks"
+        },
+        {
+            "Uuid": "76de765796504906b73be7365a9bff06",
+            "VersionConstraints": [
+                "~>2.0.0"
+            ],
+            "_comment": "GameLift"
+        },
+        {
+            "Uuid": "d3ed407a19bb4c0d92b7c4872313d600",
+            "VersionConstraints": [
+                "~>1.0.0"
+            ],
+            "_comment": "Multiplayer"
+        },
+        {
+            "Uuid": "659cffff33b14a10835bafc6ea623f98",
+            "VersionConstraints": [
+                "~>0.0.1"
+            ],
+            "_comment": "CertificateManager"
+        },
+        {
+            "Uuid": "5a149b6b3c964064bd4970f0e92f72e2",
+            "VersionConstraints": [
+                "~>0.1"
+            ],
+            "_comment": "Texture Atlas"
+        }
+    ],
+    "GemFormatVersion": 4,
+    "Uuid": "46b9d586131f46f7b8d0286211becf81",
+    "Name": "spark",
+    "DisplayName": "spark",
+    "Version": "0.1.0",
+    "Summary": "A short description of my Gem.",
+    "Tags": ["Game"],
+    "IconPath": "preview.png",
+    "IsGameGem": true,
+    "Modules": [
+        {
+            "Type": "GameModule"
+        }
+    ]
+}

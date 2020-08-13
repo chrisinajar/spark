@@ -1,0 +1,84 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="particle_showroom_001_mat" MtlFlags="524418" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_concrete_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_concrete_001_m_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/showroom/showroom_concrete_001_m_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="particle_showroom_skybox_001_mat" MtlFlags="524418" Shader="Illum" GenMask="800000000000" StringGenMask="%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1,1" Specular="0,0,0,1" Emittance="1,1,1,25" Opacity="1" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/defaults/white.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="particle_showroom_glass_001_mat" MtlFlags="2623648" Shader="Glass" GenMask="18000" StringGenMask="%DIRT_MAP%ENVIRONMENT_MAP" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="0.57999998" Shininess="248" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_glass_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_glass_001_m_ddna.dds"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams BumpMapTile="1" TintColor="1,1,1" TintCloudiness="0" BackLightScale="0.5" BumpScale="0.1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="particle_showroom_pipes_001_mat" MtlFlags="524416" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_pipe_blue_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_pipe_blue_001_m_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/showroom/showroom_pipe_blue_001_m_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525442" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_nodraw" Diffuse="1,1,1,1" Specular="0,0,0,1" Opacity="1" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures />
+  </Material>
+  <Material Name="showroom_concrete_panel_001_mat" MtlFlags="524418" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_concrete_panel_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_concrete_panel_001_m_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/showroom/showroom_concrete_panel_001_m_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="showroom_concrete_panel_002_mat" MtlFlags="524418" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_concrete_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_concrete_panel_002_m_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/showroom/showroom_concrete_001_m_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="showroom_concrete_orange_001_mat" MtlFlags="524416" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_concrete_blue_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_concrete_orange_001_m_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/showroom/showroom_concrete_orange_001_m_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="particle_showroom_chrome_001_mat" MtlFlags="524416" Shader="Illum" GenMask="800000000000" StringGenMask="%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="0.44520122,0.44520122,0.44520122,1" Specular="0.37626216,0.37626216,0.37626216,1" Opacity="1" Shininess="212" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/defaults/grey.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="particle_showroom_polymer_orange_001_mat" MtlFlags="524416" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_steel_blue_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_steel_orange_001_m_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/showroom/showroom_steel_blue_001_m_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="particle_showroom_glass_002_mat" MtlFlags="524416" Shader="Illum" GenMask="801010000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/particleassets/showroom/showroom_aluminum_001_m_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/particleassets/showroom/showroom_aluminum_001_m_ddna.dds"/>
+    <Texture Map="Specular" File="objects/particleassets/showroom/showroom_aluminum_001_m_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,1885 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>matthew williams</Author>
+  <LastAuthor>matthew williams</LastAuthor>
+  <Created>2019-07-31T14:27:02Z</Created>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12750</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s15">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s16">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s18">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s24">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s25">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s27">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s29">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s30">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+   <NumberFormat ss:Format="&quot;$&quot;#,##0.00"/>
+  </Style>
+  <Style ss:ID="s31">
+   <Font ss:FontName="Arial"/>
+   <NumberFormat ss:Format="&quot;$&quot;#,##0.00"/>
+  </Style>
+  <Style ss:ID="s33">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s35">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s36">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s37">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s38">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s42">
+   <Font ss:FontName="Arial" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s44">
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="14" ss:ExpandedRowCount="315" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s15" ss:DefaultColumnWidth="75.75"
+   ss:DefaultRowHeight="15.75">
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="216"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="262.5"/>
+   <Column ss:StyleID="s15" ss:AutoFitWidth="0" ss:Width="254.25"/>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s16"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ORIGINAL TEXT</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">TRANSLATED TEXT</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">CONTEXT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51">
+    <Cell ss:StyleID="s19"/>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">This contains original text meant for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">This contains text for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data></Cell>
+    <Cell ss:StyleID="s18"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s22"/>
+    <Cell ss:StyleID="s23"/>
+    <Cell ss:StyleID="s23"/>
+    <Cell ss:StyleID="s23"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s24"><Data ss:Type="String">ABILITIES</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s25"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s26"><Data ss:Type="String">ui_ability_type_passive</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Passive</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">Passive</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_type_immediate</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Immediate</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Immediate</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_type_unit_target</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Unit Target</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Unit Target</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_type_point_target</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Point Target</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Point Target</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_type_direction_target</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Direction Target</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Direction Target</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_type_vector_target</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Vector Target</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Vector Target</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_pierces_spell_immunity</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Spell Immunity</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Spell Immunity</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_dispellable</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Dispellable</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Dispellable</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_damage_type_physical</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Physical</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Physical</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_damage_type_magical</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Magical</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Magical</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_damage_type_pure</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Pure</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Pure</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_affects_friendly</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Friendly</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Friendly</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_affects_enemy</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Enemy</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Enemy</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_affects_both</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Both</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">Both</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_yes</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"><Data ss:Type="String">ui_ability_no</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s24"><Data ss:Type="String">TALENTS</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s25"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="s36"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HERO NAMES</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_bard_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bard</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bard</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_harbinger_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hardinger</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Hardinger</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_ironwraith_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ironwraith</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ironwraith</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_minerva_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Minerva</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Minerva</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_muse_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Muse</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Muse</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_astromage_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Astromage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Astromage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_simpleagisup_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Agi Support Hero</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Agi Support Hero</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_rangewillsup_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range Will Sup</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range Will Sup</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_quill_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Quill</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Quill</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_hero_walkingfountain_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Walking Fountain</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Walking Fountain</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">npc_spark_creep_name</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Creep</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Creep</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">ASTROMAGE</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_plasma_flare</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Plasma Flare</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Plasma Flare</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_plasma_flare_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_plasma_flare_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_plasma_flare_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_plasma_flare_description</Data></Cell>
+    <Cell><Data ss:Type="String">Cast forth a destructive solar wind, damaging all enemies in a path.</Data></Cell>
+    <Cell><Data ss:Type="String">Cast forth a destructive solar wind, damaging all enemies in a path.</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_quasar</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Quasar</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Quasar</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_quasar_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_quasar_stun_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_quasar_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_quasar_description</Data></Cell>
+    <Cell><Data ss:Type="String">Summon a quasar over a small area, dealing damage and a stun after a short delay.</Data></Cell>
+    <Cell><Data ss:Type="String">Summon a quasar over a small area, dealing damage and a stun after a short delay.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_solar_maximum</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Solar Maximum</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Solar Maximum</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_solar_maximum_max_stack_amount</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Max Stack Amount</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Max Stack Amount</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_solar_maximum_bonus_attack_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Attack Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Attack Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_solar_maximum_bonus_movement_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Movement Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Movement Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_solar_maximum_bonus_ability_power</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Ability Power</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Ability Power</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_solar_maximum_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_solar_maximum_percentage_increase</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Percentage Increase</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Percentage Increase</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_solar_maximum_description</Data></Cell>
+    <Cell><Data ss:Type="String">Gain movement speed, attack speed, and ability power with each spell cast. Stacks with itself. Maximum of three stacks.</Data></Cell>
+    <Cell><Data ss:Type="String">Gain movement speed, attack speed, and ability power with each spell cast. Stacks with itself. Maximum of three stacks.</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s29"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_antimatter_lance</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Antimatter Lance</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Antimatter Lance</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_antimatter_lance_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_antimatter_lance_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_antimatter_lance_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_antimatter_lance_description</Data></Cell>
+    <Cell><Data ss:Type="String">The Astromagus annihilates his enemies with an arc of exotic energies, dealing massive damage to a single target.</Data></Cell>
+    <Cell><Data ss:Type="String">The Astromagus annihilates his enemies with an arc of exotic energies, dealing massive damage to a single target.</Data></Cell>
+   </Row>
+   <Row ss:Index="69" ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">MINERVA</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_holy_javlin</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Holy Javlin</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Holy Javlin</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_holy_javlin_self_damage_amount</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Self Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Self Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_holy_javlin_heal_amount</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Heal Amount</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Heal Amount</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_holy_javlin_damage_amount</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_holy_javlin_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_holy_javlin_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_holy_javlin_description</Data></Cell>
+    <Cell><Data ss:Type="String">Sacrifice a small amount of health to cast a bolt of light, dealing damage to an enemy or healing an ally.</Data></Cell>
+    <Cell><Data ss:Type="String">Sacrifice a small amount of health to cast a bolt of light, dealing damage to an enemy or healing an ally.</Data></Cell>
+   </Row>
+   <Row ss:Index="78" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consecrate</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Consecrate</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Consecrate</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consecrate_damage_block</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage Block</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage Block</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consecrate_explode_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Explode Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Explode Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consecrate_shield_health_percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Shield Health Percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Shield Health Percentage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consecrate_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consecrate_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consecrate_explode_aoe</Data></Cell>
+    <Cell><Data ss:Type="String">Explode Area Of Effect</Data></Cell>
+    <Cell><Data ss:Type="String">Explode Area Of Effect</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_consecrate_description</Data></Cell>
+    <Cell><Data ss:Type="String">Bless an allied unit, purging debuffs and shielding them from a limited amount of damage for a short time. Deals area of effect damage on expiration.</Data></Cell>
+    <Cell><Data ss:Type="String">Bless an allied unit, purging debuffs and shielding them from a limited amount of damage for a short time. Deals area of effect damage on expiration.</Data></Cell>
+   </Row>
+   <Row ss:Index="87" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_piercing_light</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Piercing Light</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Piercing Light</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_piercing_light_bonus_attack_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Attack Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Attack Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_piercing_light_bonus_movement_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Movement Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Movement Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_piercing_light_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_piercing_light_reduce_attack_speed</Data></Cell>
+    <Cell><Data ss:Type="String">Attack Speed Reduction</Data></Cell>
+    <Cell><Data ss:Type="String">Attack Speed Reduction</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_piercing_light_reduce_movement_speed</Data></Cell>
+    <Cell><Data ss:Type="String">Movement Speed Reduction</Data></Cell>
+    <Cell><Data ss:Type="String">Movement Speed Reduction</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_piercing_light_debuff_duration</Data></Cell>
+    <Cell><Data ss:Type="String">Debuff Duration</Data></Cell>
+    <Cell><Data ss:Type="String">Debuff Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_piercing_light_description</Data></Cell>
+    <Cell><Data ss:Type="String">Minerva's spear cuts to the soul of her enemies, crippling them and releasing divine light that grants attack speed and movement speed to attacking allies.</Data></Cell>
+    <Cell><Data ss:Type="String">Minerva's spear cuts to the soul of her enemies, crippling them and releasing divine light that grants attack speed and movement speed to attacking allies.</Data></Cell>
+   </Row>
+   <Row ss:Index="96" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_empyrean</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Empyrean</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Empyrean</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_empyrean_damage_to_health_percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage To Health Percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage To Health Percentage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_empyrean_min_health_trigger_percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Min HP Trigger Percantage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Min HP Trigger Percantage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_empyrean_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_empyrean_description</Data></Cell>
+    <Cell><Data ss:Type="String">Minerva briefly touches divinity, converting incoming damage into healing and purging debuffs. Activates automatically when below X% health. Can be used while stunned.</Data></Cell>
+    <Cell><Data ss:Type="String">Minerva briefly touches divinity, converting incoming damage into healing and purging debuffs. Activates automatically when below X% health. Can be used while stunned.</Data></Cell>
+   </Row>
+   <Row ss:Index="102" ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">MUSE</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_harmony</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Harmony</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Harmony</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_harmony_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_harmony_heal_amount</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Heal Amount</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Heal Amount</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_harmony_cooldown_reduction</Data></Cell>
+    <Cell><Data ss:Type="String">Cooldown Reduction</Data></Cell>
+    <Cell><Data ss:Type="String">Cooldown Reduction</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_harmony_description</Data></Cell>
+    <Cell><Data ss:Type="String">Muse plays a beautiful tone on her enchanted lyre, healing an ally. Basic attacks continue the melody, reducing Harmony’s cooldown.</Data></Cell>
+    <Cell><Data ss:Type="String">Muse plays a beautiful tone on her enchanted lyre, healing an ally. Basic attacks continue the melody, reducing Harmony’s cooldown.</Data></Cell>
+   </Row>
+   <Row ss:Index="109" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_forest_friend</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Forest Friend</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Forest Friend</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_forest_friend_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_forest_friend_reveal_area</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Reveal Area Size</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Reveal Area Size</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_forest_friend_debuff_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Debuff Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Debuff Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_forest_friend_max_damage_distance</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Max Damage Distance</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Max Damage Distance</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_forest_friend_min_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Min. Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Min. Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_forest_friend_max_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Max Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Max Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_forest_friend_stack_damage_increase</Data></Cell>
+    <Cell><Data ss:Type="String">Stack Damage Increase</Data></Cell>
+    <Cell><Data ss:Type="String">Stack Damage Increase</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_forest_friend_description</Data></Cell>
+    <Cell><Data ss:Type="String">Muse sends out a forest critter to scout the battlefield. On finding an enemy, the scout briefly marks them and deals damage based on how far it traveled. Successful hits with Forest Friend permanently increase its maximum damage.</Data></Cell>
+    <Cell><Data ss:Type="String">Muse sends out a forest critter to scout the battlefield. On finding an enemy, the scout briefly marks them and deals damage based on how far it traveled. Successful hits with Forest Friend permanently increase its maximum damage.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dischord</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Dischord</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Dischord</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dischord_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dischord_delay</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Delay</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Delay</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dischord_radius</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Radius</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Radius</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dischord_stun_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dischord_damage</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_dischord_description</Data></Cell>
+    <Cell><Data ss:Type="String">Summoning ethereal strings at a target location, Muse strikes a terrible chord, stunning all enemies caught in its area.</Data></Cell>
+    <Cell><Data ss:Type="String">Summoning ethereal strings at a target location, Muse strikes a terrible chord, stunning all enemies caught in its area.</Data></Cell>
+   </Row>
+   <Row ss:Index="127" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_shadow_serenade</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Shadow Serenade</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Shadow Serenade</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_shadow_serenade_bonus_movement_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Movement Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Movement Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_shadow_serenade_bonus_attack_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Attack Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Attack Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_shadow_serenade_duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_shadow_serenade_description</Data></Cell>
+    <Cell><Data ss:Type="String">The Muse creeps through the battlefield, gaining additional movement speed and becoming invisible. When she reveals herself she releases an onslaught of arrows, gaining increased attack speed for a short time.</Data></Cell>
+    <Cell><Data ss:Type="String">The Muse creeps through the battlefield, gaining additional movement speed and becoming invisible. When she reveals herself she releases an onslaught of arrows, gaining increased attack speed for a short time.</Data></Cell>
+   </Row>
+   <Row ss:Index="133" ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HARBINGER</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_carrion_dart</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Carrion Dart</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Carrion Dart</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_carrion_dart_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_carrion_dart_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_carrion_dart_movement_speed_reduction_percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Movement Speed Reduction</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Movement Speed Reduction</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_carrion_dart_slow_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Slow Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Slow Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_carrion_dart_attack_percentage</Data></Cell>
+    <Cell><Data ss:Type="String">Attack Chance</Data></Cell>
+    <Cell><Data ss:Type="String">Attack Chance</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_carrion_dart_description</Data></Cell>
+    <Cell><Data ss:Type="String">Launch a dart at an enemy unit, slowing and dealing damage based on Harbinger’s attack value.</Data></Cell>
+    <Cell><Data ss:Type="String">Launch a dart at an enemy unit, slowing and dealing damage based on Harbinger’s attack value.</Data></Cell>
+   </Row>
+   <Row ss:Index="142" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_flicker_strike</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Flicker Strike</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Flicker Strike</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_flicker_strike_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_flicker_strike_duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_flicker_strike_bonus_attack_speed</Data></Cell>
+    <Cell><Data ss:Type="String">Bonus Attack Speed</Data></Cell>
+    <Cell><Data ss:Type="String">Bonus Attack Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_flicker_strike_description</Data></Cell>
+    <Cell><Data ss:Type="String">Teleport to a target unit, gaining bonus attack speed if the target is an enemy.</Data></Cell>
+    <Cell><Data ss:Type="String">Teleport to a target unit, gaining bonus attack speed if the target is an enemy.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_the_flock</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">The Flock</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">The Flock</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_the_flock_duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_the_flock_hide_radius</Data></Cell>
+    <Cell><Data ss:Type="String">Hide Radius</Data></Cell>
+    <Cell><Data ss:Type="String">Hide Radius</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_the_flock_evasion</Data></Cell>
+    <Cell><Data ss:Type="String">Evasion %</Data></Cell>
+    <Cell><Data ss:Type="String">Evasion %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_the_flock_description</Data></Cell>
+    <Cell><Data ss:Type="String">Harbinger’s physical form shifts unpredictably, granting evasion. Activate to significantly decrease Harbinger’s visibility, occasionally flickering into sight.</Data></Cell>
+    <Cell><Data ss:Type="String">Harbinger’s physical form shifts unpredictably, granting evasion. Activate to significantly decrease Harbinger’s visibility, occasionally flickering into sight.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_murder</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Murder</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Murder</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_murder_crit_percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Crit %</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Crit %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_murder_movement_speed_reduction_percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Movement Speed Reduction %</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Movement Speed Reduction %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_murder_slow_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Slow Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Slow Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_murder_description</Data></Cell>
+    <Cell><Data ss:Type="String">Harbinger empowers his weapon to deal a devastating critical strike to an enemy, additionally purging and slowing them.</Data></Cell>
+    <Cell><Data ss:Type="String">Harbinger empowers his weapon to deal a devastating critical strike to an enemy, additionally purging and slowing them.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">IRONWRAITH</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_phantom_grip</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Phantom Grip</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Phantom Grip</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_phantom_grip_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_phantom_grip_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_phantom_grip_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_phantom_grip_vision_radius</Data></Cell>
+    <Cell><Data ss:Type="String">Vision Radius</Data></Cell>
+    <Cell><Data ss:Type="String">Vision Radius</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_phantom_grip_vision_duration</Data></Cell>
+    <Cell><Data ss:Type="String">Vision Duration</Data></Cell>
+    <Cell><Data ss:Type="String">Vision Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_phantom_grip_description</Data></Cell>
+    <Cell><Data ss:Type="String">The Ironwraith launches its gauntlet, dragging back the first unit that it hits and dealing heavy damage if it is an enemy.</Data></Cell>
+    <Cell><Data ss:Type="String">The Ironwraith launches its gauntlet, dragging back the first unit that it hits and dealing heavy damage if it is an enemy.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dread_light</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Dread Light</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Dread Light</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dread_light_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dread_light_movement_speed_reduction</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Movement Speed Reduction</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Movement Speed Reduction</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_dread_light_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_dread_light_description</Data></Cell>
+    <Cell><Data ss:Type="String">Ironwraith exposes its core, radiating deadly energy that slows and deals damage both to nearby enemies and itself.</Data></Cell>
+    <Cell><Data ss:Type="String">Ironwraith exposes its core, radiating deadly energy that slows and deals damage both to nearby enemies and itself.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ravenous_spirit</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ravenous Spirit</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ravenous Spirit</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ravenous_spirit_bonus_strength</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Strength</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Strength</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ravenous_spirit_bonus_magic_armor</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Magic Armor</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bonus Magic Armor</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ravenous_spirit_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_ravenous_spirit_description</Data></Cell>
+    <Cell><Data ss:Type="String">The Ironwraith’s supernatural nature makes it resistant to magical attacks and feeds off of the energy of its enemies, gaining permanent strength each time an enemy hero is banished nearby.</Data></Cell>
+    <Cell><Data ss:Type="String">The Ironwraith’s supernatural nature makes it resistant to magical attacks and feeds off of the energy of its enemies, gaining permanent strength each time an enemy hero is banished nearby.</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:Index="2" ss:StyleID="s44"/>
+    <Cell ss:StyleID="s44"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consume</Data></Cell>
+    <Cell><Data ss:Type="String">Consume</Data></Cell>
+    <Cell><Data ss:Type="String">Consume</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consume_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consume_bonus_damage_strength_multiplier</Data></Cell>
+    <Cell><Data ss:Type="String">Bonus Damage x Strength</Data></Cell>
+    <Cell><Data ss:Type="String">Bonus Damage * Strength</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consume_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consume_movement_speed_reduction_percentage</Data></Cell>
+    <Cell><Data ss:Type="String">Movement Speed Reduction</Data></Cell>
+    <Cell><Data ss:Type="String">Movement Speed Reduction</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consume_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_consume_description</Data></Cell>
+    <Cell><Data ss:Type="String">Absorb a hero, disabling them and dealing damage over time if they are an enemy. While an enemy is absorbed they are invulnerable to all damage except from Absorb and Dread Light, and Ironwraith is slowed.</Data></Cell>
+    <Cell><Data ss:Type="String">Absorb a hero, disabling them and dealing damage over time if they are an enemy. While an enemy is absorbed they are invulnerable to all damage except from Absorb and Dread Light, and Ironwraith is slowed.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:Index="2" ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">SIMPLE AGI SUP</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_stun_bolt</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Bolt</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Bolt</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_stun_bolt_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_stun_bolt_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_stun_bolt_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_stun_bolt_stun_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_stun_bolt_description</Data></Cell>
+    <Cell><Data ss:Type="String">Stun Bolt Description</Data></Cell>
+    <Cell><Data ss:Type="String">Stun Bolt Description</Data></Cell>
+   </Row>
+   <Row ss:Index="197" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_armor_wave</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Armor Wave</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Armor Wave</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_armor_wave_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Wave Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Wave Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_armor_wave_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_armor_wave_duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_armor_wave_visibility_duration</Data></Cell>
+    <Cell><Data ss:Type="String">Visibility Duration</Data></Cell>
+    <Cell><Data ss:Type="String">Visibility Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_armor_wave_reduce_armor</Data></Cell>
+    <Cell><Data ss:Type="String">Reduce Armor</Data></Cell>
+    <Cell><Data ss:Type="String">Reduce Armor</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_armor_wave_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_armor_wave_description</Data></Cell>
+    <Cell><Data ss:Type="String">Armor Wave Description</Data></Cell>
+    <Cell><Data ss:Type="String">Armor Wave Description</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_aura_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Aura Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Aura Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_aura_damage_aoe</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_aura_damage_bonus_aura_damage</Data></Cell>
+    <Cell><Data ss:Type="String">Aura Damage Bonus</Data></Cell>
+    <Cell><Data ss:Type="String">Aura Damage Bonus</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_aura_damage_description</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Aura Damage Description</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Aura Damage Description</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_swap</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Swap</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Swap</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_swap_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_swap_description</Data></Cell>
+    <Cell><Data ss:Type="String">Swap Description</Data></Cell>
+    <Cell><Data ss:Type="String">Swap Description</Data></Cell>
+   </Row>
+   <Row ss:Index="215" ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">RANGE WILL SUPPORT</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_bouncing_stun</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bouncing Stun</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Bouncing Stun</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_bouncing_stun_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_bouncing_stun_speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_bouncing_stun_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_bouncing_stun_stun_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_bouncing_stun_bounces</Data></Cell>
+    <Cell><Data ss:Type="String">Bounces</Data></Cell>
+    <Cell><Data ss:Type="String">Bounces</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_bouncing_stun_bounces_distance</Data></Cell>
+    <Cell><Data ss:Type="String">Bounce Distance</Data></Cell>
+    <Cell><Data ss:Type="String">Bounce Distance</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_bouncing_stun_description</Data></Cell>
+    <Cell><Data ss:Type="String">Bouncing Stun Description</Data></Cell>
+    <Cell><Data ss:Type="String">Bouncing Stun Description</Data></Cell>
+   </Row>
+   <Row ss:Index="225" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_aoe_heal</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">AOE Heal</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">AOE Heal</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_aoe_heal_aoe</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Area Of Effect</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">AOE</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_aoe_heal_max_mana_percentage_drained_per_second</Data></Cell>
+    <Cell><Data ss:Type="String">Max Mana % Per Second</Data></Cell>
+    <Cell><Data ss:Type="String">Max Mana % Per Second</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_aoe_heal_aura_heal_amount</Data></Cell>
+    <Cell><Data ss:Type="String">Heal Amount</Data></Cell>
+    <Cell><Data ss:Type="String">Heal Amount</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_aoe_heal_description</Data></Cell>
+    <Cell><Data ss:Type="String">AOE Heal Description</Data></Cell>
+    <Cell><Data ss:Type="String">AOE Heal Description</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_damage_multi_debuff</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage Multi Debuff</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage Multi Debuff</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_damage_multi_debuff_aoe</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_damage_multi_debuff_damage_per_second</Data></Cell>
+    <Cell><Data ss:Type="String">Damage Per Second</Data></Cell>
+    <Cell><Data ss:Type="String">Damage Per Second</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_damage_multi_debuff_lost_health_as_burst_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Lost Health Burst %</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Lost Health Burst %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_damage_multi_debuff_burst_damage_interval</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Burst Damage Interval</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Burst Damage Interval</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_damage_multi_debuff_debuff_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Debuff Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Debuff Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_damage_multi_debuff_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_damage_multi_debuff_description</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage Multi Debuff Description</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage Multi Debuff Description</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_channel_attacks</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Channel Attacks</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Channel Attacks</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_channel_attacks_attack_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Attack Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Attack Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_channel_attacks_damage</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_channel_attacks_attacks_per_second</Data></Cell>
+    <Cell><Data ss:Type="String">Attacks Per Second</Data></Cell>
+    <Cell><Data ss:Type="String">Attacks Per Second</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_channel_attacks_speed</Data></Cell>
+    <Cell><Data ss:Type="String">Speed</Data></Cell>
+    <Cell><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_channel_attacks_channel_time</Data></Cell>
+    <Cell><Data ss:Type="String">Channel Time</Data></Cell>
+    <Cell><Data ss:Type="String">Channel Time</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_channel_attacks_description</Data></Cell>
+    <Cell><Data ss:Type="String">Channel Attacks Description</Data></Cell>
+    <Cell><Data ss:Type="String">Channel Attacks Description</Data></Cell>
+   </Row>
+   <Row ss:Index="248" ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">QUILL</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_runic_burst</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Runic Burst</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Runic Burst</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_runic_burst_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_runic_burst_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_runic_burst_debuff_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Debuff Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Debuff Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_runic_burst_aoe</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_runic_burst_reduce_attack_speed</Data></Cell>
+    <Cell><Data ss:Type="String">Attack Speed Reduction</Data></Cell>
+    <Cell><Data ss:Type="String">Attack Speed Reduction</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_runic_burst_movement_speed_reduction_percentage</Data></Cell>
+    <Cell><Data ss:Type="String">Movement Speed Reduction %</Data></Cell>
+    <Cell><Data ss:Type="String">Movement Speed Reduction %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_runic_burst_description</Data></Cell>
+    <Cell><Data ss:Type="String">Inscribe an explosive rune into the ground, damaging all enemies in an area of effect and slowing their movement and attack speed.</Data></Cell>
+    <Cell><Data ss:Type="String">Inscribe an explosive rune into the ground, damaging all enemies in an area of effect and slowing their movement and attack speed.</Data></Cell>
+   </Row>
+   <Row ss:Index="258" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ink_pit</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ink Pit</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ink Pit</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ink_pit_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ink_pit_damage_per_second</Data></Cell>
+    <Cell><Data ss:Type="String">Damage Per Second</Data></Cell>
+    <Cell><Data ss:Type="String">Damage Per Second</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ink_pit_duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+    <Cell><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ink_pit_total_damage</Data></Cell>
+    <Cell><Data ss:Type="String">Total Damage</Data></Cell>
+    <Cell><Data ss:Type="String">Total Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_ink_pit_creep_duration</Data></Cell>
+    <Cell><Data ss:Type="String">Creep Duration</Data></Cell>
+    <Cell><Data ss:Type="String">Creep Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_ink_pit_description</Data></Cell>
+    <Cell><Data ss:Type="String">Engulf an enemy in a well of ink, dealing damage over time while rooting and disarming them. Lasts longer on creeps.</Data></Cell>
+    <Cell><Data ss:Type="String">Engulf an enemy in a well of ink, dealing damage over time while rooting and disarming them. Lasts longer on creeps.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_thrill_seeker</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Thrill Seeker</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Thrill Seeker</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_thrill_seeker_max_movement_speed_boost_percentage</Data></Cell>
+    <Cell><Data ss:Type="String">Max Move Speed Boost %</Data></Cell>
+    <Cell><Data ss:Type="String">Max Move Speed Boost %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_thrill_seeker_enemy_health_percentage_for_max_movement_speed_boost</Data></Cell>
+    <Cell><Data ss:Type="String">Enemy Health % For Max Move Boost</Data></Cell>
+    <Cell><Data ss:Type="String">Enemy Health % For Max Move Speed Boost</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_thrill_seeker_enemy_reveal_health_percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Enemy Reveal Health %</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Enemy Reveal Health %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_thrill_seeker_description</Data></Cell>
+    <Cell><Data ss:Type="String">Thurra chases the thrill of battle, gaining increased movement speed as her enemies’ health drops. When an enemy falls below 33% of their maximum health, they are revealed on the map.</Data></Cell>
+    <Cell><Data ss:Type="String">Thurra chases the thrill of battle, gaining increased movement speed as her enemies’ health drops. When an enemy falls below 33% of their maximum health, they are revealed on the map.</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s44"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Legendarium</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Legendarium</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium_damage</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium_reduce_attack_speed</Data></Cell>
+    <Cell><Data ss:Type="String">Attack Speed Reduction</Data></Cell>
+    <Cell><Data ss:Type="String">Attack Speed Reduction</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium_range</Data></Cell>
+    <Cell><Data ss:Type="String">Range</Data></Cell>
+    <Cell><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium_movement_speed_reduction_percentage</Data></Cell>
+    <Cell><Data ss:Type="String">Move Speed Reduction %</Data></Cell>
+    <Cell><Data ss:Type="String">Move Speed Reduction %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium_aoe</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium_explosions_per_second</Data></Cell>
+    <Cell><Data ss:Type="String">Explosions Per Second</Data></Cell>
+    <Cell><Data ss:Type="String">Explosions Per Second</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium_explosions_damage_aoe</Data></Cell>
+    <Cell><Data ss:Type="String">Explosion AOE Damage</Data></Cell>
+    <Cell><Data ss:Type="String">Explosion Damage Area Of Effect</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_legendarium_debuff_linger</Data></Cell>
+    <Cell><Data ss:Type="String">Debuff Linger</Data></Cell>
+    <Cell><Data ss:Type="String">Debuff Linger</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_legendarium_description</Data></Cell>
+    <Cell><Data ss:Type="String">Quill unfurls her scroll and calls on the chaos of her greatest battles, creating a large slowing field and causing random explosions while she is within the area.</Data></Cell>
+    <Cell><Data ss:Type="String">Quill unfurls her scroll and calls on the chaos of her greatest battles, creating a large slowing field and causing random explosions while she is within the area.</Data></Cell>
+   </Row>
+   <Row ss:Index="284" ss:Height="12.75">
+    <Cell ss:StyleID="s37"><Data ss:Type="String">WALKING FOUNTAIN</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_line_stun</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Line Stun</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">Line Stun</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_line_stun_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_line_stun_damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_line_stun_stun_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_line_stun_speed</Data></Cell>
+    <Cell><Data ss:Type="String">Speed</Data></Cell>
+    <Cell><Data ss:Type="String">Speed</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_line_stun_projectile_width</Data></Cell>
+    <Cell><Data ss:Type="String">Projectile Width</Data></Cell>
+    <Cell><Data ss:Type="String">Projectile Width</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_line_stun_description</Data></Cell>
+    <Cell><Data ss:Type="String">Line Stun Description</Data></Cell>
+    <Cell><Data ss:Type="String">Line Stun Description</Data></Cell>
+   </Row>
+   <Row ss:Index="293" ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_delayed_heal_and_nuke</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Delayed Heal/Nuke</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Delayed Heal/Nuke</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_delayed_heal_and_nuke_range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_delayed_heal_and_nuke_damage</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_delayed_heal_and_nuke_heal</Data></Cell>
+    <Cell><Data ss:Type="String">Heal</Data></Cell>
+    <Cell><Data ss:Type="String">Heal</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_delayed_heal_and_nuke_aoe</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_delayed_heal_and_nuke_delay</Data></Cell>
+    <Cell><Data ss:Type="String">Delay</Data></Cell>
+    <Cell><Data ss:Type="String">Delay</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_delayed_heal_and_nuke_description</Data></Cell>
+    <Cell><Data ss:Type="String">Delayed Heal/Nuke Description</Data></Cell>
+    <Cell><Data ss:Type="String">Delayed Heal/Nuke Description</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s42"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_mana_leak</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Mana Leak</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Mana Leak</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_mana_leak_range</Data></Cell>
+    <Cell><Data ss:Type="String">Range</Data></Cell>
+    <Cell><Data ss:Type="String">Range</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_mana_leak_ally_percentage_max_mana_gained_per_second</Data></Cell>
+    <Cell><Data ss:Type="String">Ally Max Mana Gained  %</Data></Cell>
+    <Cell><Data ss:Type="String">Ally Max Mana Gained Per Second %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_mana_leak_debuff_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Debuff Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Debuff Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_mana_leak_ally_base_mana_gain_per_second</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ally Mana Gained Per Second</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Ally Mana Gained Per Second</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_mana_leak_max_mana_lost_percentage</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Enemy Max Mana Lost %</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Enemy Max Mana Lost %</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_mana_leak_buff_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Buff Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Buff Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_mana_leak_stun_duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Stun Duration</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_mana_leak_description</Data></Cell>
+    <Cell><Data ss:Type="String">Mana Leak Description</Data></Cell>
+    <Cell><Data ss:Type="String">Mana Leak Description</Data></Cell>
+   </Row>
+   <Row ss:Height="14.25">
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s44"/>
+    <Cell ss:StyleID="s42"/>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_global_teleport</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Global Teleport</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Global Teleport</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_global_teleport_aoe</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+    <Cell><Data ss:Type="String">Area Of Effect</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_global_teleport_channel_time</Data></Cell>
+    <Cell><Data ss:Type="String">Channel Time</Data></Cell>
+    <Cell><Data ss:Type="String">Channel Time</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s29"><Data ss:Type="String">ui_ability_global_teleport_allies_transported</Data></Cell>
+    <Cell><Data ss:Type="String">Allies Transported</Data></Cell>
+    <Cell><Data ss:Type="String">Allies Transported</Data></Cell>
+   </Row>
+   <Row ss:Height="12.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="String">ui_ability_global_teleport_description</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Global Teleport Description</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">Global Teleport Description</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <NoSummaryRowsBelowDetail/>
+   <NoSummaryColumnsRightDetail/>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

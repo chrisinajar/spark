@@ -1,0 +1,22 @@
+//comments!
+{
+	"abilities" : {
+		"muse/forest_friend" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "30",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "120 120 150 180 210 340 450" 
+			},
+			"special-values" : {
+				"speed" : 120,
+				"reveal_area" : 30,
+				"debuff_duration" : 8,
+				"max_damage_distance" : 300,
+				"stack_damage_increase" : 20,
+				"min_damage" : "10 20 40 60 80 160 320",
+				"max_damage" : "50 100 200 300 400 800 1200"
+			}
+		}
+	}	
+}

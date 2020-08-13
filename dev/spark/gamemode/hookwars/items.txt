@@ -1,0 +1,139 @@
+//comments!
+{
+	"items" : {
+
+		"Boots" : {
+			"extends": "item",
+
+			"name":"Boots",
+			"price":{
+				"gold" : 500
+			},
+			"special-values" : {
+				"bonus_movement_speed": "50"
+			},
+			"icon-file" : "Textures/Icons/Items/15"
+		},
+
+		"mote_of_hunger" : {
+			"extends": "item",
+
+			"name":"Mote Of Hunger",
+			"price":{
+				"gold" : 100
+			},
+			"special-values" : {
+				"bonus_life_steal": "25"
+			},
+			"icon-file" : "Textures/Icons/Items/18"
+		},
+
+		"blink" : {
+			"extends": "item",
+
+			"name":"Blink",
+			"cooldown":"10",
+			"price":{
+				"gold" : 900
+			},			
+			"costs":{
+				"mana" : "5"
+			},
+			"special-values" : {
+				"range": "20"
+			},
+			"icon-file" : "Textures/Icons/Items/19"
+		},
+
+		"stone_touch" : {
+			"extends": "item",
+
+			"name":"Stone Touch",
+			"cooldown":"10",
+			"costs":{
+				"mana" : "50"
+			},
+			"price":{
+				"gold" : 300
+			},
+			"special-values" : {
+				"stun_duration": "5"
+			},
+			"icon-file" : "Textures/Icons/Items/29"
+		},
+
+		"mana_potion" : {
+			"extends": "items/health_potion",
+
+			"name":"Mana Potion",
+			"cooldown":"45",
+			"price":{
+				"gold" : 50
+			},
+			"special-values" : {
+				"duration": "16"
+			},
+			"icon-file" : "Textures/Icons/Items/3"	
+		},
+
+		"health_potion" : {
+			"extends": "potion",
+
+			"name":"Health Potion",
+			"cooldown":"30",
+			"price":{
+				"gold" : 50
+			},
+			"special-values" : {
+				"duration": "8"
+			},
+			"icon-file" : "Textures/Icons/Items/2"
+		},
+
+		"hp_booster" : {
+			"extends": "item",
+
+			"name":"HP Booster",
+			"price":{
+				"gold" : 300
+			},
+			"special-values" : {
+				"bonus_health": "250"
+			},
+			"icon-file" : "Textures/Icons/Items/27"
+		},
+
+		"push_stick" : {
+			"extends": "item",
+
+			"name":"Push Stick",
+			"cooldown":"10",
+			"price":{
+				"gold" : 300
+			},			
+			"costs":{
+				"mana" : "35"
+			},
+			"special-values" : {
+				"range": "200",
+				"speed": "20",
+				"push_distance": "10"
+			},
+			"icon-file" : "Textures/Icons/Items/23"
+		},
+
+		"spell_book" : {
+			"extends": "item",
+			
+			"name":"Spell Book",
+			"price":{
+				"gold" : 250
+			},
+			"special-values" : {
+				"bonus_cooldown_reduction": "50"
+			},
+			"icon-file" : "Textures/Icons/Items/21"
+		}
+	
+	}
+}

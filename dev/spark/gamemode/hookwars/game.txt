@@ -1,0 +1,32 @@
+//game.txt is the starting point of a gamemode
+{
+	"import" :  ["baselib","Spark"],	//import other gamemode folders
+	"include" : ["items","abilities.txt"], //import files inside the current gamemode folder , extension is optional(only txt works)
+
+	"gamemode" : {
+	    "name" : "hookwars" ,
+		"map" : "sandbox",
+		"lua-file": "Core/Game.lua"
+	},
+	
+	"shops":{
+		"top_shop":["blink","health_potion","mana_potion"]
+	},
+
+	"units" : {
+		"bard" : {
+			"slice" : "hero_test_001",
+			"variables":{
+				"movement_speed": 100
+			},
+			"special-values" : {
+				"test": 123
+			},
+			"ability0" : "hook",
+			"ability1" : "hook_damage",
+			"ability2" : "hook_range",
+			"ability3" : "hook_speed"
+		}
+	}
+	
+}

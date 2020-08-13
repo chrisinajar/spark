@@ -1,0 +1,20 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudGemLeaderboard_precompiled.cpp",
+            "Source/CloudGemLeaderboard_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/CloudGemLeaderboard/CloudGemLeaderboardBus.h",
+            "AWS/ServiceAPI/CloudGemLeaderboardClientComponent.h"
+        ],
+        "Source": [
+            "Source/CloudGemLeaderboardModule.cpp",
+            "Source/CloudGemLeaderboardSystemComponent.cpp",
+            "Source/CloudGemLeaderboardSystemComponent.h",
+            "AWS/ServiceAPI/CloudGemLeaderboardClientComponent.cpp"
+        ]
+    }
+}

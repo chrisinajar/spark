@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Tests": [
+            "Tests/TestsMain.cpp"
+        ],
+        "Tests/Importers": [
+            "Tests/Importers/FbxImporterUtilitiesTests.cpp"
+        ],
+        "Tests/Importers/Utilities": [
+            "Tests/Importers/Utilities/RenamedNodesMapTests.cpp"
+        ]
+    }
+}

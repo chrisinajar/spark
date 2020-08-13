@@ -1,0 +1,21 @@
+{
+    "none": {
+        "Source": [
+            "Source/EMotionFX_precompiled.cpp",
+            "Source/EMotionFX_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/Integration/AnimationBus.h"
+        ],
+        "Source/System": [
+            "Source/Integration/System/AnimationModule.cpp",
+            "Source/Integration/System/SystemComponent.cpp",
+            "Source/Integration/System/SystemComponent.h",
+            "Source/Integration/System/PipelineComponent.cpp",
+            "Source/Integration/System/PipelineComponent.h"
+        ]       
+    }
+}
+

@@ -1,0 +1,49 @@
+{
+	"items": {
+		"heal_amp_cdr": {
+			"extends": "base_item",
+			"ID":                               80,    // unique ID
+			"item_cost":                        [8000, 20000],	// if recipe = true, this is the recipe cost, else the item can be bought in the shop at this price
+			"item_shop_tags":                   "",
+			"item_recipe":                      true,
+			"max_level":				        2,
+			"item_recipe_icon":					"heal_amp_cdr_recipe_icon",
+			"item_icon":                        "heal_amp_cdr_icon",
+			"item_requirements":
+			[
+				["heal_amp_simple"],
+			],
+
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"ability_behavior":                 "", // what happens when you push the button: unit_target, ground_target, no_target, toggle, passive 
+			"ability_unit_target_team":         "", // team_enemy or team_ally
+			"ability_unit_target_type":         [], // hero, creep, boss
+			"ability_unit_target_flags":        "", // if listed it can target: status_immune
+
+			// Stats
+			//-------------------------------------------------------------------------------------------------------------
+			"ability_cooldown":                 0,
+			"ability_shared_cooldown":          "base",
+			"ability_cast_range":               0,
+			"ability_cast_point":               0.0,
+
+			// Item Info
+			//-------------------------------------------------------------------------------------------------------------
+			"ability_mana_cost":                0,
+			"item_shop_tags":                   "base",
+			"item_aliases":                     "base",
+
+			// Special
+			//-------------------------------------------------------------------------------------------------------------
+			"special_values":
+			{
+				"mana_regeneration":			[12.5, 15],
+				"armor":						[55, 65],
+				"all_stats":					[24, 28],
+				"heal_amplification":			[40, 50],
+				"cooldown_reduction":			[25, 30],
+			}
+		}
+	}
+}

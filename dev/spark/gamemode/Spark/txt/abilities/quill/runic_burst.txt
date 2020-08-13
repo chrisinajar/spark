@@ -1,0 +1,20 @@
+{
+	"abilities" : {
+		"quill/runic_burst" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "20 10 10 10 10 10 10",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "90 90 110 130 150 450 750" 
+			},
+			"special-values" : {
+				"range" : 70,
+				"debuff_duration" : 4.5,
+				"aoe" : 40,
+				"reduce_attack_speed" : "10 30 50 70 90 110 130",
+				"movement_speed_reduction_percentage" : "5 15 25 35 45 55 65",
+				"damage" : "50 125 200 275 350 650 950"  
+			}
+		}
+	}
+}

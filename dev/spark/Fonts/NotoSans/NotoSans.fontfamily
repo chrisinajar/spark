@@ -1,0 +1,32 @@
+<fontfamily name="NotoSans">
+    <font>
+        <file path="notosans-regular.font" />
+        <file path="notosans-bold.font" tags="b" />
+        <file path="notosans-italic.font" tags="i" />
+        <file path="notosans-bolditalic.font" tags="b,i" />
+    </font>
+    <font lang="korean">
+        <file path="../notosanskr/notosanskr-regular.font" />
+        <file path="../notosanskr/notosanskr-regular.font" tags="b" />
+        <file path="../notosanskr/notosanskr-regular.font" tags="i" />
+        <file path="../notosanskr/notosanskr-regular.font" tags="b,i" />
+    </font>
+    <font lang="chinesesimplified">
+        <file path="../notosanssc/notosanssc-regular.font" />
+        <file path="../notosanssc/notosanssc-regular.font" tags="b" />
+        <file path="../notosanssc/notosanssc-regular.font" tags="i" />
+        <file path="../notosanssc/notosanssc-regular.font" tags="b,i" />
+    </font>
+    <font lang="chinesetraditional">
+        <file path="../notosanstc/notosanstc-regular.font" />
+        <file path="../notosanstc/notosanstc-regular.font" tags="b" />
+        <file path="../notosanstc/notosanstc-regular.font" tags="i" />
+        <file path="../notosanstc/notosanstc-regular.font" tags="b,i" />
+    </font>
+    <font lang="japanese">
+        <file path="../notosansjp/notosansjp-regular.font" />
+        <file path="../notosansjp/notosansjp-regular.font" tags="b" />
+        <file path="../notosansjp/notosansjp-regular.font" tags="i" />
+        <file path="../notosansjp/notosansjp-regular.font" tags="b,i" />
+    </font>
+</fontfamily>

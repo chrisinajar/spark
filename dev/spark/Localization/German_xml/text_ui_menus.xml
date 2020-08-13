@@ -1,0 +1,889 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10965</WindowHeight>
+  <WindowWidth>21975</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <TabRatio>274</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Courier New" x:Family="Modern" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="Print_Area" ss:RefersTo="=Sheet1!R1C3:R2C4"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="135" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62">
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="13.5"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="271.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="343.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="329.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="160.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="51" ss:StyleID="s65">
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">ORIGINAL TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">TRANSLATED TEXT</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell><Data ss:Type="String">CONTEXT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25" ss:StyleID="s65">
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">This contains original text meant for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">This contains text for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s72">
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s75"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.25" ss:StyleID="s76">
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">Language Selection</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_SelectLanguage</Data></Cell>
+    <Cell><Data ss:Type="String">select language</Data></Cell>
+    <Cell><Data ss:Type="String">Bitte Sprache wählen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_English</Data></Cell>
+    <Cell><Data ss:Type="String">English</Data></Cell>
+    <Cell><Data ss:Type="String">English</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_German</Data></Cell>
+    <Cell><Data ss:Type="String">German</Data></Cell>
+    <Cell><Data ss:Type="String">Deutsch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Japanese</Data></Cell>
+    <Cell><Data ss:Type="String">Japanese</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">日本</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Korean</Data></Cell>
+    <Cell><Data ss:Type="String">Korean</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">한국어</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ChineseSC</Data></Cell>
+    <Cell><Data ss:Type="String">Chinese (Simplified)</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">中国</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ChineseTC</Data></Cell>
+    <Cell><Data ss:Type="String">Chinese (Traditional)</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">中國</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Russian</Data></Cell>
+    <Cell><Data ss:Type="String">Russian</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Русский</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Portuguese</Data></Cell>
+    <Cell><Data ss:Type="String">Portuguese</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">português</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Spanish</Data></Cell>
+    <Cell><Data ss:Type="String">Spanish</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Español</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"/>
+   </Row>
+   <Row ss:StyleID="s76">
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">MainMenu</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s76">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">menu_title</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Lumberyard</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Lumberyard</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ui_Apply</Data></Cell>
+    <Cell><Data ss:Type="String">Apply</Data></Cell>
+    <Cell><Data ss:Type="String">Übernehmen</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ui_ApplyChanges</Data></Cell>
+    <Cell><Data ss:Type="String">Apply changes?</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Änderungen übernehmen?</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Default"/>
+    <Cell><Data ss:Type="String">ui_ApplyTT</Data></Cell>
+    <Cell><Data ss:Type="String">Apply changes</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Änderungen übernehmen</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ui_back</Data></Cell>
+    <Cell><Data ss:Type="String">Back</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">zurück</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_backTT</Data></Cell>
+    <Cell><Data ss:Type="String">Back to previous page</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Zurück zur vorherigen Seite</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_connecting</Data></Cell>
+    <Cell><Data ss:Type="String">Connecting...</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Anschluss…</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ConnectTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Connect to Server</Data></Cell>
+    <Cell><Data ss:Type="String">Verbindung zum Server</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Exit</Data></Cell>
+    <Cell><Data ss:Type="String">Exit</Data></Cell>
+    <Cell><Data ss:Type="String">beenden</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ExitGame</Data></Cell>
+    <Cell><Data ss:Type="String">Do you want to exit the game?</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">wollen Sie das Spiel beenden?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ExitToMain</Data></Cell>
+    <Cell><Data ss:Type="String">Exit Game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Spiel beenden</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ExitToMainTT</Data></Cell>
+    <Cell><Data ss:Type="String">Exit game to main menu</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Zurück zum Hauptmenü</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ExitTT</Data></Cell>
+    <Cell><Data ss:Type="String">Exit game</Data></Cell>
+    <Cell><Data ss:Type="String">Spiel beenden</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Fullscreen</Data></Cell>
+    <Cell><Data ss:Type="String">Fullscreen</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Vollbild</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_FullscreenTT</Data></Cell>
+    <Cell><Data ss:Type="String">Setup fullscreen mode</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Setup Vollbildmodus</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Quality</Data></Cell>
+    <Cell><Data ss:Type="String">Quality</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Qualität</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_QualityTT</Data></Cell>
+    <Cell><Data ss:Type="String">Setup quality level</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Setup Qualitätsniveau</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Low</Data></Cell>
+    <Cell><Data ss:Type="String">Low</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">gering</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Medium</Data></Cell>
+    <Cell><Data ss:Type="String">Medium</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">mittel</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_High</Data></Cell>
+    <Cell><Data ss:Type="String">High</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">hoch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_VeryHigh</Data></Cell>
+    <Cell><Data ss:Type="String">Very High</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">sehr hohe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Game</Data></Cell>
+    <Cell><Data ss:Type="String">Game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Spiel</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_GameTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Lumberyard</Data></Cell>
+    <Cell><Data ss:Type="String">Lumberyard</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_GraphicSettings</Data></Cell>
+    <Cell><Data ss:Type="String">Graphic Settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Grafik-Einstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_GraphicSettingsTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Graphic Settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Grafik-Einstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_GraphicSettingsTT</Data></Cell>
+    <Cell><Data ss:Type="String">Change graphic settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ändern Grafik-Einstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_GamepadLayout</Data></Cell>
+    <Cell><Data ss:Type="String">Show Controls</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">zeigen Kontrollen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_GamepadLayoutTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Controls</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Steuerung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_GamepadLayoutTT</Data></Cell>
+    <Cell><Data ss:Type="String">View controls</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">View-Steuerelemente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ControllerType</Data></Cell>
+    <Cell><Data ss:Type="String">Controller Type</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Controller-Typ</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Controller</Data></Cell>
+    <Cell><Data ss:Type="String">Xbox 360</Data></Cell>
+    <Cell><Data ss:Type="String">Xbox 360</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ControllerTypeTT</Data></Cell>
+    <Cell><Data ss:Type="String">Which platform to view controls for</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">die Plattform, um Steuerelemente für anzuzeigen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_InVehicle</Data></Cell>
+    <Cell><Data ss:Type="String">In Vehicle?</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">im Fahrzeug?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_InVehicleTT</Data></Cell>
+    <Cell><Data ss:Type="String">Controls for inside a vehicle or not</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Steuerungen für in einem Fahrzeug oder nicht</Data></Cell>
+   </Row>
+   <Row>
+	   <Cell ss:Index="2"><Data ss:Type="String">ui_Xbox</Data></Cell> <!-- ACCEPTED_USE -->
+    <Cell><Data ss:Type="String">Xbox 360</Data></Cell>
+    <Cell><Data ss:Type="String">Xbox 360</Data></Cell>
+   </Row>
+   <Row>
+	   <Cell ss:Index="2"><Data ss:Type="String">ui_PS3</Data></Cell> <!-- ACCEPTED_USE -->
+    <Cell><Data ss:Type="String">Playstation 3</Data></Cell>
+    <Cell><Data ss:Type="String">Playstation 3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Keyboard</Data></Cell>
+    <Cell><Data ss:Type="String">Kayboard and Mouse</Data></Cell>
+    <Cell><Data ss:Type="String">Tastatur und Maus</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_WeaponCust</Data></Cell>
+    <Cell><Data ss:Type="String">Weapon Customization</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Waffe Customization</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_WeaponCustTT</Data></Cell>
+    <Cell><Data ss:Type="String">Here you can customize your weapons</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Hier können Sie passen Sie Ihre Waffen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_WeaponCustTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Weapon Customization</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Waffe Customization</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_WeaponCustTitleTT</Data></Cell>
+    <Cell><Data ss:Type="String">Weapon Customization</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Waffe Customization</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ChooseWeapon</Data></Cell>
+    <Cell><Data ss:Type="String">Weapon</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Waffe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ChooseWeaponTT</Data></Cell>
+    <Cell><Data ss:Type="String">Choose a weapon to customize</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Wählen Sie eine Waffe anpassen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ChooseAttachment</Data></Cell>
+    <Cell><Data ss:Type="String">Attachment</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Befestigung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ChooseAttachmentTT</Data></Cell>
+    <Cell><Data ss:Type="String">Choose an attachment for this weapon</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Wählen Sie eine Anlage für diese Waffe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Attach</Data></Cell>
+    <Cell><Data ss:Type="String">Attach</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">befestigen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_AttachTT</Data></Cell>
+    <Cell><Data ss:Type="String">Attach attachment to weapon</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Bringen Befestigung Waffe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Detach</Data></Cell>
+    <Cell><Data ss:Type="String">Detach</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">trennen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_DetachTT</Data></Cell>
+    <Cell><Data ss:Type="String">Detach attachment from weapon</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Nehmen Anlage von Waffen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_HostLan</Data></Cell>
+    <Cell><Data ss:Type="String">Host Server</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Host Server</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_HostLanTT</Data></Cell>
+    <Cell><Data ss:Type="String">Host multiplayer server</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Host Multiplayer-Server</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_hostLevel</Data></Cell>
+    <Cell><Data ss:Type="String">Select level for multiplayer</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Wählen Sie die Stufe für Multiplayer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_HostMpTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Host Multiplayer Server</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Host Multiplayer Server</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_JoinLan</Data></Cell>
+    <Cell><Data ss:Type="String">Join Server</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Registriert Server</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_JoinLanTT</Data></Cell>
+    <Cell><Data ss:Type="String">Join multiplayer server</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Registriert Multiplayer-Server</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_JoinMpBtn</Data></Cell>
+    <Cell><Data ss:Type="String">Join</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">beitreten</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_JoinMpBtnTT</Data></Cell>
+    <Cell><Data ss:Type="String">Join server</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Registriert Server</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_JoinMpTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Join Multiplayer Game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Registriert Multiplayer Game</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_loading</Data></Cell>
+    <Cell><Data ss:Type="String">Loading...</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Loading ...</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_loadlevel</Data></Cell>
+    <Cell><Data ss:Type="String">Select level for singleplayer</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Wählen Sie Ebene für Einzelspieler</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Multiplayer</Data></Cell>
+    <Cell><Data ss:Type="String">Multiplayer</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Multiplayer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_MultiplayerTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Multiplayer</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Multiplayer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_MultiplayerTT</Data></Cell>
+    <Cell><Data ss:Type="String">Join multiplayer game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Registriert Multiplayer-Spiel</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_MusicVolume</Data></Cell>
+    <Cell><Data ss:Type="String">Music</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Musik</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_MusicVolumeTT</Data></Cell>
+    <Cell><Data ss:Type="String">Change music volume</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ändern Sie die Lautstärke der Musik</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_No</Data></Cell>
+    <Cell><Data ss:Type="String">No</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">nicht</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Ok</Data></Cell>
+    <Cell><Data ss:Type="String">Ok</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ok</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_PlayerName</Data></Cell>
+    <Cell><Data ss:Type="String">Player name</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Spielername</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_PlayerNameTT</Data></Cell>
+    <Cell><Data ss:Type="String">Player name for Multiplayer</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Spieler Name für Multiplayer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_reset</Data></Cell>
+    <Cell><Data ss:Type="String">Reset</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">rücksetzen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_resetTT</Data></Cell>
+    <Cell><Data ss:Type="String">Reset to current settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Zurücksetzen, um die aktuellen Einstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Resolution</Data></Cell>
+    <Cell><Data ss:Type="String">Resolution</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Auflösung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ResolutionTT</Data></Cell>
+    <Cell><Data ss:Type="String">Setup game resolution</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Setup-Spiel Resolution</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Resume</Data></Cell>
+    <Cell><Data ss:Type="String">Resume</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">fortsetzen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ServerName</Data></Cell>
+    <Cell><Data ss:Type="String">Server</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Server</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_ServerNameTT</Data></Cell>
+    <Cell><Data ss:Type="String">Server address</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Server-Adresse</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Settings</Data></Cell>
+    <Cell><Data ss:Type="String">Settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Einstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Singleplayer</Data></Cell>
+    <Cell><Data ss:Type="String">Singleplayer</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Singleplayer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_SingleplayerTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Start Singleplayer</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">starten Singleplayer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_SingleplayerTT</Data></Cell>
+    <Cell><Data ss:Type="String">Start singleplayer game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Starten Einzelspieler-Spiel</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_SoundSettings</Data></Cell>
+    <Cell><Data ss:Type="String">Sound Settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Sound-Einstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_SoundSettingsTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Sound Settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Sound-Einstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_SoundSettingsTT</Data></Cell>
+    <Cell><Data ss:Type="String">Change sound settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ändern Sie Sound-Einstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_SoundVolume</Data></Cell>
+    <Cell><Data ss:Type="String">Sound</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">klingen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_SoundVolumeTT</Data></Cell>
+    <Cell><Data ss:Type="String">Change sound volume</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ändern Sie die Lautstärke</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_VideoVolume</Data></Cell>
+    <Cell><Data ss:Type="String">Video</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Video</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_VideoVolumeTT</Data></Cell>
+    <Cell><Data ss:Type="String">Change video volume</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ändern Sie Video-Volumen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">ja</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ExitToMainQ</Data></Cell>
+    <Cell><Data ss:Type="String">Do you want to exit to main menu?</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Wollen Sie zum Hauptmenü zu verlassen?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ResumeTT</Data></Cell>
+    <Cell><Data ss:Type="String">Resume game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Spiel fortsetzen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Disconnected</Data></Cell>
+    <Cell><Data ss:Type="String">Could not connect to server!</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Konnte keine Verbindung zum Server herstellen!</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_GameSettings</Data></Cell>
+    <Cell><Data ss:Type="String">Game Settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Game Settings</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_GameSettingsTT</Data></Cell>
+    <Cell><Data ss:Type="String">Change game settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ändern Spiel-Einstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_GameSettingsTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Game Settings</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Game Settings</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_controlsSettings</Data></Cell>
+    <Cell><Data ss:Type="String">Controls</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Steuerung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_MouseSensitivity</Data></Cell>
+    <Cell><Data ss:Type="String">Mouse Sensitivity</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Maus-Empfindlichkeit</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_MouseSensitivityTT</Data></Cell>
+    <Cell><Data ss:Type="String">Change mouse sensitivity</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Ändern Mausempfindlichkeit</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_InvertMouse</Data></Cell>
+    <Cell><Data ss:Type="String">Invert Mouse</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Invert Maus</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_InvertMouseTT</Data></Cell>
+    <Cell><Data ss:Type="String">Invert mouse Y axis</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Invert Maus Y-Achse</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_InvertController</Data></Cell>
+    <Cell><Data ss:Type="String">Invert Controller</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Invert-Controller</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_InvertControllerTT</Data></Cell>
+    <Cell><Data ss:Type="String">Invert controller Y axis</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Invert-Controller Y-Achse</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_setPlayerName</Data></Cell>
+    <Cell><Data ss:Type="String">Set Name</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Setzen Sie Name</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_setPlayerNameTT</Data></Cell>
+    <Cell><Data ss:Type="String">Set player nickname</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Set-Player Spitznamen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_setPlayerNameTitle</Data></Cell>
+    <Cell><Data ss:Type="String">Set Nickname</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Set Nickname</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_SaveGameQ</Data></Cell>
+    <Cell><Data ss:Type="String">Are you sure you want to override your save game?</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Sind Sie sicher, dass Sie Ihren Spielstand überschreiben?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_SaveGame</Data></Cell>
+    <Cell><Data ss:Type="String">Save Game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Spiel speichern</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_LoadGame</Data></Cell>
+    <Cell><Data ss:Type="String">Load Game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Spiel laden</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_SaveGameTT</Data></Cell>
+    <Cell><Data ss:Type="String">Save current game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Speichern aktuellen Spiel</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_LoadGameTT</Data></Cell>
+    <Cell><Data ss:Type="String">Load last saved game</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Legen Sie zuletzt gespeicherte Spiel</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_UnloadingSpinner</Data></Cell>
+    <Cell><Data ss:Type="String">Unloading...</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Entladen ...</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Unloading</Data></Cell>
+    <Cell><Data ss:Type="String">Unloading</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Entladung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_PressToSelect</Data></Cell>
+    <Cell><Data ss:Type="String">Press to select</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Drücken Sie zur Auswahl</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_UserStats_Title</Data></Cell>
+    <Cell><Data ss:Type="String">USER STATS</Data></Cell>
+    <Cell><Data ss:Type="String">USER STATS</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_UserStats</Data></Cell>
+    <Cell><Data ss:Type="String">User Stats</Data></Cell>
+    <Cell><Data ss:Type="String">User Stats</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Leaderboard_Title</Data></Cell>
+    <Cell><Data ss:Type="String">LEADERBOARD</Data></Cell>
+    <Cell><Data ss:Type="String">LEADERBOARD</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Leaderboard</Data></Cell>
+    <Cell><Data ss:Type="String">Leaderboard</Data></Cell>
+    <Cell><Data ss:Type="String">Leaderboard</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_Edit</Data></Cell>
+    <Cell><Data ss:Type="String">Edit</Data></Cell>
+    <Cell><Data ss:Type="String">Bearbeiten</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s62"><Data ss:Type="String">ui_ButtonSelect</Data></Cell>
+    <Cell><Data ss:Type="String">Select Item</Data></Cell>
+    <Cell><Data ss:Type="String">Auswählen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">ui_Hello</Data></Cell>
+    <Cell><Data ss:Type="String">Hello</Data></Cell>
+    <Cell><Data ss:Type="String">Grüße</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.51181102362204722"
+     x:Data="&amp;LTime restriction sample script"/>
+    <Footer x:Margin="0.51181102362204722" x:Data="Page &amp;P"/>
+    <PageMargins x:Bottom="0.98425196850393704" x:Left="0" x:Right="0"
+     x:Top="0.98425196850393704"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>70</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>15</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>39</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

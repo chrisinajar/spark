@@ -1,0 +1,6 @@
+{
+	"include": [
+		"heroes/base_hero",
+		"heroes/astromage"
+	]
+}

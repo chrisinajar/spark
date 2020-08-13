@@ -1,0 +1,85 @@
+{
+    "units": {
+        "quill": {
+            "extends": "base_hero",
+            // General
+            //-------------------------------------------------------------------------------------------------------------
+            "slice":								"hero_test_001",		//model
+            "sound_set":							"quill",
+
+            // Abilities
+            //-------------------------------------------------------------------------------------------------------------
+            "ability_0":							"quill/runic_burst",							// Ability 1.
+            "ability_1":							"quill/ink_pit",							// Ability 2.
+            "ability_2":							"quill/thrill_seeker",							// Ability 3.
+            "ability_3":							"quill/legendarium",							// Ability 4.
+            "ability_4":							"",							// Extra abilities.
+            "ability_5":							"",							
+            "ability_6":							"",							
+            "ability_7":							"",							
+            "ability_8":							"",
+              
+            // Talents
+            //-------------------------------------------------------------------------------------------------------------
+            "talent_1":								"",
+            "talent_2":								"",
+            "talent_3":								"",
+            "talent_4":								"",
+            "talent_5":								"",
+            "talent_6":								"",
+            "talent_7":								"",
+            "talent_8":								"",
+            "talent_9":								"",
+            "talent_10":							"",
+
+            // Attributes
+            //-------------------------------------------------------------------------------------------------------------
+            "attribute_primary":					"INTELLIGENCE",
+            "attribute_starting_strength":			15,
+            "attribute_starting_agility":			15,
+            "attribute_starting_intelligence":		40,
+            "attribute_starting_will":				10,
+
+            "attribute_strength_gain":				1.8,
+            "attribute_agility_gain":				2.6,
+            "attribute_intelligence_gain":			3.8,
+            "attribute_will_gain":					1.8,
+
+            // Movement
+            //-------------------------------------------------------------------------------------------------------------
+            "movement_type":                        "unit",  //or "Boss"
+            "movement_speed":                       320,
+            "movement_turn_rate":                   0.5,
+
+            // Base
+            //-------------------------------------------------------------------------------------------------------------
+            "base_health":							200,
+            "base_health_regen": 					3,
+            "base_mana":							100,
+            "base_mana_regen":						2,
+
+            "base_damage": 							33,
+            "base_attack_time": 					2,
+            "base_attack_speed": 					100,
+
+            "base_physical_armor":					15,
+            "base_magic_armor":						15,
+
+            // Attack Properties
+            //-------------------------------------------------------------------------------------------------------------
+            "attack_type":							"ranged", 	// ranged/melee/disabled
+            "attack_damage_type":					"physical", // physical/magical
+            "attack_animation_point":				0.7,
+            "attack_backswing":						0.1,
+            "attack_range":							600,
+              
+            "projectile_model":						"projectile_001",
+            "projectile_speed":						600,
+
+            // Vision
+            //-------------------------------------------------------------------------------------------------------------
+            "vision_daytime_radius":				1800,
+            "vision_nighttime_radius":				1200
+        }
+    }
+}

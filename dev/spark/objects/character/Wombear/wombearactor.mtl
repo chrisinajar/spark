@@ -1,0 +1,100 @@
+<Material MtlFlags="557312" DccMaterialHash="2606607321" vertModifType="0">
+ <SubMaterials>
+  <Material Name="body_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Fur" GenMask="1000101010000480" StringGenMask="%CUSTOM_MODIFICATOR%DEPTH_FIXUP%FUR_VERT_COLORS%NORMAL_MAP%SPECULAR_MAP%ZPASS_CUSTOM_DIFFUSE" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.43415368,0.43415368,0.43415368,0.66666669" Opacity="1" Shininess="170" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/wombear/textures/wombear_bodyfur_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/wombear/textures/wombear_bodyfur_spec.tif"/>
+    <Texture Map="Custom" File="objects/character/wombear/textures/wombear_furnoise_diff.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="5" TileV="5"/>
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/character/wombear/textures/wombear_bodyfur_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_bodyfur_diff.tif"/>
+   </Textures>
+   <MaterialPropagationFlags flags="2"/>
+   <PublicParams FurFinAlphaTest="0.039999999" FurStiffness="0.13" SSSFalloff="0.5" FurBaseIntrusion="0" FurLengthCM="4.4899998" FurMaxGravity="0.62" DepthFixupThreshold="0.050000001" FurCombBias="0" SSSStrength="1" IndirectColor="0.02842604,0.038204376,0.064803272"/>
+  </Material>
+  <Material Name="head_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Fur" GenMask="1000101810000480" StringGenMask="%CUSTOM_MODIFICATOR%DEPTH_FIXUP%FUR_VERT_COLORS%MODEL_SPACE_Z_UP%NORMAL_MAP%SPECULAR_MAP%ZPASS_CUSTOM_DIFFUSE" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.43415368,0.43415368,0.43415368,0.66666669" Opacity="1" Shininess="170" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/wombear/textures/wombear_facefur_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/wombear/textures/wombear_facefur_spec.tif"/>
+    <Texture Map="Custom" File="objects/character/wombear/textures/wombear_furnoise_diff.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="3" TileV="3"/>
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/character/wombear/textures/wombear_facefur_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_facefur_diff.tif"/>
+   </Textures>
+   <MaterialPropagationFlags flags="2"/>
+   <PublicParams FurFinAlphaTest="0.5" FurStiffness="0.57999998" SSSFalloff="0.5" FurBaseIntrusion="0" FurLengthCM="6.9000001" FurMaxGravity="2" DepthFixupThreshold="0.050000001" FurCombBias="0" SSSStrength="1" IndirectColor="0.02842604,0.038204376,0.064803272"/>
+  </Material>
+  <Material Name="eyes_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="503000080003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%EMITTANCE_MAP%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.080219828,0.080219828,0.080219828,1" Opacity="1" Shininess="212.87" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Specular" File="engineassets/textures/white.tif"/>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_eyeball_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hammer_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_pants_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/wombear/textures/wombear_pants_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/wombear/textures/wombear_pants_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/wombear/textures/wombear_pants_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="jacket_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_jacket_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/wombear/textures/wombear_jacket_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/wombear/textures/wombear_jacket_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/wombear/textures/wombear_jacket_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="pants_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_pants_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/wombear/textures/wombear_pants_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/wombear/textures/wombear_pants_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/wombear/textures/wombear_pants_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rope_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_pants_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/wombear/textures/wombear_pants_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/wombear/textures/wombear_pants_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/wombear/textures/wombear_pants_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="teeth_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="2101000000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_teeth_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/wombear/textures/wombear_teeth_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/wombear/textures/wombear_teeth_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/wombear/textures/wombear_teeth_ddna.tif"/>
+   </Textures>
+   <PublicParams Melanin="0" SSSIndex="1.2" TranslucencyMultiplier="0.19" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="tongue_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="2101000000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,0.76086295" Opacity="1" Shininess="194.02005" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_teeth_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/wombear/textures/wombear_teeth_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/wombear/textures/wombear_teeth_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/wombear/textures/wombear_teeth_ddna.tif"/>
+   </Textures>
+   <PublicParams Melanin="0.02" SSSIndex="1.2" TranslucencyMultiplier="2.3599999" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="wrench_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0,0,0,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/wombear/textures/wombear_pants_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/wombear/textures/wombear_pants_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/wombear/textures/wombear_pants_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/wombear/textures/wombear_pants_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+</Material>

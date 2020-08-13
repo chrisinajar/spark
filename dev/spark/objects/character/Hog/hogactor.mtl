@@ -1,0 +1,71 @@
+<Material MtlFlags="557312" DccMaterialHash="0" vertModifType="0">
+ <SubMaterials>
+  <Material Name="body_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.042311415,0.042311415,0.042311415,0.47541186" Opacity="1" Shininess="121.23003" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/hog/textures/hog_body_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/hog/textures/hog_body_spec.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/hog/textures/hog_body_ddna.dds"/>
+    <Texture Map="Diffuse" File="objects/character/hog/textures/hog_body_diff.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyeTear_MAT" MtlFlags="557188" DccMaterialHash="0" Shader="Eye" GenMask="1002001000000" StringGenMask="%EYE_SPECULAR_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,0" Specular="0.048171829,0.048171829,0.048171829,0.8187452" Shininess="208.78003" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/hog/textures/hog_eyewater_spec.tif"/>
+   </Textures>
+   <PublicParams DepthBiasScale="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyes_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="1003000000000" StringGenMask="%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="0.34191445,0.3467041,0.32777813,1" Specular="0.13286835,0.13286835,0.13286835,1" Opacity="1" Shininess="51.209999" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Heightmap" File="objects/character/hog/textures/hog_eye_displ.tif"/>
+    <Texture Map="Smoothness" File="objects/character/hog/textures/hog_eye_ddna.dds"/>
+    <Texture Map="Custom" File="objects/character/hog/textures/hog_eyecornea_ddna.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/hog/textures/hog_eye_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/hog/textures/hog_eye_diff.tif"/>
+   </Textures>
+   <PublicParams CorneaRefraction="0" IrisDepth="0" IrisColor="0.5,0.5,0.5" IrisShadowing="5.8000002" CorneaSmoothness="0.70999998" ScleraSSS="0.14" IrisSSS="0.94999999" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyesAO_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Illum" GenMask="400000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0,0,0,0.93000001" Specular="0,0,0,0.0078740446" Opacity="0.93000001" Shininess="2.0078814" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/hog/textures/hog_eyesao_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hair_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Hair" GenMask="4001000000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%NORMAL_MAP" SurfaceType="mat_default" Diffuse="0.59720188,0.59720188,0.59720188,1" Specular="0.005181517,0.005181517,0.005181517,0.79913902" Opacity="1" Shininess="203.78046" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/hog/textures/hog_hair_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/hog/textures/hog_hair_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/hog/textures/hog_hair_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/hog/textures/hog_hair_ddna.dds"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.1" SoftIntersection="0" ShiftVariation="0" DiffuseWrap="0.5" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.5" AlphaBlendMultiplier="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hairCards_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Hair" GenMask="14003000000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%NORMAL_MAP%THIN_HAIR%VERTCOLORS" SurfaceType="mat_default" Diffuse="0.24228115,0.24228115,0.24228115,0.99000001" Specular="0.94730669,0.94730669,0.94730669,0.67772675" Opacity="0.99000001" Shininess="172.82031" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/hog/textures/hog_hairCards_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/hog/textures/hog_haircards_diff.tif"/>
+    <Texture Map="Specular" File="objects/character/hog/textures/hog_haircards_diff.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.1" SoftIntersection="0.60000002" ShiftVariation="0.73000002" DiffuseWrap="13.08" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.5" ThinHairThreshold="0.38" AlphaBlendMultiplier="2.1400001" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="tongue_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="2101000000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/hog/textures/hog_mouth_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/hog/textures/hog_mouth_spec.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/hog/textures/hog_mouth_ddna.dds"/>
+    <Texture Map="Diffuse" File="objects/character/hog/textures/hog_mouth_diff.dds"/>
+   </Textures>
+   <PublicParams Melanin="1" SSSIndex="1.1900001" TranslucencyMultiplier="2.5599999" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="tusks_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0.44520122,0.44520122,0.44520122,1" Specular="0.14995982,0.1470273,0.10224174,0.47007847" Opacity="1" Shininess="119.87001" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Specular" File="objects/character/hog/textures/hog_tusks_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/hog/textures/hog_tusks_ddna.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/hog/textures/hog_tusks_ddna.dds"/>
+    <Texture Map="Diffuse" File="objects/character/hog/textures/hog_tusks_diff.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams />
+</Material>

@@ -1,0 +1,13 @@
+{
+	"abilities" : {
+		"rangewillsup/aoe_heal" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			//for now the values below are ignored
+			"special-values" : {
+				"aoe" : 50,
+				"max_mana_percentage_drained_per_second" : 5,
+				"aura_heal_amount" : "8 16 24 32 40 80 120"
+			}
+		}
+	}
+}

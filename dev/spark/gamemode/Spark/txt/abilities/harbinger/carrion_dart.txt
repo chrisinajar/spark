@@ -1,0 +1,20 @@
+//comments!
+{
+	"abilities" : {
+		"harbinger/carrion_dart" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "30 20 15 10 5 5 5",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "80 80 100 120 140 200 260" 
+			},
+			"special-values" : {
+				"range" : "40 70 80 90 100 110 120",
+				"speed" : 20,
+				"movement_speed_reduction_percentage" : "10 20 25 30 35 40 45",
+				"slow_duration" : "0.5 1.5 2.25 3 3.75 4.5 5.25",
+				"attack_percentage" : 100
+			}
+		}
+	}
+}

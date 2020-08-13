@@ -1,0 +1,111 @@
+<Material MtlFlags="557312" DccMaterialHash="0" vertModifType="0">
+ <SubMaterials>
+  <Material Name="armsmain_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_armsmain_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_armsmain_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_armsmain_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_armsmain_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="armsparts_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_armsparts_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_armsparts_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_armsparts_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_armsparts_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="lightgrills_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0,0,0,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_cabinback_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_cabinback_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_cabinback_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_cabinback_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="cabinbot_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_cabinbot_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_cabinbot_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_cabinbot_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_cabinbot_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="cabinbutt_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_cabinbutt_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_cabinbutt_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_cabinbutt_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_cabinbutt_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="cabinfront_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_cabinfront_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_cabinfront_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_cabinfront_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_cabinfront_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="cabinparts_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_cabinparts_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_cabinparts_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_cabinparts_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_cabinparts_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="lfLowerLegs_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_legslower_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_legslower_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_legslower_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_legslower_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="nozzle_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_nozzle_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_nozzle_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_nozzle_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_nozzle_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="sawblade_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_armsparts_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_armsparts_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_armsparts_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_armsparts_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="legsupper_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_legsupper_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_legsupper_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_legsupper_spec.dds"/>
+    <Texture Map="Smoothness" File="objects/character/mech/textures/mech_legsupper_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="windows_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/mech/textures/mech_windows_diff.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/mech/textures/mech_windows_ddna.dds"/>
+    <Texture Map="Specular" File="objects/character/mech/textures/mech_windows_spec.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+</Material>

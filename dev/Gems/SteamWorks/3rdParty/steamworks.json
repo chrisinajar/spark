@@ -1,0 +1,37 @@
+{
+   "name": "STEAMWORKS",
+   "source": "@GEM@/External/SteamWorks",
+   "description": "SteamWorks integration",
+   "includes": [
+      "public"
+   ],
+   "defines": [],
+   "platform": {
+      "win_x64_vs2017": {
+         "importlibpath": [
+            "redistributable_bin/win64"
+         ],
+         "sharedlibpath": [
+            "redistributable_bin/win64"
+         ],
+         "import": [
+            "steam_api64.lib"
+         ],
+         "shared": [
+            "steam_api64.dll"
+         ]
+      },
+      "win_x64_vs2015": "@win_x64_vs2017",
+      "darwin_x64": {
+         "importlibpath": [
+            "redistributable_bin/osx32"
+         ],
+         "sharedlibpath": [
+            "redistributable_bin/osx32"
+         ],
+         "shared": [
+            "libsteam_api.dylib"
+         ]
+      }
+   }
+}

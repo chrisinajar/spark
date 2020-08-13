@@ -1,0 +1,77 @@
+<ATLConfig atl_name="Spark">
+ <AudioTriggers>
+  <ATLTrigger atl_name="Play_sfx_fire_loop" path="Environment">
+   <WwiseEvent wwise_name="Play_sfx_fire_loop"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_ambience_spark_alphamap" path="Environment">
+   <WwiseEvent wwise_name="Play_sfx_ambience_spark_alphamap"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_capturepoint" path="Events">
+   <WwiseEvent wwise_name="Play_sfx_capturepoint"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_duel" path="Events">
+   <WwiseEvent wwise_name="Play_sfx_duel"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_push_2" path="Items">
+   <WwiseEvent wwise_name="Play_sfx_push_2"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_push_1" path="Items">
+   <WwiseEvent wwise_name="Play_sfx_push_1"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_blink_vanish" path="Items">
+   <WwiseEvent wwise_name="Play_sfx_blink_vanish"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_blink_appear" path="Items">
+   <WwiseEvent wwise_name="Play_sfx_blink_appear"/>
+   <WwiseEvent wwise_name="Play_sfx_blink_appear_01"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_hero_astromagus_skill_w" path="Abilities">
+   <WwiseEvent wwise_name="Play_sfx_hero_astromagus_skill_w"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_hero_astromagus_skill_r" path="Abilities">
+   <WwiseEvent wwise_name="Play_sfx_hero_astromagus_skill_r"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_hero_astromagus_skill_q" path="Abilities">
+   <WwiseEvent wwise_name="Play_sfx_hero_astromagus_skill_q"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_hook_throw" path="Abilities">
+   <WwiseEvent wwise_name="Play_sfx_hook_throw"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_hook_hit" path="Abilities">
+   <WwiseEvent wwise_name="Play_sfx_hook_hit"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_ui_lockin_hero" path="UI">
+   <WwiseEvent wwise_name="Play_sfx_ui_lockin_hero"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_ui_timer_countdown" path="UI">
+   <WwiseEvent wwise_name="Play_sfx_ui_timer_countdown"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_UI_button" path="UI">
+   <WwiseEvent wwise_name="Play_sfx_UI_button"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_UI_back" path="UI">
+   <WwiseEvent wwise_name="Play_sfx_UI_back"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_levelup_1" path="General">
+   <WwiseEvent wwise_name="Play_sfx_levelup_1"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_stun" path="General">
+   <WwiseEvent wwise_name="Play_sfx_stun"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_respawn" path="General">
+   <WwiseEvent wwise_name="Play_sfx_respawn"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_point" path="General">
+   <WwiseEvent wwise_name="Play_sfx_point"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_levelup" path="General">
+   <WwiseEvent wwise_name="Play_sfx_levelup"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_buyitem" path="General">
+   <WwiseEvent wwise_name="Play_sfx_buyitem"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="Play_sfx_entershop" path="General">
+   <WwiseEvent wwise_name="Play_sfx_entershop"/>
+  </ATLTrigger>
+ </AudioTriggers>
+</ATLConfig>

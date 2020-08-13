@@ -1,0 +1,114 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="hope_m_mouth" MtlFlags="524416" Shader="Humanskin" GenMask="2040020000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/face/hope_mouth_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/face/hope_mouth_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/face/hope_mouth_spec.tif"/>
+    <Texture Map="Smoothness" File="Objects/Character/Hope/Textures/face/hope_mouth_ddna.tif"/>
+   </Textures>
+   <PublicParams Melanin="0" SSSIndex="1.2" TranslucencyMultiplier="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_face" MtlFlags="524416" Shader="Humanskin" GenMask="2050020000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING_MASK%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.24620135,0.24620135,0.24620135,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/face/hope_face_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/face/hope_face_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/face/hope_face_spec.tif"/>
+    <Texture Map="Custom" File="Objects/Character/Hope/Textures/face/hope_face_sss.tif"/>
+    <Texture Map="Smoothness" File="Objects/Character/Hope/Textures/face/hope_face_ddna.tif"/>
+   </Textures>
+   <PublicParams Melanin="0.039999999" SSSIndex="1.2" TranslucencyMultiplier="0.80000001" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_eyeball" MtlFlags="524448" Shader="Eye" GenMask="22020000000" StringGenMask="%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0,0,0,1" Emittance="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/face/hope_eyeball_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/face/hope_eyeball_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/face/hope_eyeball_spec.tif"/>
+    <Texture Map="Smoothness" File="Objects/Character/Hope/Textures/face/hope_eyeball_ddna.tif"/>
+   </Textures>
+   <PublicParams CorneaRefraction="0" IrisDepth="0" IrisColor="0.5,0.5,0.5" IrisShadowing="4.3600001" CorneaSmoothness="0.18000001" ScleraSSS="0.33000001" IrisSSS="0.60000002" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_lens" MtlFlags="557184" Shader="Glass" GenMask="40" StringGenMask="%BLUR_REFRACTION" SurfaceType="mat_default" Diffuse="0.80000001,0.80000001,0.80000001,0.63" Specular="0.19806935,0.19806935,0.19806935,0.84364718" Emittance="1,1,1,171.09" Opacity="0.63" Shininess="215.13004" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/body/grey_diff.tif"/>
+   </Textures>
+   <PublicParams BumpMapTile="0" TintColor="1,1,1" BlurAmount="0.2" TintCloudiness="0" BackLightScale="0.23" BumpScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_eyecover" MtlFlags="557184" Shader="Illum" GenMask="10002000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,0.85000002" Specular="0.19806935,0.19806935,0.19806935,0.53686273" Opacity="0.85000002" Shininess="136.89999" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/face/hope_eyecover_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_eyelashes" MtlFlags="559232" Shader="Hair" GenMask="200120000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%NORMAL_MAP%THIN_HAIR" SurfaceType="mat_default" Diffuse="0.4793202,0.4793202,0.4793202,1" Specular="1,1,1,1" Opacity="0.99000001" Shininess="255" AlphaTest="0.60000002" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/face/hope_lashes_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/face/hope_lashes_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/face/hope_lashes_spec.tif"/>
+    <Texture Map="Smoothness" File="Objects/Character/Hope/Textures/face/hope_lashes_ddna.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="-0.18000001" SoftIntersection="0.07" ShiftVariation="0" DiffuseWrap="0.5" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.87" ThinHairThreshold="0.80000001" AlphaBlendMultiplier="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_brow" MtlFlags="557218" Shader="Hair" GenMask="200120000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%NORMAL_MAP%THIN_HAIR" SurfaceType="mat_default" Diffuse="0.70110202,0.59061897,0.44520122,0.99000001" Specular="0.19806935,0.19806935,0.19806935,1" Opacity="0.99000001" Shininess="255" AlphaTest="0.46000001" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/face/hope_lashes_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/face/hope_lashes_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/face/hope_lashes_spec.tif"/>
+    <Texture Map="Smoothness" File="Objects/Character/Hope/Textures/face/hope_lashes_ddna.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0" SoftIntersection="0.079999998" ShiftVariation="0" DiffuseWrap="0.38999999" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.5" ThinHairThreshold="0.18000001" AlphaBlendMultiplier="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_haircap" MtlFlags="557186" Shader="Hair" GenMask="2120000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%NORMAL_MAP%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,0.99000001" Specular="0.1441285,0.1441285,0.1441285,0.62423539" Opacity="0.99000001" Shininess="159.18002" AlphaTest="0.80000001" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/face/hope_hair_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/face/hope_hair_ddn.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/face/hope_hair_spec.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.41999999" SoftIntersection="0.64999998" ShiftVariation="0.14" DiffuseWrap="0.5" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1" AlphaBlendMultiplier="1.28" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_haircards" MtlFlags="559234" Shader="Hair" GenMask="2120000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%NORMAL_MAP%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.49102089,0.49102089,0.49102089,1" Opacity="0.99000001" Shininess="20" AlphaTest="0.60000002" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/face/hope_hair_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/face/hope_hair_ddn.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/face/hope_hair_spec.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.31999999" SoftIntersection="0.33000001" ShiftVariation="0.13" DiffuseWrap="0.5" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1" AlphaBlendMultiplier="1.97" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_hairstrands" MtlFlags="559234" Shader="Hair" GenMask="4202120000008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%NORMAL_MAP%THIN_HAIR%VERTCOLORS%VIEW_ALIGNED_STRANDS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.059511244,0.059511244,0.059511244,1" Opacity="0.99000001" Shininess="221.77003" AlphaTest="0.34" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/face/hope_hair_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/face/hope_hair_ddn.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/face/hope_hair_spec.tif"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.33000001" SoftIntersection="0.63999999" ShiftVariation="0.14" DiffuseWrap="0.5" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" StrandWidth="0" SecondaryHighlightWidth="1" ThinHairThreshold="0.79000002" AlphaBlendMultiplier="1.27" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_hairpieces" MtlFlags="524418" Shader="Illum" GenMask="12082020000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%PHONG_TESSELLATION%SPECULAR_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/body/hope_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/body/hope_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/body/hope_spec.tif"/>
+    <Texture Map="Smoothness" File="Objects/Character/Hope/Textures/body/hope_ddna.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" EmittanceMapGamma="1" TessellationFactor="1" SSSIndex="0" TessellationFactorMax="32" TessellationFactorMin="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_body" MtlFlags="524418" Shader="Illum" GenMask="12002020000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="1,1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/body/hope_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/body/hope_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/body/hope_spec.tif"/>
+    <Texture Map="Smoothness" File="Objects/Character/Hope/Textures/body/hope_ddna.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="hope_m_hands" MtlFlags="524416" Shader="Humanskin" GenMask="2050020000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING_MASK%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.17788844,0.17788844,0.17788844,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Character/Hope/Textures/hands/hope_hand_diff.tif"/>
+    <Texture Map="Bumpmap" File="Objects/Character/Hope/Textures/hands/hope_hand_ddna.tif"/>
+    <Texture Map="Specular" File="Objects/Character/Hope/Textures/hands/hope_hand_spec.tif"/>
+    <Texture Map="Custom" File="Objects/Character/Hope/Textures/hands/hope_hand_sss.tif"/>
+    <Texture Map="Smoothness" File="Objects/Character/Hope/Textures/hands/hope_hand_ddna.tif"/>
+   </Textures>
+   <PublicParams Melanin="0.029999999" SSSIndex="1.26" TranslucencyMultiplier="0.85000002" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+</Material>

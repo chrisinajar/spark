@@ -1,0 +1,20 @@
+{
+	"abilities" : {
+		"rangewillsup/channel_attacks" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "80",
+			"is_ultimate" : true,
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "200 400 600 800 1000 1200" 
+			},
+			"special-values" : {
+				"attack_range" : 70,
+				"damage" : "100 150 200 350 500 1000",
+				"attacks_per_second" : 5,
+				"speed" : 100,
+				"channel_time" : 8
+			}
+		}
+	}
+}

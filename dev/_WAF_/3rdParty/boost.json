@@ -1,0 +1,11 @@
+{
+	"name": "boost",
+	"source": "@3P:boost@",
+	"description": "Boost header only library",
+	"header_only": "True",
+	"includes": [
+		"."
+	],
+	"defines": [],
+	"lib_required": "False"
+}

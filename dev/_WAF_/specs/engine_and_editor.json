@@ -1,0 +1,34 @@
+{
+    "description": "Configuration to build the engine modules, editor, and asset processor only",
+    "visual_studio_name": "Engine and Editor",
+
+    "modules" :
+    [
+        "Editor",
+        "AssetBuilder",
+        "AssetProcessor",
+        "AssetProcessorBatch",
+        "GridHub",
+        "AssetTaggingTools",
+        "SceneUI",
+        "SceneCore",
+        "Cry3DEngine",
+        "CryAction",
+        "CryAction_AutoFlowNode",
+        "CryAudioCommon",
+        "CryAudioImplNoSound",
+        "CryAudioImplWwise",
+        "CryCommon",
+        "CryFont",
+        "CryNetwork",
+        "CryPhysics",
+        "CrySoundSystem",
+        "CrySystem",
+        "CryRenderD3D11",
+        "CryRenderD3D12",
+        "CryRenderGL",
+        "CryRenderMetal",
+        "CryRenderNULL",
+        "LmbrAWS"
+    ]
+}

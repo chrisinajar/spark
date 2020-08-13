@@ -1,0 +1,15 @@
+{
+    "GemFormatVersion": 4,
+    "Uuid": "d2793a8baa464ba1af9094bed6b761c0",
+    "Name": "SteamWorks",
+    "DisplayName": "SteamWorks",
+    "Version": "0.1.0",
+    "Summary": "SteamWorks SDK integration",
+    "Tags": ["Untagged"],
+    "IconPath": "preview.png",
+    "Modules": [
+        {
+            "Type": "GameModule"
+        }
+    ]
+}

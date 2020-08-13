@@ -1,0 +1,86 @@
+<ObjectStream version="1">
+	<Class name="SceneManifest" version="1" type="{9274AD17-3212-4651-9F3B-7DCCB080E467}">
+		<Class name="AZStd::vector" field="values" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+			<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}">
+				<Class name="MeshGroup" field="element" version="1" type="{07B356B7-3635-40B5-878A-FAC4EFD5AD86}">
+					<Class name="IMeshGroup" field="BaseClass1" version="1" type="{74D45E45-81EE-4AD4-83B5-F37EB98D847C}">
+						<Class name="IMeshBaseGroup" field="BaseClass1" version="1" type="{1D20FA11-B184-429E-8C86-745852234845}">
+							<Class name="IGroup" field="BaseClass1" version="1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
+								<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+							</Class>
+						</Class>
+					</Class>
+					<Class name="AZStd::string" field="name" value="GSG_Maze_Door" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+					<Class name="SceneNodeSelectionList" field="nodeSelectionList" version="1" type="{D0CE66CE-1BAD-42F5-86ED-3923573B3A02}">
+						<Class name="ISceneNodeSelectionList" field="BaseClass1" version="1" type="{DC3F9996-E550-4780-A03B-80B0DDA1DA45}"/>
+						<Class name="AZStd::vector" field="selectedNodes" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+							<Class name="AZStd::string" field="element" value="" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							<Class name="AZStd::string" field="element" value="RootNode" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_L_group" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_R_group" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_L_group._LOD0_AM_Maze_Doors_01_L" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_L_group.physics_mesh" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_L_group._LOD1_AM_Maze_Doors_01_L" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_R_group._LOD0_AM_Maze_Doors_01_R" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_R_group.physics_mesh" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_R_group._LOD1_AM_Maze_Doors_01_R" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+						</Class>
+						<Class name="AZStd::vector" field="unselectedNodes" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}"/>
+					</Class>
+					<Class name="AZStd::vector" field="rules" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+						<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}">
+							<Class name="MaterialRule" field="element" version="2" type="{35620013-A27C-4F6D-87BF-72F11688ACAD}">
+								<Class name="IMaterialRule" field="BaseClass1" version="1" type="{428C9752-6EDF-4FA2-9BDF-DBDFCEB4CC0F}">
+									<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+										<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+									</Class>
+								</Class>
+								<Class name="bool" field="updateMaterials" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+								<Class name="bool" field="removeMaterials" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+							</Class>
+						</Class>
+						<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}">
+							<Class name="PhysicsRule" field="element" version="1" type="{845CCDDB-E7D3-4423-AF28-D0C4AFDF02A8}">
+								<Class name="IPhysicsRule" field="BaseClass1" version="1" type="{F607B4E9-0B9E-43FB-918A-77EF5FDD2C27}">
+									<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+										<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+									</Class>
+								</Class>
+								<Class name="SceneNodeSelectionList" field="nodeSelectionList" version="1" type="{D0CE66CE-1BAD-42F5-86ED-3923573B3A02}">
+									<Class name="ISceneNodeSelectionList" field="BaseClass1" version="1" type="{DC3F9996-E550-4780-A03B-80B0DDA1DA45}"/>
+									<Class name="AZStd::vector" field="selectedNodes" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+										<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_L_group.physics_mesh" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_R_group.physics_mesh" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+									</Class>
+									<Class name="AZStd::vector" field="unselectedNodes" type="{2BADE35A-6F1B-4698-B2BC-3373D010020C}">
+										<Class name="AZStd::string" field="element" value="" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::string" field="element" value="RootNode" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_L_group" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_R_group" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_L_group._LOD0_AM_Maze_Doors_01_L" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_L_group._LOD1_AM_Maze_Doors_01_L" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_R_group._LOD0_AM_Maze_Doors_01_R" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+										<Class name="AZStd::string" field="element" value="RootNode.AM_Maze_Doors_01_R_group._LOD1_AM_Maze_Doors_01_R" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+									</Class>
+								</Class>
+							</Class>
+						</Class>
+						<Class name="AZStd::shared_ptr" field="element" type="{D5B5ACA6-A81E-410E-8151-80C97B8CD2A0}">
+							<Class name="StaticMeshAdvancedRule" field="element" version="5" type="{AE82749D-A68A-4FE7-A8BA-0F4CE67607AC}">
+								<Class name="IMeshAdvancedRule" field="BaseClass1" version="1" type="{ADF04C44-5786-466A-AE69-63E5E3474D21}">
+									<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+										<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+									</Class>
+								</Class>
+								<Class name="bool" field="use32bitVertices" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+								<Class name="bool" field="mergeMeshes" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+								<Class name="AZStd::string" field="vertexColorStreamName" value="Disabled" type="{EF8FF807-DDEE-4EB0-B678-4CA3A2C490A4}"/>
+							</Class>
+						</Class>
+					</Class>
+				</Class>
+			</Class>
+		</Class>
+	</Class>
+</ObjectStream>
+

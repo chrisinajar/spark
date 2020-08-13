@@ -1,0 +1,651 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>matthew williams</Author>
+  <LastAuthor>matthew williams</LastAuthor>
+  <Created>2019-04-24T14:21:04Z</Created>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12750</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#666699" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#C5D9F1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial"/>
+   <Interior/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="75" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultColumnWidth="75.75"
+   ss:DefaultRowHeight="15.75">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="216"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="262.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="254.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">KEY</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ORIGINAL TEXT</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">TRANSLATED TEXT</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CONTEXT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="51">
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">This contains original text meant for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">This contains text for subtitles. Use descriptive expressions like &lt;frantic laughter&gt; and ## for a new line.</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Main Menu</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s73"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_heros</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">HEROS</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">HEROS</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_watch</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">WATCH</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">WATCH</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_learn</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">LEARN</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">LEARN</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_store</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">STORE</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">STORE</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_tournement</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">TOURNEMENT</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">TOURNEMENT</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_play</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">PLAY</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">PLAY</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_start</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Start</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Start</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_spark</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">SPARK</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">SPARK</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_notifications</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">NOTIFICATIONS</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">NOTIFICATIONS</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_players_in_game_now</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">PLAYERS IN GAME NOW</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">PLAYERS IN GAME NOW</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_main_menu_unique_players_in_last_month</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">UNIQUE PLAYERS IN THE LAST MONTH</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">UNIQUE PLAYERS IN THE LAST MONTH</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Hero Selection</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_hero_selection_random</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Random</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Random</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_hero_selection_lock_in</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Lock In</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Lock In</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Hero Tab</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_hero_attribute_strength</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">STRENGTH</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">STRENGTH</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_hero_attribute_agility</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">AGILITY</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">AGILITY</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_hero_attribute_intellegence</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">INTELLEGENCE</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">INTELLEGENCE</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_hero_attribute_will</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">WILL</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">WILL</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Watch Tab</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_watch_live</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">LIVE</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">LIVE</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_watch_tournements</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">TOURNEMENTS</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">TOURNEMENTS</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_watch_replay</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">REPLAYS</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">REPLAYS</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_watch_downloads</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">DOWNLOADS</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">DOWNLOADS</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Learn Tab</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_learn_gameplay_updates</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">GAMEPLAY UPDATES</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">GAMEPLAY UPDATES</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_learn_training</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">TRAINING</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">TRAINING</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_learn_tutorials</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">TUTORIALS</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">TUTORIALS</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_learn_items</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ITEMS</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ITEMS</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_learn_hero_guides</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">HERO GUIDES</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">HERO GUIDES</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Store Tab</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_store_featured</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FEATURED</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FEATURED</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_store_browse</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">BROWSE</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">BROWSE</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Tournement Tab</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_active</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ACTIVE</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ACTIVE</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_create</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">CREATE</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">CREATE</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_join</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">JOIN</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">JOIN</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_name</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Tournement Name</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Tournement Name</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_name_placeholder</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Tournement Name...</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Tournement Name...</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_format</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Tournement Format</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Tournement Format</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_max_players</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Max Players/Teams</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Max Players/Teams</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_best_of</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Best Of...</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Best Of...</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_privacy</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Privacy</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Privacy</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_status</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Status</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Status</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_created_by</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Created By</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Created By</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_bracket_single</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Bracket(Single Elimination)</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Bracket(Single Elimination)</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_bracket_double</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Bracket(Double Elimination)</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Bracket(Double Elimination)</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_custom</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Custom</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Custom</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_private</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Private(Invite Only)</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Private(Invite Only)</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_friends</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Friends</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Friends</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_everyone</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Everyone</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Everyone</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_best_of_1</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Best Of 1</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Best Of 1</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_best_of_3</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Best Of 3</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Best Of 3</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ui_tournement_best_of_5</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Best Of 5</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Best Of 5</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Chat</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">ui_chat_placeholder_text</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Tap here to chat...</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Tap here to chat...</Data></Cell>
+   </Row>
+   <Row ss:Index="69" ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Friends</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ui_friends</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">FRIENDS</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">FRIENDS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ui_friends_invite_to_party</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">INVITE TO PARTY</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">INVITE TO PARTY</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ui_friends_send_message</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">SEND MESSAGE</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">SEND MESSAGE</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ui_friends_view_profile</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">VIEW PROFILE</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">VIEW PROFILE</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ui_friends_ignore_user</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">IGNORE USER</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">IGNORE USER</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.75">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ui_friends_add_friend</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ADD FRIEND</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">ADD FRIEND</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <NoSummaryRowsBelowDetail/>
+   <NoSummaryColumnsRightDetail/>
+   <Selected/>
+   <TopRowVisible>36</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>64</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

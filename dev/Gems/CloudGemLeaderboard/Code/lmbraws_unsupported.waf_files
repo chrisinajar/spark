@@ -1,0 +1,13 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudGemLeaderboard_precompiled.cpp",
+            "Source/CloudGemLeaderboard_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Implementation": [
+            "Source/ComponentStub.cpp"
+        ]
+    }
+}

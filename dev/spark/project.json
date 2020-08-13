@@ -1,0 +1,21 @@
+{
+    "project_name": "spark",
+    "product_name": "spark",
+    "executable_name": "sparkLauncher",
+    "modules" : [],
+    "project_id": "{43405A25-B2AE-4B6C-86BA-DFBB1D5FBDB8}",
+
+    "android_settings" : {
+        "package_name" : "com.lumberyard.yourgame",
+        "version_number" : 1,
+        "version_name" : "1.0.0.0",
+        "orientation" : "landscape"
+    },
+
+    "durango_settings" : {
+    },
+
+    "orbis_settings": {
+    }
+
+}

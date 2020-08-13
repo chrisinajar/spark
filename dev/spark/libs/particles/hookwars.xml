@@ -1,0 +1,17 @@
+<ParticleLibrary Name="hookwars" SandboxVersion="1.17.0.0" ParticleVersion="33">
+ <Particles Name="fog">
+  <Params EmitterShape="BOX" EmitterGpuShape="BOX" Count="12271" EmitterSizeDiameter="5" EmitterSizeXYZ="X=5,Y=5,Z=5" SpawnPosXYZRandom="X=50,Y=50,Z=1" VelocityXYZRandom="X=(1,Random=1),Y=(1,Random=1),Z=0.1" VelocitySpread="0" Continuous="true" ParticleLifeTime="10" Curvature="0" Material="ui/spark_logo_purple_origsize.dds" DiffuseBacklighting="1" ReceiveShadows="true" SizeX="Random=0.75,ParticleAge=(t=0.004,v=0.25;t=1,v=1)" SizeY="Random=0.75,ParticleAge=(t=0.004,v=0.25;t=1,v=1)" SizeZ="Random=0.75,ParticleAge=(t=0.004,v=0.25;t=1,v=1)" GravityScale="0.1" TurbulenceSize="1" TurbulenceSpeed="1" FinalCollision="Bounce" CameraNonFacingFade="FadeCurve=(;t=1,v=1)"/>
+ </Particles>
+ <Particles Name="fire">
+  <Params EmitterType="GPU" EmitterShape="BOX" EmitterGpuShape="BOX" Count="1200" Velocity="Z=4" EmitterSizeDiameter="5" EmitterSizeXYZ="X=5,Y=5,Z=5" SpawnPosXYZ="X=-2,Y=2" SpawnPosXYZRandom="X=2,Y=2" VelocityXYZRandom="X=0.1,Y=0.1,Z=2" VelocitySpread="0" Continuous="true" ParticleLifeTime="2,Random=1" Facing="Free" FacingGpu="Free" OrientToVelocity="true" Curvature="0" Texture="textures/core.dds" SoftParticle="true,Softness=3.5" MotionBlur="true" Alpha="20" Color="(x=0.879622,y=0.017642,z=0),Random=0.14" EmissiveLighting="10" SizeX="4,Random=1,ParticleAge=(v=1;t=1,v=0.137)" SizeY="4,Random=1,ParticleAge=(v=1;t=1,v=0.137)" SizeZ="4,Random=1,ParticleAge=(v=1;t=1,v=0.137)" CameraNonFacingFade="FadeCurve=(;t=1,v=1)"/>
+ </Particles>
+ <Particles Name="fire_ball">
+  <Params EmitterType="GPU" EmitterShape="BOX" EmitterGpuShape="BOX" Count="1200" Velocity="X=1,Z=1" EmitterSizeDiameter="5" EmitterSizeXYZ="X=5,Y=5,Z=5" SpawnPosXYZ="X=-2,Y=2" SpawnPosXYZRandom="X=2,Y=2" VelocityXYZRandom="X=0.1,Y=0.1,Z=2" VelocitySpread="0" Continuous="true" ParticleLifeTime="2,Random=1" Facing="Free" FacingGpu="Free" OrientToVelocity="true" Curvature="0" Texture="textures/core.dds" SoftParticle="true,Softness=3.5" MotionBlur="true" Alpha="20" Color="(x=0.879622,y=0.017642,z=0),Random=0.14" EmissiveLighting="10" SizeX="4,Random=1,ParticleAge=(v=1;t=1,v=0.137)" SizeY="4,Random=1,ParticleAge=(v=1;t=1,v=0.137)" SizeZ="4,Random=1,ParticleAge=(v=1;t=1,v=0.137)" CameraNonFacingFade="FadeCurve=(;t=1,v=1)"/>
+ </Particles>
+ <Particles Name="move_order_effect">
+  <Params Count="1" EmitterSizeDiameter="5" LocalSpawnPosOffset="z=2" ParticleLifeTime="1" SpawnPosOffset="z=2" Facing="Free" FacingGpu="Free" Curvature="0" Texture="editor/plugins/particleeditorplugin/defaults/defaultparticle.dds" Material="materials/green" Geometry="objects/arrow.cgf" Speed="-5" CameraNonFacingFade="FadeCurve=(;t=1,v=1)"/>
+ </Particles>
+ <Particles Name="attack_order_effect">
+  <Params Count="1" EmitterSizeDiameter="5" LocalSpawnPosOffset="z=2" ParticleLifeTime="1" SpawnPosOffset="z=2" Facing="Free" FacingGpu="Free" Curvature="0" Texture="editor/plugins/particleeditorplugin/defaults/defaultparticle.dds" Geometry="objects/arrow.cgf" Speed="-5" CameraNonFacingFade="FadeCurve=(;t=1,v=1)"/>
+ </Particles>
+</ParticleLibrary>

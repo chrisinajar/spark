@@ -1,0 +1,16 @@
+{
+    "none": {
+        "Source": [
+            "Source/Microphone_precompiled.cpp",
+            "Source/Microphone_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Source": [
+            "Source/MicrophoneModule.cpp",
+            "Source/MicrophoneSystemComponent.cpp",
+            "Source/MicrophoneSystemComponent.h",
+            "Source/MicrophoneSystemComponent_null.h"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+//comments!
+{
+	"abilities" : {
+		"astromage/antimatter_lance" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "25",
+			"is_ultimate" : true,
+			//for now the values below are ignored
+			"costs": {
+				"mana" : "50"
+			},
+			"special-values" : {
+				"range" : 30,
+				"speed" : 20,
+				"damage" : 150
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+//comments!
+{
+	"abilities" : {
+		"rangewillsup/damage_multi_debuff" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "20",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "100 100 120 140 160 510 860" 
+			},
+			"special-values" : {
+				"aoe" : 20,
+				"damage_per_second" : "7 14 21 28 35 70 105",
+				"lost_health_as_burst_damage" : "8 16 24 32 40 48 56",
+				"burst_damage_interval" : 4,
+				"debuff_duration" : 12,
+				"range" : 55
+			}
+		}
+	}	
+}

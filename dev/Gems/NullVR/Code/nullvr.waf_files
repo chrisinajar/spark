@@ -1,0 +1,18 @@
+{
+    "none": {
+        "Source": [
+            "Source/NullVR_precompiled.cpp",
+            "Source/NullVR_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/NullVR/NullVRBus.h"
+        ],
+        "Source": [
+            "Source/NullVRModule.cpp",
+            "Source/NullVRDevice.cpp",
+            "Source/NullVRDevice.h"
+        ]
+    }
+}

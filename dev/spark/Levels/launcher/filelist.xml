@@ -1,0 +1,6 @@
+<download name="launcher" type="Map">
+ <index src="filelist.xml" dest="filelist.xml"/>
+ <files>
+  <file src="level.pak" dest="level.pak" size="46078" md5="88e6c68402907498fb288d748a458782"/>
+ </files>
+</download>

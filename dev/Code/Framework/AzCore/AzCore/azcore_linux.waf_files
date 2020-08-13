@@ -1,0 +1,18 @@
+{
+    "AzCore_uber_linux.cpp":
+    {
+        "Debug":
+        [
+            "Debug/StackTracerLinux.inl",
+            "Debug/TraceCppLinux.inl"
+        ],
+        "Module":
+        [
+            "Module/DynamicModuleHandleLinux.cpp"
+        ],
+        "Utils" : 
+        [
+            "Utils/generic/Utils_Generic.cpp"
+        ]
+    }
+}

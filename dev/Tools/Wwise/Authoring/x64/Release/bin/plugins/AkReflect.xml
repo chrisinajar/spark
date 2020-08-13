@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 Audiokinetic Inc. -->
+<PluginModule>
+  <EffectPlugin Name="Wwise Reflect" CompanyID="0" PluginID="171">
+    <PluginInfo MenuPath="70-Reflect">
+      <PlatformSupport>
+        <Platform Name="Windows">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+        <Platform Name="Linux">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+        <Platform Name="XboxOne">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+        <Platform Name="Android">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+        <Platform Name="Mac">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+        <Platform Name="PS4">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+        <Platform Name="iOS">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+        <Platform Name="Emscripten">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+        <Platform Name="Switch">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+        <Platform Name="Lumin">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>false</CanBeInsertOnAudioObjects>
+        </Platform>
+      </PlatformSupport>
+    </PluginInfo>
+    <Properties>
+      <Property Name="SpeedOfSound" Type="Real32" SupportRTPCType="Exclusive" DisplayName="Speed of Sound">
+        <UserInterface Step="1" Fine="0.001" Decimals="3" UIMin="100" UIMax="1000"/>
+        <DefaultValue>345</DefaultValue>
+        <AudioEnginePropertyID>0</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0.001</Min>
+              <Max>4294967296</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="CenterPerc" Type="Real32" SupportRTPCType="Additive" DisplayName="Center Ratio">
+        <UserInterface Step="1" Fine="0.001" Decimals="3" />
+        <DefaultValue>100</DefaultValue>
+        <AudioEnginePropertyID>1</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0</Min>
+              <Max>100</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="MaxReflections" Type="Real32" DisplayName="Max Reflections">
+        <UserInterface Step="1" Fine="1" Decimals="0" UIMax="6" />
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>2</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0</Min>
+              <Max>1024</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="Dry" Type="Real32" DisplayName="Dry">
+        <UserInterface Step="1" Fine="0.1" Decimals="1"/>
+        <DefaultValue>-96</DefaultValue>
+        <AudioEnginePropertyID>3</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96</Min>
+              <Max>24</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+     <Property Name="Wet" Type="Real32" SupportRTPCType="Additive" DisplayName="Output Level">
+       <UserInterface Step="1" Fine="0.1" Decimals="1"/>
+       <DefaultValue>0</DefaultValue>
+       <AudioEnginePropertyID>4</AudioEnginePropertyID>
+       <Restrictions>
+         <ValueRestriction>
+           <Range Type="Real32">
+             <Min>-96</Min>
+             <Max>24</Max>
+           </Range>
+         </ValueRestriction>
+       </Restrictions>
+     </Property>
+      <Property Name="MaxDistance" Type="Real32" DisplayName="Max Distance">
+        <UserInterface Step="50" Fine="1" Decimals="0" UIMax="100" />
+        <DefaultValue>100</DefaultValue>
+        <AudioEnginePropertyID>5</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>1</Min>
+              <Max>4294967296</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="BaseTextureFrequency" Type="Real32" IsVisible="false">
+        <DefaultValue>250</DefaultValue>
+        <AudioEnginePropertyID>6</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>20</Min>
+              <Max>1000</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="FadeOutNbFrames" Type="int32" IsVisible="false">
+        <DefaultValue>3</DefaultValue>
+        <AudioEnginePropertyID>7</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="int32">
+              <Min>1</Min>
+              <Max>100</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="CursorNameCategory" Type="int32" DisplayName="Cursor Name Category">
+        <DefaultValue>0</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Enumeration Type="int32">
+              <Value DisplayName="No Flag">0</Value>
+              <Value DisplayName="Image Source ID">1</Value>
+              <Value DisplayName="Image Source Name">2</Value>
+              <Value DisplayName="Game Object ID">3</Value>
+              <Value DisplayName="Game Object Name">4</Value>
+              <Value DisplayName="Texture(s)">5</Value>
+            </Enumeration>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+    </Properties>
+  </EffectPlugin>
+</PluginModule>

@@ -1,0 +1,8 @@
+<fontfamily name="NotoSerif">
+    <font>
+        <file path="notoserif-regular.font" />
+        <file path="notoserif-bold.font" tags="b" />
+        <file path="notoserif-italic.font" tags="i" />
+        <file path="notoserif-bolditalic.font" tags="b,i" />
+    </font>
+</fontfamily>

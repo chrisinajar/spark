@@ -1,0 +1,262 @@
+<ObjectStream version="3">
+	<Class name="SceneManifest" version="1" type="{9274AD17-3212-4651-9F3B-7DCCB080E467}">
+		<Class name="AZStd::vector" field="values" type="{5D6A7C67-11CA-59A4-829B-0B20B781B292}">
+			<Class name="AZStd::shared_ptr" field="element" type="{EB7522F9-0E87-55A9-A191-E924DC5AE867}">
+				<Class name="ActorGroup" field="element" version="4" type="{D1AC3803-8282-46C5-8610-93CD39B0F843}">
+					<Class name="IActorGroup" field="BaseClass1" version="2" type="{C86945A8-AEE8-4CFC-8FBF-A20E9BC71348}">
+						<Class name="ISceneNodeGroup" field="BaseClass1" version="1" type="{1D20FA11-B184-429E-8C86-745852234845}">
+							<Class name="IGroup" field="BaseClass1" version="1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
+								<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+							</Class>
+						</Class>
+					</Class>
+					<Class name="AZStd::string" field="name" value="acolyte_mesh" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="AZStd::string" field="selectedRootBone" value="" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="SceneNodeSelectionList" field="nodeSelectionList" version="1" type="{D0CE66CE-1BAD-42F5-86ED-3923573B3A02}">
+						<Class name="ISceneNodeSelectionList" field="BaseClass1" version="1" type="{DC3F9996-E550-4780-A03B-80B0DDA1DA45}"/>
+						<Class name="AZStd::vector" field="selectedNodes" type="{99DAD0BC-740E-5E82-826B-8FC7968CC02C}">
+							<Class name="AZStd::string" field="element" value="RootNode.Acolyte" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.Acolyte.SkinWeight_0" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.Acolyte.map1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.Acolyte.acolyte_tex" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+						</Class>
+						<Class name="AZStd::vector" field="unselectedNodes" type="{99DAD0BC-740E-5E82-826B-8FC7968CC02C}">
+							<Class name="AZStd::string" field="element" value="RootNode" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc.Ruou" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc.Ruou.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vu" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vu" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi._T_MatCa" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi._P_MatCa" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co._Dau" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vu.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vu.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi._T_MatCa.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi._T_MatCa._T_Ban" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi._P_MatCa.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi._P_MatCa._P_Ban" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co._Dau.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co._Dau._Mu1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi._T_MatCa._T_Ban.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi._T_MatCa._T_Ban._T_Bo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi._P_MatCa._P_Ban.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi._P_MatCa._P_Ban._P_Bo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co._Dau._Mu1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co._Dau._Mu1._Mu2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Cai1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Tro1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Ban1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Cai1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Tro1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Ban1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._Truong" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi._T_MatCa._T_Ban._T_Bo.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi._P_MatCa._P_Ban._P_Bo.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co._Dau._Mu1._Mu2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Cai1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Cai1._T_Cai2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Tro1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Tro1._T_Tro2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Ban1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Ban1._T_Ban2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Cai1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Cai1._P_Cai2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Tro1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Tro1._P_Tro2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Ban1.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Ban1._P_Ban2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._Truong.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Cai1._T_Cai2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Cai1._T_Cai2._T_CaiBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Tro1._T_Tro2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Tro1._T_Tro2._T_TroBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Ban1._T_Ban2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Ban1._T_Ban2._T_BanBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Cai1._P_Cai2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Cai1._P_Cai2._P_CaiBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Tro1._P_Tro2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Tro1._P_Tro2._P_TroBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Ban1._P_Ban2.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Ban1._P_Ban2._P_BanBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Cai1._T_Cai2._T_CaiBo.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Tro1._T_Tro2._T_TroBo.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Ban1._T_Ban2._T_BanBo.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Cai1._P_Cai2._P_CaiBo.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Tro1._P_Tro2._P_TroBo.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Ban1._P_Ban2._P_BanBo.transform" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+						</Class>
+					</Class>
+					<Class name="AZ::Uuid" field="id" value="{9786AC92-336D-53B7-89C7-A9F98502ECDC}" type="{E152C105-A133-4D03-BBF8-3D4B2FBA3E2A}"/>
+					<Class name="RuleContainer" field="rules" version="1" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
+						<Class name="AZStd::vector" field="rules" type="{B5BDB053-178F-5D55-8663-70897A71B7C9}">
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="CoordinateSystemRule" field="element" version="1" type="{603207E2-4F55-4C33-9AAB-98CA75C1E351}">
+									<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+										<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+									</Class>
+									<Class name="int" field="targetCoordinateSystem" value="0" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+								</Class>
+							</Class>
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="TangentsRule" field="element" version="1" type="{4BD1CE13-D2EB-4CCF-AB21-4877EF69DE7D}">
+									<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+										<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+									</Class>
+									<Class name="int" field="tangentSpace" value="1" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+									<Class name="int" field="bitangentMethod" value="1" type="{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}"/>
+									<Class name="bool" field="normalize" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+									<Class name="AZ::u64" field="uvSetIndex" value="0" type="{D6597933-47CD-4FC8-B911-63F3E2B0993A}"/>
+								</Class>
+							</Class>
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="SkinRule" field="element" version="2" type="{B26E7FC9-86A1-4711-8415-8BE4861C08BA}">
+									<Class name="ISkinRule" field="BaseClass1" version="1" type="{5496ECAF-B096-4455-AE72-D55C5B675443}">
+										<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+											<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+										</Class>
+									</Class>
+									<Class name="unsigned int" field="maxWeightsPerVertex" value="4" type="{43DA906B-7DEF-4CA8-9790-854106D3F983}"/>
+									<Class name="float" field="weightThreshold" value="0.0010000" type="{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}"/>
+								</Class>
+							</Class>
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="MeshRule" field="element" version="2" type="{7F115A73-28A2-4E35-8C87-1A1982773034}">
+									<Class name="IMeshRule" field="BaseClass1" version="1" type="{299934A2-22EC-48AF-AB2B-953AFF8E0B19}">
+										<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+											<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+										</Class>
+									</Class>
+									<Class name="bool" field="optimizeTriangleList" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+								</Class>
+							</Class>
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="MaterialRule" field="element" version="2" type="{35620013-A27C-4F6D-87BF-72F11688ACAD}">
+									<Class name="IMaterialRule" field="BaseClass1" version="1" type="{428C9752-6EDF-4FA2-9BDF-DBDFCEB4CC0F}">
+										<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+											<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+										</Class>
+									</Class>
+									<Class name="bool" field="updateMaterials" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+									<Class name="bool" field="removeMaterials" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+								</Class>
+							</Class>
+						</Class>
+					</Class>
+				</Class>
+			</Class>
+			<Class name="AZStd::shared_ptr" field="element" type="{EB7522F9-0E87-55A9-A191-E924DC5AE867}">
+				<Class name="MeshGroup" field="element" version="3" type="{07B356B7-3635-40B5-878A-FAC4EFD5AD86}">
+					<Class name="IMeshGroup" field="BaseClass1" version="2" type="{74D45E45-81EE-4AD4-83B5-F37EB98D847C}">
+						<Class name="ISceneNodeGroup" field="BaseClass1" version="1" type="{1D20FA11-B184-429E-8C86-745852234845}">
+							<Class name="IGroup" field="BaseClass1" version="1" type="{DE008E67-790D-4672-A73A-5CA0F31EDD2D}">
+								<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+							</Class>
+						</Class>
+					</Class>
+					<Class name="AZStd::string" field="name" value="acolyte_mesh" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+					<Class name="SceneNodeSelectionList" field="nodeSelectionList" version="1" type="{D0CE66CE-1BAD-42F5-86ED-3923573B3A02}">
+						<Class name="ISceneNodeSelectionList" field="BaseClass1" version="1" type="{DC3F9996-E550-4780-A03B-80B0DDA1DA45}"/>
+						<Class name="AZStd::vector" field="selectedNodes" type="{99DAD0BC-740E-5E82-826B-8FC7968CC02C}">
+							<Class name="AZStd::string" field="element" value="" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.Acolyte" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc.Ruou" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vu" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vu" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi._T_MatCa" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi._P_MatCa" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co._Dau" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi._T_MatCa._T_Ban" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi._P_MatCa._P_Ban" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co._Dau._Mu1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._T_Chan._T_Goi._T_MatCa._T_Ban._T_Bo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._P_Chan._P_Goi._P_MatCa._P_Ban._P_Bo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._Co._Dau._Mu1._Mu2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Cai1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Tro1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Ban1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Cai1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Tro1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Ban1" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._Truong" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Cai1._T_Cai2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Tro1._T_Tro2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Ban1._T_Ban2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Cai1._P_Cai2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Tro1._P_Tro2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Ban1._P_Ban2" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Cai1._T_Cai2._T_CaiBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Tro1._T_Tro2._T_TroBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._T_Vai1.T_KhuuTay._T_CoTay._T_Ban1._T_Ban2._T_BanBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Cai1._P_Cai2._P_CaiBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Tro1._P_Tro2._P_TroBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+							<Class name="AZStd::string" field="element" value="RootNode.root._Goc._Ron._Nguc._P_Vai2.P_KhuuTay._P_CoTay._P_Ban1._P_Ban2._P_BanBo" type="{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}"/>
+						</Class>
+						<Class name="AZStd::vector" field="unselectedNodes" type="{99DAD0BC-740E-5E82-826B-8FC7968CC02C}"/>
+					</Class>
+					<Class name="RuleContainer" field="rules" version="1" type="{2C20D3DF-57FF-4A31-8680-A4D45302B9CF}">
+						<Class name="AZStd::vector" field="rules" type="{B5BDB053-178F-5D55-8663-70897A71B7C9}">
+							<Class name="AZStd::shared_ptr" field="element" type="{0BB4AFBA-F087-55C7-95DF-01D71F6CB052}">
+								<Class name="MaterialRule" field="element" version="2" type="{35620013-A27C-4F6D-87BF-72F11688ACAD}">
+									<Class name="IMaterialRule" field="BaseClass1" version="1" type="{428C9752-6EDF-4FA2-9BDF-DBDFCEB4CC0F}">
+										<Class name="IRule" field="BaseClass1" version="1" type="{81267F8B-3963-423B-9FF7-D276D82CD110}">
+											<Class name="IManifestObject" field="BaseClass1" type="{3B839407-1884-4FF4-ABEA-CA9D347E83F7}"/>
+										</Class>
+									</Class>
+									<Class name="bool" field="updateMaterials" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+									<Class name="bool" field="removeMaterials" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+								</Class>
+							</Class>
+						</Class>
+					</Class>
+					<Class name="AZ::Uuid" field="id" value="{74253F8E-F687-40F0-9971-77F1E872C47D}" type="{E152C105-A133-4D03-BBF8-3D4B2FBA3E2A}"/>
+				</Class>
+			</Class>
+		</Class>
+	</Class>
+</ObjectStream>
+

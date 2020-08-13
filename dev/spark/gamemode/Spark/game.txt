@@ -1,0 +1,37 @@
+{
+	"import" :  ["baselib"],	//import other gamemode folders
+	"include" : [
+	// folders!!
+	// txt folder is old sample values
+	// values is new unprocessed (mostly wrong) files from luma and baumi
+	// json is proper correct actual files put together the right way
+		"txt/items/items",
+		"txt/abilities/abilities",
+		"txt/units/units",
+		"txt/runes",
+		"txt/shrines",
+
+		"values/heroes"
+	],
+
+	"gamemode" : {
+	    "name" : "Spark",
+		"map" : "512map",
+		"lua-file": "Core/Game.lua"
+	},
+	
+	"shops":{
+		"top_shop":["flutter_crown","health_potion","mana_potion"]
+	},
+
+	"herolist": {
+		"harbinger": 1,
+		"minerva": 1,
+		"muse": 1,
+		"old_man": 1,
+		"quill": 1,
+		"astromage": 1,
+		"simpleagisup": 1,
+		"walkingfountain": 1
+	}
+}

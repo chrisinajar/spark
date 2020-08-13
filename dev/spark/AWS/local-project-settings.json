@@ -1,0 +1,10 @@
+{
+    "default": {
+        "Set": "us-west-2", 
+        "FrameworkVersion": "1.1.3"
+    }, 
+    "us-west-2": {
+        "ProjectStackId": "arn:aws:cloudformation:us-west-2:588472492807:stack/spark/e14fa9c0-69f1-11e9-92bf-0206b4669a7e", 
+        "FrameworkVersion": "1.1.3"
+    }
+}

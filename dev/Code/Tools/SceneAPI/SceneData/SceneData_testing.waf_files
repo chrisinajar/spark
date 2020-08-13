@@ -1,0 +1,14 @@
+{
+    "none":
+    {
+        "Tests":
+        [
+            "Tests/TestsMain.cpp"
+        ],
+        "Tests/GraphData":
+        [
+            "Tests/GraphData/MeshDataTests.cpp",
+            "Tests/GraphData/MeshDataPrimitiveUtilsTests.cpp"
+        ]
+    }
+}

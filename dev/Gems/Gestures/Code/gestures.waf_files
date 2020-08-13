@@ -1,0 +1,51 @@
+{
+    "none": {
+        "Source": [
+            "Source/Gestures_precompiled.cpp",
+            "Source/Gestures_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/Gestures/GestureRecognizerClickOrTap.h",
+            "Include/Gestures/GestureRecognizerClickOrTap.inl",
+            "Include/Gestures/GestureRecognizerDrag.h",
+            "Include/Gestures/GestureRecognizerDrag.inl",
+            "Include/Gestures/GestureRecognizerHold.h",
+            "Include/Gestures/GestureRecognizerHold.inl",
+            "Include/Gestures/GestureRecognizerPinch.h",
+            "Include/Gestures/GestureRecognizerPinch.inl",
+            "Include/Gestures/GestureRecognizerRotate.h",
+            "Include/Gestures/GestureRecognizerRotate.inl",
+            "Include/Gestures/GestureRecognizerSwipe.h",
+            "Include/Gestures/GestureRecognizerSwipe.inl",
+            "Include/Gestures/IGestureRecognizer.h"
+        ],
+        "Source": [
+            "Source/GestureRecognizerClickOrTapFlowNode.cpp",
+            "Source/GestureRecognizerDragFlowNode.cpp",
+            "Source/GestureRecognizerHoldFlowNode.cpp",
+            "Source/GestureRecognizerPinchFlowNode.cpp",
+            "Source/GestureRecognizerRotateFlowNode.cpp",
+            "Source/GestureRecognizerSwipeFlowNode.cpp",
+            "Source/GesturesModule.cpp",
+            "Source/GesturesSystemComponent.cpp",
+            "Source/GesturesSystemComponent.h",
+            "Source/InputChannelGesture.h",
+            "Source/InputChannelGestureClickOrTap.cpp",
+            "Source/InputChannelGestureClickOrTap.h",
+            "Source/InputChannelGestureDrag.cpp",
+            "Source/InputChannelGestureDrag.h",
+            "Source/InputChannelGestureHold.cpp",
+            "Source/InputChannelGestureHold.h",
+            "Source/InputChannelGesturePinch.cpp",
+            "Source/InputChannelGesturePinch.h",
+            "Source/InputChannelGestureRotate.cpp",
+            "Source/InputChannelGestureRotate.h",
+            "Source/InputChannelGestureSwipe.cpp",
+            "Source/InputChannelGestureSwipe.h",
+            "Source/InputDeviceGestures.cpp",
+            "Source/InputDeviceGestures.h"
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+<ParticleLibrary Name="TestingParticles" SandboxVersion="1.15.0.0" ParticleVersion="33">
+ <Particles Name="Fire_Main">
+  <Params Count="5" EmitterSizeDiameter="5" Continuous="true" ParticleLifeTime="2" Curvature="0" Speed="1" CameraNonFacingFade="FadeCurve=(;t=1,v=1)"/>
+ </Particles>
+</ParticleLibrary>

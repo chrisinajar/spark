@@ -1,0 +1,20 @@
+//comments!
+{
+	"abilities" : {
+		"quill/ink_pit" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "12",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "120 120 150 180 210 450 690" 
+			},
+			"special-values" : {
+				"range" : 55,
+				"damage_per_second" : "100 100 100 100 100 150 200",
+				"total_damage" : "50 150 200 250 300 525 800",
+				"duration" : "0.5 1.5 2 2.5 3 3.5 4",
+				"creep_duration" : "0.5 10 10 10 10 10 10"
+			}
+		}
+	}	
+}

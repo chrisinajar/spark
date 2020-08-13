@@ -1,0 +1,66 @@
+########################################################################################
+# All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+# its licensors.
+#
+# For complete copyright and license terms please see the LICENSE at the root of this
+# distribution (the "License"). All use of this software is governed by the License,
+# or, if provided, by the license below or the license accompanying this file. Do not
+# remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+#
+# Original file Copyright Crytek GMBH or its affiliates, used under license.
+#
+########################################################################################
+
+
+def build(bld):
+
+    bld.CryResourceCompilerModule(
+        # Settings
+        target                  = 'ResourceCompilerPC',
+        vs_filter               = 'RC',
+        copyright_org           = 'Amazon-CryTek',
+        file_list               = 'resourcecompilerpc.waf_files',
+        platforms               = ['win', 'darwin'],
+        configurations          = ['debug', 'debug_test', 'profile', 'profile_test'],
+        use                     = ['AzToolsFramework'],
+        uselib                  = ['LUA',
+                                   'QT5CORE',
+                                   'QT5GUI',
+                                   'QT5WIDGETS',
+                                   'AWS_CPP_SDK_CORE'],
+        includes                = ['.',
+                                   bld.ThirdPartyPath('mikkt'),
+                                   bld.Path('Code/Tools'),
+                                   bld.Path('Code/Tools/RC/ResourceCompiler'),
+                                   bld.Path('Code/Tools/CryCommonTools'),
+                                   bld.Path('Code/CryEngine/Cry3DEngine'),
+                                   bld.Path('Code/Sandbox')],        
+        defines                 = ['CRYTOOLS',
+                                   'RESOURCECOMPILERPC_EXPORTS',
+                                   'OFFLINE_COMPUTATION' ],
+        
+        debug_dedicated_defines         = [ 'LY_IGNORE_METRICS' ],
+        debug_test_dedicated_defines    = [ 'LY_IGNORE_METRICS' ],
+        profile_dedicated_defines       = [ 'LY_IGNORE_METRICS' ],
+        profile_test_dedicated_defines  = [ 'LY_IGNORE_METRICS' ],
+        performance_dedicated_defines   = [ 'LY_IGNORE_METRICS' ],
+        release_dedicated_defines       = [ 'LY_IGNORE_METRICS' ],
+        darwin_defines                  = [ 'LY_IGNORE_METRICS' ],
+        
+        enable_rtti             = True,
+
+        win_x64_clang_cxxflags  = ['-fexceptions', '-Wno-nonportable-include-path', '-Wno-format'],
+
+        #Platform specific
+        win_lib                 = ['Gdi32',
+                                    'Shell32',
+                                    'Ole32'],
+        win_features            = ['ExternalLyMetrics' ],
+        win_use                 = bld.make_aws_library_task_list(['LyMetricsProducer']),
+        
+        
+        # Testing
+        test_all_file_list  = ['resourcecompilerpc_test.waf_files'],
+    )

@@ -1,0 +1,80 @@
+<Material MtlFlags="557312" DccMaterialHash="0" vertModifType="0">
+ <SubMaterials>
+  <Material Name="body_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="2901000000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING_MASK%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.83077002,0.83077002,0.83077002,0.90196157" Opacity="1" Shininess="230.0002" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/caveman/textures/caveman_body_ddna.dds"/>
+    <Texture Map="Opacity" File="objects/character/caveman/textures/caveman_body_sss.tif"/>
+    <Texture Map="Specular" File="objects/character/caveman/textures/caveman_body_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/caveman/textures/caveman_body_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_body_diff.tif"/>
+   </Textures>
+   <PublicParams Melanin="0.22499999" SSSIndex="1.2" TranslucencyMultiplier="1.75" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="legs_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="2921000040000" StringGenMask="%DISPLACEMENT_MAPPING%NORMAL_MAP%PN_TESSELLATION%SPECULAR_MAP%SUBSURFACE_SCATTERING_MASK%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.57112497,0.57112497,0.57112497,0.90196145" Opacity="1" Shininess="230.00017" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/caveman/textures/caveman_legs_ddna.dds"/>
+    <Texture Map="Opacity" File="objects/character/caveman/textures/caveman_leg_sss.tif"/>
+    <Texture Map="Specular" File="objects/character/caveman/textures/caveman_legs_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/caveman/textures/caveman_legs_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_legs_diff.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" TessellationFactor="1" TessellationDispBias="1" Melanin="0.22499999" TessellationHeightScale="1" SSSIndex="1.2" TessellationFactorMax="32" TranslucencyMultiplier="1.75" TessellationFactorMin="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="head_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="2921000040000" StringGenMask="%DISPLACEMENT_MAPPING%NORMAL_MAP%PN_TESSELLATION%SPECULAR_MAP%SUBSURFACE_SCATTERING_MASK%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.57112497,0.57112497,0.57112497,0.8627457" Opacity="1" Shininess="220.00015" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Smoothness" File="objects/character/caveman/textures/caveman_head_ddna.dds"/>
+    <Texture Map="Opacity" File="objects/character/caveman/textures/caveman_head_sss.tif"/>
+    <Texture Map="Specular" File="objects/character/caveman/textures/caveman_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/caveman/textures/caveman_head_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_head_diff.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" TessellationFactor="3.22" TessellationDispBias="1" Melanin="0.25999999" TessellationHeightScale="1" SSSIndex="1.2" TessellationFactorMax="32" TranslucencyMultiplier="0.79000002" TessellationFactorMin="5.0100002" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="cloth_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Humanskin" GenMask="2101000000000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_SKIN" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0,0,0,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_cloth_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/caveman/textures/caveman_cloth_ddna.tif"/>
+    <Texture Map="Specular" File="objects/character/caveman/textures/caveman_cloth_spec.tif"/>
+    <Texture Map="Smoothness" File="objects/character/caveman/textures/caveman_cloth_ddna.dds"/>
+   </Textures>
+   <PublicParams Melanin="0.47" SSSIndex="1.2" TranslucencyMultiplier="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyes_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="1003000000000" StringGenMask="%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="0.34191445,0.3467041,0.32777813,1" Specular="0.13286835,0.13286835,0.13286835,1" Opacity="1" Shininess="119.86005" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Custom" File="objects/character/caveman/textures/caveman_eyecornea_ddna.tif"/>
+    <Texture Map="Heightmap" File="objects/character/caveman/textures/caveman_eye_displ.dds"/>
+    <Texture Map="Bumpmap" File="objects/character/caveman/textures/caveman_eye_ddna.dds"/>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_eye_diff.tif"/>
+   </Textures>
+   <PublicParams CorneaRefraction="0" IrisDepth="0.02" IrisColor="0.5,0.5,0.5" IrisShadowing="5.8000002" CorneaSmoothness="0.70999998" ScleraSSS="0.14" IrisSSS="0.94999999" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyeWetness_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="1003001000000" StringGenMask="%EYE_SPECULAR_OVERLAY%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.029556841,0.029556841,0.029556841,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Bumpmap" File="objects/character/caveman/textures/caveman_eyecornea_ddna.tif"/>
+    <Texture Map="Smoothness" File="objects/character/caveman/textures/caveman_eyecornea_ddna.dds"/>
+   </Textures>
+   <PublicParams DepthBiasScale="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyeTear_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Eye" GenMask="1002001000000" StringGenMask="%EYE_SPECULAR_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_default" Diffuse="1,1,1,1" Specular="0.046665091,0.046665091,0.046665091,0.83921593" Opacity="1" Shininess="214.00006" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_eyewater_spec.tif"/>
+   </Textures>
+   <PublicParams DepthBiasScale="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eyesAO_MAT" MtlFlags="557184" DccMaterialHash="0" Shader="Illum" GenMask="400000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0,0,0,0.92000002" Specular="0.045000002,0.045000002,0.045000002,0.0078740185" Opacity="0.92000002" Shininess="2.0078747" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_eyesao_diff.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="skin_MAT" MtlFlags="524416" DccMaterialHash="0" Shader="Illum" GenMask="501000000003" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_SPECULAR_ANTIALIASING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_default" Diffuse="0.80000001,0.80000001,0.80000001,1" Specular="0.5,0.5,0.5,0.83137262" Opacity="1" Shininess="212.00002" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Specular" File="objects/character/caveman/textures/caveman_skin_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/character/caveman/textures/caveman_skin_ddna.tif"/>
+    <Texture Map="Diffuse" File="objects/character/caveman/textures/caveman_skin_diff.tif"/>
+    <Texture Map="Smoothness" File="objects/character/caveman/textures/caveman_skin_ddna.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+</Material>

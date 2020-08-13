@@ -1,0 +1,248 @@
+/*
+* All or portions of this file Copyright (c) Amazon.com, Inc. or its affiliates or
+* its licensors.
+*
+* For complete copyright and license terms please see the LICENSE at the root of this
+* distribution (the "License"). All use of this software is governed by the License,
+* or, if provided, by the license below or the license accompanying this file. Do not
+* remove or modify any license notices. This file is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+*
+*/
+// Original file Copyright Crytek GMBH or its affiliates, used under license.
+
+#if SMALL_UNIFORM_BUFFERS
+// This is the maximum number of bones we can fit into 16k of space, which is
+// the maximum size of uniform/constant buffer memory some GPUs have
+#define MAX_BONES 512
+#else
+#define MAX_BONES 768
+#endif
+#define MAX_NUM_BONES_PER_GROUP 250
+#define MAX_NUM_BONES_PER_GROUP_WITH_MB 125
+
+//
+// The engine PBR system works in a variety of light unit spaces.
+//   The time of day system works in LUX, but uses an ad-hoc light 10000 unit
+//   scale when converting to engine light values.
+//
+
+#define LIGHT_UNIT_SCALE 10000.0
+#define EMITTANCE_TO_ENGINE_LIGHT_SCALE (1000.0 / LIGHT_UNIT_SCALE)
+
+//
+// The per-material constant buffer is still reflected through the parameter system.
+// The register below are register offsets into the constant buffer. Tweakables defined
+// in the shader use the PER_MATERIAL_X registers. These will generate a PER_MATERIAL
+// constant buffer in the final HLSL.
+//
+
+
+// Material hardcoded registers (Must match MaterialRegister enum in ShaderResources.cpp)
+#define PER_MATERIAL_DIFFUSE_COLOR          c0
+#define PER_MATERIAL_SPECULAR_COLOR         c1
+#define PER_MATERIAL_EMISSIVE_COLOR         c2
+#define PER_MATERIAL_DEFORM_WAVE            c3
+#define PER_MATERIAL_DETAIL_TILING          c5
+#define PER_MATERIAL_TEXEL_DENSITY          c6
+#define PER_MATERIAL_UV_MATRIX_DIFFUSE      c7
+#define PER_MATERIAL_UV_MATRIX_CUSTOM       c11
+#define PER_MATERIAL_UV_MATRIX_EMISSIVE_MULTIPLIER c15
+#define PER_MATERIAL_UV_MATRIX_EMITTANCE    c19
+#define PER_MATERIAL_UV_MATRIX_DETAIL       c23
+
+// Material tweakable registers.
+#define PER_MATERIAL_0   c27
+#define PER_MATERIAL_1   c28
+#define PER_MATERIAL_2   c29
+#define PER_MATERIAL_3   c30
+#define PER_MATERIAL_4   c31
+#define PER_MATERIAL_5   c32
+#define PER_MATERIAL_6   c33
+#define PER_MATERIAL_7   c34
+#define PER_MATERIAL_8   c35
+#define PER_MATERIAL_9   c36
+#define PER_MATERIAL_10  c37
+#define PER_MATERIAL_11  c38
+#define PER_MATERIAL_12  c39
+
+float4 PerMaterial_DiffuseColor  : PM_DiffuseColor < register = PER_MATERIAL_DIFFUSE_COLOR >;
+float4 PerMaterial_SpecularColor : PM_SpecularColor < register = PER_MATERIAL_SPECULAR_COLOR >;
+float4 PerMaterial_EmissiveColor : PM_EmissiveColor < register = PER_MATERIAL_EMISSIVE_COLOR >;
+float2x4 PerMaterial_DeformWave  : PM_DeformWave  < register = PER_MATERIAL_DEFORM_WAVE >;
+float4 PerMaterial_DetailTiling  : PM_DetailTiling < register = PER_MATERIAL_DETAIL_TILING >;
+float4 PerMaterial_TexelDensity  : PM_TexelDensity < register = PER_MATERIAL_TEXEL_DENSITY >;
+
+float3 GetMaterial_Emittance()
+{
+    return PerMaterial_EmissiveColor.rgb * PerMaterial_EmissiveColor.a * EMITTANCE_TO_ENGINE_LIGHT_SCALE;
+}
+
+float GetMaterial_AlphaTest()
+{
+    return PerMaterial_DeformWave[1].w;
+}
+
+// Deprecated.
+#define VS_REG_PB_0 c0
+#define VS_REG_PB_9 c9
+
+//*** Begin Do Not Remove or Rename ***//
+// Warning:
+// Do NOT remove, rename or use these shader constants.  They are NOT referenced in any shader anywhere, however the instancing system relies on these constants existing.
+// The vertex stream parameter InstBendInfo gets the prefix "Inst" removed during parsing and then later in CShaderMan::mfGetFXParameter, it does a lookup with
+// that mangled string into the SFXParam array and will fail if this exact shader constant has not been registered.  If this lookup fails, then InstBendInfo will
+// not be properly updated and instanced items with bend will disappear.
+float4 BendInfo         : SI_BendInfo         < vsregister = c2; >;
+float4 PrevBendInfo     : SI_PrevBendInfo     < vsregister = c3; >;
+half4 AlphaTest         : SI_AlphaTest        < vsregister = c6; >;
+half4 AmbientOp         : SI_AmbientOpacity   < vsregister = c5; >;
+//*** End Do Not Remove or Rename ***//
+
+// Vertex shader parameters
+float4x4 vpMatrix       : PI_ViewProjection   < vsregister = c0; >;
+
+#if %TEMP_VEGETATION
+	half4 AmbientObjectCol : SI_ObjectAmbColComp < vsregister = c4; >;  //x=Ambient.w, y=ObjColor.w, z = 0, w = render quality
+#endif
+
+half4 Ambient      : PI_Ambient;
+
+#define CONSTANT_BUFFER_PER_FRAME   register(b11)
+#define CONSTANT_BUFFER_PER_VIEW    register(b10)
+#define CONSTANT_BUFFER_PER_PASS    register(b9)
+#define CONSTANT_BUFFER_PER_SUBPASS register(b8)
+
+cbuffer PerViewConstantBuffer : CONSTANT_BUFFER_PER_VIEW
+{
+    float4    PerView_WorldViewPos;
+    float4    PerView_WorldViewPosPrev;
+    float4x4  PerView_ViewProjZeroMatr;
+    float4x4  PerView_ViewProjZeroMatrPrev;
+    float4x4  PerView_ViewProjZeroMatrPrevNearest;
+    float4    PerView_AnimGenParams; // time * {2.0, 0.5, 1.0, 0.125}
+
+    float4    PerView_ViewBasisX;
+    float4    PerView_ViewBasisY;
+    float4    PerView_ViewBasisZ;
+
+    float4x4  PerView_ViewProjMatr;
+    float4x4  PerView_ViewProjMatrPrev;
+    float4x4  PerView_ViewMatr;
+    float4x4  PerView_ProjMatr;
+    float4    PerView_TessellationParams;
+
+    float4    PerView_ScreenSize;
+    float4    PerView_HPosScale;
+    float4    PerView_ProjRatio;
+    float4    PerView_NearestScaled;
+    float4    PerView_NearFarClipDist;
+
+    float4    PerView_FogColor;
+
+    float4x4  PerView_FrustumPlaneEquation;
+    float4    PerView_JitterParams;
+};
+
+#define PERVIEW_JITTER_SUBPIXEL_OFFSET PerView_JitterParams.zw
+#define PERVIEW_JITTER_SUBPIXEL_OFFSET_CLIPSPACE PerView_JitterParams.xy
+
+cbuffer PerFrameConstantBuffer : CONSTANT_BUFFER_PER_FRAME
+{
+    float4 PerFrame_VolumetricFogParams;
+    float4 PerFrame_VolumetricFogRampParams;
+    float4 PerFrame_VolumetricFogColorGradientBase;
+    float4 PerFrame_VolumetricFogColorGradientDelta;
+    float4 PerFrame_VolumetricFogColorGradientParams;
+    float4 PerFrame_VolumetricFogColorGradientRadial;
+
+    // x:near distance, y:reciprocal of far minus near distance, z:depth resolution of volume tex, w:reciprocal of depth resolution
+    float4 PerFrame_VolumetricFogSamplingParams;
+
+    // x:near distance, y:far minus near distance, z:reciprocal of depth resolution minus one, w: not used
+    float4 PerFrame_VolumetricFogDistributionParams;
+
+    // x: scattering factor, y: extinction factor, z: anisotoropy, w: one minus squared anisotoropy
+    float4 PerFrame_VolumetricFogScatteringParams;
+
+    // x: blend factor of two radial lobes, y: blend mode of two radial lobes, z,w: not used
+    float4 PerFrame_VolumetricFogScatteringBlendParams;
+
+    // xyz: sun color multiplied by a fog albedo, w: secondary anisotoropy
+    float4 PerFrame_VolumetricFogScatteringColor;
+
+    // xyz: sun color multiplied by a fog albedo, w: one minus squared secondary anisotoropy
+    float4 PerFrame_VolumetricFogScatteringSecondaryColor;
+
+    // x: height scale, y: log2(e) * fogDensity * exp(heightScale * PerView_WorldViewPos.z + heightOffset)
+    // z: global fog visibility, w: max density clamp
+    float4 PerFrame_VolumetricFogHeightDensityParams;
+
+    // x: ramp start distance, y: ramp end distance, z: 1 / (RampEnd - RampStart), w: RampStart / (RampEnd - RampStart)
+    float4 PerFrame_VolumetricFogHeightDensityRampParams;
+
+    // x: far distance at top left corner of screen, y: far distance at top, z: far distance at left, w: far distance at center of screen
+    float4 PerFrame_VolumetricFogDistanceParams;
+
+    // xyz: primary global env probe color multiplied by a fog albedo, w: attenuation of primary global env probe
+    float4 PerFrame_VolumetricFogGlobalEnvProbe0;
+
+    // xyz: secondary global env probe color multiplied by a fog albedo, w: attenuation of secondary global env probe
+    float4 PerFrame_VolumetricFogGlobalEnvProbe1;
+
+    float4 PerFrame_SvoLightingParams;
+
+    float4 PerFrame_Time;       // Contains [ time, frame time, time since frame time, noon to night coefficient ]
+
+    float4 PerFrame_SunColor;
+    float4 PerFrame_SunDirection;
+    float4 PerFrame_HDRParams;
+
+    float4 PerFrame_CloudShadingColorSun;
+    float4 PerFrame_CloudShadingColorSky;
+    float4 PerFrame_CloudShadowParams;
+    float4 PerFrame_CloudShadowAnimParams;
+
+    float4 PerFrame_CausticsSmoothSunDirection;
+
+    float4 PerFrame_DecalZFightingRemedy;
+    float4 PerFrame_WaterLevel;
+
+    float4 PerFrame_StereoParams;
+    float4 PerFrame_RandomParams;
+
+    uint4 PerFrame_MultiLayerAlphaBlendData;
+};
+
+float GetPerFrame_SSDOAmount()
+{
+    return PerFrame_DecalZFightingRemedy.w;
+}
+
+#define PERFRAME_TIME_CURRENT 	PerFrame_Time.x
+#define PERFRAME_TIME_ELAPSED 	PerFrame_Time.y
+#define PERFRAME_TIME_PREVIOUS 	PerFrame_Time.z
+#define NoonToNightRatio 		PerFrame_Time.w
+
+//==========================================================================================
+// Frequently used parameters
+
+float4 AvgFogVolumeContrib[6]: PI_AvgFogVolumeContrib;
+float4 PS_ScreenSize        : PB_ScreenSize;
+float4 PS_ZRange;
+
+float3 vSkinPrecisionOffset = { PB_ObjVal[0], PB_ObjVal[1], PB_ObjVal[2] };
+float4 fSkinningExtraWeights : PB_SkinningExtraWeights;
+#define UseFogVolumeShadingQualityHigh     (AvgFogVolumeContrib[1].w > 0 )
+#define FogVol_HeightFallOffBasePoint 	(AvgFogVolumeContrib[3].xyz)
+#define FogVol_HeightFallOffDirScaled 	(AvgFogVolumeContrib[4].xyz)
+#define FogVol_GlobalDensity          	(AvgFogVolumeContrib[4].w)
+#define FogVol_DensityOffset          	(AvgFogVolumeContrib[3].w)
+#define FogVol_AvgFogVolumeColor      	(AvgFogVolumeContrib[0].rgb)
+#define FogVol_AABBox_Valid           	(AvgFogVolumeContrib[2].w)
+#define FogVol_CameraInside          	(AvgFogVolumeContrib[5].x)
+
+
+//spark stuff
+float4 FogOfWar  : PB_FogOfWar;
+//

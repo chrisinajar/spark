@@ -1,0 +1,48 @@
+Event	ID	Name			Wwise Object Path	Notes
+	393235542	Play_sfx_blink_vanish			\Default Work Unit\Play_sfx_blink_vanish	
+	431846268	Play_sfx_duel			\Default Work Unit\Play_sfx_duel	
+	681320211	Play_sfx_buyitem			\Default Work Unit\Play_sfx_buyitem	
+	1117141914	Play_sfx_UI_back			\Default Work Unit\Play_sfx_UI_back	
+	1541992402	Play_sfx_capturepoint			\Default Work Unit\Play_sfx_capturepoint	
+	2122963377	Play_sfx_ambience_spark_alphamap			\Default Work Unit\Play_sfx_ambience_spark_alphamap	
+	2231392266	Play_sfx_blink_appear_01			\Default Work Unit\Play_sfx_blink_appear_01	
+	2234392231	Play_sfx_levelup_1			\Default Work Unit\Play_sfx_levelup_1	
+	2693333339	Play_sfx_hero_astromagus_skill_w			\Default Work Unit\Play_sfx_hero_astromagus_skill_w	
+	2693333341	Play_sfx_hero_astromagus_skill_q			\Default Work Unit\Play_sfx_hero_astromagus_skill_q	
+	2693333342	Play_sfx_hero_astromagus_skill_r			\Default Work Unit\Play_sfx_hero_astromagus_skill_r	
+	2762721572	Play_sfx_blink_appear			\Default Work Unit\Play_sfx_blink_appear	
+	2833543870	Play_sfx_respawn			\Default Work Unit\Play_sfx_respawn	
+	2925662583	Play_sfx_UI_button			\Default Work Unit\Play_sfx_UI_button	
+	2944748108	Play_sfx_point			\Default Work Unit\Play_sfx_point	
+	3170220158	Play_sfx_ui_lockin_hero			\Default Work Unit\Play_sfx_ui_lockin_hero	
+	3201342862	Play_sfx_ui_timer_countdown			\Default Work Unit\Play_sfx_ui_timer_countdown	
+	3852581064	Play_sfx_entershop			\Default Work Unit\Play_sfx_entershop	
+	3908763747	Play_sfx_fire_loop			\Default Work Unit\Play_sfx_fire_loop	
+	4175570933	Play_sfx_attack_r_1			\Default Work Unit\Play_sfx_attack_r_1	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	93383826	sfx_point	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_point_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\in Game 2D\sfx_point		390840
+	96482954	sfx_UI_back	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_UI_back_56D34C19.wem		\Actor-Mixer Hierarchy\Menu\UI\Menu\sfx_UI_back		152944
+	140086355	sfx_ui_timer_countdown_2	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_ui_timer_countdown_2_56D34C19.wem		\Actor-Mixer Hierarchy\Menu\UI\Menu\sfx_ui_timer_countdown\sfx_ui_timer_countdown_2		71824
+	185789000	sfx_capturepoint	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_capturepoint_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\in Game 2D\sfx_capturepoint		359284
+	195914978	sfx_buyitem	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_buyitem_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\in Game 2D\sfx_buyitem		133944
+	232225433	sfx_levelup_1	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_levelup_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\in Game 2D\sfx_levelup_1		512684
+	336698749	sfx_hero_astromagus_skill_w	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_hero_astromagus_skill_w_56D34C19.wem		\Actor-Mixer Hierarchy\Heroes Skill SFX\hero_astromagus\sfx_hero_astromagus_skill_w		756764
+	351618176	sfx_ui_lockin_hero	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_ui_lockin_hero_56D34C19.wem		\Actor-Mixer Hierarchy\Menu\UI\Menu\sfx_ui_lockin_hero		771344
+	409444624	sfx_hero_astromagus_skill_r	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_hero_astromagus_skill_r_56D34C19.wem		\Actor-Mixer Hierarchy\Heroes Skill SFX\hero_astromagus\sfx_hero_astromagus_skill_r		959544
+	423571487	sfx_entershop	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_entershop_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\in Game 2D\sfx_entershop		583144
+	449547935	sfx_ui_timer_countdown_1	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_ui_timer_countdown_1_56D34C19.wem		\Actor-Mixer Hierarchy\Menu\UI\Menu\sfx_ui_timer_countdown\sfx_ui_timer_countdown_1		73872
+	488226643	sfx_attack_r_arrow_1	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_attack_r_arrow_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Basic Attacks\sfx_attack_r_arrow_1		69200
+	508470882	sfx_respawn	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_respawn_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\in Game 2D\sfx_respawn		679064
+	522099703	sfx_blink_vanish	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_blink_vanish_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_blink_vanish		112584
+	536042359	sfx_duel	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_duel_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\in Game 2D\sfx_duel		536684
+	621194481	sfx_UI_button	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_UI_button_56D34C19.wem		\Actor-Mixer Hierarchy\Menu\UI\Menu\sfx_UI_button		440628
+	767737219	sfx_fire_loop	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_fire_loop_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_fire_loop		16248896
+	938719284	sfx_attack_r_woosh_basic_2	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_attack_r_woosh_basic_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Basic Attacks\sfx_attack_r_woosh_basic_2		138256
+	998526210	sfx_blink_appear	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_blink_appear_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_blink_appear		134944
+	1013913954	sfx_hero_astromagus_skill_q	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_hero_astromagus_skill_q_56D34C19.wem		\Actor-Mixer Hierarchy\Heroes Skill SFX\hero_astromagus\sfx_hero_astromagus_skill_q		699444
+	1056440603	sfx_attack_r_throw_1	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_attack_r_throw_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Basic Attacks\sfx_attack_r_throw_1		138256
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	266088136	sfx_ambience_spark_alphamap	F:\amazon\Lumberyard\1.18.0.0\dev\spark\Sounds\wwise_project\.cache\Windows\SFX\sfx_ambience_spark_alphamap_8956FC97.wem	266088136.wem	\Actor-Mixer Hierarchy\Default Work Unit\sfx_ambience_spark_alphamap	
+

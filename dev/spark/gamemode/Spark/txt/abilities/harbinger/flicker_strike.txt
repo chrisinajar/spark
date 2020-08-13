@@ -1,0 +1,17 @@
+{
+	"abilities" : {
+		"harbinger/flicker_strike" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"cooldown" : "20 15 13 11 9 7 5",
+			//for now the values below are ignored
+			"costs":{
+				"mana" : "70 70 90 110 130 150 170" 
+			},
+			"special-values" : {
+				"range" : "40 70 80 90 100 110 120",
+				"duration" : 2,
+				"bonus_attack_speed" : "25 80 120 160 200 240 280"
+			}
+		}
+	}
+}

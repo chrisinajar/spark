@@ -1,0 +1,46 @@
+{
+	"items": {
+		"tiny_ward_stack": {
+			"extends": "tiny_ward_stack",
+	    	"ID":                               25,    // unique ID
+	    	"item_cost":                        0,	// if recipe = true, this is the recipe cost, else the item can be bought in the shop at this price
+	    	"item_shop_tags":                   "",
+	    	"item_recipe":                      true,
+	    	"max_level":				        5,
+	    	"item_recipe_icon":					"tiny_ward_stack_recipe_icon",
+	    	"item_icon":                        "tiny_ward_stack",
+	    	"item_requirements":
+	    	[
+	    		["small_hp_regen", "small_mana_regen"],
+	    	],
+
+	   		// General
+	    	//-------------------------------------------------------------------------------------------------------------
+	    	"ability_behavior":                 "ground_target", // what happens when you push the button: unit_target, ground_target, no_target, toggle, passive 
+	    	"ability_unit_target_team":         "", // team_enemy or team_ally
+	    	"ability_unit_target_type":         [], // hero, creep, boss
+	    	"ability_unit_target_flags":        "", // if listed it can target: status_immune
+
+		    // Stats
+		    //-------------------------------------------------------------------------------------------------------------
+		    "ability_cooldown":                 0,
+		    "ability_shared_cooldown":          "base",
+		    "ability_cast_range":               0,
+		    "ability_cast_point":               0.0,
+
+		    // Item Info
+		    //-------------------------------------------------------------------------------------------------------------
+		    "ability_mana_cost":                0,
+		    "item_shop_tags":                   "base",
+		    "item_aliases":                     "base",
+
+		    // Special
+		    //-------------------------------------------------------------------------------------------------------------
+		    "special_values":
+		    {
+		    	"health_regeneration":			5,
+		    	"mana_regeneration":			5,
+		    }
+		}
+	}
+}

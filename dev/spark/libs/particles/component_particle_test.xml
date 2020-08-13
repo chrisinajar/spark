@@ -1,0 +1,5 @@
+<ParticleLibrary Name="Component_Particle_Test" SandboxVersion="0.0.0.0" ParticleVersion="28">
+ <Particles Name="SphereEmitter">
+  <Params Count="10" Continuous="true" ParticleLifeTime="2" Curvature="0" BlendType="Multiplicative" Texture="editor/plugins/particleeditorplugin/defaults/defaultparticle.tif" Material="levels/samples/component_sample/_dev_dot" SizeX="0.1,ParticleAge=(v=1;t=1)" SizeY="0.1,ParticleAge=(v=1;t=1)" Speed="1"/>
+ </Particles>
+</ParticleLibrary>

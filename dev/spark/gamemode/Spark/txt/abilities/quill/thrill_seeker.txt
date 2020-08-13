@@ -1,0 +1,12 @@
+{
+	"abilities" : {
+		"quill/thrill_seeker" : {
+			"icon-file": "Textures/Icons/Abilities/12",
+			"special-values" : {
+				"max_movement_speed_boost_percentage" : "6 12 24 36 48 60 72",
+				"enemy_health_percentage_for_max_movement_speed_boost" : 25,
+				"enemy_reveal_health_percentage" : 25
+			}
+		}
+	}
+}

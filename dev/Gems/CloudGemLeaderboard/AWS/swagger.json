@@ -1,0 +1,486 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "$RestApiResourceName$",
+        "description": "API for the $ResourceGroupName$ service ($DeploymentName$ deployment)."
+   },
+    "schemes": [
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "x-amazon-cloud-canvas-lambda-dispatch": {
+        "lambda": "$ServiceLambdaArn$"
+    },
+    "paths": {
+        "/loadtest": {
+            "x-cloud-gem-framework-interface-implementation": {
+                "interface": "CloudGemLeaderboard_LoadTest_1_0_0"
+            }
+        },
+        "/score": {
+            "x-amazon-cloud-canvas-lambda-dispatch": {
+                "module": "submit_score"
+            },
+            "post" : {
+                "description": "submit a new high score",
+                "parameters": [
+                    {
+                        "name": "score_entry",
+                        "in": "body",
+                        "required": true,
+                        "schema" : {
+                            "$ref" : "#/definitions/SingleScore"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The Updated score entry",
+                        "schema": {
+                            "$ref": "#/definitions/SingleScore"
+                        }
+                    }
+                }
+            }
+        },
+        "/scores/{user}": {
+            "x-amazon-cloud-canvas-lambda-dispatch": {
+                "module": "user_scores"
+            },
+            "get": {
+                "description": "Get all scores for given user",
+                "parameters": [
+                    {
+                        "description": "The user name that you wish to obtain scores for.",
+                        "name": "user",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A response with the scores for the user",
+                        "schema": {
+                            "$ref": "#/definitions/ScoreData"
+                        }
+                    }
+                }
+            }
+        },
+        "/score/{stat}/{user}": {
+            "x-amazon-cloud-canvas-lambda-dispatch": {
+                "module": "user_scores"
+            },
+            "get": {
+                "description": "Get a specific score for given user",
+                "parameters": [
+                    {
+                        "description": "The user name that you wish to obtain scores for.",
+                        "name": "user",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    },
+                    {
+                        "description": "The leaderboard stat table to query for scores about a player.",
+                        "name": "stat",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A response with the scores for the user",
+                        "schema": {
+                            "$ref": "#/definitions/ScoreData"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete a specific score for given user",
+                "parameters": [
+                    {
+                        "description": "The user name that you wish to delete scores for.",
+                        "name": "user",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    },
+                    {
+                        "description": "The leaderboard stat table to you wish to delete scores from.",
+                        "name": "stat",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A response with the scores for the user",
+                        "schema": {
+                            "$ref": "#/definitions/ScoreData"
+                        }
+                    }
+                }
+            }
+        },
+        "/stats": {
+            "get": {
+                "description": "Get a list of all valid stats (leaderbooards)",
+                "responses": {
+                    "200": {
+                        "description": "a list of all stat definitions",
+                        "schema": {
+                            "$ref": "#/definitions/StatList"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Create a new stat to track in the leaderboards or edit an existing one",
+                "parameters": [
+                    {
+                        "name": "stat_def",
+                        "in": "body",
+                        "required": true,
+                        "schema" : {
+                            "$ref" : "#/definitions/StatDefinition"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list of all stats",
+                        "schema": {
+                            "$ref": "#/definitions/StatList"
+                        }
+                    }
+                }
+            }
+        },
+        "/stats/{stat_name}": {
+            "delete": {
+                "description": "Delete a stat from the list of valid stats",
+                "parameters": [
+                    {
+                        "description": "The leaderboard stat table to delete.",
+                        "name": "stat_name",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A list of all stats",
+                        "schema": {
+                            "$ref": "#/definitions/StatList"
+                        }
+                    }
+                }
+            }
+        },
+        "/player/ban_list": {
+            "get": {
+                "description": "Get a list of banned players",
+                "responses": {
+                    "200": {
+                        "description": "a list of players",
+                        "schema": {
+                            "$ref": "#/definitions/BannedPlayerList"
+                        }
+                    }
+                }
+            }
+        },
+        "/player/ban/{user}": {
+            "post": {
+                "description": "Ban a specific player",
+                "parameters": [
+                    {
+                        "description": "The user name of the individual you wish to ban.",
+                        "name": "user",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The outcome of the ban request",
+                        "schema": {
+                            "$ref": "#/definitions/BanOutcome"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Unban a specific player",
+                "parameters": [
+                    {
+                        "description": "The user name of the individual you wish to unban.",
+                        "name": "user",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "the outcome of the unban request",
+                        "schema": {
+                            "$ref": "#/definitions/BanOutcome"
+                        }
+                    }
+                }
+            }
+        },
+        "/leaderboard/{stat}": {
+            "post": {
+                "description": "Update a leaderboard stat table details.",
+                "parameters": [
+                    {
+                        "description": "The leaderboard stat table to update.",
+                        "name": "stat",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    },
+                    {
+                        "name": "additional_data",
+                        "in": "body",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definitions/AdditionalLeaderboardRequestData"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The sorted list of scores that make up the leaderboard",
+                        "schema": {
+                            "$ref": "#/definitions/ScoreData"
+                        }
+                    }
+                }
+            }
+        },
+        "/service/status": {
+            "x-amazon-cloud-canvas-lambda-dispatch": {
+                "module": "service_status"
+            },
+            "get": {
+                "operationId": "get_service_status",
+                "description": "Returns the service's status. Useful for testing connectivity.",
+                "responses": {
+                    "200": {
+                        "description": "A successful service status response.",
+                        "schema": {
+                            "$ref": "#/definitions/ServiceStatus"
+                        }
+                    }
+                }
+            }
+        },
+        "/process_records": {
+            "get": {
+                "operationId": "process_records",
+                "description": "TESTING ONLY! Manually invoke record_set_processor to process all newly submitted scores",
+                "responses": {
+                    "200": {
+                        "description": "A successful invocation."
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "ServiceStatus": {
+            "type": "object",
+            "properties": {
+                "status": {
+                    "description": "The leaderboard service API status.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "status"
+            ]
+        },
+        "BanOutcome":{
+            "type": "object",
+            "properties": {
+                "status": {
+                    "description": "The banning response status.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "status"
+            ]
+        },
+        "Error": {
+            "type": "object",
+            "properties": {
+                "errorCode": {
+                    "type": "string"
+                },
+                "errorMessage": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "errorCode",
+                "errorMessage"
+            ]
+        },
+        "SingleScore": {
+            "type": "object",
+            "properties": {
+                "user": {
+                    "description": "The user name.",
+                    "type": "string"
+                },
+                "stat": {
+                    "description": "The leaderboard stat table name.",
+                    "type": "string"
+                },
+                "value": {
+                    "description": "The user's leaderboard score.",
+                    "type": "number"
+                },
+                "estimated_rank": {
+                    "description": "The user's estimated ranking.",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "stat",
+                "value",
+                "user"
+            ]
+        },
+        "ScoreList": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/SingleScore"
+            }
+        },
+        "ScoreData": {
+            "type": "object",
+            "properties": {
+                "scores": {
+                    "$ref": "#/definitions/ScoreList"
+                },
+                "current_page": {
+                    "description": "The current page number to view.",
+                    "type": "integer"
+                },
+                "total_pages": {
+                    "description": "The total number of pages within the leaderboard stat table.",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "scores"
+            ]
+        },
+        "StatDefinition": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "The leaderboard stat table name.  Example:  score",
+                    "type": "string"
+                },
+                "mode": {
+                    "description": "The leaderboard stat table aggregation mode which can be either OVERWRITE or INCREMENT.  Example: OVERWRITE",
+                    "type": "string"
+                },
+                "min": {
+                    "description": "The minimum allowable score value. Values below this level will be rejected. Example: 0",
+                    "type": "number"
+                },
+                "max": {
+                    "description": "The maximum allowable score value. Values above this level will be rejected. Example: 999999",
+                    "type": "number"
+                },
+                "sample_size": {
+                    "description": "The leaderboard sample resevoir size. The recommended range is between 200 to 1000. Example: 300",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "name",
+                "mode"
+            ]
+        },
+        "StringList": {
+            "type": "array",
+            "description": "A string array of user names. Example: ['player1', 'player2']",
+            "items": {
+                "type": "string"
+            }
+        },
+        "StatDefList": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/StatDefinition"
+            }
+        },
+        "BannedPlayerList": {
+            "type": "object",
+            "properties": {
+                "players": {
+                    "$ref": "#/definitions/StringList"
+                }
+            }
+        },
+        "StatList": {
+            "type": "object",
+            "properties": {
+                "stats": {
+                    "$ref": "#/definitions/StatDefList"
+                }
+            },
+            "required": [
+                "stats"
+            ]
+        },
+        "AdditionalLeaderboardRequestData": {
+            "type": "object",
+            "properties": {
+                "users": {
+                    "$ref": "#/definitions/StringList"
+                },
+                "page": {
+                    "description": "The page number to start from.  Example: 0",
+                    "type": "integer"
+                },
+                "page_size": {
+                    "description": "The page size to be used for each page.  Example: 10",
+                    "type": "integer"
+                }
+            }
+        },
+        "MainTableKey": {
+            "type": "object",
+            "properties": {
+                "user": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "user"
+            ]
+        }
+    }
+}

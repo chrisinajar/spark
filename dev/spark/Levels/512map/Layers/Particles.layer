@@ -1,0 +1,12 @@
+<ObjectStream version="3">
+	<Class name="EditorLayer" version="2" type="{82C661FE-617C-471D-98D5-289570137714}">
+		<Class name="AZStd::vector" field="layerEntities" type="{21786AF0-2606-5B9A-86EB-0892E2820E6C}"/>
+		<Class name="AZStd::unordered_map" field="sliceAssetsToSliceInstances" type="{22A78DE8-C4C9-5B13-AAB8-6FA23E3C5FC7}"/>
+		<Class name="LayerProperties" field="m_layerProperties" version="2" type="{FA61BD6E-769D-4856-BFB5-B535E0FC57B4}">
+			<Class name="Color" field="m_color" value="0.3176471 0.3176471 0.3176471 1.0000000" type="{7894072A-9050-4F0F-901B-34B1A0D29417}"/>
+			<Class name="bool" field="m_saveAsBinary" value="false" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+			<Class name="bool" field="m_isLayerVisible" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
+		</Class>
+	</Class>
+</ObjectStream>
+

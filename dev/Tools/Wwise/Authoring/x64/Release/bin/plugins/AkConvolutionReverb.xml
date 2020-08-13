@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 Audiokinetic Inc. -->
+<PluginModule>
+ <EffectPlugin Name="Wwise Convolution Reverb" CompanyID="0" PluginID="127">
+    <PluginInfo MenuPath="60-Convolution">
+      <PlatformSupport>
+        <Platform Name="Windows">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+          <CanBeRendered>true</CanBeRendered>
+          <CanReferenceDataFile>true</CanReferenceDataFile>
+        </Platform>
+        <Platform Name="Linux">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+          <CanBeRendered>true</CanBeRendered>
+          <CanReferenceDataFile>true</CanReferenceDataFile>
+        </Platform>
+        <Platform Name="XboxOne">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+          <CanBeRendered>true</CanBeRendered>
+          <CanReferenceDataFile>true</CanReferenceDataFile>
+        </Platform>
+        <Platform Name="Android">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+          <CanBeRendered>true</CanBeRendered>
+          <CanReferenceDataFile>true</CanReferenceDataFile>
+        </Platform>
+        <Platform Name="Mac">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+          <CanBeRendered>true</CanBeRendered>
+          <CanReferenceDataFile>true</CanReferenceDataFile>
+        </Platform>
+        <Platform Name="PS4">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+          <CanBeRendered>true</CanBeRendered>
+          <CanReferenceDataFile>true</CanReferenceDataFile>
+        </Platform>
+        <Platform Name="iOS">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+          <CanBeRendered>true</CanBeRendered>
+          <CanReferenceDataFile>true</CanReferenceDataFile>
+        </Platform>
+        <Platform Name="Emscripten">
+          <CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+          <CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+          <CanBeRendered>true</CanBeRendered>
+          <CanReferenceDataFile>true</CanReferenceDataFile>
+        </Platform>
+				<Platform Name="Switch">
+					<CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+					<CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+					<CanBeRendered>true</CanBeRendered>
+					<CanReferenceDataFile>true</CanReferenceDataFile>
+				</Platform>
+				<Platform Name="Lumin">
+					<CanBeInsertOnBusses>true</CanBeInsertOnBusses>
+					<CanBeInsertOnAudioObjects>true</CanBeInsertOnAudioObjects>
+					<CanBeRendered>true</CanBeRendered>
+					<CanReferenceDataFile>true</CanReferenceDataFile>
+				</Platform>
+      </PlatformSupport>
+    </PluginInfo>
+    <Properties>
+      <!-- Impulse response preprocessing properties -->
+      <Property Name="IRStretch" Type="Real32" DisplayName="IR Stretch" DisplayGroup="Impulse Response/Transformation">
+        <UserInterface Step="1" Fine="0.1" Decimals="1" AutoUpdate="false"/>
+        <DefaultValue>100</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>50</Min>
+              <Max>200</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="IRChannelSelect" Type="int32" DisplayName="IR Channels" DisplayGroup="Impulse Response/Transformation">
+        <DefaultValue>4</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Enumeration Type="int32">
+              <Value DisplayName="Stereo">0</Value>
+              <Value DisplayName="Mixdown">1</Value>
+              <Value DisplayName="Left only">2</Value>
+              <Value DisplayName="Right only">3</Value>
+              <Value DisplayName="As Input">4</Value>
+            </Enumeration>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="IRLRMix" Type="Real32" DisplayName="IR Balance" DisplayGroup="Impulse Response/Transformation">
+        <UserInterface Step="1" Decimals="1" AutoUpdate="false" LRMixDisplay="true"/>
+        <DefaultValue>0</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-100</Min>
+              <Max>100</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="IRChannelSelect" Action="Enable">
+            <Condition>
+              <Enumeration Type="int32">
+                <!--Stereo -->
+                <Value>0</Value>
+                <!--Mixdown -->
+                <Value>1</Value>
+              </Enumeration>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="IRConvolutionThreshold" Type="Real32" DisplayName="IR Threshold" DisplayGroup="Impulse Response/Optimization">
+        <UserInterface Step="1" Fine="0.1" Decimals="1" AutoUpdate="false" SliderType="14"/>
+        <DefaultValue>-144</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-144</Min>
+              <Max>-30</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="IRConvolutionSmooth" Type="Real32" DisplayName="IR Smooth" DisplayGroup="Impulse Response/Optimization">
+        <UserInterface Step="1" Fine="0.1" Decimals="1" AutoUpdate="false"/>
+        <DefaultValue>0</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0</Min>
+              <Max>100</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="IRConvolutionThreshold" Action="Enable">
+            <Condition>
+              <Range Type="Real32">
+                <Min>-143</Min>
+                <Max>-30</Max>
+              </Range>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="IRConvolutionSmoothMax" Type="Real32" IsVisible="false" DisplayName="IR Convolution Smooth" DisplayGroup="Impulse Response">
+        <DefaultValue>100</DefaultValue>
+      </Property>
+      <Property Name="IRConvolutionStart" Type="Real64" IsVisible="false" DisplayName="IR Convolution Begin" DisplayGroup="Impulse Response">
+        <DefaultValue>0</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real64">
+              <Min>0</Min>
+              <Max>20</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="IRConvolutionStop" Type="Real64" IsVisible="false" DisplayName="IR Convolution End" DisplayGroup="Impulse Response">
+        <DefaultValue>0</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real64">
+              <Min>0</Min>
+              <Max>20</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="IRLevel" Type="Real32" DataMeaning="Decibels" DisplayName="IR Volume" DisplayGroup="Impulse Response">
+        <UserInterface Step="0.1" Fine="0.01" Decimals="2" AutoUpdate="false"/>
+        <DefaultValue>0</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96.3</Min>
+              <Max>24</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="IRLevelAutomate" Type="bool" DisplayName="IR Automate Volume" DisplayGroup="Impulse Response">
+        <DefaultValue>true</DefaultValue>
+      </Property>
+      <Property Name="IRLPFAutomate" Type="bool" DisplayName="IR Automate LPF" DisplayGroup="Impulse Response">
+        <DefaultValue>false</DefaultValue>
+      </Property>
+      <Property Name="IRGraphicEQAutomate" Type="bool" DisplayName="IR Enable EQ" DisplayGroup="Impulse Response">
+        <DefaultValue>false</DefaultValue>
+      </Property>
+      <Property Name="IRLPFSlope" Type="int32" IsVisible="false">
+        <DefaultValue>6</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Enumeration Type="int32">
+              <Value>6</Value>
+              <Value>12</Value>
+              <Value>18</Value>
+              <Value>24</Value>
+            </Enumeration>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <!-- Runtime processing properties -->
+      <Property Name="AlgoTypeSelect" Type="int32" DisplayName="Reverb Type" DisplayGroup="Reverb">
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>32</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Enumeration Type="int32">
+              <Value DisplayName="Reverb">0</Value>
+              <Value DisplayName="Filter">1</Value>
+            </Enumeration>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="PreDelay" Type="Real32" DisplayName="Pre Delay" DisplayGroup="Reverb">
+        <UserInterface Step="1" Fine="0.1" Decimals="2" UIMax="200" AutoUpdate="false"/>
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>0</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0</Min>
+              <Max>1000</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="FrontRearDelay" Type="Real32" DisplayName="Rear Delay" DisplayGroup="Reverb">
+        <UserInterface Step="1" Fine="0.1" Decimals="2" UIMax="200" AutoUpdate="false"/>
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>1</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0</Min>
+              <Max>200</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="InputCenterLevel" Type="Real32" SupportRTPCType="Additive" DataMeaning="Decibels" DisplayName="Center Input Level" DisplayGroup="Input Levels">
+        <UserInterface Step="1" Fine="0.1" Decimals="1"/>
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>10</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96.3</Min>
+              <Max>0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="AlgoTypeSelect" Action="Enable">
+            <Condition>
+              <Enumeration Type="int32">
+                <!-- Reverb -->
+                <Value>0</Value>
+              </Enumeration>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="InputLFELevel" Type="Real32" SupportRTPCType="Additive" DataMeaning="Decibels" DisplayName="LFE Input Level" DisplayGroup="Input Levels">
+        <UserInterface Step="1" Fine="0.1" Decimals="1"/>
+        <DefaultValue>-96.3</DefaultValue>
+        <AudioEnginePropertyID>11</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96.3</Min>
+              <Max>0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="AlgoTypeSelect" Action="Enable">
+            <Condition>
+              <Enumeration Type="int32">
+                <!-- Reverb -->
+                <Value>0</Value>
+              </Enumeration>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="InputStereoWidth" Type="Real32" SupportRTPCType="Additive" DisplayName="Input Spread" DisplayGroup="Input Levels">
+        <UserInterface Step="1" Fine="0.1" Decimals="1"/>
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>33</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0</Min>
+              <Max>180</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="AlgoTypeSelect" Action="Enable">
+            <Condition>
+              <Enumeration Type="int32">
+                <!-- Reverb -->
+                <Value>0</Value>
+              </Enumeration>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="FrontLevel" Type="Real32" SupportRTPCType="Additive" DataMeaning="Decibels" DisplayName="Reverb Front Level" DisplayGroup="Reverb Levels">
+        <UserInterface Step="1" Decimals="0"/>
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>20</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96.3</Min>
+              <Max>0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="AlgoTypeSelect" Action="Enable">
+            <Condition>
+              <Enumeration Type="int32">
+                <!-- Reverb -->
+                <Value>0</Value>
+              </Enumeration>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="RearLevel" Type="Real32" SupportRTPCType="Additive" DataMeaning="Decibels" DisplayName="Reverb Rear Level" DisplayGroup="Reverb Levels">
+        <UserInterface Step="1" Decimals="0"/>
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>21</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96.3</Min>
+              <Max>0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="AlgoTypeSelect" Action="Enable">
+            <Condition>
+              <Enumeration Type="int32">
+                <!-- Reverb -->
+                <Value>0</Value>
+              </Enumeration>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="CenterLevel" Type="Real32" SupportRTPCType="Additive" DataMeaning="Decibels" DisplayName="Reverb Center Level" DisplayGroup="Reverb Levels">
+        <UserInterface Step="1" Fine="0.1" Decimals="1"/>
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>22</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96.3</Min>
+              <Max>0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="AlgoTypeSelect" Action="Enable">
+            <Condition>
+              <Enumeration Type="int32">
+                <!-- Reverb -->
+                <Value>0</Value>
+              </Enumeration>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="LFELevel" Type="Real32" SupportRTPCType="Exclusive" DataMeaning="Decibels" DisplayName="Reverb LFE Level" DisplayGroup="Reverb Levels">
+        <UserInterface Step="1" Fine="0.1" Decimals="1"/>
+        <DefaultValue>-96.3</DefaultValue>
+        <AudioEnginePropertyID>23</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96.3</Min>
+              <Max>0</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="AlgoTypeSelect" Action="Enable">
+            <Condition>
+              <Enumeration Type="int32">
+                <!-- Reverb -->
+                <Value>0</Value>
+              </Enumeration>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="DryLevel" Type="Real32" SupportRTPCType="Additive" DataMeaning="Decibels" DisplayName="Dry Level" DisplayGroup="Output Levels">
+        <UserInterface Step="0.5" Fine="0.1" Decimals="2"/>
+        <DefaultValue>-96.3</DefaultValue>
+        <AudioEnginePropertyID>30</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96.3</Min>
+              <Max>24</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="WetLevel" Type="Real32" SupportRTPCType="Additive" DataMeaning="Decibels" DisplayName="Wet Level" DisplayGroup="Output Levels">
+        <UserInterface Step="0.5" Fine="0.1" Decimals="2"/>
+        <DefaultValue>0</DefaultValue>
+        <AudioEnginePropertyID>31</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>-96.3</Min>
+              <Max>24</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="StereoWidth" Type="Real32" SupportRTPCType="Additive" DisplayName="Output Spread" DisplayGroup="Output Levels">
+        <UserInterface Step="1" Fine="0.1" Decimals="1"/>
+        <DefaultValue>180</DefaultValue>
+        <AudioEnginePropertyID>2</AudioEnginePropertyID>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="Real32">
+              <Min>0</Min>
+              <Max>180</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+        <Dependencies>
+          <PropertyDependency Name="AlgoTypeSelect" Action="Enable">
+            <Condition>
+              <Enumeration Type="int32">
+                <!-- Reverb -->
+                <Value>0</Value>
+              </Enumeration>
+            </Condition>
+          </PropertyDependency>
+        </Dependencies>
+      </Property>
+      <Property Name="ChannelConfigOverride" Type="int64" DisplayName="Channel Configuration Override">
+        <UserInterface ControlClass="AudioSourceChannelConfigOverride" />
+        <DefaultValue>0</DefaultValue>
+      </Property>
+      <!-- Hidden properties, not used as effect parameters but instead used to allow conversion of IR for proper runtime execution context -->
+      <Property Name="SoundEngineBlockSizeDefault" Type="int32" IsVisible="false">
+        <DefaultValue>1024</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="int32">
+              <Min>128</Min>
+              <Max>4096</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="SoundEngineSampleRateDefault" Type="int32" IsVisible="false">
+        <DefaultValue>48000</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="int32">
+              <Min>24000</Min>
+              <Max>48000</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <!-- Property name must exist to be overridden in projects that require it -->
+      <Property Name="SoundEngineSampleRateiOS" Type="int32" IsVisible="false">
+        <DefaultValue>48000</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="int32">
+              <Min>24000</Min>
+              <Max>48000</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+      <Property Name="SoundEngineSampleRateMac" Type="int32" IsVisible="false">
+        <DefaultValue>48000</DefaultValue>
+        <Restrictions>
+          <ValueRestriction>
+            <Range Type="int32">
+              <Min>24000</Min>
+              <Max>48000</Max>
+            </Range>
+          </ValueRestriction>
+        </Restrictions>
+      </Property>
+    </Properties>
+  </EffectPlugin>
+</PluginModule>

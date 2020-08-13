@@ -1,0 +1,17 @@
+{
+    "none": {
+        "Source": [
+            "Source/HMDFramework_precompiled.cpp",
+            "Source/HMDFramework_precompiled.h"
+        ]
+    },
+    "auto": {
+        "Source": [
+            "Source/HMDFrameworkModule.cpp",
+            "Source/HMDDebuggerComponent.h",
+            "Source/HMDDebuggerComponent.cpp",
+            "Source/HMDLuaComponent.h",
+            "Source/HMDLuaComponent.cpp"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "auto": {
+        "Root": [
+        ],
+        
+        "ExampleBuilder": [
+            "Source/ExampleBuilderApplication.cpp"
+        ]
+    }
+}

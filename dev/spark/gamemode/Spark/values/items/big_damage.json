@@ -1,0 +1,41 @@
+{
+	"items": {
+		"big_damage": {
+			"extends": "item",
+	    	"ID":                               23,    // unique ID
+	    	"item_cost":                        1400,	// if recipe = true, this is the recipe cost, else the item can be bought in the shop at this price
+	    	"item_shop_tags":                   "",
+	    	"item_recipe":                      false,
+	    	"max_level":				        5,
+	    	"item_recipe_icon":					"base_recipe_icon",
+	    	"item_icon":                        "big_damage_icon",
+
+	   		// General
+	    	//-------------------------------------------------------------------------------------------------------------
+	    	"ability_behavior":                 "passive", // what happens when you push the button: unit_target, ground_target, no_target, toggle, passive 
+	    	"ability_unit_target_team":         "", // team_enemy or team_ally
+	    	"ability_unit_target_type":         [], // hero, creep, boss
+	    	"ability_unit_target_flags":        "", // if listed it can target: status_immune
+
+		    // Stats
+		    //-------------------------------------------------------------------------------------------------------------
+		    "ability_cooldown":                 0,
+		    "ability_shared_cooldown":          "base",
+		    "ability_cast_range":               0,
+		    "ability_cast_point":               0.0,
+
+		    // Item Info
+		    //-------------------------------------------------------------------------------------------------------------
+		    "ability_mana_cost":                0,
+		    "item_shop_tags":                   "base",
+		    "item_aliases":                     "base",
+
+		    // Special
+		    //-------------------------------------------------------------------------------------------------------------
+		    "special_values":
+		    {
+		    	"damage":						30,
+		    }
+		}
+	}
+}

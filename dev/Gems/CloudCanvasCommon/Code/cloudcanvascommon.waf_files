@@ -1,0 +1,19 @@
+{
+    "none": {
+        "Source": [
+            "Source/CloudCanvasCommon_precompiled.cpp",
+            "Source/CloudCanvasCommon_precompiled.h",
+            "Source/CloudCanvasCommonModule.cpp",
+            "Source/CloudCanvasCommonModule.h"
+        ]
+    },
+    "auto": {
+        "Include": [
+            "Include/CloudCanvasCommon/CloudCanvasCommonBus.h"
+        ],
+        "Source": [
+            "Source/CloudCanvasCommonSystemComponent.cpp",
+            "Source/CloudCanvasCommonSystemComponent.h"
+        ]
+    }
+}

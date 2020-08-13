@@ -1,0 +1,18 @@
+{
+    "AzCore_uber_ios.cpp":
+    {
+        "Debug":
+        [
+            "Debug/StackTracerLinux.inl",
+            "Debug/TraceCppApple.inl"
+        ],
+        "Module":
+        [
+            "Module/DynamicModuleHandleLinux.cpp"
+        ],
+        "Utils" : 
+        [
+            "Utils/generic/Utils_Generic.cpp"
+        ]
+    }
+}
